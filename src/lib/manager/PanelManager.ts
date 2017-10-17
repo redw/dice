@@ -115,8 +115,8 @@ module Pop{
                 let name: string = list[i];
                 let layer: eui.Group = new eui.Group();
                 layer.name = name;
-                layer.width = Global.getStageWidth();
-                layer.height = Global.getStageHeight();
+                layer.width = __STAGE.stageWidth;
+                layer.height = __STAGE.stageHeight;
                 layer.touchEnabled = false;
                 layer.touchChildren = true;
                 root.addChild(layer);
@@ -233,8 +233,8 @@ module Pop{
                     this.screenBgImg = new eui.Image();
                     this.screenBgImg.source = "screen_bg_png";
                     this.screenBgImg.scale9Grid = new egret.Rectangle(60, 158, 360, 15);
-                    this.screenBgImg.width = Global.getStageWidth();
-                    this.screenBgImg.height = Global.getStageHeight();
+                    this.screenBgImg.width = __STAGE.stageWidth;
+                    this.screenBgImg.height = __STAGE.stageHeight;
                 }
                 layer.addChild(this.screenBgImg);
             }
@@ -307,8 +307,8 @@ module Pop{
 
         private addOpenEffect(panel: BasePanel): void {
             egret.Tween.removeTweens(panel);
-            let stageWidth: number = Global.getStageWidth();
-            let stageHeight: number = Global.getStageHeight();
+            let stageWidth: number = __STAGE.stageWidth;
+            let stageHeight: number = __STAGE.stageHeight;
             switch (panel.effectType) {
                 case 1:
                     panel.anchorOffsetX = panel.width / 2;
@@ -345,8 +345,8 @@ module Pop{
 
         private addCloseEffect(panel: BasePanel): void {
             egret.Tween.removeTweens(panel);
-            let stageWidth = Global.getStageWidth();
-            let stageHeight = Global.getStageHeight();
+            let stageWidth = __STAGE.stageWidth;
+            let stageHeight = __STAGE.stageHeight;
             let tween = null;
             switch (panel.effectType) {
                 case 1:

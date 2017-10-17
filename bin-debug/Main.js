@@ -41,9 +41,12 @@ var Main = (function (_super) {
         GameLoad.start(this.loadComplete, this);
     };
     Main.prototype.loadComplete = function () {
+        console.log("load complete");
         GameLoop.boot();
         Pop.boot(this);
         GameLoop.registerEnterFrame(this.onEnterFrame, this);
+        var mainView = new MainView();
+        this.addChild(mainView);
     };
     Main.prototype.onEnterFrame = function () {
         dragonBones.WorldClock.clock.advanceTime(0.01);

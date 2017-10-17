@@ -30,11 +30,14 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private loadComplete() {
+        console.log("load complete");
         GameLoop.boot();
-
         Pop.boot(this);
 
         GameLoop.registerEnterFrame(this.onEnterFrame, this);
+
+        let mainView = new MainView();
+        this.addChild(mainView);
     }
 
     private onEnterFrame() {

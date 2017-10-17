@@ -15,12 +15,12 @@ module GameLoad {
         showProgress(window["__loadProgress"] || 50);
         loadPlatformConfig();
         loadDefaultRes();
-        GameWorker.boot();
-        GameWorker.loadConfig();
+        // GameWorker.boot();
+        // GameWorker.loadConfig();
 
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, onLoadGroupComplete, null);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, onLoadGroupProgress, null);
-        EventManager.inst.addEventListener(GameEvents.LOAD_CONFIG_COMPLETE, onLoadGameConfigComplete, null);
+        EventManager.inst.addEventListener(GameEvents.LOAD_CONFIG_COMPLETE, onLoadGameConfigComplete, GameLoad);
     }
 
     function showProgress(value:number, tip = "") {
@@ -41,10 +41,12 @@ module GameLoad {
 
     function  loadPlatformConfig() {
         let platform = ExternalUtil.getPlatform();
-        RES.getResByUrl(`resource/config_${platform}.json?v=${Date.now()}`, (data) => {
-            egret.log("load config_json complete");
+        RES.getResByUrl(`resource/config.json?v=${Date.now()}`, (data) => {
+            egret.log("load config complete");
             addProgress(1);
-            Global.initConfig(data);
+            Global.boot(data);
+            dataOk = Global.TEST;
+            jsonOk = Global.TEST;
             GameDataProxy.boot();
             Net.addCmdListener(CmdConst.ENTER, onDataRes, GameLoad);
             requestServerPath();
@@ -74,16 +76,7 @@ module GameLoad {
 
     function  sendEnterCmd() {
         addProgress(1);
-        // let from:string = window["AWY_SDK"].getURLVar("cp_from");
-        // let friendId:string = window["AWY_SDK"].getURLVar("fuid") || 1;
-        // window["AWY_SDK"].shareParams({"cp_from":"msg"});
         let req:any = {cmd:"enter"};
-        // if (from) {
-        //     req.from = from;
-        // }
-        // if (friendId) {
-        //     req.inviteId = friendId;
-        // }
         Net.sendHMessage(req);
     }
 
@@ -96,7 +89,7 @@ module GameLoad {
     }
 
     function onLoadGroupProgress(e:RES.ResourceEvent) {
-        // let groupName = e.groupName;
+        let groupName = e.groupName;
         addProgress(3);
     }
 
@@ -107,12 +100,12 @@ module GameLoad {
         enterGame();
     }
 
-    function  onLoadGameConfigComplete() {
+    function onLoadGameConfigComplete() {
         jsonOk = true;
         enterGame();
     }
 
-    function  onLoadDefResComplete(e:RES.ResourceEvent) {
+    function onLoadDefResComplete(e:RES.ResourceEvent) {
         RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, onLoadDefResComplete, GameLoad);
         let target = e.target;
         if (target && target.resConfig && target.resConfig.keyMap) {
@@ -127,18 +120,19 @@ module GameLoad {
         if (useXJS) {
             showProgress(90);
             let xmlJsRes = resConfig["xml_js"].url;
-            window["AWY_SDK"].loadSingleScript(xmlJsRes, function () {
+            window["loadSingleScript"](xmlJsRes, function () {
                 skinOk = true;
                 enterGame();
             });
         } else {
-            let themeURL = "resource/default.thm.json?";
+            let themeURL = "resource/default.thm.json";
             let theme = new eui.Theme(themeURL, __STAGE);
-            theme.once(eui.UIEvent.COMPLETE, onLoadSkinComplete, GameLoad);
+            theme.once(eui.UIEvent.COMPLETE, onLoadSkinComplete, null);
         }
     }
 
     function onLoadSkinComplete() {
+        console.log("加载skin完成");
         skinOk = true;
         enterGame();
     }
