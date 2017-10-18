@@ -37,3 +37,4 @@ var SimpleGroup = (function (_super) {
     return SimpleGroup;
 }(eui.Group));
 __reflect(SimpleGroup.prototype, "SimpleGroup");
+//# sourceMappingURL=SimpleGroup.js.map

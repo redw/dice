@@ -53,3 +53,4 @@ var GameWorker;
     }
     GameWorker.getSke = getSke;
 })(GameWorker || (GameWorker = {}));
+//# sourceMappingURL=GameWorker.js.map

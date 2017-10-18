@@ -72,7 +72,7 @@ var Scene = (function (_super) {
     // 添加背景
     Scene.prototype.addBackGround = function () {
         var container = this.backGroundLayer;
-        var start = this.road + this.build + this.des;
+        var start = this.des + this.build + this.road;
         var end = start + this.inner;
         for (var i = start; i < end; i++) {
             for (var j = start; j < end; j++) {
@@ -83,51 +83,38 @@ var Scene = (function (_super) {
         this.addTileToLayer(end, start, "ground_14_png", container, -19, -28);
         this.addTileToLayer(end, end, "ground_15_png", container, 25, -61);
         this.addTileToLayer(start, end, "ground_12_png", container, 54, -52);
-        start = this.build + this.des + 1;
-        var step = this.inner;
-        for (var i = 0; i < this.inner; i++) {
-            this.addTileToLayer(start + i, start - 1, "road_05_png", container);
-            this.addTileToLayer(start + step, start + i, "road_05_png", container);
-            this.addTileToLayer(start + i, start + step, "road_05_png", container);
-            this.addTileToLayer(start - 1, start + i, "road_05_png", container);
+        start = this.des + this.build;
+        end = start + this.inner + this.road;
+        for (var i = start + 1; i < end; i++) {
+            this.addTileToLayer(i, start, "road_05_png", container);
+            this.addTileToLayer(end, i, "road_05_png", container);
+            this.addTileToLayer(i, end, "road_05_png", container);
+            this.addTileToLayer(start, i, "road_05_png", container);
         }
-        this.addTileToLayer(start - 1, start - 1, "road_03_png", container);
-        this.addTileToLayer(start + step, start - 1, "road_04_png", container);
-        this.addTileToLayer(start - 1, start + step, "road_02_png", container);
-        this.addTileToLayer(start + step, start + step, "road_01_png", container);
-        start = this.build + 1;
-        step = this.build + this.road + this.inner;
-        for (var i = 0; i <= end; i++) {
-            this.addTileToLayer(start + i - 1, start - 1, "ground_09_png", container);
-            this.addTileToLayer(start + step, start + i - 1, "ground_09_png", container);
-            this.addTileToLayer(start + i, start + step, "ground_09_png", container);
-            this.addTileToLayer(start - 1, start + i, "ground_09_png", container);
+        this.addTileToLayer(start, start, "road_03_png", container);
+        this.addTileToLayer(end, start, "road_04_png", container);
+        this.addTileToLayer(start, end, "road_02_png", container);
+        this.addTileToLayer(end, end, "road_01_png", container);
+        start = this.des;
+        end = start + this.inner + this.road * 2 + this.build;
+        for (var i = start; i <= end; i++) {
+            this.addTileToLayer(i, start, "ground_09_png", container);
+            this.addTileToLayer(end, i, "ground_09_png", container);
+            this.addTileToLayer(i, end, "ground_09_png", container);
+            this.addTileToLayer(start, i, "ground_09_png", container);
         }
-        start = this.build + this.des + 1;
-        step = this.inner;
-        for (var i = 0; i < step; i++) {
-            this.addTileToLayer(start + i, start - 1, "road_05_png", container);
-            this.addTileToLayer(start + step, start + i, "road_05_png", container);
-            this.addTileToLayer(start + i, start + step, "road_05_png", container);
-            this.addTileToLayer(start - 1, start + i, "road_05_png", container);
-        }
-        this.addTileToLayer(start - 1, start - 1, "road_03_png", container);
-        this.addTileToLayer(start + step, start - 1, "road_04_png", container);
-        this.addTileToLayer(start - 1, start + step, "road_02_png", container);
-        this.addTileToLayer(start + step, start + step, "road_01_png", container);
-        // 外围
         start = 0;
-        step = this.size - 2;
-        for (var i = 0; i < step; i++) {
-            this.addTileToLayer(i + 1, start, "ground_03_png", container);
-            this.addTileToLayer(step + 1, i + i, "ground_07_png", container);
-            this.addTileToLayer(i + 1, step + 1, "ground_02_png", container);
+        end = start + this.inner + this.road * 2 + this.build * 2;
+        this.addTileToLayer(start, start, "ground_05_png", container);
+        this.addTileToLayer(end + 1, start, "ground_06_png", container);
+        this.addTileToLayer(end + 1, end + 1, "ground_08_png", container, -4, -2);
+        this.addTileToLayer(start, end + 1, "ground_01_png", container, 0, -2);
+        for (var i = start; i < end; i++) {
+            this.addTileToLayer(i + 1, 0, "ground_03_png", container);
+            this.addTileToLayer(end + 1, i + 1, "ground_07_png", container);
+            this.addTileToLayer(i + 1, end + 1, "ground_02_png", container, -4, -2);
             this.addTileToLayer(start, i + 1, "ground_04_png", container);
         }
-        // this.addTileToLayer(start - 1, start - 1, "road_03_png", container);
-        // this.addTileToLayer(start + step, start - 1, "road_04_png", container);
-        // this.addTileToLayer(start - 1, start + step, "road_02_png", container);
-        // this.addTileToLayer(start + step, start + step, "road_01_png", container);
     };
     Scene.prototype.addTileToLayer = function (xx, yy, source, container, offX, offY) {
         if (offX === void 0) { offX = 0; }
@@ -149,3 +136,4 @@ var Scene = (function (_super) {
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
+//# sourceMappingURL=Scene.js.map
