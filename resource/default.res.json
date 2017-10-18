@@ -1,0 +1,305 @@
+{
+	"groups": [
+		{
+			"keys": "zhuangshi_02_png,zhuangshi_01_png,tree_07_png,tree_06_png,tree_05_png,tree_04_png,tree_03_png,tree_02_png,tree_01_png,tingche_02_png,tingche_01_png,road_06_png,road_05_png,road_04_png,road_03_png,road_02_png,road_01_png,ludeng_02_png,ludeng_01_png,lajitong_01_png,ground_15_png,ground_14_png,ground_13_png,ground_12_png,ground_10_png,ground_09_png,ground_08_png,ground_07_png,ground_06_png,ground_05_png,ground_04_png,ground_03_png,ground_02_png,ground_01_png,car_05_png,car_04_png,car_03_png,car_02_png,car_01_png,beijing_12_png,beijing_11_png,beijing_10_png,beijing_09_png,beijing_08_png,beijing_07_png,beijing_06_png,beijing_05_png,beijing_04_png,beijing_03_png,beijing_02_png,beijing_01_png,7_png,6_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "scene/6.png",
+			"type": "image",
+			"name": "6_png"
+		},
+		{
+			"url": "scene/7.png",
+			"type": "image",
+			"name": "7_png"
+		},
+		{
+			"url": "scene/beijing_01.png",
+			"type": "image",
+			"name": "beijing_01_png"
+		},
+		{
+			"url": "scene/beijing_02.png",
+			"type": "image",
+			"name": "beijing_02_png"
+		},
+		{
+			"url": "scene/beijing_03.png",
+			"type": "image",
+			"name": "beijing_03_png"
+		},
+		{
+			"url": "scene/beijing_04.png",
+			"type": "image",
+			"name": "beijing_04_png"
+		},
+		{
+			"url": "scene/beijing_05.png",
+			"type": "image",
+			"name": "beijing_05_png"
+		},
+		{
+			"url": "scene/beijing_06.png",
+			"type": "image",
+			"name": "beijing_06_png"
+		},
+		{
+			"url": "scene/beijing_07.png",
+			"type": "image",
+			"name": "beijing_07_png"
+		},
+		{
+			"url": "scene/beijing_08.png",
+			"type": "image",
+			"name": "beijing_08_png"
+		},
+		{
+			"url": "scene/beijing_09.png",
+			"type": "image",
+			"name": "beijing_09_png"
+		},
+		{
+			"url": "scene/beijing_10.png",
+			"type": "image",
+			"name": "beijing_10_png"
+		},
+		{
+			"url": "scene/beijing_11.png",
+			"type": "image",
+			"name": "beijing_11_png"
+		},
+		{
+			"url": "scene/beijing_12.png",
+			"type": "image",
+			"name": "beijing_12_png"
+		},
+		{
+			"url": "scene/car_01.png",
+			"type": "image",
+			"name": "car_01_png"
+		},
+		{
+			"url": "scene/car_02.png",
+			"type": "image",
+			"name": "car_02_png"
+		},
+		{
+			"url": "scene/car_03.png",
+			"type": "image",
+			"name": "car_03_png"
+		},
+		{
+			"url": "scene/car_04.png",
+			"type": "image",
+			"name": "car_04_png"
+		},
+		{
+			"url": "scene/car_05.png",
+			"type": "image",
+			"name": "car_05_png"
+		},
+		{
+			"url": "scene/ground_01.png",
+			"type": "image",
+			"name": "ground_01_png"
+		},
+		{
+			"url": "scene/ground_02.png",
+			"type": "image",
+			"name": "ground_02_png"
+		},
+		{
+			"url": "scene/ground_03.png",
+			"type": "image",
+			"name": "ground_03_png"
+		},
+		{
+			"url": "scene/ground_04.png",
+			"type": "image",
+			"name": "ground_04_png"
+		},
+		{
+			"url": "scene/ground_05.png",
+			"type": "image",
+			"name": "ground_05_png"
+		},
+		{
+			"url": "scene/ground_06.png",
+			"type": "image",
+			"name": "ground_06_png"
+		},
+		{
+			"url": "scene/ground_07.png",
+			"type": "image",
+			"name": "ground_07_png"
+		},
+		{
+			"url": "scene/ground_08.png",
+			"type": "image",
+			"name": "ground_08_png"
+		},
+		{
+			"url": "scene/ground_09.png",
+			"type": "image",
+			"name": "ground_09_png"
+		},
+		{
+			"url": "scene/ground_10.png",
+			"type": "image",
+			"name": "ground_10_png"
+		},
+		{
+			"url": "scene/ground_12.png",
+			"type": "image",
+			"name": "ground_12_png"
+		},
+		{
+			"url": "scene/ground_13.png",
+			"type": "image",
+			"name": "ground_13_png"
+		},
+		{
+			"url": "scene/ground_14.png",
+			"type": "image",
+			"name": "ground_14_png"
+		},
+		{
+			"url": "scene/ground_15.png",
+			"type": "image",
+			"name": "ground_15_png"
+		},
+		{
+			"url": "scene/lajitong_01.png",
+			"type": "image",
+			"name": "lajitong_01_png"
+		},
+		{
+			"url": "scene/ludeng_01.png",
+			"type": "image",
+			"name": "ludeng_01_png"
+		},
+		{
+			"url": "scene/ludeng_02.png",
+			"type": "image",
+			"name": "ludeng_02_png"
+		},
+		{
+			"url": "scene/road_01.png",
+			"type": "image",
+			"name": "road_01_png"
+		},
+		{
+			"url": "scene/road_02.png",
+			"type": "image",
+			"name": "road_02_png"
+		},
+		{
+			"url": "scene/road_03.png",
+			"type": "image",
+			"name": "road_03_png"
+		},
+		{
+			"url": "scene/road_04.png",
+			"type": "image",
+			"name": "road_04_png"
+		},
+		{
+			"url": "scene/road_05.png",
+			"type": "image",
+			"name": "road_05_png"
+		},
+		{
+			"url": "scene/road_06.png",
+			"type": "image",
+			"name": "road_06_png"
+		},
+		{
+			"url": "scene/tingche_01.png",
+			"type": "image",
+			"name": "tingche_01_png"
+		},
+		{
+			"url": "scene/tingche_02.png",
+			"type": "image",
+			"name": "tingche_02_png"
+		},
+		{
+			"url": "scene/tree_01.png",
+			"type": "image",
+			"name": "tree_01_png"
+		},
+		{
+			"url": "scene/tree_02.png",
+			"type": "image",
+			"name": "tree_02_png"
+		},
+		{
+			"url": "scene/tree_03.png",
+			"type": "image",
+			"name": "tree_03_png"
+		},
+		{
+			"url": "scene/tree_04.png",
+			"type": "image",
+			"name": "tree_04_png"
+		},
+		{
+			"url": "scene/tree_05.png",
+			"type": "image",
+			"name": "tree_05_png"
+		},
+		{
+			"url": "scene/tree_06.png",
+			"type": "image",
+			"name": "tree_06_png"
+		},
+		{
+			"url": "scene/tree_07.png",
+			"type": "image",
+			"name": "tree_07_png"
+		},
+		{
+			"url": "scene/zhuangshi_01.png",
+			"type": "image",
+			"name": "zhuangshi_01_png"
+		},
+		{
+			"url": "scene/zhuangshi_02.png",
+			"type": "image",
+			"name": "zhuangshi_02_png"
+		},
+		{
+			"url": "ani/poche/poche_tex.png",
+			"type": "image",
+			"name": "poche_tex_png"
+		},
+		{
+			"url": "ani/shaizi/dice_roll_tex.png",
+			"type": "image",
+			"name": "dice_roll_tex_png"
+		},
+		{
+			"url": "ani/poche/poche_ske.json",
+			"type": "json",
+			"name": "poche_ske_json"
+		},
+		{
+			"url": "ani/poche/poche_tex.json",
+			"type": "json",
+			"name": "poche_tex_json"
+		},
+		{
+			"url": "ani/shaizi/dice_roll_tex.json",
+			"type": "json",
+			"name": "dice_roll_tex_json"
+		},
+		{
+			"url": "ani/shaizi/dice_roll_ske.json",
+			"type": "json",
+			"name": "dice_roll_ske_json"
+		}
+	]
+}

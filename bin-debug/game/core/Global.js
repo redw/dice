@@ -17,4 +17,3 @@ var Global;
     }
     Global.boot = boot;
 })(Global || (Global = {}));
-//# sourceMappingURL=Global.js.map

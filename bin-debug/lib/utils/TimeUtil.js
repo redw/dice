@@ -59,4 +59,3 @@ var TimeUtil;
     }
     TimeUtil.toChineseStr = toChineseStr;
 })(TimeUtil || (TimeUtil = {}));
-//# sourceMappingURL=TimeUtil.js.map

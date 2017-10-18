@@ -84,4 +84,3 @@ var ExComponent = (function (_super) {
     return ExComponent;
 }(eui.Component));
 __reflect(ExComponent.prototype, "ExComponent", ["ILifeCycle"]);
-//# sourceMappingURL=ExComponent.js.map
