@@ -2,55 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354097f5-5154-4fa5-87bb-9370f55ffa31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/core/FrameAnimal.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/utils/TickerUtil.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoad.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameWorker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameWorker.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/utils/MathUtil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/utils/MathUtil.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/LoaderUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/LoaderUtils.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/McUtil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/McUtil.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtils.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/core/GameWorker.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/utils/LoaderUtils.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/utils/McUtil.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/utils/MovieClipUtils.ts" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/core/GameLoad.ts" afterPath="$PROJECT_DIR$/src/game/core/MainLoad.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/utils/MathUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/MathUtil.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/BottomView.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/LeftView.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/RightView.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/SceneBackground.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/SceneBg.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameConfig.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameEvents.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameEvents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/Global.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/Global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ILifeCycle.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ILifeCycle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/IViewStack.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/IViewStack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ObjPool.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ObjPool.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/EventManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/EventManager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/Net.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/Net.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/BaseSound.js" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/BaseSound.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ArrayUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/ArrayUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BigNum.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BigNum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BitUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BitUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/EffectUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/EffectUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ExternalUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/ExternalUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/RedPointUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/RedPointUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/exml.e.d.ts" afterPath="$PROJECT_DIR$/libs/exml.e.d.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.d.ts" afterPath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.d.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.js" afterPath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.min.js" afterPath="$PROJECT_DIR$/libs/modules/dragonBones/dragonBones.min.js" />
@@ -62,20 +63,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.ts" afterPath="$PROJECT_DIR$/src/Main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/core/AssetAdapter.ts" afterPath="$PROJECT_DIR$/src/lib/core/AssetAdapter.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/core/ThemeAdapter.ts" afterPath="$PROJECT_DIR$/src/lib/core/ThemeAdapter.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/manager/EventManager.ts" afterPath="$PROJECT_DIR$/src/lib/manager/EventManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" afterPath="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" afterPath="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/GeomUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/GeomUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/StringUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/StringUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/TimeUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/TimeUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/Util.ts" afterPath="$PROJECT_DIR$/src/lib/utils/Util.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/view/BasePanel.ts" afterPath="$PROJECT_DIR$/src/lib/view/BasePanel.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/view/ExComponent.ts" afterPath="$PROJECT_DIR$/src/lib/view/ExComponent.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/view/SimpleGroup.ts" afterPath="$PROJECT_DIR$/src/lib/view/SimpleGroup.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.res.json" afterPath="$PROJECT_DIR$/resource/default.res.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.thm.json" afterPath="$PROJECT_DIR$/resource/default.thm.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/MainView.ts" afterPath="$PROJECT_DIR$/src/game/view/MainView.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -94,107 +86,127 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.ts">
+      <file leaf-file-name="MainView.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.res.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/default.res.json">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="319">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PanelManager.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/manager/PanelManager.ts">
+      <file leaf-file-name="LeftView.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/LeftView.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="348" column="0" lean-forward="false" selection-start-line="348" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundManager.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/sound/SoundManager.ts">
+      <file leaf-file-name="exml.e.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/exml.e.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="44">
+              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayUtil.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts">
+      <file leaf-file-name="default.thm.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/default.thm.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <marker date="1508493069176" expanded="true" signature="0:256" ph="{&quot;autoGenerateExmlsList&quot;: true...}" />
+                <marker date="1508493069176" expanded="true" signature="46:239" ph="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scene.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1386">
+              <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainLoad.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/MainLoad.ts">
+      <file leaf-file-name="SceneBackground.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBackground.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CmdConst.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/CmdConst.ts">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiceContainer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1958">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameConfig.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/GameConfig.ts">
+      <file leaf-file-name="SceneBg.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBg.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameDataProxy.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/GameDataProxy.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEvents.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/GameEvents.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="333">
+              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getPointByXXYY</find>
+      <find>gridIndexArr</find>
+      <find>getGridPosByIndex</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -203,14 +215,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/egretProperties.json" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
         <option value="$PROJECT_DIR$/src/Main.ts" />
         <option value="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" />
         <option value="$PROJECT_DIR$/src/game/core/MainLoad.ts" />
         <option value="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" />
         <option value="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/BottomViewSkin.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/BottomView.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/LeftView.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/RightView.ts" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/resource/default.thm.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/SceneBg.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/SceneBackground.ts" />
       </list>
     </option>
   </component>
@@ -413,7 +434,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,6 +474,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -443,6 +518,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\hh_roll\src\game\view\scene" />
       <recent name="C:\workspace\hh_roll\src\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -545,10 +621,18 @@
       <workItem from="1508311652499" duration="10844000" />
       <workItem from="1508335725978" duration="4870000" />
     </task>
+    <task id="LOCAL-00001" summary="version 0.0.2">
+      <created>1508482485711</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508482485711</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19495000" />
+    <option name="totallyTimeSpent" value="30032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1040" extended-state="0" />
@@ -608,66 +692,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 0.0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.0.2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_04.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_05.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_06.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_07.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_08.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/beijing_09.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/car_01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/car_02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/car_03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/game/city/city01/car_04.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/game/city/city01/ground_01.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -763,30 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147">
-          <caret line="105" column="66" lean-forward="false" selection-start-line="105" selection-start-column="66" selection-end-line="105" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -891,7 +900,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1508483636983" expanded="true" signature="6020:31564" ph="{&quot;name&quot;: &quot;dice_roll_ske_json&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,8 +932,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/BottomView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/RightView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/LeftView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/exml.e.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/default.thm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1508493069176" expanded="true" signature="0:256" ph="{&quot;autoGenerateExmlsList&quot;: true...}" />
+            <marker date="1508493069176" expanded="true" signature="46:239" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBackground.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBg.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>

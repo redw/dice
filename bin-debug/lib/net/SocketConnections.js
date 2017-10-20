@@ -43,3 +43,4 @@ var SocketConnect;
     }
     SocketConnect.send = send;
 })(SocketConnect || (SocketConnect = {}));
+//# sourceMappingURL=SocketConnections.js.map

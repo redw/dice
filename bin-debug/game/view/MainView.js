@@ -18,17 +18,27 @@ var MainView = (function (_super) {
         _this.scene = new Scene(95, 67, 3);
         _this.addChild(_this.scene);
         _this.scene.y = 200;
-        _this.createDice(200, 200);
+        _this.leftView = new LeftView();
+        _this.leftView.left = 0;
+        _this.addChild(_this.leftView);
+        _this.rightView = new RightView();
+        _this.rightView.right = 0;
+        _this.addChild(_this.rightView);
+        _this.bottomView = new BottomView();
+        _this.bottomView.y = 836;
+        _this.addChild(_this.bottomView);
+        _this.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onClick, _this);
         return _this;
     }
-    MainView.prototype.createDice = function (x, y) {
-        var dice = BoneUtil.createArmature("dice_roll");
-        var display = dice.display;
-        display.x = x;
-        display.y = y;
-        dice.animation.gotoAndPlay("1-1", 0, 0, 0);
-        this.addChild(display);
+    MainView.prototype.onClick = function (e) {
+        var name = e.target.name;
+        switch (name) {
+            case "diceBtn":
+                this.scene.throwDice();
+                break;
+        }
     };
     return MainView;
 }(egret.DisplayObjectContainer));
 __reflect(MainView.prototype, "MainView");
+//# sourceMappingURL=MainView.js.map

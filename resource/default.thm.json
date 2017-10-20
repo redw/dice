@@ -1,3 +1,10 @@
 {
-  "exmls": []
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/eui_skins/component/ProgressSkin.exml",
+    "resource/eui_skins/BottomViewSkin.exml",
+    "resource/eui_skins/LeftViewSkin.exml",
+    "resource/eui_skins/RightViewSkin.exml"
+  ],
+  "skins": {}
 }
