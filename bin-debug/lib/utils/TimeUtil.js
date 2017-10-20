@@ -1,3 +1,6 @@
+/**
+ * Created by fraser on 16/8/17.
+ */
 var TimeUtil;
 (function (TimeUtil) {
     /**
@@ -59,4 +62,3 @@ var TimeUtil;
     }
     TimeUtil.toChineseStr = toChineseStr;
 })(TimeUtil || (TimeUtil = {}));
-//# sourceMappingURL=TimeUtil.js.map

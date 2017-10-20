@@ -190,5 +190,29 @@ var GeomUtil;
         return new egret.Point(a.x + dx, a.y + dy);
     }
     GeomUtil.getLineAcrossPoint = getLineAcrossPoint;
+    /**
+     * 点是否在quad内,注意一家要是凸四边形
+     * @param point
+     * @param A
+     * @param B
+     * @param C
+     * @param D
+     * @returns {boolean}
+     */
+    function isPointInQuad(point, A, B, C, D) {
+        if (!point || !A || !B || !C || !D) {
+            return null;
+        }
+        var x = point.x;
+        var y = point.y;
+        var a = (B.x - A.x) * (y - A.y) - (B.y - A.y) * (x - A.x);
+        var b = (C.x - B.x) * (y - B.y) - (C.y - B.y) * (x - B.x);
+        var c = (D.x - C.x) * (y - C.y) - (D.y - C.y) * (x - C.x);
+        var d = (A.x - D.x) * (y - D.y) - (A.y - D.y) * (x - D.x);
+        if ((a > 0 && b > 0 && c > 0 && d > 0) || (a < 0 && b < 0 && c < 0 && d < 0)) {
+            return true;
+        }
+        return false;
+    }
+    GeomUtil.isPointInQuad = isPointInQuad;
 })(GeomUtil || (GeomUtil = {}));
-//# sourceMappingURL=GeomUtil.js.map

@@ -1,4 +1,8 @@
+/**
+ * Created by fraser on 16/8/17.
+ */
 module TimeUtil {
+
     /**
      * @param date
      * @param hourEnable

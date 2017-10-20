@@ -1,3 +1,8 @@
+/**
+ * 字符串工具
+ * @author j
+ *
+ */
 var StringUtil;
 (function (StringUtil) {
     function trim(str) {
@@ -174,4 +179,3 @@ var StringUtil;
     }
     StringUtil.format = format;
 })(StringUtil || (StringUtil = {}));
-//# sourceMappingURL=StringUtil.js.map

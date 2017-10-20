@@ -6,12 +6,12 @@ var SoundManager;
     var playingSounds = [];
     var musicStatus = true;
     var soundStatus = true;
-    function boot() {
+    function initialize() {
         var stage = __STAGE;
         stage.addEventListener(egret.Event.ACTIVATE, this.onActive, this);
         stage.addEventListener(egret.Event.DEACTIVATE, this.onDeactive, this);
     }
-    SoundManager.boot = boot;
+    SoundManager.initialize = initialize;
     function onActive() {
         if (musicStatus)
             playMusic(currentMusicPath);
@@ -27,7 +27,7 @@ var SoundManager;
      */
     function setMusicStatus(value) {
         if (value) {
-            if (!currentMusicPath) {
+            if (currentMusicPath) {
                 playMusic(currentMusicPath);
             }
         }
@@ -127,4 +127,3 @@ var SoundManager;
         }
     }
 })(SoundManager || (SoundManager = {}));
-//# sourceMappingURL=SoundManager.js.map

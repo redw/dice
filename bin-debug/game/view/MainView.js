@@ -32,4 +32,3 @@ var MainView = (function (_super) {
     return MainView;
 }(egret.DisplayObjectContainer));
 __reflect(MainView.prototype, "MainView");
-//# sourceMappingURL=MainView.js.map

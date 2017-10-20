@@ -11,6 +11,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+/**
+ * Created by Administrator on 12/1 0001.
+ */
 var SimpleGroup = (function (_super) {
     __extends(SimpleGroup, _super);
     function SimpleGroup() {
@@ -37,4 +40,3 @@ var SimpleGroup = (function (_super) {
     return SimpleGroup;
 }(eui.Group));
 __reflect(SimpleGroup.prototype, "SimpleGroup");
-//# sourceMappingURL=SimpleGroup.js.map

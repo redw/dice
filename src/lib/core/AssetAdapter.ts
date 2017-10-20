@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////
 //
-//  Copyright (c) 2014-present, Egret Technology.
+//  Copyright (c) 2014-2015, Egret Technology Inc.
 //  All rights reserved.
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -26,8 +26,6 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //////////////////////////////////////////////////////////////////////////////////////
-
-
 class AssetAdapter implements eui.IAssetAdapter {
     /**
      * @language zh_CN
@@ -36,12 +34,13 @@ class AssetAdapter implements eui.IAssetAdapter {
      * @param compFunc 解析完成回调函数，示例：callBack(content:any,source:string):void;
      * @param thisObject callBack的 this 引用
      */
-    public getAsset(source: string, compFunc:Function, thisObject: any): void {
-        function onGetRes(data: any): void {
+    public getAsset(source:string, compFunc:Function, thisObject:any):void {
+        function onGetRes(data:any):void {
             compFunc.call(thisObject, data, source);
         }
+
         if (RES.hasRes(source)) {
-            let data = RES.getRes(source);
+            var data = RES.getRes(source);
             if (data) {
                 onGetRes(data);
             }

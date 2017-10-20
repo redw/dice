@@ -3,12 +3,13 @@
  * @author j
  *
  */
-module GeomUtil
-{
+module GeomUtil {
+	import numberArray = ArrayUtil.numberArray;
 	/**
 	 * 弧度转角度乘值
 	 */
 	export const R_T_D:number = 180 / Math.PI;
+
 	/**
 	 * 角度转弧度乘值
 	 */
@@ -20,8 +21,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function radiansToDegrees(radians:number):number
-	{
+	export function radiansToDegrees(radians:number) {
 		return radians * GeomUtil.R_T_D;
 	}
 
@@ -31,8 +31,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function degreesToRadians(degrees:number):number
-	{
+	export function degreesToRadians(degrees:number) {
 		return degrees * GeomUtil.D_T_R;
 	}
 
@@ -43,8 +42,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function pointAngle(p_1:egret.Point, p_2:egret.Point):number
-	{
+	export function pointAngle(p_1:egret.Point, p_2:egret.Point) {
 		return Math.atan2(p_2.y - p_1.y, p_2.x - p_1.x) * GeomUtil.R_T_D;
 	}
 
@@ -55,8 +53,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function pointRadians(p_1:egret.Point, p_2:egret.Point):number
-	{
+	export function pointRadians(p_1:egret.Point, p_2:egret.Point) {
 		return Math.atan2(p_2.y - p_1.y, p_2.x - p_1.x);
 	}
 
@@ -66,9 +63,8 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function angleToSpeed(angle:number):egret.Point
-	{
-		var radians:number = angle * GeomUtil.D_T_R;
+	export function angleToSpeed(angle:number) {
+		let radians:number = angle * GeomUtil.D_T_R;
 		return new egret.Point(Math.cos(radians), Math.sin(radians));
 	}
 
@@ -78,8 +74,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function radiansToSpeed(radians:number):egret.Point
-	{
+	export function radiansToSpeed(radians:number) {
 		return new egret.Point(Math.cos(radians), Math.sin(radians));
 	}
 
@@ -90,9 +85,8 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function angleSpeed(p_1:egret.Point, p_2:egret.Point):egret.Point
-	{
-		var radians:number = Math.atan2(p_2.y - p_1.y, p_2.x - p_1.x);
+	export function angleSpeed(p_1:egret.Point, p_2:egret.Point) {
+		let radians:number = Math.atan2(p_2.y - p_1.y, p_2.x - p_1.x);
 		return new egret.Point(Math.cos(radians), Math.sin(radians));
 	}
 
@@ -104,9 +98,8 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function getCirclePoint(point:egret.Point, angle:number, length:number):egret.Point
-	{
-		var radians:number = angle * GeomUtil.D_T_R;
+	export function getCirclePoint(point:egret.Point, angle:number, length:number) {
+		let radians:number = angle * GeomUtil.D_T_R;
 		return point.add(new egret.Point(Math.cos(radians) * length, Math.sin(radians) * length));
 	}
 
@@ -118,8 +111,7 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function getCirclePoint2(point:egret.Point, radians:number, length:number):egret.Point
-	{
+	export function getCirclePoint2(point:egret.Point, radians:number, length:number) {
 		return point.add(new egret.Point(Math.cos(radians) * length, Math.sin(radians) * length));
 	}
 
@@ -130,18 +122,13 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function getBezierY(x:number, startY:number = 0):number
-	{
-		if(x < 0 || x > 1)
+	export function getBezierY(x:number, startY:number = 0) {
+		if (x < 0 || x > 1) {
+			return 0;
+		} else if(startY < 0 || startY > 1)
 		{
 			return 0;
-		}
-		else if(startY < 0 || startY > 1)
-		{
-			return 0;
-		}
-		else
-		{
+		} else {
 			var startX:number = 0.5 - Math.sqrt((1 - startY) / 4);
 			var currentX:number = x * (1 - startX) + startX;
 			return 4 * (currentX - 0.5) * (currentX - 0.5) - 1;
@@ -157,29 +144,24 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function getLineAcross(a:egret.Point, b:egret.Point, c:egret.Point, d:egret.Point):boolean
-	{
-		if (a == null || b == null || c == null || d == null)
-		{
+	export function getLineAcross(a:egret.Point, b:egret.Point, c:egret.Point, d:egret.Point):boolean {
+		if (a == null || b == null || c == null || d == null) {
 			return false;
 		}
 
-		var area_abc:number = (a.x - c.x) * (b.y - c.y) - (a.y - c.y) * (b.x - c.x);
-		var area_abd:number = (a.x - d.x) * (b.y - d.y) - (a.y - d.y) * (b.x - d.x);
+		let area_abc:number = (a.x - c.x) * (b.y - c.y) - (a.y - c.y) * (b.x - c.x);
+		let area_abd:number = (a.x - d.x) * (b.y - d.y) - (a.y - d.y) * (b.x - d.x);
 
-		if (area_abc * area_abd > 0)
-		{
+		if (area_abc * area_abd > 0) {
 			return false;
 		}
 
-		var area_cda:number = (c.x - a.x) * (d.y - a.y) - (c.y - a.y) * (d.x - a.x);
-		var area_cdb:number = (c.x - b.x) * (d.y - b.y) - (c.y - b.y) * (d.x - b.x);
+		let area_cda:number = (c.x - a.x) * (d.y - a.y) - (c.y - a.y) * (d.x - a.x);
+		let area_cdb:number = (c.x - b.x) * (d.y - b.y) - (c.y - b.y) * (d.x - b.x);
 
-		if (area_cda * area_cdb > 0)
-		{
+		if (area_cda * area_cdb > 0) {
 			return false;
 		}
-
 		return true;
 	}
 
@@ -192,33 +174,51 @@ module GeomUtil
 	 * @return
 	 *
 	 */
-	export function getLineAcrossPoint(a:egret.Point, b:egret.Point, c:egret.Point, d:egret.Point):egret.Point
-	{
-		if (a == null || b == null || c == null || d == null)
-		{
+	export function getLineAcrossPoint(a:egret.Point, b:egret.Point, c:egret.Point, d:egret.Point) {
+		if (a == null || b == null || c == null || d == null) {
 			return null;
 		}
 
-		var area_abc:number = (a.x - c.x) * (b.y - c.y) - (a.y - c.y) * (b.x - c.x);
-		var area_abd:number = (a.x - d.x) * (b.y - d.y) - (a.y - d.y) * (b.x - d.x);
-
-		if (area_abc * area_abd > 0)
-		{
+		let area_abc = (a.x - c.x) * (b.y - c.y) - (a.y - c.y) * (b.x - c.x);
+		let area_abd = (a.x - d.x) * (b.y - d.y) - (a.y - d.y) * (b.x - d.x);
+		if (area_abc * area_abd > 0) {
 			return null;
 		}
 
-		var area_cda:number = (c.x - a.x) * (d.y - a.y) - (c.y - a.y) * (d.x - a.x);
-		var area_cdb:number = (c.x - b.x) * (d.y - b.y) - (c.y - b.y) * (d.x - b.x);
-
-		if (area_cda * area_cdb > 0)
-		{
+		let area_cda = (c.x - a.x) * (d.y - a.y) - (c.y - a.y) * (d.x - a.x);
+		let area_cdb = (c.x - b.x) * (d.y - b.y) - (c.y - b.y) * (d.x - b.x);
+		if (area_cda * area_cdb > 0) {
 			return null;
 		}
 
-		var t:number = area_cda / (area_abd- area_abc);
-		var dx:number = t * (b.x - a.x);
-		var dy:number = t * (b.y - a.y);
-
+		let t = area_cda / (area_abd- area_abc);
+		let dx = t * (b.x - a.x);
+		let dy = t * (b.y - a.y);
 		return new egret.Point(a.x + dx, a.y + dy);
+	}
+
+	/**
+	 * 点是否在quad内,注意一家要是凸四边形
+	 * @param point
+	 * @param A
+	 * @param B
+	 * @param C
+	 * @param D
+	 * @returns {boolean}
+	 */
+	export function isPointInQuad(point:egret.Point, A:egret.Point, B:egret.Point, C:egret.Point, D:egret.Point) {
+		if (!point || !A || !B || !C || !D) {
+			return null;
+		}
+		let x = point.x;
+		let y = point.y;
+		let a = (B.x - A.x) * (y - A.y) - (B.y - A.y) * (x - A.x);
+		let b = (C.x - B.x) * (y - B.y) - (C.y - B.y) * (x - B.x);
+		let c = (D.x - C.x) * (y - C.y) - (D.y - C.y) * (x - C.x);
+		let d = (A.x - D.x) * (y - D.y) - (A.y - D.y) * (x - D.x);
+		if ((a > 0 && b > 0 && c > 0 && d > 0) || (a < 0 && b < 0 && c < 0 && d < 0)) {
+			return true;
+		}
+		return false;
 	}
 }

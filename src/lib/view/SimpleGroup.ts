@@ -1,3 +1,6 @@
+/**
+ * Created by Administrator on 12/1 0001.
+ */
 class SimpleGroup extends eui.Group {
     public constructor() {
         super();
