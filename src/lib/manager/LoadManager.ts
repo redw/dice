@@ -12,7 +12,7 @@ module LoadManager {
         loadingParamList = [];
         loadWorker = new Worker(getBasePath() + "src/lib/netWorker.js");
         loadWorker.onmessage = onNetMessage;
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, groupLoadComplete, LoadManager);
+        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, groupLoadComplete, LoadManager);
     }
 
     function onNetMessage(e) {
@@ -58,7 +58,7 @@ module LoadManager {
         }
         uid++;
         let name = `group_#_${uid}`;
-        loadingParamList.push([name, back, context]);
+        loadingParamList.push(name, back, context);
         RES.createGroup(name, urlList);
         RES.loadGroup(name, property);
     }

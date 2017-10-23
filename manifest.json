@@ -40,7 +40,7 @@
 		"bin-debug/lib/core/ILifeCycle.js",
 		"bin-debug/lib/core/IViewStack.js",
 		"bin-debug/Main.js",
-		"bin-debug/lib/view/SimpleGroup.js",
+		"bin-debug/game/core/BaseButton.js",
 		"bin-debug/lib/manager/EventManager.js",
 		"bin-debug/lib/manager/LoadManager.js",
 		"bin-debug/lib/manager/PanelManager.js",
@@ -69,6 +69,6 @@
 		"bin-debug/game/core/GameDataProxy.js",
 		"bin-debug/lib/view/RedPoint.js",
 		"bin-debug/lib/view/SimpleButton.js",
-		"bin-debug/game/core/BaseButton.js"
+		"bin-debug/lib/view/SimpleGroup.js"
 	]
 }
