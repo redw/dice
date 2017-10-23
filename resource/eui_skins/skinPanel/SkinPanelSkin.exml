@@ -4,10 +4,9 @@
     <e:Image x="169" y="503" width="302" height="103" source="skin_bg_1_png" />
     <e:Image x="169" y="497" width="300" height="93" source="skin_title_touzi_png"/>
     
-    <n:SkinShowComp skinName="SkinShowCompSkin" y="642"/>
-    <n:SkinCostComp skinName="SkinCostCompSkin" y="844" x="40"/>
+    <n:SkinShowComp id="skinShowComp" skinName="SkinShowCompSkin" y="642"/>
     
-    <e:TabBar id="tabBar" x="5" bottom="8" itemRendererSkinName="SkinTabBtnSkin" height="70">
+    <e:TabBar id="tabBar" x="5" bottom="8" height="70" itemRendererSkinName="SkinTabBtnSkin">
         <e:layout>
             <e:HorizontalLayout gap="20"/>
         </e:layout>
@@ -21,6 +20,5 @@
         </e:ArrayCollection>
 	</e:TabBar>
 
-    
-    <n:SimpleButton id="close2" name="close" x="577" y="566" width="63" height="67"  source="common_but_close_png"/>
+    <n:SimpleButton name="close" x="577" y="566" source="common_but_close_png"/>
 </e:Skin>

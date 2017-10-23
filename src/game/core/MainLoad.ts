@@ -1,26 +1,27 @@
+/**
+ * 进入之前的加载
+ *
+ * Created by hh on 2017/10/17.
+ */
 module MainLoad {
-    let dataOk = true;
+    let dataOk = false;
     let resOk = false;
     let skinOk = false;
     let jsonOk = false;
     let progress = 0;
-    let resConfig;
+    let resConfig:any;
 
-    let finish:Function;
+    let back:Function;
     let context:any;
-    export function start($finish:Function, $context:any){
-        finish = $finish;
-        context = $context;
 
+    export function start($back:Function, $context:any){
+        back = $back;
+        context = $context;
         showProgress(window["__loadProgress"] || 50);
         loadPlatformConfig();
         loadDefaultRes();
-        // GameWorker.boot();
-        // GameWorker.loadConfig();
-
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, onLoadGroupComplete, null);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, onLoadGroupProgress, null);
-        EventManager.inst.addEventListener(GameEvents.LOAD_CONFIG_COMPLETE, onLoadGameConfigComplete, MainLoad);
     }
 
     function showProgress(value:number, tip = "") {
@@ -41,23 +42,20 @@ module MainLoad {
 
     function  loadPlatformConfig() {
         let platform = ExternalUtil.getPlatform();
-        RES.getResByUrl(`resource/config.json?v=${Date.now()}`, (data) => {
-            egret.log("load config complete");
+        RES.getResByUrl(`resource/config_${platform}.json?v=${Date.now()}`, (data) => {
+            egret.log("load config_json complete");
             addProgress(1);
             Global.boot(data);
-            dataOk = Global.TEST;
-            jsonOk = Global.TEST;
-            GameDataProxy.boot();
-            Net.addCmdListener(CmdConst.ENTER, onDataRes, MainLoad);
+            dataOk = true;
+            // Net.boot();
+            // Net.addCmdListener(CmdConst.ENTER, onDataRes, MainLoad);
             requestServerPath();
         }, null, RES.ResourceItem.TYPE_JSON);
     }
 
     function  loadDefaultRes() {
-        let assetAdapter = new AssetAdapter();
         let resVer = "1.0.0";
         let resURL = `resource/default.res.json?v=${resVer}`;
-        __STAGE.registerImplementation("eui.IAssetAdapter", assetAdapter);
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, onLoadDefResComplete, MainLoad);
         RES.loadConfig(resURL, "resource/");
     }
@@ -76,8 +74,17 @@ module MainLoad {
 
     function  sendEnterCmd() {
         addProgress(1);
-        let req:any = {cmd:"enter"};
-        Net.sendHMessage(req);
+        // let from:string = window["AWY_SDK"].getURLVar("cp_from");
+        // let friendId:string = window["AWY_SDK"].getURLVar("fuid") || 1;
+        // window["AWY_SDK"].shareParams({"cp_from":"msg"});
+        // let data = {};
+        // if (from) {
+        //     data["from"] = from;
+        // }
+        // if (friendId) {
+        //     data["inviteId"] = friendId;
+        // }
+        // Net.sendMessage(CmdConst.ENTER,data);
     }
 
     function  onLoadGroupComplete(e:RES.ResourceEvent) {
@@ -89,29 +96,36 @@ module MainLoad {
     }
 
     function onLoadGroupProgress(e:RES.ResourceEvent) {
-        let groupName = e.groupName;
+        // let groupName = e.groupName;
         addProgress(3);
     }
 
     function onDataRes() {
+        egret.log("load enter_data complete");
         Net.removeCmdListener(CmdConst.ENTER, onDataRes, MainLoad);
         addProgress(2);
         dataOk = true;
         enterGame();
     }
 
-    function onLoadGameConfigComplete() {
+    function onLoadGameConfigComplete(data:any) {
+        egret.log("load json_res complete");
         jsonOk = true;
+        GameConfig.setData(data);
         enterGame();
     }
 
-    function onLoadDefResComplete(e:RES.ResourceEvent) {
+    function  onLoadDefResComplete(e:RES.ResourceEvent) {
+        egret.log("load default_res complete");
         RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, onLoadDefResComplete, MainLoad);
         let target = e.target;
         if (target && target.resConfig && target.resConfig.keyMap) {
             resConfig = target.resConfig.keyMap;
-            egret.log("load default_res complete");
+            let configURL = resConfig.blank_png ? resConfig.blank_png.url : "resource/blank.png";
+            LoadManager.loadConfigData(configURL, onLoadGameConfigComplete, MainLoad);
             RES.loadGroup("preload");
+        } else {
+            egret.warn("获取到资源配置信息");
         }
     }
 
@@ -120,26 +134,32 @@ module MainLoad {
         if (useXJS) {
             showProgress(90);
             let xmlJsRes = resConfig["xml_js"].url;
-            window["loadSingleScript"](xmlJsRes, function () {
+            window["AWY_SDK"].loadSingleScript(xmlJsRes, function () {
+                egret.log("load skin_res complete");
                 skinOk = true;
                 enterGame();
             });
         } else {
             let themeURL = "resource/default.thm.json";
             let theme = new eui.Theme(themeURL, __STAGE);
-            theme.once(eui.UIEvent.COMPLETE, onLoadSkinComplete, null);
+            theme.once(eui.UIEvent.COMPLETE, onLoadSkinComplete, MainLoad);
         }
     }
 
     function onLoadSkinComplete() {
-        console.log("加载skin完成");
+        egret.log("load skin_res complete");
         skinOk = true;
         enterGame();
     }
 
     function  enterGame() {
         if (dataOk && resOk && skinOk && jsonOk) {
-            finish.call(context);
+            if (window["hideProgress"]) {
+                window["hideProgress"]();
+            }
+            if (back) {
+                back.call(context);
+            }
         }
     }
 }

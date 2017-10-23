@@ -12,12 +12,25 @@ var GameConfig = (function () {
      * @param data  包含种组配置的大的对象
      */
     GameConfig.setData = function (data) {
-        GameConfig.ErrorData = data["error"];
-        GameConfig.BaseData = data["basedata"];
-        GameConfig.BuildData = data["building"];
-        GameConfig.RewardData = data["reward"];
-        GameConfig.TaskData = data["task"];
-        GameConfig.LevelData = data["level"];
+        GameConfig.basedata = data["basedata"];
+        GameConfig.building = data["building"];
+        GameConfig.buildingdata = data["buildingdata"];
+        GameConfig.bus = data["bus"];
+        GameConfig.card = data["card"];
+        GameConfig.chess = data["chess"];
+        GameConfig.chessgroup = data["chessgroup"];
+        GameConfig.city = data["city"];
+        GameConfig.citydata = data["citydata"];
+        GameConfig.drawcost = data["drawcost"];
+        GameConfig.drawfree = data["drawfree"];
+        GameConfig.language = data["language"];
+        GameConfig.level = data["level"];
+        GameConfig.local = data["local"];
+        GameConfig.reward = data["reward"];
+        GameConfig.roll = data["roll"];
+        GameConfig.shop = data["shop"];
+        GameConfig.starsit = data["starsit"];
+        GameConfig.task = data["task"];
     };
     return GameConfig;
 }());

@@ -11,9 +11,9 @@
 	],
 	"game": [
 		"bin-debug/lib/view/ExComponent.js",
-		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/utils/ArrayUtil.js",
 		"bin-debug/lib/view/BasePanel.js",
+		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/core/ThemeAdapter.js",
 		"bin-debug/game/core/GameEvents.js",
 		"bin-debug/game/core/GameLoop.js",
@@ -31,6 +31,7 @@
 		"bin-debug/game/view/scene/dice/DiceContainer.js",
 		"bin-debug/game/view/skinPanel/SkinCostComp.js",
 		"bin-debug/game/view/skinPanel/SkinItemRen.js",
+		"bin-debug/game/view/skinPanel/SkinModel.js",
 		"bin-debug/game/view/skinPanel/SkinPanel.js",
 		"bin-debug/game/view/skinPanel/SkinShowComp.js",
 		"bin-debug/game/view/skinPanel/SkinTabBtn.js",

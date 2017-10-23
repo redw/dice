@@ -1,8 +1,8 @@
 {
 	"groups": [
 		{
-			"name": "preload",
-			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png,skin_city_1_png,skin_city_2_png,skin_city_3_png,skin_dice_1_png,skin_dice_2_png,skin_dice_3_png,skin_player_1_png,skin_player_2_png,skin_player_3_png,skin_bg_1_png,skin_bg_2_png,skin_bubble_1_png,skin_bubble_2_png,skin_but_blue_png,skin_but_yellow_png,skin_city_label_0_png,skin_dice_label_0_png_png,skin_label_car_png,skin_label_cary_png,skin_label_city_png,skin_label_cityy_png,skin_label_dice_png,skin_label_dicey_png,skin_label_player_png,skin_label_playery_png,skin_lock_png,skin_NO1_png,skin_NO2_png,skin_NO3_png,skin_player_label_0_png,skin_player_label_1_png,skin_player_xilie1_png,skin_player_xilie2_png,skin_player_xilie3_png,skin_selection_png,skin_title_city_png,skin_title_touzi_png,skin_track_png,skin_track_1_png,skin_track_2_png,skin_use_png,skin_using_png,suspension_but_1_touch_png"
+			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png,skin_city_1_png,skin_city_2_png,skin_city_3_png,skin_dice_1_png,skin_dice_2_png,skin_dice_3_png,skin_player_1_png,skin_player_2_png,skin_player_3_png,skin_bg_1_png,skin_bg_2_png,skin_bubble_1_png,skin_bubble_2_png,skin_but_blue_png,skin_but_yellow_png,skin_city_label_0_png,skin_dice_label_0_png_png,skin_label_car_png,skin_label_cary_png,skin_label_city_png,skin_label_cityy_png,skin_label_dice_png,skin_label_dicey_png,skin_label_player_png,skin_label_playery_png,skin_lock_png,skin_NO1_png,skin_NO2_png,skin_NO3_png,skin_player_label_0_png,skin_player_label_1_png,skin_player_xilie1_png,skin_player_xilie2_png,skin_player_xilie3_png,skin_selection_png,skin_title_city_png,skin_title_touzi_png,skin_track_png,skin_track_1_png,skin_track_2_png,skin_use_png,skin_using_png,suspension_but_1_touch_png",
+			"name": "preload"
 		}
 	],
 	"resources": [
@@ -1523,344 +1523,344 @@
 			"subkeys": "btn_dice_png,btn_upgrade_png,icon_cash_png,icon_diamond_png"
 		},
 		{
-			"name": "juming_ske_json",
+			"url": "ani/bone/juming/juming_ske.json",
 			"type": "json",
-			"url": "ani/bone/juming/juming_ske.json"
+			"name": "juming_ske_json"
 		},
 		{
-			"name": "juming_tex_json",
+			"url": "ani/bone/juming/juming_tex.json",
 			"type": "json",
-			"url": "ani/bone/juming/juming_tex.json"
+			"name": "juming_tex_json"
 		},
 		{
-			"name": "juming_tex_png",
+			"url": "ani/bone/juming/juming_tex.png",
 			"type": "image",
-			"url": "ani/bone/juming/juming_tex.png"
+			"name": "juming_tex_png"
 		},
 		{
-			"name": "maoqizi_ske_json",
+			"url": "ani/bone/maoqizi/maoqizi_ske.json",
 			"type": "json",
-			"url": "ani/bone/maoqizi/maoqizi_ske.json"
+			"name": "maoqizi_ske_json"
 		},
 		{
-			"name": "maoqizi_tex_json",
+			"url": "ani/bone/maoqizi/maoqizi_tex.json",
 			"type": "json",
-			"url": "ani/bone/maoqizi/maoqizi_tex.json"
+			"name": "maoqizi_tex_json"
 		},
 		{
-			"name": "maoqizi_tex_png",
+			"url": "ani/bone/maoqizi/maoqizi_tex.png",
 			"type": "image",
-			"url": "ani/bone/maoqizi/maoqizi_tex.png"
+			"name": "maoqizi_tex_png"
 		},
 		{
-			"name": "poche_ske_json",
+			"url": "ani/bone/poche/poche_ske.json",
 			"type": "json",
-			"url": "ani/bone/poche/poche_ske.json"
+			"name": "poche_ske_json"
 		},
 		{
-			"name": "poche_tex_json",
+			"url": "ani/bone/poche/poche_tex.json",
 			"type": "json",
-			"url": "ani/bone/poche/poche_tex.json"
+			"name": "poche_tex_json"
 		},
 		{
-			"name": "poche_tex_png",
+			"url": "ani/bone/poche/poche_tex.png",
 			"type": "image",
-			"url": "ani/bone/poche/poche_tex.png"
+			"name": "poche_tex_png"
 		},
 		{
-			"name": "dice_roll_ske_json",
+			"url": "ani/bone/shaizi/dice_roll_ske.json",
 			"type": "json",
-			"url": "ani/bone/shaizi/dice_roll_ske.json"
+			"name": "dice_roll_ske_json"
 		},
 		{
-			"name": "dice_roll_tex_json",
+			"url": "ani/bone/shaizi/dice_roll_tex.json",
 			"type": "json",
-			"url": "ani/bone/shaizi/dice_roll_tex.json"
+			"name": "dice_roll_tex_json"
 		},
 		{
-			"name": "dice_roll_tex_png",
+			"url": "ani/bone/shaizi/dice_roll_tex.png",
 			"type": "image",
-			"url": "ani/bone/shaizi/dice_roll_tex.png"
+			"name": "dice_roll_tex_png"
 		},
 		{
-			"name": "xiaojiaoche_ske_json",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_ske.json",
 			"type": "json",
-			"url": "ani/bone/xiaojiaoche/xiaojiaoche_ske.json"
+			"name": "xiaojiaoche_ske_json"
 		},
 		{
-			"name": "xiaojiaoche_tex_json",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.json",
 			"type": "json",
-			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.json"
+			"name": "xiaojiaoche_tex_json"
 		},
 		{
-			"name": "xiaojiaoche_tex_png",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.png",
 			"type": "image",
-			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.png"
+			"name": "xiaojiaoche_tex_png"
 		},
 		{
-			"name": "zhuawawaji_ske_json",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_ske.json",
 			"type": "json",
-			"url": "ani/bone/zhuawawaji/zhuawawaji_ske.json"
+			"name": "zhuawawaji_ske_json"
 		},
 		{
-			"name": "zhuawawaji_tex_json",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.json",
 			"type": "json",
-			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.json"
+			"name": "zhuawawaji_tex_json"
 		},
 		{
-			"name": "zhuawawaji_tex_png",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.png",
 			"type": "image",
-			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.png"
+			"name": "zhuawawaji_tex_png"
 		},
 		{
-			"name": "dengguang_0_png",
+			"url": "ani/frame/dengguang/dengguang_0.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_0.png"
+			"name": "dengguang_0_png"
 		},
 		{
-			"name": "dengguang_1_png",
+			"url": "ani/frame/dengguang/dengguang_1.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_1.png"
+			"name": "dengguang_1_png"
 		},
 		{
-			"name": "dengguang_2_png",
+			"url": "ani/frame/dengguang/dengguang_2.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_2.png"
+			"name": "dengguang_2_png"
 		},
 		{
-			"name": "dengguang_3_png",
+			"url": "ani/frame/dengguang/dengguang_3.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_3.png"
+			"name": "dengguang_3_png"
 		},
 		{
-			"name": "dengguang_4_png",
+			"url": "ani/frame/dengguang/dengguang_4.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_4.png"
+			"name": "dengguang_4_png"
 		},
 		{
-			"name": "dengguang_5_png",
+			"url": "ani/frame/dengguang/dengguang_5.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_5.png"
+			"name": "dengguang_5_png"
 		},
 		{
-			"name": "dengguang_6_png",
+			"url": "ani/frame/dengguang/dengguang_6.png",
 			"type": "image",
-			"url": "ani/frame/dengguang/dengguang_6.png"
+			"name": "dengguang_6_png"
 		},
 		{
-			"name": "skin_city_1_png",
+			"url": "ui/icon/skincity/skin_city_1.png",
 			"type": "image",
-			"url": "ui/icon/skincity/skin_city_1.png"
+			"name": "skin_city_1_png"
 		},
 		{
-			"name": "skin_city_2_png",
+			"url": "ui/icon/skincity/skin_city_2.png",
 			"type": "image",
-			"url": "ui/icon/skincity/skin_city_2.png"
+			"name": "skin_city_2_png"
 		},
 		{
-			"name": "skin_city_3_png",
+			"url": "ui/icon/skincity/skin_city_3.png",
 			"type": "image",
-			"url": "ui/icon/skincity/skin_city_3.png"
+			"name": "skin_city_3_png"
 		},
 		{
-			"name": "skin_dice_1_png",
+			"url": "ui/icon/skindice/skin_dice_1.png",
 			"type": "image",
-			"url": "ui/icon/skindice/skin_dice_1.png"
+			"name": "skin_dice_1_png"
 		},
 		{
-			"name": "skin_dice_2_png",
+			"url": "ui/icon/skindice/skin_dice_2.png",
 			"type": "image",
-			"url": "ui/icon/skindice/skin_dice_2.png"
+			"name": "skin_dice_2_png"
 		},
 		{
-			"name": "skin_dice_3_png",
+			"url": "ui/icon/skindice/skin_dice_3.png",
 			"type": "image",
-			"url": "ui/icon/skindice/skin_dice_3.png"
+			"name": "skin_dice_3_png"
 		},
 		{
-			"name": "skin_player_1_png",
+			"url": "ui/icon/skinplayer/skin_player_1.png",
 			"type": "image",
-			"url": "ui/icon/skinplayer/skin_player_1.png"
+			"name": "skin_player_1_png"
 		},
 		{
-			"name": "skin_player_2_png",
+			"url": "ui/icon/skinplayer/skin_player_2.png",
 			"type": "image",
-			"url": "ui/icon/skinplayer/skin_player_2.png"
+			"name": "skin_player_2_png"
 		},
 		{
-			"name": "skin_player_3_png",
+			"url": "ui/icon/skinplayer/skin_player_3.png",
 			"type": "image",
-			"url": "ui/icon/skinplayer/skin_player_3.png"
+			"name": "skin_player_3_png"
 		},
 		{
-			"name": "skin_bg_1_png",
+			"url": "ui/skin/skin_bg_1.png",
 			"type": "image",
-			"url": "ui/skin/skin_bg_1.png"
+			"name": "skin_bg_1_png"
 		},
 		{
-			"name": "skin_bg_2_png",
+			"url": "ui/skin/skin_bg_2.png",
 			"type": "image",
-			"url": "ui/skin/skin_bg_2.png"
+			"name": "skin_bg_2_png"
 		},
 		{
-			"name": "skin_bubble_1_png",
+			"url": "ui/skin/skin_bubble_1.png",
 			"type": "image",
-			"url": "ui/skin/skin_bubble_1.png"
+			"name": "skin_bubble_1_png"
 		},
 		{
-			"name": "skin_bubble_2_png",
+			"url": "ui/skin/skin_bubble_2.png",
 			"type": "image",
-			"url": "ui/skin/skin_bubble_2.png"
+			"name": "skin_bubble_2_png"
 		},
 		{
-			"name": "skin_but_blue_png",
+			"url": "ui/skin/skin_but_blue.png",
 			"type": "image",
-			"url": "ui/skin/skin_but_blue.png"
+			"name": "skin_but_blue_png"
 		},
 		{
-			"name": "skin_but_yellow_png",
+			"url": "ui/skin/skin_but_yellow.png",
 			"type": "image",
-			"url": "ui/skin/skin_but_yellow.png"
+			"name": "skin_but_yellow_png"
 		},
 		{
-			"name": "skin_city_label_0_png",
+			"url": "ui/skin/skin_city_label_0.png",
 			"type": "image",
-			"url": "ui/skin/skin_city_label_0.png"
+			"name": "skin_city_label_0_png"
 		},
 		{
-			"name": "skin_dice_label_0_png_png",
+			"url": "ui/skin/skin_dice_label_0_png.png",
 			"type": "image",
-			"url": "ui/skin/skin_dice_label_0_png.png"
+			"name": "skin_dice_label_0_png_png"
 		},
 		{
-			"name": "skin_label_car_png",
+			"url": "ui/skin/skin_label_car.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_car.png"
+			"name": "skin_label_car_png"
 		},
 		{
-			"name": "skin_label_cary_png",
+			"url": "ui/skin/skin_label_cary.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_cary.png"
+			"name": "skin_label_cary_png"
 		},
 		{
-			"name": "skin_label_city_png",
+			"url": "ui/skin/skin_label_city.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_city.png"
+			"name": "skin_label_city_png"
 		},
 		{
-			"name": "skin_label_cityy_png",
+			"url": "ui/skin/skin_label_cityy.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_cityy.png"
+			"name": "skin_label_cityy_png"
 		},
 		{
-			"name": "skin_label_dice_png",
+			"url": "ui/skin/skin_label_dice.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_dice.png"
+			"name": "skin_label_dice_png"
 		},
 		{
-			"name": "skin_label_dicey_png",
+			"url": "ui/skin/skin_label_dicey.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_dicey.png"
+			"name": "skin_label_dicey_png"
 		},
 		{
-			"name": "skin_label_player_png",
+			"url": "ui/skin/skin_label_player.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_player.png"
+			"name": "skin_label_player_png"
 		},
 		{
-			"name": "skin_label_playery_png",
+			"url": "ui/skin/skin_label_playery.png",
 			"type": "image",
-			"url": "ui/skin/skin_label_playery.png"
+			"name": "skin_label_playery_png"
 		},
 		{
-			"name": "skin_lock_png",
+			"url": "ui/skin/skin_lock.png",
 			"type": "image",
-			"url": "ui/skin/skin_lock.png"
+			"name": "skin_lock_png"
 		},
 		{
-			"name": "skin_NO1_png",
+			"url": "ui/skin/skin_NO1.png",
 			"type": "image",
-			"url": "ui/skin/skin_NO1.png"
+			"name": "skin_NO1_png"
 		},
 		{
-			"name": "skin_NO2_png",
+			"url": "ui/skin/skin_NO2.png",
 			"type": "image",
-			"url": "ui/skin/skin_NO2.png"
+			"name": "skin_NO2_png"
 		},
 		{
-			"name": "skin_NO3_png",
+			"url": "ui/skin/skin_NO3.png",
 			"type": "image",
-			"url": "ui/skin/skin_NO3.png"
+			"name": "skin_NO3_png"
 		},
 		{
-			"name": "skin_player_label_0_png",
+			"url": "ui/skin/skin_player_label_0.png",
 			"type": "image",
-			"url": "ui/skin/skin_player_label_0.png"
+			"name": "skin_player_label_0_png"
 		},
 		{
-			"name": "skin_player_label_1_png",
+			"url": "ui/skin/skin_player_label_1.png",
 			"type": "image",
-			"url": "ui/skin/skin_player_label_1.png"
+			"name": "skin_player_label_1_png"
 		},
 		{
-			"name": "skin_player_xilie1_png",
+			"url": "ui/skin/skin_player_xilie1.png",
 			"type": "image",
-			"url": "ui/skin/skin_player_xilie1.png"
+			"name": "skin_player_xilie1_png"
 		},
 		{
-			"name": "skin_player_xilie2_png",
+			"url": "ui/skin/skin_player_xilie2.png",
 			"type": "image",
-			"url": "ui/skin/skin_player_xilie2.png"
+			"name": "skin_player_xilie2_png"
 		},
 		{
-			"name": "skin_player_xilie3_png",
+			"url": "ui/skin/skin_player_xilie3.png",
 			"type": "image",
-			"url": "ui/skin/skin_player_xilie3.png"
+			"name": "skin_player_xilie3_png"
 		},
 		{
-			"name": "skin_selection_png",
+			"url": "ui/skin/skin_selection.png",
 			"type": "image",
-			"url": "ui/skin/skin_selection.png"
+			"name": "skin_selection_png"
 		},
 		{
-			"name": "skin_title_city_png",
+			"url": "ui/skin/skin_title_city.png",
 			"type": "image",
-			"url": "ui/skin/skin_title_city.png"
+			"name": "skin_title_city_png"
 		},
 		{
-			"name": "skin_title_touzi_png",
+			"url": "ui/skin/skin_title_touzi.png",
 			"type": "image",
-			"url": "ui/skin/skin_title_touzi.png"
+			"name": "skin_title_touzi_png"
 		},
 		{
-			"name": "skin_track_png",
+			"url": "ui/skin/skin_track.png",
 			"type": "image",
-			"url": "ui/skin/skin_track.png"
+			"name": "skin_track_png"
 		},
 		{
-			"name": "skin_track_1_png",
+			"url": "ui/skin/skin_track_1.png",
 			"type": "image",
-			"url": "ui/skin/skin_track_1.png"
+			"name": "skin_track_1_png"
 		},
 		{
-			"name": "skin_track_2_png",
+			"url": "ui/skin/skin_track_2.png",
 			"type": "image",
-			"url": "ui/skin/skin_track_2.png"
+			"name": "skin_track_2_png"
 		},
 		{
-			"name": "skin_use_png",
+			"url": "ui/skin/skin_use.png",
 			"type": "image",
-			"url": "ui/skin/skin_use.png"
+			"name": "skin_use_png"
 		},
 		{
-			"name": "skin_using_png",
+			"url": "ui/skin/skin_using.png",
 			"type": "image",
-			"url": "ui/skin/skin_using.png"
+			"name": "skin_using_png"
 		},
 		{
-			"name": "suspension_but_1_touch_png",
+			"url": "ui/suspension/suspension_but_1_touch.png",
 			"type": "image",
-			"url": "ui/suspension/suspension_but_1_touch.png"
+			"name": "suspension_but_1_touch_png"
 		}
 	]
 }
