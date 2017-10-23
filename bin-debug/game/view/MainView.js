@@ -15,9 +15,9 @@ var MainView = (function (_super) {
     __extends(MainView, _super);
     function MainView() {
         var _this = _super.call(this) || this;
-        _this.scene = new Scene(95, 67, 3);
+        _this.scene = new Scene(1920, 2260, 95, 67);
         _this.addChild(_this.scene);
-        _this.scene.y = 200;
+        _this.scene.create(3);
         _this.createDice(200, 200);
         return _this;
     }
