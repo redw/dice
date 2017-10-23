@@ -140,4 +140,3 @@ var RedPointUtil;
     }
     RedPointUtil.removeRedPoint = removeRedPoint;
 })(RedPointUtil || (RedPointUtil = {}));
-//# sourceMappingURL=RedPointUtil.js.map

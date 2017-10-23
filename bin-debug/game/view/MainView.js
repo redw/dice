@@ -17,7 +17,6 @@ var MainView = (function (_super) {
         var _this = _super.call(this) || this;
         _this.scene = new Scene(95, 67, 3);
         _this.addChild(_this.scene);
-        _this.scene.y = 200;
         _this.leftView = new LeftView();
         _this.leftView.left = 0;
         _this.addChild(_this.leftView);
@@ -41,4 +40,3 @@ var MainView = (function (_super) {
     return MainView;
 }(egret.DisplayObjectContainer));
 __reflect(MainView.prototype, "MainView");
-//# sourceMappingURL=MainView.js.map

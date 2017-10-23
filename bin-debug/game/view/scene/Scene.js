@@ -38,15 +38,15 @@ var Scene = (function (_super) {
         _this.tileW = tileW;
         _this.tileH = tileH;
         _this.inner = inner;
-        _this.x = __STAGE.stageWidth * 0.5;
         var count = inner + (_this.road + _this.build + _this.des) * 2;
         _this.size = count;
-        _this.backGround = new SceneBg(_this);
+        _this.backGround = new SceneBG();
         _this.addChild(_this.backGround);
-        _this.diceContainer = new DiceContainer(_this);
-        _this.addChild(_this.diceContainer);
-        _this.initDice();
+        _this.backGround.draw();
+        _this.homeLand = new HomeLand(95, 67);
+        _this.addChild(_this.homeLand);
         return _this;
+        // this.initDice();
     }
     Scene.prototype.createDice = function (x, y) {
         var dice = BoneUtil.createArmature("dice_roll");
@@ -61,19 +61,18 @@ var Scene = (function (_super) {
         var y = (xx + yy) * this.tileH * 0.5;
         return { x: x, y: y };
     };
-    // 实始化色子
-    Scene.prototype.initDice = function (count) {
-        if (count === void 0) { count = 2; }
-        var diceArr = ArrayUtil.numberArray(0, 9);
-        while (count--) {
-            var randomValue = ArrayUtil.removeRandomItem(diceArr);
-            this.diceContainer.addRandomDice(randomValue);
-        }
-    };
+    // // 实始化色子
+    // private initDice(count = 2) {
+    //     let diceArr = ArrayUtil.numberArray(0, 9);
+    //     while (count--) {
+    //         let randomValue = ArrayUtil.removeRandomItem(diceArr);
+    //         this.diceContainer.addRandomDice(randomValue);
+    //     }
+    // }
+    //
     Scene.prototype.throwDice = function () {
-        this.diceContainer.throwDice();
+        this.homeLand.throwDice();
     };
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
-//# sourceMappingURL=Scene.js.map

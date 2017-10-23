@@ -1,8 +1,8 @@
 {
 	"groups": [
 		{
-			"keys": "zhuangshi_02_png,zhuangshi_01_png,tree_07_png,tree_06_png,tree_05_png,tree_04_png,tree_03_png,tree_02_png,tree_01_png,tingche_02_png,tingche_01_png,road_06_png,road_05_png,road_04_png,road_03_png,road_02_png,road_01_png,ludeng_02_png,ludeng_01_png,lajitong_01_png,ground_15_png,ground_14_png,ground_13_png,ground_12_png,ground_10_png,ground_09_png,ground_08_png,ground_07_png,ground_06_png,ground_05_png,ground_04_png,ground_03_png,ground_02_png,ground_01_png,car_05_png,car_04_png,car_03_png,car_02_png,car_01_png,beijing_12_png,beijing_11_png,beijing_10_png,beijing_09_png,beijing_08_png,beijing_07_png,beijing_06_png,beijing_05_png,beijing_04_png,beijing_03_png,beijing_02_png,beijing_01_png,7_png,6_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png",
-			"name": "preload"
+			"name": "preload",
+			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png"
 		}
 	],
 	"resources": [
@@ -270,36 +270,6 @@
 			"url": "scene/zhuangshi_02.png",
 			"type": "image",
 			"name": "zhuangshi_02_png"
-		},
-		{
-			"url": "ani/poche/poche_tex.png",
-			"type": "image",
-			"name": "poche_tex_png"
-		},
-		{
-			"url": "ani/shaizi/dice_roll_tex.png",
-			"type": "image",
-			"name": "dice_roll_tex_png"
-		},
-		{
-			"url": "ani/poche/poche_ske.json",
-			"type": "json",
-			"name": "poche_ske_json"
-		},
-		{
-			"url": "ani/poche/poche_tex.json",
-			"type": "json",
-			"name": "poche_tex_json"
-		},
-		{
-			"url": "ani/shaizi/dice_roll_tex.json",
-			"type": "json",
-			"name": "dice_roll_tex_json"
-		},
-		{
-			"url": "ani/shaizi/dice_roll_ske.json",
-			"type": "json",
-			"name": "dice_roll_ske_json"
 		},
 		{
 			"url": "ui/announ/announ_bg_1.png",
@@ -1551,6 +1521,131 @@
 			"type": "sheet",
 			"name": "ui_json",
 			"subkeys": "btn_dice_png,btn_upgrade_png,icon_cash_png,icon_diamond_png"
+		},
+		{
+			"name": "juming_ske_json",
+			"type": "json",
+			"url": "ani/bone/juming/juming_ske.json"
+		},
+		{
+			"name": "juming_tex_json",
+			"type": "json",
+			"url": "ani/bone/juming/juming_tex.json"
+		},
+		{
+			"name": "juming_tex_png",
+			"type": "image",
+			"url": "ani/bone/juming/juming_tex.png"
+		},
+		{
+			"name": "maoqizi_ske_json",
+			"type": "json",
+			"url": "ani/bone/maoqizi/maoqizi_ske.json"
+		},
+		{
+			"name": "maoqizi_tex_json",
+			"type": "json",
+			"url": "ani/bone/maoqizi/maoqizi_tex.json"
+		},
+		{
+			"name": "maoqizi_tex_png",
+			"type": "image",
+			"url": "ani/bone/maoqizi/maoqizi_tex.png"
+		},
+		{
+			"name": "poche_ske_json",
+			"type": "json",
+			"url": "ani/bone/poche/poche_ske.json"
+		},
+		{
+			"name": "poche_tex_json",
+			"type": "json",
+			"url": "ani/bone/poche/poche_tex.json"
+		},
+		{
+			"name": "poche_tex_png",
+			"type": "image",
+			"url": "ani/bone/poche/poche_tex.png"
+		},
+		{
+			"name": "dice_roll_ske_json",
+			"type": "json",
+			"url": "ani/bone/shaizi/dice_roll_ske.json"
+		},
+		{
+			"name": "dice_roll_tex_json",
+			"type": "json",
+			"url": "ani/bone/shaizi/dice_roll_tex.json"
+		},
+		{
+			"name": "dice_roll_tex_png",
+			"type": "image",
+			"url": "ani/bone/shaizi/dice_roll_tex.png"
+		},
+		{
+			"name": "xiaojiaoche_ske_json",
+			"type": "json",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_ske.json"
+		},
+		{
+			"name": "xiaojiaoche_tex_json",
+			"type": "json",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.json"
+		},
+		{
+			"name": "xiaojiaoche_tex_png",
+			"type": "image",
+			"url": "ani/bone/xiaojiaoche/xiaojiaoche_tex.png"
+		},
+		{
+			"name": "zhuawawaji_ske_json",
+			"type": "json",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_ske.json"
+		},
+		{
+			"name": "zhuawawaji_tex_json",
+			"type": "json",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.json"
+		},
+		{
+			"name": "zhuawawaji_tex_png",
+			"type": "image",
+			"url": "ani/bone/zhuawawaji/zhuawawaji_tex.png"
+		},
+		{
+			"name": "dengguang_0_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_0.png"
+		},
+		{
+			"name": "dengguang_1_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_1.png"
+		},
+		{
+			"name": "dengguang_2_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_2.png"
+		},
+		{
+			"name": "dengguang_3_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_3.png"
+		},
+		{
+			"name": "dengguang_4_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_4.png"
+		},
+		{
+			"name": "dengguang_5_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_5.png"
+		},
+		{
+			"name": "dengguang_6_png",
+			"type": "image",
+			"url": "ani/frame/dengguang/dengguang_6.png"
 		}
 	]
 }

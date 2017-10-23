@@ -2,8 +2,8 @@
  * 游戏场景
  */
 class Scene extends egret.DisplayObjectContainer {
-    private backGround:SceneBg;
-    private diceContainer: DiceContainer;
+    private backGround:SceneBG;
+    private homeLand:HomeLand;
 
     public tileW = 100;
     public tileH = 100;
@@ -28,17 +28,17 @@ class Scene extends egret.DisplayObjectContainer {
         this.tileH = tileH;
         this.inner = inner;
 
-        this.x = __STAGE.stageWidth * 0.5;
         let count = inner + (this.road + this.build + this.des) * 2;
         this.size = count;
 
-        this.backGround = new SceneBg(this);
+        this.backGround = new SceneBG();
         this.addChild(this.backGround);
+        this.backGround.draw();
 
-        this.diceContainer = new DiceContainer(this);
-        this.addChild(this.diceContainer);
+        this.homeLand = new HomeLand(95, 67);
+        this.addChild(this.homeLand);
 
-        this.initDice();
+        // this.initDice();
     }
 
     public createDice(x:number, y:number) {
@@ -56,16 +56,16 @@ class Scene extends egret.DisplayObjectContainer {
         return {x:x, y:y};
     }
 
-    // 实始化色子
-    private initDice(count = 2) {
-        let diceArr = ArrayUtil.numberArray(0, 9);
-        while (count--) {
-            let randomValue = ArrayUtil.removeRandomItem(diceArr);
-            this.diceContainer.addRandomDice(randomValue);
-        }
-    }
-
+    // // 实始化色子
+    // private initDice(count = 2) {
+    //     let diceArr = ArrayUtil.numberArray(0, 9);
+    //     while (count--) {
+    //         let randomValue = ArrayUtil.removeRandomItem(diceArr);
+    //         this.diceContainer.addRandomDice(randomValue);
+    //     }
+    // }
+    //
     public throwDice() {
-        this.diceContainer.throwDice();
+        this.homeLand.throwDice();
     }
 }
