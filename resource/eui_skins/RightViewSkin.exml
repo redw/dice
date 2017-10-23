@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RightViewSkin" width="640" height="205" xmlns:e="http://ns.egret.com/eui">
+    <e:Image y="138" width="145" height="30" source="playmain_bg_city_png" touchEnabled="false" x="356"  scale9Grid="16,3,2,24"/>
+    <e:Image y="21" width="127" height="43" source="playmain_bg_line_png" touchEnabled="false" x="233"  scale9Grid="22,5,3,33"/>
+    <e:Image y="21" width="236" height="43" source="playmain_bg_line_png" touchEnabled="false" x="384"  scale9Grid="23,5,2,33"/>
+    <e:ProgressBar id="expProgressBar" x="260" y="85" width="343" height="43" value="50" >
+        <e:skinName><e:Skin>
+            <e:Image y="0" width="343" height="43" source="playmain_bar_bg_1_png" touchEnabled="false" x="0"  scale9Grid="24,5,2,33"/>
+            <e:Image id="thumb" y="0" width="342" height="43" source="playmain_bar_bg_blue_png" touchEnabled="false" x="0"  scale9Grid="88,5,3,33"/>
+            <e:Image y="-1" width="345" height="45" source="playmain_bar_bg_2_png" touchEnabled="false" x="-1"  scale9Grid="25,5,2,35"/>
+        </e:Skin></e:skinName>
+    </e:ProgressBar>
+</e:Skin>

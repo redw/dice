@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ProgressSkin" minWidth="200" minHeight="135" xmlns:e="http://ns.egret.com/eui" height="55">
+    <e:Image y="0" width="100%" source="playmain_bar_bg_1_png" scale9Grid="23,5,1,33"/>
+    <e:Image id="thumb" y="2" width="219" height="51" source="playmain_bar_bg_yellow_png" x="6"  scale9Grid="79,6,4,39"/>
+    <e:Image y="0" source="playmain_bar_bg_2_png" scale9Grid="25,5,1,35" width="230"/>
+    <e:Label id="textLbl" top="11" bottom="14" text="30/62" fontFamily="Microsoft YaHei" x="77" textColor="0x705307" size="30.0"  bold="true" verticalAlign="middle" textAlign="center"  anchorOffsetY="0"/>
+</e:Skin>
