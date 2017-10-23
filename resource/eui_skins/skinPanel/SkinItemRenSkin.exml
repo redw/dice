@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkinItemRenSkin" width="198" height="204" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
+    <e:Image x="6.69" y="71" width="165" height="118" source="skin_selection_png" touchEnabled="false" />
+    <e:Image x="22.35" y="59" width="131" height="112" source="skin_NO3_png" touchEnabled="false" />
+    <e:Image x="34" y="4.35" width="104" height="131" source="skin_player_1_png" touchEnabled="false" />
+    <e:Image x="16" y="168" width="145" height="35" source="skin_track_2_png" touchEnabled="false" />
+    <e:Image x="131" y="15" width="44" height="44" source="skin_using_png" touchEnabled="false" />
+    <e:Image x="114" y="14" width="81" height="44" source="skin_use_png" touchEnabled="false" />
+    <e:Image x="131" y="13" width="46" height="46" source="skin_lock_png" touchEnabled="false" />
+    <e:Label x="27" y="176" width="81" height="20" text="甜美下午 " fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0x8c949a" size="18"  textAlign="center" bold="true"/>
+    <e:Label x="107.5" y="178" width="49" height="16" text="x 12" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="18"  bold="true" anchorOffsetX="0" textAlign="center"/>
+</e:Skin>

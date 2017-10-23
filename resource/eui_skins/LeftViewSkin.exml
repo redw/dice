@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="LeftViewSkin" width="117" height="355" xmlns:e="http://ns.egret.com/eui" xmlns:n="*">
     <e:Image source="playmain_but_menuy_png"/>
-    <n:SimpleButton source="playmain_but_activity_png" y="132" x="9"/>
-    <n:SimpleButton source="playmain_but_task_png" y="235" x="11"/>
+    <n:SimpleButton name="activityBtn" source="playmain_but_activity_png" y="132" x="9"/>
+    <n:SimpleButton name="taskBtn" source="playmain_but_task_png" y="235" x="11"/>
 </e:Skin>

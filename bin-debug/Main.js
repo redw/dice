@@ -47,6 +47,7 @@ var Main = (function (_super) {
     Main.prototype.enterGame = function () {
         var mainView = new MainView();
         this.addChild(mainView);
+        Pop.boot(this);
         GameLoop.boot();
         GameLoop.registerEnterFrame(this.onEnterFrame, this);
     };

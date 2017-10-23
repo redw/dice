@@ -4,7 +4,12 @@
     "resource/eui_skins/component/ProgressSkin.exml",
     "resource/eui_skins/BottomViewSkin.exml",
     "resource/eui_skins/LeftViewSkin.exml",
-    "resource/eui_skins/RightViewSkin.exml"
+    "resource/eui_skins/RightViewSkin.exml",
+    "resource/eui_skins/skinPanel/SkinCostCompSkin.exml",
+    "resource/eui_skins/skinPanel/SkinItemRenSkin.exml",
+    "resource/eui_skins/skinPanel/SkinShowCompSkin.exml",
+    "resource/eui_skins/skinPanel/SkinPanelSkin.exml",
+    "resource/eui_skins/skinPanel/SkinTabBtnSkin.exml"
   ],
   "skins": {}
 }

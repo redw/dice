@@ -2,7 +2,7 @@
 	"groups": [
 		{
 			"name": "preload",
-			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png"
+			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png,skin_city_1_png,skin_city_2_png,skin_city_3_png,skin_dice_1_png,skin_dice_2_png,skin_dice_3_png,skin_player_1_png,skin_player_2_png,skin_player_3_png,skin_bg_1_png,skin_bg_2_png,skin_bubble_1_png,skin_bubble_2_png,skin_but_blue_png,skin_but_yellow_png,skin_city_label_0_png,skin_dice_label_0_png_png,skin_label_car_png,skin_label_cary_png,skin_label_city_png,skin_label_cityy_png,skin_label_dice_png,skin_label_dicey_png,skin_label_player_png,skin_label_playery_png,skin_lock_png,skin_NO1_png,skin_NO2_png,skin_NO3_png,skin_player_label_0_png,skin_player_label_1_png,skin_player_xilie1_png,skin_player_xilie2_png,skin_player_xilie3_png,skin_selection_png,skin_title_city_png,skin_title_touzi_png,skin_track_png,skin_track_1_png,skin_track_2_png,skin_use_png,skin_using_png,suspension_but_1_touch_png"
 		}
 	],
 	"resources": [
@@ -1646,6 +1646,221 @@
 			"name": "dengguang_6_png",
 			"type": "image",
 			"url": "ani/frame/dengguang/dengguang_6.png"
+		},
+		{
+			"name": "skin_city_1_png",
+			"type": "image",
+			"url": "ui/icon/skincity/skin_city_1.png"
+		},
+		{
+			"name": "skin_city_2_png",
+			"type": "image",
+			"url": "ui/icon/skincity/skin_city_2.png"
+		},
+		{
+			"name": "skin_city_3_png",
+			"type": "image",
+			"url": "ui/icon/skincity/skin_city_3.png"
+		},
+		{
+			"name": "skin_dice_1_png",
+			"type": "image",
+			"url": "ui/icon/skindice/skin_dice_1.png"
+		},
+		{
+			"name": "skin_dice_2_png",
+			"type": "image",
+			"url": "ui/icon/skindice/skin_dice_2.png"
+		},
+		{
+			"name": "skin_dice_3_png",
+			"type": "image",
+			"url": "ui/icon/skindice/skin_dice_3.png"
+		},
+		{
+			"name": "skin_player_1_png",
+			"type": "image",
+			"url": "ui/icon/skinplayer/skin_player_1.png"
+		},
+		{
+			"name": "skin_player_2_png",
+			"type": "image",
+			"url": "ui/icon/skinplayer/skin_player_2.png"
+		},
+		{
+			"name": "skin_player_3_png",
+			"type": "image",
+			"url": "ui/icon/skinplayer/skin_player_3.png"
+		},
+		{
+			"name": "skin_bg_1_png",
+			"type": "image",
+			"url": "ui/skin/skin_bg_1.png"
+		},
+		{
+			"name": "skin_bg_2_png",
+			"type": "image",
+			"url": "ui/skin/skin_bg_2.png"
+		},
+		{
+			"name": "skin_bubble_1_png",
+			"type": "image",
+			"url": "ui/skin/skin_bubble_1.png"
+		},
+		{
+			"name": "skin_bubble_2_png",
+			"type": "image",
+			"url": "ui/skin/skin_bubble_2.png"
+		},
+		{
+			"name": "skin_but_blue_png",
+			"type": "image",
+			"url": "ui/skin/skin_but_blue.png"
+		},
+		{
+			"name": "skin_but_yellow_png",
+			"type": "image",
+			"url": "ui/skin/skin_but_yellow.png"
+		},
+		{
+			"name": "skin_city_label_0_png",
+			"type": "image",
+			"url": "ui/skin/skin_city_label_0.png"
+		},
+		{
+			"name": "skin_dice_label_0_png_png",
+			"type": "image",
+			"url": "ui/skin/skin_dice_label_0_png.png"
+		},
+		{
+			"name": "skin_label_car_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_car.png"
+		},
+		{
+			"name": "skin_label_cary_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_cary.png"
+		},
+		{
+			"name": "skin_label_city_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_city.png"
+		},
+		{
+			"name": "skin_label_cityy_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_cityy.png"
+		},
+		{
+			"name": "skin_label_dice_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_dice.png"
+		},
+		{
+			"name": "skin_label_dicey_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_dicey.png"
+		},
+		{
+			"name": "skin_label_player_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_player.png"
+		},
+		{
+			"name": "skin_label_playery_png",
+			"type": "image",
+			"url": "ui/skin/skin_label_playery.png"
+		},
+		{
+			"name": "skin_lock_png",
+			"type": "image",
+			"url": "ui/skin/skin_lock.png"
+		},
+		{
+			"name": "skin_NO1_png",
+			"type": "image",
+			"url": "ui/skin/skin_NO1.png"
+		},
+		{
+			"name": "skin_NO2_png",
+			"type": "image",
+			"url": "ui/skin/skin_NO2.png"
+		},
+		{
+			"name": "skin_NO3_png",
+			"type": "image",
+			"url": "ui/skin/skin_NO3.png"
+		},
+		{
+			"name": "skin_player_label_0_png",
+			"type": "image",
+			"url": "ui/skin/skin_player_label_0.png"
+		},
+		{
+			"name": "skin_player_label_1_png",
+			"type": "image",
+			"url": "ui/skin/skin_player_label_1.png"
+		},
+		{
+			"name": "skin_player_xilie1_png",
+			"type": "image",
+			"url": "ui/skin/skin_player_xilie1.png"
+		},
+		{
+			"name": "skin_player_xilie2_png",
+			"type": "image",
+			"url": "ui/skin/skin_player_xilie2.png"
+		},
+		{
+			"name": "skin_player_xilie3_png",
+			"type": "image",
+			"url": "ui/skin/skin_player_xilie3.png"
+		},
+		{
+			"name": "skin_selection_png",
+			"type": "image",
+			"url": "ui/skin/skin_selection.png"
+		},
+		{
+			"name": "skin_title_city_png",
+			"type": "image",
+			"url": "ui/skin/skin_title_city.png"
+		},
+		{
+			"name": "skin_title_touzi_png",
+			"type": "image",
+			"url": "ui/skin/skin_title_touzi.png"
+		},
+		{
+			"name": "skin_track_png",
+			"type": "image",
+			"url": "ui/skin/skin_track.png"
+		},
+		{
+			"name": "skin_track_1_png",
+			"type": "image",
+			"url": "ui/skin/skin_track_1.png"
+		},
+		{
+			"name": "skin_track_2_png",
+			"type": "image",
+			"url": "ui/skin/skin_track_2.png"
+		},
+		{
+			"name": "skin_use_png",
+			"type": "image",
+			"url": "ui/skin/skin_use.png"
+		},
+		{
+			"name": "skin_using_png",
+			"type": "image",
+			"url": "ui/skin/skin_using.png"
+		},
+		{
+			"name": "suspension_but_1_touch_png",
+			"type": "image",
+			"url": "ui/suspension/suspension_but_1_touch.png"
 		}
 	]
 }

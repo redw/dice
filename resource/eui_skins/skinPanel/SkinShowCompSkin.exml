@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkinShowCompSkin" width="640" height="205" xmlns:e="http://ns.egret.com/eui" xmlns:n="*">
+    <e:Group y="36">
+        <e:Image x="-1" width="658" height="134" source="skin_track_png" scale9Grid="2,0,2,0" touchEnabled="false" />
+        <e:Image x="160" width="81" height="102" source="skin_track_1_png" touchEnabled="false" />
+        <e:Image x="4" width="81" height="102" source="skin_track_1_png" touchEnabled="false" />
+        <e:Image x="400" width="81" height="102" source="skin_track_1_png" touchEnabled="false" />
+        <e:Image x="556" width="81" height="102" source="skin_track_1_png" touchEnabled="false" />
+    </e:Group>
+    <e:Scroller>
+        <e:Group>
+            <e:layout>
+                <e:HorizontalLayout gap="27"/>
+            </e:layout>
+            <n:SkinItemRen skinName="SkinItemRenSkin" y="-20"/>
+            <n:SkinItemRen skinName="SkinItemRenSkin"/>
+            <n:SkinItemRen skinName="SkinItemRenSkin"/>
+        </e:Group>
+    </e:Scroller>
+</e:Skin>
