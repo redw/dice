@@ -1,4 +1,10 @@
 /**
+ * 游戏中通用的component
+ *
+ * -添加了对象的生命周期
+ * -添加了点击事件
+ * -添加了舞台事件
+ *
  * Created by hh on 2017/10/10 0010.
  */
 class ExComponent extends eui.Component implements ILifeCycle{
@@ -6,21 +12,21 @@ class ExComponent extends eui.Component implements ILifeCycle{
     protected _viewOk = false;
     protected _data:any;
 
-    /** 打开特效
-     * 0:没有动画
-     * 1:中间弹出
-     * 2:上进
-     * 3:下进
-     * 4:左进
-     * 5:右进
-     */
-    public effectType: number = 0;
-
     constructor(data?:any) {
         super();
         if (data !== undefined) {
             this.setData(data);
         }
+    }
+
+    $onAddToStage(stage: egret.Stage, nestLevel: number) {
+        super.$onAddToStage(stage, nestLevel);
+        this.addToStage();
+    }
+
+    $onRemoveFromStage() {
+        super.$onRemoveFromStage();
+        this.removeFromStage();
     }
 
     protected childrenCreated() {
@@ -33,15 +39,14 @@ class ExComponent extends eui.Component implements ILifeCycle{
         }
     }
 
-    private $onClick(e:egret.TouchEvent) {
-        let name = e.target.name;
-        if (name == "closeBtn" || name == "close") {
-            Pop.close(this);
-        } else {
-            this.onClick(name);
-        }
+    protected $onClick(e:egret.TouchEvent) {
+        this.onClick(name);
     }
 
+    /**
+     * 点击事件
+     * @param name
+     */
     protected onClick(name:string) {
 
     }
@@ -63,29 +68,50 @@ class ExComponent extends eui.Component implements ILifeCycle{
         return this._data;
     }
 
+    /**
+     * 界面初始化完成
+     */
     public init() {
 
     }
 
+    /**
+     * 对象激活
+     * 可触发多次
+     */
     public active() {
 
     }
 
+    /**
+     * 添加到舞台
+     */
+    public addToStage() {
+
+    }
+
+    /**
+     * 从舞台上移除
+     */
+    public removeFromStage() {
+
+    }
+
+    /**
+     * 对失眠(处理待回收状态)
+     */
     public disActive() {
 
     }
 
+    /**
+     * 释放
+     */
     public dispose() {
-        this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.$onClick,this);
+        this.disActive();
+        this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.$onClick, this);
+        if (this.parent) {
+            this.parent.removeChild(this);
+        }
     }
-
-    // $onAddToStage(stage: egret.Stage, nestLevel: number) {
-    //     super.$onAddToStage(stage, nestLevel);
-    //     this.addToStage();
-    // }
-    //
-    // $onRemoveFromStage() {
-    //     super.$onRemoveFromStage();
-    //     this.removeFromStage();
-    // }
 }

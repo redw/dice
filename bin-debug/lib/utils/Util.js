@@ -30,57 +30,65 @@ var Util;
         return to;
     }
     Util.mixin = mixin;
+    function getRandomInt(from, end) {
+        var len = end - from;
+        var value = from;
+        if (len > 0) {
+            value = from + Math.round(Math.random() * len);
+        }
+        return value;
+    }
+    Util.getRandomInt = getRandomInt;
     function isSimpleType(value) {
         var t = typeof (value);
         return t == "number" || t == "boolean" || t == "string";
     }
     Util.isSimpleType = isSimpleType;
-    function getNumber(obj, key, defaultValue) {
-        if (obj) {
-            var value = obj[key];
-            if (value == null || value === "NaN") {
-                return defaultValue;
-            }
-            return +value || 0;
-        }
-        return defaultValue;
-    }
-    Util.getNumber = getNumber;
-    function getString(obj, key, defaultValue) {
-        if (obj) {
-            if (key in obj) {
-                return String(obj[key]);
-            }
-            return defaultValue;
-        }
-        return defaultValue;
-    }
-    Util.getString = getString;
-    function getProperty(obj, prop) {
-        var parts = prop.split("."), last = parts.pop(), len = parts.length, i = 1, current = parts[0];
-        while (i < len && (obj == obj[current])) {
-            current = parts[i];
-            i++;
-        }
-        if (obj) {
-            return obj[last];
+    function getPropValue(obj, prop, defV) {
+        if (!obj) {
+            return defV;
         }
         else {
-            return null;
+            if (obj.hasOwnProperty(prop)) {
+                return obj.prop;
+            }
+            else {
+                return defV;
+            }
         }
     }
-    Util.getProperty = getProperty;
-    function setProperty(obj, prop, value) {
-        var parts = prop.split("."), last = parts.pop(), len = parts.length, i = 1, current = parts[0];
-        while (i < len && (obj == obj[current])) {
-            current = parts[i];
-            i++;
-        }
-        if (obj) {
-            obj[last] = value;
-        }
-        return obj;
-    }
-    Util.setProperty = setProperty;
+    Util.getPropValue = getPropValue;
+    // export function getProperty(obj:any, prop:string) {
+    //     let parts = prop.split("."),
+    //         last = parts.pop(),
+    //         len = parts.length,
+    //         i = 1,
+    //         current = parts[0];
+    //     while (i < len && (obj == obj[current])) {
+    //         current = parts[i];
+    //         i++;
+    //     }
+    //     if (obj) {
+    //         return obj[last];
+    //     } else {
+    //         return null;
+    //     }
+    // }
+    //
+    // export function setProperty(obj:any, prop:string, value:any) {
+    //     let parts = prop.split("."),
+    //         last = parts.pop(),
+    //         len = parts.length,
+    //         i = 1,
+    //         current = parts[0];
+    //     while (i < len && (obj == obj[current])) {
+    //         current = parts[i];
+    //         i++;
+    //     }
+    //     if (obj) {
+    //         obj[last] = value;
+    //     }
+    //     return obj;
+    // }
 })(Util || (Util = {}));
 //# sourceMappingURL=Util.js.map

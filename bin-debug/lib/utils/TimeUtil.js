@@ -1,3 +1,6 @@
+/**
+ * Created by fraser on 16/8/17.
+ */
 var TimeUtil;
 (function (TimeUtil) {
     /**

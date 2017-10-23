@@ -1,3 +1,8 @@
+/**
+ * 字符串工具
+ * @author j
+ *
+ */
 module StringUtil {
     export function trim(str) {
         return str.replace(/(^\s*)|(\s*$)/g, "");

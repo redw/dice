@@ -37,16 +37,18 @@ var Main = (function (_super) {
     }
     Main.prototype.onAddToStage = function () {
         __STAGE = this.stage;
-        __STAGE.scaleMode = egret.StageScaleMode.SHOW_ALL;
-        GameLoad.start(this.loadComplete, this);
+        var stage = this.stage;
+        var assetAdapter = new AssetAdapter();
+        stage.registerImplementation("eui.IAssetAdapter", assetAdapter);
+        stage.scaleMode = egret.StageScaleMode.SHOW_ALL;
+        LoadManager.boot();
+        MainLoad.start(this.enterGame, this);
     };
-    Main.prototype.loadComplete = function () {
-        console.log("load complete");
-        GameLoop.boot();
-        Pop.boot(this);
-        GameLoop.registerEnterFrame(this.onEnterFrame, this);
+    Main.prototype.enterGame = function () {
         var mainView = new MainView();
         this.addChild(mainView);
+        GameLoop.boot();
+        GameLoop.registerEnterFrame(this.onEnterFrame, this);
     };
     Main.prototype.onEnterFrame = function () {
         dragonBones.WorldClock.clock.advanceTime(0.01);

@@ -115,8 +115,8 @@ module Pop{
                 let name: string = list[i];
                 let layer: eui.Group = new eui.Group();
                 layer.name = name;
-                layer.width = __STAGE.stageWidth;
-                layer.height = __STAGE.stageHeight;
+                layer.width = __STAGE.getStageWidth();
+                layer.height = __STAGE.getStageHeight();
                 layer.touchEnabled = false;
                 layer.touchChildren = true;
                 root.addChild(layer);
@@ -307,8 +307,8 @@ module Pop{
 
         private addOpenEffect(panel: BasePanel): void {
             egret.Tween.removeTweens(panel);
-            let stageWidth: number = __STAGE.stageWidth;
-            let stageHeight: number = __STAGE.stageHeight;
+            let stageWidth: number = __STAGE.getStageWidth();
+            let stageHeight: number = __STAGE.getStageHeight();
             switch (panel.effectType) {
                 case 1:
                     panel.anchorOffsetX = panel.width / 2;

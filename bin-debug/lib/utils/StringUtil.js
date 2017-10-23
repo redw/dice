@@ -1,3 +1,8 @@
+/**
+ * 字符串工具
+ * @author j
+ *
+ */
 var StringUtil;
 (function (StringUtil) {
     function trim(str) {

@@ -9,8 +9,8 @@ module SoundManager{
     var musicStatus: boolean = true;
     var soundStatus: boolean = true;
 
-    export function boot(){
-        let stage = __STAGE;
+    export function initialize(){
+        var stage = __STAGE;
         stage.addEventListener(egret.Event.ACTIVATE, this.onActive, this);
         stage.addEventListener(egret.Event.DEACTIVATE, this.onDeactive, this);
     }    
@@ -30,7 +30,7 @@ module SoundManager{
      */
     export function setMusicStatus(value: boolean){
         if(value){
-            if(!currentMusicPath){
+            if (currentMusicPath){
                 playMusic(currentMusicPath);
             }
         }else{

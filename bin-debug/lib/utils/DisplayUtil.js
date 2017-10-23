@@ -14,10 +14,17 @@ var DisplayUtil;
         model.x = 0;
         model.y = 0;
         model.alpha = alpha;
-        model.width = __STAGE.stageWidth;
-        model.height = __STAGE.stageHeight;
+        model.width = __STAGE.getStageWidth();
+        model.height = __STAGE.getStageHeight();
         model.touchEnabled = true;
         return model;
+        /* var sprite:egret.Sprite = new egret.Sprite();
+         sprite.graphics.beginFill(0, alpha);
+         sprite.graphics.drawRect(0, 0, Global.getStageWidth(), Global.getStageHeight());
+         sprite.graphics.endFill();
+         sprite.touchEnabled  = true;
+         sprite.touchChildren = false;
+         return sprite;*/
     }
     DisplayUtil.createMask = createMask;
     function removeFromParent(displayObject) {
@@ -69,5 +76,36 @@ var DisplayUtil;
         }
     }
     DisplayUtil.depthSortChildren = depthSortChildren;
+    function getObjectCenterPosition(obj) {
+        var x = obj.x + obj.width * 0.5;
+        var y = obj.y + obj.height * 0.5;
+        return [x, y];
+    }
+    DisplayUtil.getObjectCenterPosition = getObjectCenterPosition;
+    // export function createTxt(style:Object) {
+    //     let defaultStyle = {
+    //         size : 14,
+    //         textColor: 0xffffff,
+    //         bold: false,
+    //         stroke : 0,
+    //         strokeColor : 0,
+    //         x : 0,
+    //         y : 0,
+    //         fontFamily : "微软雅黑",
+    //         text : ""
+    //     };
+    //     Util.mixin(style, defaultStyle);
+    //     let txt = new eui.Label();
+    //     txt.textColor = defaultStyle.textColor;
+    //     txt.size = defaultStyle.size;
+    //     txt.bold = defaultStyle.bold;
+    //     txt.fontFamily = defaultStyle.fontFamily;
+    //     txt.stroke = defaultStyle.stroke;
+    //     txt.strokeColor = defaultStyle.strokeColor;
+    //     txt.x = defaultStyle.x;
+    //     txt.y = defaultStyle.y;
+    //     txt.text = defaultStyle.text;
+    //     return txt;
+    // }
 })(DisplayUtil || (DisplayUtil = {}));
 //# sourceMappingURL=DisplayUtil.js.map
