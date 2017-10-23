@@ -8,10 +8,9 @@ class MainView extends egret.DisplayObjectContainer {
     public constructor() {
         super();
 
-
-        this.scene = new Scene(1920, 2260, 95, 67);
+        this.scene = new Scene(95, 67, 3);
         this.addChild(this.scene);
-        this.scene.create(3);
+        this.scene.y = 200;
 
         this.leftView = new LeftView();
         this.leftView.left = 0;

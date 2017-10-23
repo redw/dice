@@ -1,36 +1,71 @@
+/**
+ * 游戏场景
+ */
 class Scene extends egret.DisplayObjectContainer {
-    private background:SceneBackGround;
-    private isoScene:ISOScene;
-    private tileW = 100;
-    private tileH = 50;
-    private sceneWidth = 1920;
-    private sceneHeight = 2260;
+    private backGround:SceneBg;
+    private diceContainer: DiceContainer;
 
-    public constructor(width:number, height:number, tileW:number, tileH:number) {
+    public tileW = 100;
+    public tileH = 100;
+    public inner = 3;
+    public road = 1;
+    public build = 1;
+    public des = 1;
+    public size = 7;
+
+    /**
+     * 构造函数
+     * @param tileW     格子宽度
+     * @param tileH     格子高度
+     * @param inner     内部大小
+     * @param road      环道
+     * @param build     建筑
+     * @param des       装饰
+     */
+    public constructor(tileW:number, tileH:number, inner = 3) {
         super();
-        this.sceneWidth = width;
-        this.sceneHeight = height;
         this.tileW = tileW;
         this.tileH = tileH;
+        this.inner = inner;
 
-        this.background = new SceneBackGround();
-        this.addChild(this.background);
+        this.x = __STAGE.stageWidth * 0.5;
+        let count = inner + (this.road + this.build + this.des) * 2;
+        this.size = count;
 
-        this.isoScene = new ISOScene(tileW, tileH);
-        this.addChild(this.isoScene);
+        this.backGround = new SceneBg(this);
+        this.addChild(this.backGround);
 
-        this.center();
+        this.diceContainer = new DiceContainer(this);
+        this.addChild(this.diceContainer);
+
+        this.initDice();
     }
 
-    public center() {
-        this.x = ( __STAGE.stageWidth - this.sceneWidth) * 0.5;
-        this.y = (__STAGE.stageHeight - this.sceneHeight) * 0.5;
-        this.isoScene.x = this.x * -1 + __STAGE.stageWidth * 0.5;
-        this.isoScene.y = this.y * -1 + 200;
+    public createDice(x:number, y:number) {
+        let dice = BoneUtil.createArmature("dice_roll");
+        let display = dice.display;
+        display.x = x;
+        display.y = y;
+        dice.animation.gotoAndPlay("1-1", 0, 0, 0);
+        this.addChild(display);
     }
 
-    public create(inner = 3) {
-        this.background.create();
-        this.isoScene.create(inner);
+    public getGridPosByXXYY(xx:number, yy:number) {
+        let x = (xx - yy - 1) * this.tileW * 0.5;
+        let y = (xx + yy) * this.tileH * 0.5;
+        return {x:x, y:y};
+    }
+
+    // 实始化色子
+    private initDice(count = 2) {
+        let diceArr = ArrayUtil.numberArray(0, 9);
+        while (count--) {
+            let randomValue = ArrayUtil.removeRandomItem(diceArr);
+            this.diceContainer.addRandomDice(randomValue);
+        }
+    }
+
+    public throwDice() {
+        this.diceContainer.throwDice();
     }
 }
