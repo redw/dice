@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Skinwawaji_light" width="77.67" height="78.33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="wawa_light">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:Wait duration="500"/>
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+
+    <e:Image x="24.34" y="24.66" touchEnabled="false"  source="wawa_light_01_png"/>
+	<e:Image id="image" x="1.34" y="2.16" scale9Grid="20,28,2,2" touchEnabled="false" source="wawa_light_00_png"/>
+
+</e:Skin>

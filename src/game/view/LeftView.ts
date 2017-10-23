@@ -13,6 +13,10 @@ class LeftView extends ExComponent {
             case "taskBtn":
                 Pop.open(SkinPanel);
                 break;
+
+            case "activityBtn":
+                Pop.open(DollMachinePanel)
+                break;
         }
     }
 }

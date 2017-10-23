@@ -11,9 +11,9 @@
 	],
 	"game": [
 		"bin-debug/lib/view/ExComponent.js",
-		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/utils/ArrayUtil.js",
 		"bin-debug/lib/view/BasePanel.js",
+		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/core/ThemeAdapter.js",
 		"bin-debug/game/core/GameEvents.js",
 		"bin-debug/game/core/GameLoop.js",
@@ -23,13 +23,13 @@
 		"bin-debug/game/view/LeftView.js",
 		"bin-debug/game/view/MainView.js",
 		"bin-debug/game/view/RightView.js",
+		"bin-debug/game/view/dollmachine/DollMachinePanel.js",
 		"bin-debug/game/view/scene/HomeLand.js",
 		"bin-debug/game/view/scene/HomeLandBG.js",
 		"bin-debug/game/view/scene/Scene.js",
 		"bin-debug/game/view/scene/SceneBG.js",
 		"bin-debug/game/view/scene/dice/Dice.js",
 		"bin-debug/game/view/scene/dice/DiceContainer.js",
-		"bin-debug/game/view/skinPanel/SkinCostComp.js",
 		"bin-debug/game/view/skinPanel/SkinItemRen.js",
 		"bin-debug/game/view/skinPanel/SkinModel.js",
 		"bin-debug/game/view/skinPanel/SkinPanel.js",
@@ -40,7 +40,7 @@
 		"bin-debug/lib/core/ILifeCycle.js",
 		"bin-debug/lib/core/IViewStack.js",
 		"bin-debug/Main.js",
-		"bin-debug/game/core/BaseButton.js",
+		"bin-debug/lib/view/SimpleGroup.js",
 		"bin-debug/lib/manager/EventManager.js",
 		"bin-debug/lib/manager/LoadManager.js",
 		"bin-debug/lib/manager/PanelManager.js",
@@ -69,6 +69,6 @@
 		"bin-debug/game/core/GameDataProxy.js",
 		"bin-debug/lib/view/RedPoint.js",
 		"bin-debug/lib/view/SimpleButton.js",
-		"bin-debug/lib/view/SimpleGroup.js"
+		"bin-debug/game/core/BaseButton.js"
 	]
 }
