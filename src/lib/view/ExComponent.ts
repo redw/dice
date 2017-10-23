@@ -40,7 +40,7 @@ class ExComponent extends eui.Component implements ILifeCycle{
     }
 
     protected $onClick(e:egret.TouchEvent) {
-        this.onClick(name);
+        this.onClick(e.target.name);
     }
 
     /**

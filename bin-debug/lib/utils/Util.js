@@ -30,6 +30,52 @@ var Util;
         return to;
     }
     Util.mixin = mixin;
+    /**
+     * 对象转化成数组
+     * @param obj
+     * @param out
+     * @returns {any[]}
+     */
+    function objToArr(obj, out) {
+        if (!out) {
+            out = [];
+        }
+        if (obj) {
+            var keys = Object.keys(obj);
+            for (var i = 0, len = keys.length; i < len; i++) {
+                var key = keys[i];
+                out.push(obj[key]);
+            }
+        }
+        return out;
+    }
+    Util.objToArr = objToArr;
+    /**
+     * 根据对象的order属性 从小到大排序
+     * @param a
+     * @param b
+     * @returns {number}
+     */
+    function sortByOrder(a, b) {
+        if (a && b) {
+            return a.order - b.order;
+        }
+        return 0;
+    }
+    Util.sortByOrder = sortByOrder;
+    /**
+     * 根据对象的order属性 从大到小排序
+     * @param a
+     * @param b
+     * @returns {number}
+     */
+    function sortByOrder1(a, b) {
+        if (a && b) {
+            return b.order - a.order;
+        }
+        return 0;
+    }
+    Util.sortByOrder1 = sortByOrder1;
     function getRandomInt(from, end) {
         var len = end - from;
         var value = from;
@@ -91,4 +137,3 @@ var Util;
     //     return obj;
     // }
 })(Util || (Util = {}));
-//# sourceMappingURL=Util.js.map

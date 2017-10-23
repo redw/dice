@@ -14,8 +14,8 @@ module DisplayUtil {
         model.x = 0;
         model.y = 0;
         model.alpha = alpha;
-        model.width = __STAGE.getStageWidth();
-        model.height = __STAGE.getStageHeight();
+        model.width = __STAGE.stageWidth;
+        model.height = __STAGE.stageHeight;
         model.touchEnabled = true;
         return model;
 

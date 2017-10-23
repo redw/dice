@@ -1,4 +1,4 @@
-let __STAGE;
+let __STAGE:egret.Stage;
 
 /**
  * 游戏入口
@@ -35,8 +35,11 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private enterGame() {
+
         let mainView = new MainView();
         this.addChild(mainView);
+
+        Pop.boot(this);
 
         GameLoop.boot();
         GameLoop.registerEnterFrame(this.onEnterFrame, this);

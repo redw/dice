@@ -14,8 +14,8 @@ var DisplayUtil;
         model.x = 0;
         model.y = 0;
         model.alpha = alpha;
-        model.width = __STAGE.getStageWidth();
-        model.height = __STAGE.getStageHeight();
+        model.width = __STAGE.stageWidth;
+        model.height = __STAGE.stageHeight;
         model.touchEnabled = true;
         return model;
         /* var sprite:egret.Sprite = new egret.Sprite();
@@ -108,4 +108,3 @@ var DisplayUtil;
     //     return txt;
     // }
 })(DisplayUtil || (DisplayUtil = {}));
-//# sourceMappingURL=DisplayUtil.js.map

@@ -1,8 +1,8 @@
 /**
- * 游戏场景
+ * 家园背景
  */
-class SceneBg extends egret.DisplayObjectContainer {
-    private scene:Scene;
+class HomeLandBG extends egret.DisplayObjectContainer {
+    private homeLand:HomeLand;
     private tileW = 100;
     private tileH = 100;
     private inner = 3;
@@ -20,18 +20,18 @@ class SceneBg extends egret.DisplayObjectContainer {
      * @param build     建筑
      * @param des       装饰
      */
-    public constructor(scene:Scene) {
+    public constructor(homeLand:HomeLand) {
         super();
-        this.scene = scene;
-        this.tileW = scene.tileW;
-        this.tileH = scene.tileH;
-        this.inner = scene.inner;
-        this.road = scene.road;
-        this.build = scene.build;
-        this.des = scene.des;
-        this.size = scene.size;
+        this.homeLand = homeLand;
+        this.tileW = homeLand.tileW;
+        this.tileH = homeLand.tileH;
+        this.inner = homeLand.inner;
+        this.road = homeLand.road;
+        this.build = homeLand.build;
+        this.des = homeLand.des;
+        this.size = homeLand.size;
 
-        this.addBackGround();
+        this.draw();
     }
 
     /**
@@ -45,7 +45,7 @@ class SceneBg extends egret.DisplayObjectContainer {
     }
 
     // 添加背景
-    private addBackGround() {
+    public draw() {
         let container = this;
         let start = this.des + this.build + this.road;
         let end = start + this.inner;
@@ -98,7 +98,7 @@ class SceneBg extends egret.DisplayObjectContainer {
     public addTileToLayer(xx:number, yy:number, source:string, container:egret.DisplayObjectContainer, offX = 0, offY = 0) {
         let bitmap = new AutoBitmap();
         bitmap.source = source;
-        let pos = this.scene.getGridPosByXXYY(xx, yy);
+        let pos = this.homeLand.getGridPosByXXYY(xx, yy);
         bitmap.x = pos.x + offX;
         bitmap.y = pos.y + offY;
         container.addChild(bitmap);

@@ -1,6 +1,6 @@
 class DiceContainer extends egret.DisplayObjectContainer {
     private layer:egret.DisplayObjectContainer;
-    private scene:Scene;
+    private homeLand:HomeLand;
     // 色子显示对象
     private diceArr:Dice[];
     private throwCount = 0;
@@ -10,17 +10,17 @@ class DiceContainer extends egret.DisplayObjectContainer {
     // 色子的活动格子范围
     private gridIndexArr:number[];
 
-    public constructor(scene:Scene) {
+    public constructor(homeLand:HomeLand) {
         super();
-        this.scene = scene;
+        this.homeLand = homeLand;
         this.layer = new egret.DisplayObjectContainer();
         this.addChild(this.layer);
 
         this.gridIndexArr = [];
 
-        let off = scene.des + scene.build + scene.road;
-        let span = scene.des * 2 + scene.build * 2 + scene.road * 2 + scene.inner;
-        let len = scene.inner;
+        let off = homeLand.des + homeLand.build + homeLand.road;
+        let span = homeLand.des * 2 + homeLand.build * 2 + homeLand.road * 2 + homeLand.inner;
+        let len = homeLand.inner;
         for (let i = 0; i < len; i++) {
             for (let j = 0; j < len; j++) {
                 let value = (off + i) * span + off + j;
@@ -36,7 +36,7 @@ class DiceContainer extends egret.DisplayObjectContainer {
         let exist = false;
         do {
             let pos = ArrayUtil.getRandomItem(this.gridIndexArr);
-            let span = this.scene.des * 2 + this.scene.build * 2 + this.scene.road * 2 + this.scene.inner;
+            let span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
             let yy = ~~(pos / span);
             let xx = pos % span;
             this.addDice(xx, yy, value);
@@ -110,7 +110,7 @@ class DiceContainer extends egret.DisplayObjectContainer {
     }
 
     private getGridPosByIndex(index:number) {
-        let span = this.scene.des * 2 + this.scene.build * 2 + this.scene.road * 2 + this.scene.inner;
+        let span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
         let xx = index % span;
         let yy = ~~(index / span);
         console.log("drop:",xx, yy);
@@ -118,6 +118,6 @@ class DiceContainer extends egret.DisplayObjectContainer {
     }
 
     private getGirdPosByXXYY(xx:number, yy:number) {
-        return this.scene.getGridPosByXXYY(xx, yy);
+        return this.homeLand.getGridPosByXXYY(xx, yy);
     }
 }

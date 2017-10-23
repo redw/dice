@@ -134,8 +134,8 @@ var Pop;
                 var name_1 = list[i];
                 var layer = new eui.Group();
                 layer.name = name_1;
-                layer.width = __STAGE.getStageWidth();
-                layer.height = __STAGE.getStageHeight();
+                layer.width = __STAGE.stageWidth;
+                layer.height = __STAGE.stageHeight;
                 layer.touchEnabled = false;
                 layer.touchChildren = true;
                 root.addChild(layer);
@@ -316,8 +316,8 @@ var Pop;
         };
         PanelManager.prototype.addOpenEffect = function (panel) {
             egret.Tween.removeTweens(panel);
-            var stageWidth = __STAGE.getStageWidth();
-            var stageHeight = __STAGE.getStageHeight();
+            var stageWidth = __STAGE.stageWidth;
+            var stageHeight = __STAGE.stageHeight;
             switch (panel.effectType) {
                 case 1:
                     panel.anchorOffsetX = panel.width / 2;
@@ -382,4 +382,3 @@ var Pop;
     }(egret.HashObject));
     __reflect(PanelManager.prototype, "PanelManager");
 })(Pop || (Pop = {}));
-//# sourceMappingURL=PanelManager.js.map

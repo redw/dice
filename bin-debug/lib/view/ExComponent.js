@@ -49,7 +49,7 @@ var ExComponent = (function (_super) {
         }
     };
     ExComponent.prototype.$onClick = function (e) {
-        this.onClick(name);
+        this.onClick(e.target.name);
     };
     /**
      * 点击事件
@@ -114,4 +114,3 @@ var ExComponent = (function (_super) {
     return ExComponent;
 }(eui.Component));
 __reflect(ExComponent.prototype, "ExComponent", ["ILifeCycle"]);
-//# sourceMappingURL=ExComponent.js.map
