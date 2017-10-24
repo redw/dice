@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkinPart2Skin" width="640" height="550" xmlns:e="http://ns.egret.com/eui"  xmlns:n="*">
+    <e:Image x="169" y="33" width="300" height="93" source="skin_title_touzi_png"/>
+    <e:Group y="400" x="190">
+        <e:Image x="0" y="15" width="314" height="73" source="skin_bubble_2_png" scale9Grid="20,28,2,2" touchEnabled="false" />
+        <e:Image x="142" y="0" width="31" height="20" source="skin_bubble_1_png" touchEnabled="false" />
+        <e:Label width="218" height="25" text="拥有3只牛牛时获得" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="20"  textAlign="center" bold="true" horizontalCenter="0" verticalCenter="6.5"/>
+    </e:Group>
+
+        <e:Label x="441.67" y="629" width="60.33" height="23" text="125" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  textAlign="center" anchorOffsetX="0" bold="true"/>
+</e:Skin>

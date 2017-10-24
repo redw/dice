@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin_2Skin" width="198" height="204" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
+    <e:Image x="12.5" y="64" width="165" height="118" source="skin_selection_png" touchEnabled="false" />
+    <e:Image x="14" y="25" width="153" height="136" source="skin_city_1_png" touchEnabled="false" />
+    <e:Image x="22" y="167" width="145" height="35" source="skin_track_2_png" touchEnabled="false" />
+    <e:Image x="130" y="3" width="44" height="44" source="skin_using_png" touchEnabled="false" />
+    <e:Image x="114" y="3" width="81" height="44" source="skin_use_png" touchEnabled="false" />
+    <e:Image x="129" y="2" width="46" height="46" source="skin_lock_png" touchEnabled="false" />
+    <e:Label x="33" y="175" width="81" height="20" text="甜美下午 " fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0x8c949a" size="18"  textAlign="center" bold="true"/>
+    <e:Label x="119.5" y="177" width="43" height="16" text="x 12" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="18"  textAlign="center" bold="true" anchorOffsetX="0"/>
+</e:Skin>

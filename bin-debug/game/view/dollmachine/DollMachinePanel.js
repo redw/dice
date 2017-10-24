@@ -51,7 +51,7 @@ var DollMachinePanel = (function (_super) {
         if (action === void 0) { action = "idle"; }
         DisplayUtil.removeFromParent(this.goodsImg);
         this.armature.addEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
-        this.armature.addEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+        this.armature.addEventListener(dragonBones.AnimationEvent.COMPLETE, this.attachComplete, this);
         this.armature.animation.play(action, 1);
     };
     DollMachinePanel.prototype.onFrameEvent = function (e) {
@@ -63,10 +63,11 @@ var DollMachinePanel = (function (_super) {
             this.timerId = GameLoop.registerEnterFrame(this.follow, this);
         }
     };
-    DollMachinePanel.prototype.attackComplete = function () {
+    DollMachinePanel.prototype.attachComplete = function () {
         GameLoop.clearTimer(this.timerId);
+        Pop.close(this);
         this.armature.removeEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
-        this.armature.removeEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+        this.armature.removeEventListener(dragonBones.AnimationEvent.COMPLETE, this.attachComplete, this);
     };
     DollMachinePanel.prototype.follow = function () {
         var boneName = "zhuazi2";
@@ -81,3 +82,4 @@ var DollMachinePanel = (function (_super) {
     return DollMachinePanel;
 }(BasePanel));
 __reflect(DollMachinePanel.prototype, "DollMachinePanel");
+//# sourceMappingURL=DollMachinePanel.js.map

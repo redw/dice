@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkinSkin" width="640" height="1067" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
+    <e:Image x="0" y="0" width="640" height="1067" source="图层 103833055_png" visible="false" touchEnabled="false" />
+    <e:Image x="0" y="597" width="640" height="547" source="skin_bg_2_png" scale9Grid="9,12,4,4" touchEnabled="false" />
+    <e:Image x="169" y="503" width="302" height="103" source="skin_bg_1_png" touchEnabled="false" />
+    
+    <e:TabBar id="tabBar" x="5" bottom="0" itemRendererSkinName="SkinTabBtnSkin">
+        <e:layout>
+        <e:HorizontalLayout gap="20"/>
+        </e:layout>
+        <e:ArrayCollection>
+            <e:Array>
+                <e:Object label="skin_label_city_png"/>
+                <e:Object label="skin_label_player_png"/>
+                <e:Object label="skin_label_dice_png"/>
+                <e:Object label="skin_label_car_png"/>
+            </e:Array>
+        </e:ArrayCollection>
+	</e:TabBar>
+
+    <!--<n:SkinCostComp skinName="SkinShowCompSkin" />-->
+
+    <e:Group y="0" height="100%" width="100%" touchEnabled="false" x="0" touchChildren="false" >
+        <n:BaseButton id="close1" x="607" y="589" width="63" height="67" name="close" anchorOffsetY="33" anchorOffsetX="31" touchEnabled="true" bgSource="common_but_close_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="63" height="67" id="bg" source="common_but_close_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+        <e:Image x="169" y="497" width="300" height="93" touchEnabled="false"  source="skin_title_touzi_png"/>
+
+
+
+
+
+        <e:Image x="91" y="612" width="455" height="52" source="common_visitandskin_png" scale9Grid="20,18,2,2" touchEnabled="false" />
+			<e:Image x="114" y="625" width="417" height="30" touchEnabled="false" source="skin_dice_label_0_png_png"/>
+
+        <e:Label x="448" y="629" width="44" height="23" text="1225" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  bold="true" textAlign="center"/>
+        <e:Label x="165" y="629" width="31" height="23" text="155" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  textAlign="center" bold="true"/>
+    </e:Group>
+    <e:Group y="0" height="100%" width="100%" touchEnabled="false" x="0" touchChildren="false" >
+        <n:BaseButton id="close2" x="607" y="408" width="63" height="67" name="close" anchorOffsetY="33" anchorOffsetX="31" touchEnabled="true" bgSource="common_but_close_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="63" height="67" id="bg" source="common_but_close_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+
+
+
+
+
+        <n:BaseButton x="324" y="529" width="192" height="107" id="player_2" name="player_2" anchorOffsetY="53" anchorOffsetX="96" touchEnabled="true" bgSource="skin_player_xilie1_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="192" height="107" id="bg" source="skin_player_xilie1_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+        <n:BaseButton x="59" y="529" width="175" height="97" id="player_1" name="player_1" anchorOffsetY="48" anchorOffsetX="87" touchEnabled="true" bgSource="skin_player_xilie2_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="175" height="97" id="bg" source="skin_player_xilie2_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+        <n:BaseButton x="584" y="529" width="175" height="97" id="player_3" name="player_3" anchorOffsetY="48" anchorOffsetX="87" touchEnabled="true" bgSource="skin_player_xilie3_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="175" height="97" id="bg" source="skin_player_xilie3_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+        <e:Image x="91" y="612" width="455" height="52" source="common_visitandskin_png" scale9Grid="20,18,2,2" touchEnabled="false" />
+        <e:Image x="114" y="625" width="417" height="30" source="skin_player_label_1_png" touchEnabled="false" />
+
+        <e:Label x="441.67" y="629" width="60.33" height="23" text="125" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  textAlign="center" anchorOffsetX="0" bold="true"/>
+        <e:Label x="157.67" y="629" width="43" height="23" text="155" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  bold="true" anchorOffsetX="0" textAlign="center"/>
+    </e:Group>
+    <e:Group y="0" height="100%" width="100%" touchEnabled="false" x="0" touchChildren="false" >
+
+
+
+
+
+        <e:Image x="169" y="497" width="300" height="93" source="skin_title_city_png" touchEnabled="false" />
+        <n:BaseButton id="close3" x="607" y="589" width="63" height="67" name="close" anchorOffsetY="33" anchorOffsetX="31" touchEnabled="true" bgSource="common_but_close_png" touchChildren="false" >
+                <e:skinName><e:Skin>
+                        <e:Image width="63" height="67" id="bg" source="common_but_close_png" />
+                </e:Skin></e:skinName>
+        </n:BaseButton>
+    </e:Group>
+</e:Skin>

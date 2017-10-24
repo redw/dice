@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkinPart1Skin" width="640" height="550" xmlns:e="http://ns.egret.com/eui"  xmlns:n="*">
+    <e:TabBar id="tabBar" x="31" y="6" height="100"  itemRendererSkinName="SimpleTabBtnSkin" anchorOffsetY="0">
+        <e:layout>
+            <e:HorizontalLayout gap="20"/>
+        </e:layout>
+        <e:ArrayCollection>
+            <e:Array>
+                <e:Object upSrc="wawa_xl_00_png" downSrc="wawa_xl_01_png"/>
+                <e:Object upSrc="wawa_xl1_00_png" downSrc="wawa_xl1_01_png"/>
+                <e:Object upSrc="wawa_xl2_01_png" downSrc="wawa_xl2_00_png"/>
+            </e:Array>
+        </e:ArrayCollection>
+	</e:TabBar>
+
+    <e:Group x="91" y="125">
+        <e:Image width="455" height="52" source="common_visitandskin_png" scale9Grid="20,18,2,2" touchEnabled="false" />
+        <e:Image x="23" y="13" width="417" height="30" source="skin_player_label_1_png" touchEnabled="false" />
+        <e:Label x="351.67" y="17" width="60.33" height="23" text="125" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  textAlign="center" anchorOffsetX="0" bold="true"/>
+        <e:Label x="67.67" y="16" width="43" height="23" text="155" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xff9804" size="20"  bold="true" anchorOffsetX="0" textAlign="center"/>
+    </e:Group>
+
+
+	<e:Label x="172.67" y="433" width="310" height="23" text="玩家皮肤通过抓娃娃机获得" fontFamily="Microsoft YaHei" size="20" bold="true" textAlign="center" textColor="0x665f59"/>
+
+    
+
+    <!--<e:Group y="370" x="50">
+        <e:Image x="0" y="17" width="552" height="106" source="skin_bubble_2_png" scale9Grid="20,28,2,2"/>
+        <e:Image x="261" y="0.5" width="31" height="19" source="skin_bubble_1_png" />
+        <e:Image x="33" y="40" width="262" height="63" source="skin_city_label_0_png" />
+        <e:Image x="409" y="27" width="31" height="24" source="common_icon_diamon_s_png" />
+        <n:BaseButton x="469.5" y="84.93" width="135" height="49" id="up" name="up" anchorOffsetY="23.43" anchorOffsetX="67.5" touchEnabled="true" bgSource="suspension_but_1_png" touchChildren="false" >
+            <e:skinName><e:Skin>
+                <e:Image width="136" height="49" id="bg" source="suspension_but_1_png"  scale9Grid="32,6,10,42"/>
+                <e:Image x="38" y="15" width="60" height="23" source="suspension_label_0_png"/>
+            </e:Skin></e:skinName>
+        </n:BaseButton>
+        <e:Label id="levelTxt" x="89" y="41" width="83.5" height="18" text="22" fontFamily="Microsoft YaHei" textColor="0xb55826" size="18"  bold="true"/>
+        <e:Label id="coinTxt" x="195" y="77" width="59" height="23" text="125" fontFamily="Microsoft YaHei" textColor="0xb55826" size="18" bold="true"/>
+        <e:Label id="diamondTxt" x="446" y="31" width="68" height="19" text="224.324" fontFamily="Microsoft YaHei" textColor="0xe72f1c" size="18"  bold="true"/>
+    </e:Group>-->
+</e:Skin>

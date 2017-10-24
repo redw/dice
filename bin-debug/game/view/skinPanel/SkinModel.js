@@ -21,3 +21,4 @@ var SkinModel;
     }
     SkinModel.getDataProvider = getDataProvider;
 })(SkinModel || (SkinModel = {}));
+//# sourceMappingURL=SkinModel.js.map

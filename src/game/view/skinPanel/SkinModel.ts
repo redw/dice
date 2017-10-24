@@ -1,5 +1,26 @@
 module SkinModel {
     export function getDataProvider(type:number) {
+        let dataObj = null;
+        type = Math.max(0, type);
+        if (type == 0) {
+            dataObj = GameData.getProp("skinObj");
+        } else if (type == 1) {
+            dataObj = GameData.getProp("chessObj");
+        } else if (type == 2) {
+            dataObj = GameData.getProp("diceObj");
+        } else {
+            dataObj = GameData.getProp("vehicleObj");
+        }
+        let newObj = {};
+        Util.mixin(dataObj, newObj);
+        for (let key in newObj) {
+            newObj[key].id = +key;
+        }
+        return Util.objToArr(newObj);
+    }
+
+    export function getSkinConfigObj(obj:{id:number}, type:number) {
+        let id = obj.id;
         let infoObj = null;
         type = Math.max(0, type);
         if (type == 0) {
@@ -11,8 +32,6 @@ module SkinModel {
         } else {
             infoObj = GameConfig.bus;
         }
-        let infoArr = Util.objToArr(infoObj);
-        infoArr.sort(Util.sortByOrder);
-        return infoArr;
+        return infoObj[id];
     }
 }

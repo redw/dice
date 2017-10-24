@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin_4Skin" width="314" height="88" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
+    <e:Image x="0" y="15" width="314" height="73" source="skin_bubble_2_png" scale9Grid="20,28,2,2" touchEnabled="false" />
+    <e:Image x="142" y="0" width="31" height="20" source="skin_bubble_1_png" touchEnabled="false" />
+    <e:Label width="218" height="25" text="拥有3只牛牛时获得" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="20"  textAlign="center" bold="true" horizontalCenter="0" verticalCenter="6.5"/>
+</e:Skin>

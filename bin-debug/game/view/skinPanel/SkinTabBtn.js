@@ -21,3 +21,4 @@ var SkinTabBtn = (function (_super) {
     return SkinTabBtn;
 }(eui.Component));
 __reflect(SkinTabBtn.prototype, "SkinTabBtn");
+//# sourceMappingURL=SkinTabBtn.js.map

@@ -52,7 +52,7 @@ class DollMachinePanel extends BasePanel {
     private start(goods:number, action:string = "idle") {
         DisplayUtil.removeFromParent(this.goodsImg);
         this.armature.addEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
-        this.armature.addEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+        this.armature.addEventListener(dragonBones.AnimationEvent.COMPLETE, this.attachComplete, this);
         this.armature.animation.play(action, 1);
     }
 
@@ -66,10 +66,11 @@ class DollMachinePanel extends BasePanel {
         }
     }
 
-    private attackComplete() {
+    private attachComplete() {
         GameLoop.clearTimer(this.timerId);
+        Pop.close(this);
         this.armature.removeEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
-        this.armature.removeEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+        this.armature.removeEventListener(dragonBones.AnimationEvent.COMPLETE, this.attachComplete, this);
     }
 
     private follow() {

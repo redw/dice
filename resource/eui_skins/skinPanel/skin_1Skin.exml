@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skin_1Skin" width="552" height="123" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
+    <e:Image x="0" y="17" width="552" height="106" source="skin_bubble_2_png" scale9Grid="20,28,2,2" touchEnabled="false" />
+    <e:Image x="261" y="0.5" width="31" height="19" source="skin_bubble_1_png" touchEnabled="false" />
+    <e:Image x="33" y="40" width="262" height="63" source="skin_city_label_0_png" touchEnabled="false" />
+    <e:Image x="409" y="27" width="31" height="24" source="common_icon_diamon_s_png" touchEnabled="false" />
+    <n:BaseButton x="469.5" y="84.93" width="135" height="49" id="up" name="up" anchorOffsetY="23.43" anchorOffsetX="67.5" touchEnabled="true" bgSource="suspension_but_1_png" touchChildren="false" >
+        <e:skinName><e:Skin>
+            <e:Image width="136" height="49" id="bg" source="suspension_but_1_png"  scale9Grid="32,6,10,42"/>
+            <e:Image x="38" y="15" width="60" height="23" source="suspension_label_0_png" touchEnabled="false" />
+        </e:Skin></e:skinName>
+    </n:BaseButton>
+    <e:Label x="89" y="40" width="83.5" height="18" text="22" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="18"  bold="true" textAlign="left" anchorOffsetX="0"/>
+    <e:Label x="200" y="77" width="59" height="23" text="125" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xb55826" size="18"  textAlign="left" bold="true" anchorOffsetX="0"/>
+    <e:Label x="446" y="31" width="68" height="19" text="224.324" fontFamily="Microsoft YaHei" touchEnabled="false" textColor="0xe72f1c" size="18"  bold="true"/>
+</e:Skin>

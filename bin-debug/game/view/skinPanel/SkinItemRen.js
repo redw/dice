@@ -20,7 +20,7 @@ var SkinItemRen = (function (_super) {
         return _this;
     }
     SkinItemRen.prototype.selected = function (obj) {
-        this.selectedImg.visible = obj.id == this.cdata.id;
+        // this.selectedImg.visible = obj.id == this.cdata.id;
     };
     /**
      * 配置数组
@@ -28,9 +28,12 @@ var SkinItemRen = (function (_super) {
      */
     SkinItemRen.prototype.setData = function (obj) {
         this.cdata = obj;
-        this.nameTxt.text = Util.getPropValue(obj, "name", obj.id);
-        this.countTxt.text = Util.getPropValue(obj, "count", 1);
+        var name = obj.name;
+        var nameTxt = DisplayUtil.getChildByName(this, "nameTxt");
+        name = name + "{0}";
+        TextUtil.color(nameTxt, name, "   x1", 0xb55826);
     };
     return SkinItemRen;
 }(eui.Component));
 __reflect(SkinItemRen.prototype, "SkinItemRen");
+//# sourceMappingURL=SkinItemRen.js.map

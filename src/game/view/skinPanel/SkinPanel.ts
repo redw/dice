@@ -15,7 +15,8 @@ class SkinPanel extends BasePanel {
 
     private onSelectChange() {
         let selectIndex = this.tabBar.selectedIndex;
-        let arr = SkinModel.getDataProvider(selectIndex);
-        this.skinShowComp.showAllSkin(arr);
+        let type = Math.max(selectIndex, 0);
+        let arr = SkinModel.getDataProvider(type);
+        this.skinShowComp.setSkinInfo(arr, type);
     }
 }

@@ -2,9 +2,8 @@
 <e:Skin class="SkinPanelSkin" width="640" height="1067" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:n="*">
     <e:Image y="597" width="640" height="547" source="skin_bg_2_png" scale9Grid="9,12,4,4"/>
     <e:Image x="169" y="503" width="302" height="103" source="skin_bg_1_png" />
-    <e:Image x="169" y="497" width="300" height="93" source="skin_title_touzi_png"/>
     
-    <n:SkinShowComp id="skinShowComp" skinName="SkinShowCompSkin" y="642"/>
+    <n:SkinShowComp id="skinShowComp" skinName="SkinShowCompSkin" y="491"/>
     
     <e:TabBar id="tabBar" x="5" bottom="8" height="70" itemRendererSkinName="SkinTabBtnSkin">
         <e:layout>

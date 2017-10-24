@@ -7,20 +7,24 @@ class SkinItemRen extends eui.Component {
     public constructor() {
         super();
         this.skinName = SkinItemRenSkin;
-        this.touchChildren = false;
     }
 
-    public selected(obj:any) {
-        this.selectedImg.visible = obj.id == this.cdata.id;
+    public selected(obj:any, ) {
+        DisplayUtil.setChildProp(this, "selectedImg", obj.id == this.cdata.id, "visible");
     }
 
-    /**
-     * 配置数组
-     * @param obj
-     */
-    public setData(obj:any) {
-        this.cdata = obj;
-        this.nameTxt.text = Util.getPropValue(obj, "name", obj.id);
-        this.countTxt.text = Util.getPropValue(obj, "count", 1);
+    public setData(obj:any, type:number) {
+        let cObj = SkinModel.getSkinConfigObj(obj, type);
+        let nameTxt = <eui.Label>DisplayUtil.getChildByName(this, "nameTxt");
+        let name = cObj.name;
+        let count = 1;
+        if (type == 0) {
+            nameTxt.text = name;
+        } else {
+            name = name + "{0}";
+            TextUtil.color(nameTxt, name, `     x${count}`, 0xb55826)
+        }
+
+
     }
 }
