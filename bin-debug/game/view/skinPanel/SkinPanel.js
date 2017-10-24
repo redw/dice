@@ -25,8 +25,9 @@ var SkinPanel = (function (_super) {
     };
     SkinPanel.prototype.onSelectChange = function () {
         var selectIndex = this.tabBar.selectedIndex;
-        var arr = SkinModel.getDataProvider(selectIndex);
-        this.skinShowComp.showAllSkin(arr);
+        var type = Math.max(selectIndex, 0);
+        var arr = SkinModel.getDataProvider(type);
+        this.skinShowComp.setSkinInfo(arr, type);
     };
     return SkinPanel;
 }(BasePanel));

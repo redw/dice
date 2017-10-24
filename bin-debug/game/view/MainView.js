@@ -24,7 +24,7 @@ var MainView = (function (_super) {
         _this.rightView.right = 0;
         _this.addChild(_this.rightView);
         _this.bottomView = new BottomView();
-        _this.bottomView.y = 836;
+        _this.bottomView.y = 780;
         _this.addChild(_this.bottomView);
         _this.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.onClick, _this);
         return _this;

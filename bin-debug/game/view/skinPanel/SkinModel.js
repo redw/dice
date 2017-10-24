@@ -1,6 +1,30 @@
 var SkinModel;
 (function (SkinModel) {
     function getDataProvider(type) {
+        var dataObj = null;
+        type = Math.max(0, type);
+        if (type == 0) {
+            dataObj = GameData.skinObj;
+        }
+        else if (type == 1) {
+            dataObj = GameData.chessObj;
+        }
+        else if (type == 2) {
+            dataObj = GameData.diceObj;
+        }
+        else {
+            dataObj = GameData.vehicleObj;
+        }
+        var newObj = {};
+        Util.mixin(dataObj, newObj);
+        for (var key in newObj) {
+            newObj[key].id = +key;
+        }
+        return Util.objToArr(newObj);
+    }
+    SkinModel.getDataProvider = getDataProvider;
+    function getSkinConfigObj(obj, type) {
+        var id = obj.id;
         var infoObj = null;
         type = Math.max(0, type);
         if (type == 0) {
@@ -15,10 +39,8 @@ var SkinModel;
         else {
             infoObj = GameConfig.bus;
         }
-        var infoArr = Util.objToArr(infoObj);
-        infoArr.sort(Util.sortByOrder);
-        return infoArr;
+        return infoObj[id];
     }
-    SkinModel.getDataProvider = getDataProvider;
+    SkinModel.getSkinConfigObj = getSkinConfigObj;
 })(SkinModel || (SkinModel = {}));
 //# sourceMappingURL=SkinModel.js.map

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SimpleTabBtnSkin" states="up,down,disabled" minWidth="100" minHeight="60" xmlns:e="http://ns.egret.com/eui" width="174" height="46">
+    <e:Image source="{data.upSrc}" source.down="{data.downSrc}"/>
+</e:Skin>

@@ -1,7 +1,7 @@
 var Net;
 (function (Net) {
     var eventDisPatcher;
-    function boot(httpBack, socketBack, context) {
+    function boot(obj, httpBack, socketBack, context) {
         eventDisPatcher = new egret.EventDispatcher();
         var httpHost = Global.H_HOST;
         var token = Global.TOKEN;
@@ -38,6 +38,11 @@ var Net;
     function sendMessage(req, data) {
     }
     Net.sendMessage = sendMessage;
+    function sendTestMessage(cmd, compFun, context) {
+        var url = "http/" + cmd + ".json";
+        RES.getResByUrl(url, compFun, context);
+    }
+    Net.sendTestMessage = sendTestMessage;
     function dispatchCmd(cmd, data) {
         eventDisPatcher.dispatchEventWith(cmd, false, data);
     }

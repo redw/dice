@@ -20,7 +20,7 @@ class MainView extends egret.DisplayObjectContainer {
         this.addChild(this.rightView);
 
         this.bottomView = new BottomView();
-        this.bottomView.y = 836;
+        this.bottomView.y = 780;
         this.addChild(this.bottomView);
 
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onClick, this);

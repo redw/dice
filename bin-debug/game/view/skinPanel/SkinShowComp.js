@@ -18,9 +18,10 @@ var SkinShowComp = (function (_super) {
         _this.itemArr = [];
         _this.freeItemArr = [];
         _this.skinName = SkinShowCompSkin;
+        _this.partList = Array(4);
         return _this;
     }
-    SkinShowComp.prototype.showAllSkin = function (arr) {
+    SkinShowComp.prototype.setSkinInfo = function (arr, type) {
         this.skinData = arr;
         while (this.itemArr.length) {
             var item = this.itemArr.pop();
@@ -36,19 +37,33 @@ var SkinShowComp = (function (_super) {
                 comp = new SkinItemRen();
             }
             this.itemArr.push(comp);
-            comp.setData(arr[i]);
+            comp.setData(arr[i], type);
             this.itemContainer.addChild(comp);
         }
-        this.showSomeSkinInfo(arr[0]);
-    };
-    SkinShowComp.prototype.showSomeSkinInfo = function (obj) {
-        for (var i = 0, len = this.itemArr.length; i < len; i++) {
-            var comp = this.itemArr[i];
-            comp.selected(obj);
+        for (var i = 0, len = this.partList.length; i < len; i++) {
+            var view = this.partList[i];
+            if (i == type) {
+                if (!view) {
+                    view = new (egret.getDefinitionByName("SkinPart" + i));
+                    this.partList[i] = view;
+                }
+                if (!view.parent) {
+                    this.addChild(view);
+                }
+            }
+            else {
+                DisplayUtil.removeFromParent(view);
+            }
         }
-        this.levelTxt.text = Util.getPropValue(obj, "level", "1");
-        this.coinTxt.text = Util.getPropValue(obj, "coin", "1");
-        this.diamondTxt.text = Util.getPropValue(obj, "diamond", "1");
+        this.showSomeSkinInfo(arr[0], type);
+    };
+    SkinShowComp.prototype.showSomeSkinInfo = function (obj, type) {
+        var view = this.partList[type];
+        if (view && view.showSomeInfo) {
+            view.showSomeInfo(obj, type);
+        }
+        else {
+        }
     };
     return SkinShowComp;
 }(eui.Component));

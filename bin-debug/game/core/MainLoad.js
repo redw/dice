@@ -44,10 +44,8 @@ var MainLoad;
             egret.log("load config_json complete");
             addProgress(1);
             Global.boot(data);
-            dataOk = true;
-            // Net.boot();
-            // Net.addCmdListener(CmdConst.ENTER, onDataRes, MainLoad);
-            requestServerPath();
+            GameDataProxy.boot(data);
+            requestServerPath(data);
         }, null, RES.ResourceItem.TYPE_JSON);
     }
     function loadDefaultRes() {
@@ -56,7 +54,7 @@ var MainLoad;
         RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, onLoadDefResComplete, MainLoad);
         RES.loadConfig(resURL, "resource/");
     }
-    function requestServerPath() {
+    function requestServerPath(data) {
         if (Global.H_HOST) {
             sendEnterCmd();
         }
@@ -69,18 +67,14 @@ var MainLoad;
         }
     }
     function sendEnterCmd() {
+        if (Global.TEST) {
+            Net.sendTestMessage(CmdConst.ENTER, onDataRes, MainLoad);
+        }
+        else {
+            var data = {};
+            Net.sendMessage(CmdConst.ENTER, data);
+        }
         addProgress(1);
-        // let from:string = window["AWY_SDK"].getURLVar("cp_from");
-        // let friendId:string = window["AWY_SDK"].getURLVar("fuid") || 1;
-        // window["AWY_SDK"].shareParams({"cp_from":"msg"});
-        // let data = {};
-        // if (from) {
-        //     data["from"] = from;
-        // }
-        // if (friendId) {
-        //     data["inviteId"] = friendId;
-        // }
-        // Net.sendMessage(CmdConst.ENTER,data);
     }
     function onLoadGroupComplete(e) {
         var groupName = e.groupName;
@@ -93,8 +87,11 @@ var MainLoad;
         // let groupName = e.groupName;
         addProgress(3);
     }
-    function onDataRes() {
+    function onDataRes(data) {
         egret.log("load enter_data complete");
+        if (data && Global.TEST) {
+            GameDataProxy.doHttpRes({ cmd: CmdConst.ENTER }, data);
+        }
         Net.removeCmdListener(CmdConst.ENTER, onDataRes, MainLoad);
         addProgress(2);
         dataOk = true;

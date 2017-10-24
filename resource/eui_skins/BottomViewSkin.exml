@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="BottomViewSkin" width="640" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:n="*">
+<e:Skin class="BottomViewSkin" width="640" height="290" xmlns:e="http://ns.egret.com/eui" xmlns:n="*">
     <n:SimpleButton name="upgradeBtn" source="playmain_but_upgrade_png" y="200" x="523"/>
     <n:SimpleButton name="skinBtn" source="playmain_but_skinshop_png" y="200" x="45"/>
     <n:SimpleButton name="friendBtn" source="playmain_but_addfriend_png" y="100" x="45"/>
-    <n:SimpleButton name="diceBtn" source="playmain_but_dice_png" x="240" y="11"/>
+    <n:SimpleButton name="diceBtn" source="playmain_but_dice_png" x="240" y="31"/>
     <e:ProgressBar id="progress" skinName="ProgressSkin" y="216" x="220"/>
 </e:Skin>

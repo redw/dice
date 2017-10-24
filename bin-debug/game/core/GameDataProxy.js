@@ -5,8 +5,8 @@ var GameData = {};
  */
 var GameDataProxy;
 (function (GameDataProxy) {
-    function boot() {
-        Net.boot(httpBack, socketBack, GameDataProxy);
+    function boot(obj) {
+        Net.boot(obj, httpBack, socketBack, GameDataProxy);
     }
     GameDataProxy.boot = boot;
     // 处理错误
@@ -18,9 +18,9 @@ var GameDataProxy;
         Util.mixin(res, GameData);
         Net.dispatchCmd(cmd, res);
     }
+    GameDataProxy.doHttpRes = doHttpRes;
     function doSocketRes(res) {
         var cmd = res.cmd;
-        // TODO 消息体
         var body = res;
         Util.mixin(body, GameData);
         Net.dispatchCmd(cmd, body);

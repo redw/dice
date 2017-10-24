@@ -5,8 +5,8 @@ const GameData:IGameData = <IGameData>{};
  * 游戏数据代理
  */
 module GameDataProxy {
-    export function boot() {
-        Net.boot(httpBack, socketBack, GameDataProxy);
+    export function boot(obj:any) {
+        Net.boot(obj, httpBack, socketBack, GameDataProxy);
     }
 
     // 处理错误
@@ -14,7 +14,7 @@ module GameDataProxy {
         console.error(code);
     }
 
-    function doHttpRes(req:any, res:any) {
+    export function doHttpRes(req:any, res:any) {
         let cmd = req.cmd;
         Util.mixin(res, GameData);
         Net.dispatchCmd(cmd, res);
@@ -22,7 +22,6 @@ module GameDataProxy {
 
     function doSocketRes(res:any) {
         let cmd = res.cmd;
-        // TODO 消息体
         let body = res;
         Util.mixin(body, GameData);
         Net.dispatchCmd(cmd, body);
@@ -51,11 +50,15 @@ module GameDataProxy {
 }
 
 interface IGameData {
-    headimgurl:string
-    land:{number:{lv:string,event:number}}[]
-    nickname:string
-    serverTime:number
-    sex:number
-    tech:{number:number}[]
-    uid:number
+    headimgurl:string;
+    land:{number:{lv:string,event:number}}[];
+    nickname:string;
+    serverTime:number;
+    sex:number;
+    tech:{number:number}[];
+    uid:number;
+    skinObj:any;
+    chessObj:any;
+    diceObj:any;
+    vehicleObj:any;
 }

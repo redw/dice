@@ -1,7 +1,7 @@
 module Net {
     let eventDisPatcher:egret.EventDispatcher;
 
-    export function boot(httpBack:Function, socketBack:Function, context:any) {
+    export function boot(obj:any, httpBack:Function, socketBack:Function, context:any) {
         eventDisPatcher = new egret.EventDispatcher();
 
         let httpHost = Global.H_HOST;
@@ -36,8 +36,13 @@ module Net {
         SocketConnect.send(req);
     }
 
-    export function  sendMessage(req:any, data:any) {
+    export function sendMessage(req:any, data:any) {
 
+    }
+
+    export function sendTestMessage(cmd:string, compFun:Function, context) {
+        let url = `http/${cmd}.json`;
+        RES.getResByUrl(url, compFun, context);
     }
 
     export function dispatchCmd(cmd:string, data:any):void {

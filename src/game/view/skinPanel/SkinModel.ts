@@ -3,13 +3,13 @@ module SkinModel {
         let dataObj = null;
         type = Math.max(0, type);
         if (type == 0) {
-            dataObj = GameData.getProp("skinObj");
+            dataObj = GameData.skinObj;
         } else if (type == 1) {
-            dataObj = GameData.getProp("chessObj");
+            dataObj = GameData.chessObj;
         } else if (type == 2) {
-            dataObj = GameData.getProp("diceObj");
+            dataObj = GameData.diceObj;
         } else {
-            dataObj = GameData.getProp("vehicleObj");
+            dataObj = GameData.vehicleObj;
         }
         let newObj = {};
         Util.mixin(dataObj, newObj);

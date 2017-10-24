@@ -35,7 +35,6 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private enterGame() {
-
         let mainView = new MainView();
         this.addChild(mainView);
 
