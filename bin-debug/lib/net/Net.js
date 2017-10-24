@@ -35,6 +35,9 @@ var Net;
         SocketConnect.send(req);
     }
     Net.sendSMessage = sendSMessage;
+    function sendMessage(req, data) {
+    }
+    Net.sendMessage = sendMessage;
     function dispatchCmd(cmd, data) {
         eventDisPatcher.dispatchEventWith(cmd, false, data);
     }
@@ -52,4 +55,3 @@ var Net;
     }
     Net.removeCmdListener = removeCmdListener;
 })(Net || (Net = {}));
-//# sourceMappingURL=Net.js.map

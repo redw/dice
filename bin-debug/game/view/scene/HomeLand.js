@@ -78,4 +78,3 @@ var HomeLand = (function (_super) {
     return HomeLand;
 }(egret.DisplayObjectContainer));
 __reflect(HomeLand.prototype, "HomeLand");
-//# sourceMappingURL=HomeLand.js.map

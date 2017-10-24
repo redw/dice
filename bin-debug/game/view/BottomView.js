@@ -18,7 +18,13 @@ var BottomView = (function (_super) {
         _this.skinName = BottomViewSkin;
         return _this;
     }
+    BottomView.prototype.onClick = function (name) {
+        switch (name) {
+            case "skinBtn":
+                Pop.open(SkinPanel);
+                break;
+        }
+    };
     return BottomView;
 }(ExComponent));
 __reflect(BottomView.prototype, "BottomView");
-//# sourceMappingURL=BottomView.js.map

@@ -46,6 +46,31 @@ module DisplayUtil {
         }
     }
 
+    /**
+     * 设置子对象的属性
+     * @param parent
+     * @param name
+     * @param prop
+     */
+    export function setChildProp(parent:egret.DisplayObjectContainer, name:string, value:any, prop?:string) {
+        if (parent && name) {
+            let dis = parent.getChildByName(name);
+            if (dis) {
+                if (!prop) {
+                    if (dis instanceof eui.Label) {
+                        prop = "text";
+                    }
+                    if (dis instanceof eui.Image) {
+                        prop = "source";
+                    }
+                }
+                if (prop) {
+                    dis[prop] = value;
+                }
+            }
+        }
+    }
+
     export function removeChildByName(parent:egret.DisplayObjectContainer, name:string) {
         if (parent && name) {
             let child = parent.getChildByName(name);

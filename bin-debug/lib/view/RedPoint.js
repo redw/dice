@@ -53,4 +53,3 @@ var RedPoint = (function (_super) {
     return RedPoint;
 }(egret.Sprite));
 __reflect(RedPoint.prototype, "RedPoint");
-//# sourceMappingURL=RedPoint.js.map

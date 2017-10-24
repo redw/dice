@@ -16,6 +16,7 @@ var SkinItemRen = (function (_super) {
     function SkinItemRen() {
         var _this = _super.call(this) || this;
         _this.skinName = SkinItemRenSkin;
+        _this.touchChildren = false;
         return _this;
     }
     SkinItemRen.prototype.selected = function (obj) {
@@ -33,4 +34,3 @@ var SkinItemRen = (function (_super) {
     return SkinItemRen;
 }(eui.Component));
 __reflect(SkinItemRen.prototype, "SkinItemRen");
-//# sourceMappingURL=SkinItemRen.js.map

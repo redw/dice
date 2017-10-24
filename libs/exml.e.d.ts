@@ -8,6 +8,8 @@ declare class ProgressSkin extends eui.Skin{
 }
 declare class DollMachinePanelSkin extends eui.Skin{
 }
+declare class SimpleTabBtnSkin extends eui.Skin{
+}
 declare class Skinwawaji_light extends eui.Skin{
 }
 declare class SkinItemRenSkin extends eui.Skin{

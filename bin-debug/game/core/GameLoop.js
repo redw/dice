@@ -15,29 +15,28 @@ var GameLoop;
         var curTime = egret.getTimer();
         var offTimer = curTime - oldTimer;
         var len = timerArr.length;
-        freeIndexArr.length = 0;
         for (var i = 0; i < len; i++) {
             var timer = timerArr[i];
-            if (timer.id <= 0) {
-                release(timer);
-                timerArr[i] = null;
-                freeIndexArr.push(i);
-            }
-            else {
-                if (timer.delay <= 0) {
-                    timer.back.call(timer.context, offTimer);
+            if (timer) {
+                if (!timer.back) {
+                    release(timer);
                 }
                 else {
-                    timer.time += offTimer;
-                    if (timer.time > timerArr[i].delay) {
-                        timer.time -= timerArr[i].delay;
-                        timer.back.call(timer.context);
-                        if (timer.repeat >= 1) {
-                            if (timer.repeat == 1) {
-                                clearTimer(timer.id);
-                            }
-                            else {
-                                timer.repeat--;
+                    if (timer.delay <= 0) {
+                        timer.back.call(timer.context, offTimer);
+                    }
+                    else {
+                        timer.time += offTimer;
+                        if (timer.time > timerArr[i].delay) {
+                            timer.time -= timerArr[i].delay;
+                            timer.back.call(timer.context);
+                            if (timer.repeat >= 1) {
+                                if (timer.repeat == 1) {
+                                    clearTimer(timer.id);
+                                }
+                                else {
+                                    timer.repeat--;
+                                }
                             }
                         }
                     }
@@ -45,7 +44,6 @@ var GameLoop;
             }
         }
         oldTimer = curTime;
-        dragonBones.WorldClock.clock.advanceTime(0.025);
     }
     function boot() {
         var stage = __STAGE;
@@ -63,11 +61,14 @@ var GameLoop;
     GameLoop.registerEnterFrame = registerEnterFrame;
     function clearTimer(id) {
         var timer = timerMap[id];
-        release(timer);
+        timer.back = null;
     }
     GameLoop.clearTimer = clearTimer;
     function release(timer) {
         if (timer) {
+            var id_1 = timer.id;
+            freeIndexArr.push(id_1);
+            timerArr[id_1] = null;
             timer.back = null;
             timer.context = null;
             timer.id = -1;
@@ -80,7 +81,7 @@ var GameLoop;
         if (delay === void 0) { delay = 1000; }
         if (repeat === void 0) { repeat = 1; }
         var timer = pool.pop();
-        var timerId = ++id;
+        var timerId = id++;
         if (!timer) {
             timer = {};
         }
@@ -102,4 +103,3 @@ var GameLoop;
     }
     GameLoop.registerTimer = registerTimer;
 })(GameLoop || (GameLoop = {}));
-//# sourceMappingURL=GameLoop.js.map

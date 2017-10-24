@@ -6,6 +6,7 @@
     "resource/eui_skins/LeftViewSkin.exml",
     "resource/eui_skins/RightViewSkin.exml",
     "resource/eui_skins/dollMachine/DollMachinePanelSkin.exml",
+    "resource/eui_skins/dollMachine/SimpleTabBtnSkin.exml",
     "resource/eui_skins/dollMachine/Skinwawaji_light.exml",
     "resource/eui_skins/skinPanel/SkinItemRenSkin.exml",
     "resource/eui_skins/skinPanel/SkinShowCompSkin.exml",

@@ -32,6 +32,10 @@ class MainView extends egret.DisplayObjectContainer {
             case "diceBtn":
                 this.scene.throwDice();
                 break;
+
+            case "skinBtn":
+                Pop.open(SkinPanel);
+                break;
         }
     }
 }

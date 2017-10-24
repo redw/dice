@@ -20,7 +20,14 @@ var DollMachinePanel = (function (_super) {
         return _this;
     }
     DollMachinePanel.prototype.init = function () {
-        LoadManager.loadGroup(["zhuawawaji_ske_json", "zhuawawaji_tex_json", "zhuawawaji_tex_png"], this.onLoadWawaji, this);
+        LoadManager.loadDragonBone("zhuawawaji", this.onLoadWawaji, this);
+    };
+    DollMachinePanel.prototype.active = function () {
+        var free = true;
+        var diamondCost = 100;
+        DisplayUtil.setChildProp(this.diamondDrawBtn, "costTxt", diamondCost);
+        DisplayUtil.setChildProp(this.freeDrawBtn, "freeImg", free, "visible");
+        DisplayUtil.setChildProp(this.freeDrawBtn, "againFreeImg", !free, "visible");
     };
     DollMachinePanel.prototype.onLoadWawaji = function () {
         this.armature = BoneUtil.createArmature("zhuawawaji");
@@ -28,11 +35,49 @@ var DollMachinePanel = (function (_super) {
         display.x = 320;
         display.y = 620;
         this.handGroup.addChild(display);
-        this.armature.animation.gotoAndPlay("idle", 0, 0, 0);
     };
-    DollMachinePanel.prototype.start = function () {
+    DollMachinePanel.prototype.onClick = function (name) {
+        switch (name) {
+            case "freeDrawBtn":
+                this.start(101);
+                Net.sendMessage(CmdConst.DRAW, { type: 1, idx: this.groupIdx });
+                break;
+            case "diamondDrawBtn":
+                Net.sendMessage(CmdConst.DRAW, { type: 2, idx: this.groupIdx });
+                break;
+        }
+    };
+    DollMachinePanel.prototype.start = function (goods, action) {
+        if (action === void 0) { action = "idle"; }
+        DisplayUtil.removeFromParent(this.goodsImg);
+        this.armature.addEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
+        this.armature.addEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+        this.armature.animation.play(action, 1);
+    };
+    DollMachinePanel.prototype.onFrameEvent = function (e) {
+        var frameLabel = e.frameLabel;
+        if (frameLabel == "attackStart") {
+            this.goodsImg = new eui.Rect(60, 40, 0xff0000);
+            this.handGroup.addChildAt(this.goodsImg, 0);
+            this.follow();
+            this.timerId = GameLoop.registerEnterFrame(this.follow, this);
+        }
+    };
+    DollMachinePanel.prototype.attackComplete = function () {
+        GameLoop.clearTimer(this.timerId);
+        this.armature.removeEventListener(dragonBones.AnimationEvent.FRAME_EVENT, this.onFrameEvent, this);
+        this.armature.removeEventListener(dragonBones.AnimationEvent.COMPLETE, this.attackComplete, this);
+    };
+    DollMachinePanel.prototype.follow = function () {
+        var boneName = "zhuazi2";
+        var bone = this.armature.getBone(boneName);
+        if (bone && this.goodsImg) {
+            this.goodsImg.x = this.armature.display.x + bone.globalTransformMatrix.tx;
+            this.goodsImg.y = this.armature.display.y + bone.globalTransformMatrix.ty;
+        }
+        else {
+        }
     };
     return DollMachinePanel;
 }(BasePanel));
 __reflect(DollMachinePanel.prototype, "DollMachinePanel");
-//# sourceMappingURL=DollMachinePanel.js.map

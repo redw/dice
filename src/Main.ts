@@ -46,7 +46,7 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private onEnterFrame() {
-        dragonBones.WorldClock.clock.advanceTime(0.01);
+        dragonBones.WorldClock.clock.advanceTime(0.025);
     }
 }
 

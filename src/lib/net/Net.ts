@@ -36,6 +36,10 @@ module Net {
         SocketConnect.send(req);
     }
 
+    export function  sendMessage(req:any, data:any) {
+
+    }
+
     export function dispatchCmd(cmd:string, data:any):void {
         eventDisPatcher.dispatchEventWith(cmd, false, data);
     }

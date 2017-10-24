@@ -11,9 +11,9 @@
 	],
 	"game": [
 		"bin-debug/lib/view/ExComponent.js",
+		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/utils/ArrayUtil.js",
 		"bin-debug/lib/view/BasePanel.js",
-		"bin-debug/lib/core/ObjPool.js",
 		"bin-debug/lib/core/ThemeAdapter.js",
 		"bin-debug/game/core/GameEvents.js",
 		"bin-debug/game/core/GameLoop.js",
@@ -69,6 +69,7 @@
 		"bin-debug/game/core/GameDataProxy.js",
 		"bin-debug/lib/view/RedPoint.js",
 		"bin-debug/lib/view/SimpleButton.js",
-		"bin-debug/lib/view/SimpleGroup.js"
+		"bin-debug/lib/view/SimpleGroup.js",
+		"bin-debug/lib/view/SimpleTabBtn.js"
 	]
 }

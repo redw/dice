@@ -53,4 +53,3 @@ var SkinShowComp = (function (_super) {
     return SkinShowComp;
 }(eui.Component));
 __reflect(SkinShowComp.prototype, "SkinShowComp");
-//# sourceMappingURL=SkinShowComp.js.map

@@ -35,9 +35,11 @@ var MainView = (function (_super) {
             case "diceBtn":
                 this.scene.throwDice();
                 break;
+            case "skinBtn":
+                Pop.open(SkinPanel);
+                break;
         }
     };
     return MainView;
 }(egret.DisplayObjectContainer));
 __reflect(MainView.prototype, "MainView");
-//# sourceMappingURL=MainView.js.map

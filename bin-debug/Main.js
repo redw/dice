@@ -52,9 +52,8 @@ var Main = (function (_super) {
         GameLoop.registerEnterFrame(this.onEnterFrame, this);
     };
     Main.prototype.onEnterFrame = function () {
-        dragonBones.WorldClock.clock.advanceTime(0.01);
+        dragonBones.WorldClock.clock.advanceTime(0.025);
     };
     return Main;
 }(egret.DisplayObjectContainer));
 __reflect(Main.prototype, "Main");
-//# sourceMappingURL=Main.js.map

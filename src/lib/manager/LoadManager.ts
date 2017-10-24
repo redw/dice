@@ -64,6 +64,29 @@ module LoadManager {
     }
 
     /**
+     * 加载dragonBone资源
+     * @param name
+     * @param back
+     * @param context
+     * @param property
+     */
+    export function loadDragonBone(name:string|string[], back:any, context:any, property?:number) {
+        let res = [];
+        if (typeof name == "string") {
+            res.push(`${name}_ske_json`);
+            res.push(`${name}_tex_json`);
+            res.push(`${name}_tex_png`);
+        } else {
+            for (let i = 0, len = name.length; i < len; i++) {
+                res.push(`${name[i]}_ske_json`);
+                res.push(`${name[i]}_tex_json`);
+                res.push(`${name[i]}_tex_png`);
+            }
+        }
+        loadGroup(res, back, context, property);
+    }
+
+    /**
      * 加载list
      * @param urlList
      * @param compFunc

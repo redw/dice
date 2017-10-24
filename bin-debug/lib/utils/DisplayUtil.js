@@ -46,6 +46,31 @@ var DisplayUtil;
         }
     }
     DisplayUtil.getChildByName = getChildByName;
+    /**
+     * 设置子对象的属性
+     * @param parent
+     * @param name
+     * @param prop
+     */
+    function setChildProp(parent, name, value, prop) {
+        if (parent && name) {
+            var dis = parent.getChildByName(name);
+            if (dis) {
+                if (!prop) {
+                    if (dis instanceof eui.Label) {
+                        prop = "text";
+                    }
+                    if (dis instanceof eui.Image) {
+                        prop = "source";
+                    }
+                }
+                if (prop) {
+                    dis[prop] = value;
+                }
+            }
+        }
+    }
+    DisplayUtil.setChildProp = setChildProp;
     function removeChildByName(parent, name) {
         if (parent && name) {
             var child = parent.getChildByName(name);
@@ -108,4 +133,3 @@ var DisplayUtil;
     //     return txt;
     // }
 })(DisplayUtil || (DisplayUtil = {}));
-//# sourceMappingURL=DisplayUtil.js.map

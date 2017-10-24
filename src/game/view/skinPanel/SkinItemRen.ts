@@ -6,7 +6,8 @@ class SkinItemRen extends eui.Component {
 
     public constructor() {
         super();
-        this.skinName = SkinItemRenSkin
+        this.skinName = SkinItemRenSkin;
+        this.touchChildren = false;
     }
 
     public selected(obj:any) {

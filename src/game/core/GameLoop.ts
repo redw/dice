@@ -23,26 +23,25 @@ module GameLoop {
         let curTime = egret.getTimer();
         let offTimer = curTime - oldTimer;
         let len = timerArr.length;
-        freeIndexArr.length = 0;
         for (let i = 0; i < len; i++) {
             let timer = timerArr[i];
-            if (timer.id <= 0) {
-                release(timer);
-                timerArr[i] = null;
-                freeIndexArr.push(i);
-            } else {
-                if (timer.delay <= 0) {
-                    timer.back.call(timer.context, offTimer);
+            if (timer) {
+                if (!timer.back) {
+                    release(timer);
                 } else {
-                    timer.time += offTimer;
-                    if (timer.time > timerArr[i].delay) {
-                        timer.time -= timerArr[i].delay;
-                        timer.back.call(timer.context);
-                        if (timer.repeat >= 1) {
-                            if (timer.repeat == 1) {
-                                clearTimer(timer.id);
-                            } else {
-                                timer.repeat--;
+                    if (timer.delay <= 0) {
+                        timer.back.call(timer.context, offTimer);
+                    } else {
+                        timer.time += offTimer;
+                        if (timer.time > timerArr[i].delay) {
+                            timer.time -= timerArr[i].delay;
+                            timer.back.call(timer.context);
+                            if (timer.repeat >= 1) {
+                                if (timer.repeat == 1) {
+                                    clearTimer(timer.id);
+                                } else {
+                                    timer.repeat--;
+                                }
                             }
                         }
                     }
@@ -50,8 +49,6 @@ module GameLoop {
             }
         }
         oldTimer = curTime;
-
-        dragonBones.WorldClock.clock.advanceTime(0.025);
     }
 
     export function boot() {
@@ -70,11 +67,14 @@ module GameLoop {
 
     export function clearTimer(id:number) {
         let timer = timerMap[id];
-        release(timer);
+        timer.back = null;
     }
 
     function release(timer:Timer) {
         if (timer) {
+            let id = timer.id;
+            freeIndexArr.push(id);
+            timerArr[id] = null;
             timer.back = null;
             timer.context = null;
             timer.id = -1;
@@ -86,7 +86,7 @@ module GameLoop {
 
     export function registerTimer(back:Function, context?:any, delay = 1000, repeat = 1) {
         let timer = pool.pop();
-        let timerId = ++id;
+        let timerId = id++;
         if (!timer) {
             timer = <Timer>{};
         }

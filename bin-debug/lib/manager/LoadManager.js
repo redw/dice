@@ -61,6 +61,30 @@ var LoadManager;
     }
     LoadManager.loadGroup = loadGroup;
     /**
+     * 加载dragonBone资源
+     * @param name
+     * @param back
+     * @param context
+     * @param property
+     */
+    function loadDragonBone(name, back, context, property) {
+        var res = [];
+        if (typeof name == "string") {
+            res.push(name + "_ske_json");
+            res.push(name + "_tex_json");
+            res.push(name + "_tex_png");
+        }
+        else {
+            for (var i = 0, len = name.length; i < len; i++) {
+                res.push(name[i] + "_ske_json");
+                res.push(name[i] + "_tex_json");
+                res.push(name[i] + "_tex_png");
+            }
+        }
+        loadGroup(res, back, context, property);
+    }
+    LoadManager.loadDragonBone = loadDragonBone;
+    /**
      * 加载list
      * @param urlList
      * @param compFunc
@@ -102,4 +126,3 @@ var LoadManager;
         return path;
     }
 })(LoadManager || (LoadManager = {}));
-//# sourceMappingURL=LoadManager.js.map

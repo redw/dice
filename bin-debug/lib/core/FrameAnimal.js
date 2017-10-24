@@ -7,4 +7,3 @@ var FrameAnimal = (function () {
     return FrameAnimal;
 }());
 __reflect(FrameAnimal.prototype, "FrameAnimal");
-//# sourceMappingURL=FrameAnimal.js.map
