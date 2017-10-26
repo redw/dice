@@ -1,15 +1,17 @@
 module Net {
     let eventDisPatcher:egret.EventDispatcher;
+    let httpConnect;
+    let socketConnect;
+    let test:string;
 
     export function boot(obj:any, httpBack:Function, socketBack:Function, context:any) {
         eventDisPatcher = new egret.EventDispatcher();
-
-        let httpHost = Global.H_HOST;
-        let token = Global.TOKEN;
-        let socketHost = Global.S_HOST;
-
-        HttpConnect.boot(httpHost, token, httpBack, context);
-        SocketConnect.boot(socketHost, token, socketBack, context);
+        test = obj.test;
+        let httpHost = obj.httpHost;
+        let token = obj.socketHost;
+        let socketHost = obj.token;
+        httpConnect = new HttpConnect(httpHost, token, httpBack, context);
+        socketConnect = new SocketConnect((socketHost, token, socketBack, context));
     }
 
     /**
@@ -23,7 +25,7 @@ module Net {
         if (DEBUG) {
             console.log("%c[http]" , "color: #e5bd9c", Date.now(), ":", req);
         }
-        HttpConnect.send(req, backFun, context, method);
+        httpConnect.send(req, backFun, context, method);
     }
 
     /**
@@ -33,11 +35,15 @@ module Net {
         if (DEBUG) {
             console.log("%c[socket]" , "color: #e5bd9c", Date.now(), ":", req);
         }
-        SocketConnect.send(req);
+        httpConnect.send(req);
     }
 
-    export function sendMessage(req:any, data:any) {
-
+    export function sendMessage(req:any, data?:any, backFun?:Function, context?:any) {
+        if (test) {
+            sendTestMessage(req, backFun, context);
+        } else {
+            sendHMessage(req, data, backFun, context);
+        }
     }
 
     export function sendTestMessage(cmd:string, compFun:Function, context) {
@@ -45,19 +51,19 @@ module Net {
         RES.getResByUrl(url, compFun, context);
     }
 
-    export function dispatchCmd(cmd:string, data:any):void {
+    export function dispatch(cmd:string, data:any):void {
         eventDisPatcher.dispatchEventWith(cmd, false, data);
     }
 
-    export function hasCmdListener(cmd:string):boolean {
+    export function has(cmd:string):boolean {
         return eventDisPatcher.hasEventListener(cmd);
     }
 
-    export function addCmdListener(cmd:string, listener:Function, thisObj:any):void {
+    export function on(cmd:string, listener:Function, thisObj:any):void {
         eventDisPatcher.addEventListener(cmd, listener, thisObj);
     }
 
-    export function removeCmdListener(cmd:string, listener:Function, thisObj:any):void {
+    export function off(cmd:string, listener:Function, thisObj:any):void {
         eventDisPatcher.removeEventListener(cmd, listener, thisObj);
     }
 }

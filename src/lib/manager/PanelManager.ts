@@ -115,8 +115,8 @@ module Pop{
                 let name: string = list[i];
                 let layer: eui.Group = new eui.Group();
                 layer.name = name;
-                layer.width = __STAGE.stageWidth;
-                layer.height = __STAGE.stageHeight;
+                layer.width = STAGE.stageWidth;
+                layer.height = STAGE.stageHeight;
                 layer.touchEnabled = false;
                 layer.touchChildren = true;
                 root.addChild(layer);
@@ -233,8 +233,8 @@ module Pop{
                     this.screenBgImg = new eui.Image();
                     this.screenBgImg.source = "screen_bg_png";
                     this.screenBgImg.scale9Grid = new egret.Rectangle(60, 158, 360, 15);
-                    this.screenBgImg.width = __STAGE.stageWidth;
-                    this.screenBgImg.height = __STAGE.stageHeight;
+                    this.screenBgImg.width = STAGE.stageWidth;
+                    this.screenBgImg.height = STAGE.stageHeight;
                 }
                 layer.addChild(this.screenBgImg);
             }
@@ -307,8 +307,8 @@ module Pop{
 
         private addOpenEffect(panel: BasePanel): void {
             egret.Tween.removeTweens(panel);
-            let stageWidth: number = __STAGE.stageWidth;
-            let stageHeight: number = __STAGE.stageHeight;
+            let stageWidth: number = STAGE.stageWidth;
+            let stageHeight: number = STAGE.stageHeight;
             switch (panel.effectType) {
                 case 1:
                     panel.anchorOffsetX = panel.width / 2;
@@ -345,8 +345,8 @@ module Pop{
 
         private addCloseEffect(panel: BasePanel): void {
             egret.Tween.removeTweens(panel);
-            let stageWidth = __STAGE.stageWidth;
-            let stageHeight = __STAGE.stageHeight;
+            let stageWidth = STAGE.stageWidth;
+            let stageHeight = STAGE.stageHeight;
             let tween = null;
             switch (panel.effectType) {
                 case 1:

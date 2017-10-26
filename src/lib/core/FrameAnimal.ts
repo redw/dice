@@ -1,3 +1,0 @@
-class FrameAnimal {
-    // TODO
-}

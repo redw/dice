@@ -10,7 +10,7 @@ module SoundManager{
     var soundStatus: boolean = true;
 
     export function initialize(){
-        var stage = __STAGE;
+        var stage = STAGE;
         stage.addEventListener(egret.Event.ACTIVATE, this.onActive, this);
         stage.addEventListener(egret.Event.DEACTIVATE, this.onDeactive, this);
     }    

@@ -29,7 +29,7 @@ class HomeLand extends egret.DisplayObjectContainer {
         this.tileH = tileH;
         this.inner = inner;
 
-        this.x = __STAGE.stageWidth * 0.5;
+        this.x = STAGE.stageWidth * 0.5;
         this.y = 200;
         let count = inner + (this.road + this.build + this.des) * 2;
         this.size = count;

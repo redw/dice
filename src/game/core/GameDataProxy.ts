@@ -17,14 +17,14 @@ module GameDataProxy {
     export function doHttpRes(req:any, res:any) {
         let cmd = req.cmd;
         Util.mixin(res, GameData);
-        Net.dispatchCmd(cmd, res);
+        Net.dispatch(cmd, res);
     }
 
     function doSocketRes(res:any) {
         let cmd = res.cmd;
         let body = res;
         Util.mixin(body, GameData);
-        Net.dispatchCmd(cmd, body);
+        Net.dispatch(cmd, body);
     }
 
     function httpBack(req:any, res:any) {

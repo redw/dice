@@ -19,7 +19,7 @@ module GameLoop {
     let timerArr:Timer[];
     let freeIndexArr:number[];
 
-    function onEnterFrame() {
+    export function $onEnterFrame() {
         let curTime = egret.getTimer();
         let offTimer = curTime - oldTimer;
         let len = timerArr.length;
@@ -52,13 +52,11 @@ module GameLoop {
     }
 
     export function boot() {
-        let stage = __STAGE;
         pool = [];
         freeIndexArr = [];
         timerArr = [];
         timerMap = {};
         oldTimer = egret.getTimer();
-        stage.addEventListener(egret.Event.ENTER_FRAME, onEnterFrame, GameLoop);
     }
 
     export function registerEnterFrame(back:Function, context?:any) {

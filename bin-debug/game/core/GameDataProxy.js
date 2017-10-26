@@ -16,14 +16,14 @@ var GameDataProxy;
     function doHttpRes(req, res) {
         var cmd = req.cmd;
         Util.mixin(res, GameData);
-        Net.dispatchCmd(cmd, res);
+        Net.dispatch(cmd, res);
     }
     GameDataProxy.doHttpRes = doHttpRes;
     function doSocketRes(res) {
         var cmd = res.cmd;
         var body = res;
         Util.mixin(body, GameData);
-        Net.dispatchCmd(cmd, body);
+        Net.dispatch(cmd, body);
     }
     function httpBack(req, res) {
         if (!res) {

@@ -11,7 +11,7 @@ var GameLoop;
     var pool;
     var timerArr;
     var freeIndexArr;
-    function onEnterFrame() {
+    function $onEnterFrame() {
         var curTime = egret.getTimer();
         var offTimer = curTime - oldTimer;
         var len = timerArr.length;
@@ -45,14 +45,13 @@ var GameLoop;
         }
         oldTimer = curTime;
     }
+    GameLoop.$onEnterFrame = $onEnterFrame;
     function boot() {
-        var stage = __STAGE;
         pool = [];
         freeIndexArr = [];
         timerArr = [];
         timerMap = {};
         oldTimer = egret.getTimer();
-        stage.addEventListener(egret.Event.ENTER_FRAME, onEnterFrame, GameLoop);
     }
     GameLoop.boot = boot;
     function registerEnterFrame(back, context) {

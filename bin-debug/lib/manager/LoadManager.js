@@ -8,7 +8,6 @@ var LoadManager;
     var loadingParamList;
     var hadListener = false;
     function boot() {
-        hadListener = true;
         loadingParamList = [];
         loadWorker = new Worker(getBasePath() + "src/lib/netWorker.js");
         loadWorker.onmessage = onNetMessage;
@@ -49,10 +48,6 @@ var LoadManager;
      * @param property
      */
     function loadGroup(urlList, back, context, property) {
-        if (!hadListener) {
-            hadListener = true;
-            RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, groupLoadComplete, LoadManager);
-        }
         uid++;
         var name = "group_#_" + uid;
         loadingParamList.push(name, back, context);

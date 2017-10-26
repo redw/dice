@@ -1,40 +1,35 @@
-module SocketConnect {
-    let connecting = false;
+class SocketConnect extends egret.EventDispatcher{
+    connecting = false;
+    socket:WebSocket;
+    host = "";
+    token = "";
+    back:Function;
+    context:any;
 
-    let socket:WebSocket;
-    let host = "";
-    let port:any;
-    let backFun:Function;
-    let context:any;
-
-    export function boot($host:string, $token:string, $backFun?:Function, $context?:any) {
-        backFun = $backFun;
-        context = $context;
-        host = $host;
-        port = $token;
-
-        socket = new WebSocket(host);
-        socket.onopen = onOpen;
-        socket.onmessage = onMessage;
-        socket.onerror = onError;
+    public construct(host:string, token:string, back:Function, context:any) {
+        this.host = host;
+        this.token = token;
+        this.socket = new WebSocket(host);
+        this.socket.onopen = this.onOpen;
+        this.socket.onmessage = this.onMessage;
+        this.socket.onerror = this.onError;
     }
 
-    function onOpen(e) {
-        connecting = true;
+    onOpen(e) {
+        this.connecting = true;
         egret.log("connect socket success");
     }
 
-    function onMessage(e) {
-        if (backFun) {
-            backFun.call(context, e.data);
-        }
+    onMessage(e) {
+        this.back.call(this.context, JSON.parse(e.data));
     }
 
-    function onError(e) {
+    onError(e) {
+        this.back.call(this.context, "error");
         egret.log("connect socket error");
     }
 
-    export function send(obj:{cmd:string}) {
+    public send(obj:{cmd:string}) {
         let reqInfo:any = {_T:0};
         if (Util.isSimpleType(obj)) {
             reqInfo.cmd = obj;
@@ -43,6 +38,6 @@ module SocketConnect {
                 reqInfo[key] = obj[key];
             }
         }
-        socket.send(reqInfo);
+        this.socket.send(reqInfo);
     }
 }

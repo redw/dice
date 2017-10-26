@@ -95,7 +95,7 @@ class BonusPanel extends BasePanel
         this.tweenLight(360);
 
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        TickerUtil.register(this.onTouch, this, 700);
+        // TickerUtil.register(this.onTouch, this, 700);
     }
 
     public destory(): void
@@ -104,7 +104,7 @@ class BonusPanel extends BasePanel
         egret.Tween.removeTweens(this.groupIcon);
 
         this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        TickerUtil.unregister(this.onInterval, this);
+        // TickerUtil.unregister(this.onInterval, this);
     }
 
     private onTouch(e: egret.TouchEvent): void

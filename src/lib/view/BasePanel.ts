@@ -24,7 +24,7 @@ class BasePanel extends ExComponent {
 
     public constructor(data?:any, option?:any) {
         super(data);
-        this.effectType = Util.getPropValue(option, "effect", 1);
+        this.effectType = Util.getValue(option, "effect", 1);
         this.modal = true;
     }
 

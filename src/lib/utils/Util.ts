@@ -27,12 +27,6 @@ module Util {
         return to;
     }
 
-    /**
-     * 对象转化成数组
-     * @param obj
-     * @param out
-     * @returns {any[]}
-     */
     export function objToArr(obj:any, out?:any[]) {
         if (!out) {
             out = [];
@@ -47,26 +41,44 @@ module Util {
         return out;
     }
 
-    /**
-     * 根据对象的order属性 从小到大排序
-     * @param a
-     * @param b
-     * @returns {number}
-     */
-    export function sortByOrder(a:{order:number}, b:{order:number}) {
+    export function getValue(source:any, key:string, defaultValue?:any) {
+        if (!source || typeof source === 'number') {
+            return defaultValue;
+        } else if (source.hasOwnProperty(key)) {
+            return source[key];
+        } else if (key.indexOf('.'))
+        {
+            let keys = key.split('.');
+            let parent = source;
+            let value = defaultValue;
+            //  Use for loop here so we can break early
+            for (var i = 0; i < keys.length; i++) {
+                if (parent.hasOwnProperty(keys[i])) {
+                    //  Yes it has a key property, let's carry on down
+                    value = parent[keys[i]];
+                    parent = parent[keys[i]];
+                } else {
+                    //  Can't go any further, so reset to default
+                    value = defaultValue;
+                    break;
+                }
+            }
+            return value;
+        } else {
+            return defaultValue;
+        }
+    }
+
+    // 升序
+    export function ascendSort(a:{order:number}, b:{order:number}) {
         if (a && b) {
             return a.order - b.order;
         }
         return 0;
     }
 
-    /**
-     * 根据对象的order属性 从大到小排序
-     * @param a
-     * @param b
-     * @returns {number}
-     */
-    export function sortByOrder1(a:{order:number}, b:{order:number}) {
+    // 降序
+    export function descendSort(a:{order:number}, b:{order:number}) {
         if (a && b) {
             return b.order - a.order;
         }
@@ -86,49 +98,4 @@ module Util {
         let t = typeof (value);
         return t == "number" || t == "boolean" || t == "string";
     }
-
-    export function getPropValue(obj:any, prop:string, defV?:any) {
-        if (!obj) {
-            return defV;
-        } else {
-            if (obj.hasOwnProperty(prop)) {
-                return obj.prop;
-            } else {
-                return defV;
-            }
-        }
-    }
-
-    // export function getProperty(obj:any, prop:string) {
-    //     let parts = prop.split("."),
-    //         last = parts.pop(),
-    //         len = parts.length,
-    //         i = 1,
-    //         current = parts[0];
-    //     while (i < len && (obj == obj[current])) {
-    //         current = parts[i];
-    //         i++;
-    //     }
-    //     if (obj) {
-    //         return obj[last];
-    //     } else {
-    //         return null;
-    //     }
-    // }
-    //
-    // export function setProperty(obj:any, prop:string, value:any) {
-    //     let parts = prop.split("."),
-    //         last = parts.pop(),
-    //         len = parts.length,
-    //         i = 1,
-    //         current = parts[0];
-    //     while (i < len && (obj == obj[current])) {
-    //         current = parts[i];
-    //         i++;
-    //     }
-    //     if (obj) {
-    //         obj[last] = value;
-    //     }
-    //     return obj;
-    // }
 }

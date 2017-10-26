@@ -1,13 +1,17 @@
 var Net;
 (function (Net) {
     var eventDisPatcher;
+    var httpConnect;
+    var socketConnect;
+    var test;
     function boot(obj, httpBack, socketBack, context) {
         eventDisPatcher = new egret.EventDispatcher();
-        var httpHost = Global.H_HOST;
-        var token = Global.TOKEN;
-        var socketHost = Global.S_HOST;
-        HttpConnect.boot(httpHost, token, httpBack, context);
-        SocketConnect.boot(socketHost, token, socketBack, context);
+        test = obj.test;
+        var httpHost = obj.httpHost;
+        var token = obj.socketHost;
+        var socketHost = obj.token;
+        httpConnect = new HttpConnect(httpHost, token, httpBack, context);
+        socketConnect = new SocketConnect((socketHost, token, socketBack, context));
     }
     Net.boot = boot;
     /**
@@ -22,7 +26,7 @@ var Net;
         if (true) {
             console.log("%c[http]", "color: #e5bd9c", Date.now(), ":", req);
         }
-        HttpConnect.send(req, backFun, context, method);
+        httpConnect.send(req, backFun, context, method);
     }
     Net.sendHMessage = sendHMessage;
     /**
@@ -32,10 +36,16 @@ var Net;
         if (true) {
             console.log("%c[socket]", "color: #e5bd9c", Date.now(), ":", req);
         }
-        SocketConnect.send(req);
+        httpConnect.send(req);
     }
     Net.sendSMessage = sendSMessage;
-    function sendMessage(req, data) {
+    function sendMessage(req, data, backFun, context) {
+        if (test) {
+            sendTestMessage(req, backFun, context);
+        }
+        else {
+            sendHMessage(req, data, backFun, context);
+        }
     }
     Net.sendMessage = sendMessage;
     function sendTestMessage(cmd, compFun, context) {
@@ -43,21 +53,21 @@ var Net;
         RES.getResByUrl(url, compFun, context);
     }
     Net.sendTestMessage = sendTestMessage;
-    function dispatchCmd(cmd, data) {
+    function dispatch(cmd, data) {
         eventDisPatcher.dispatchEventWith(cmd, false, data);
     }
-    Net.dispatchCmd = dispatchCmd;
-    function hasCmdListener(cmd) {
+    Net.dispatch = dispatch;
+    function has(cmd) {
         return eventDisPatcher.hasEventListener(cmd);
     }
-    Net.hasCmdListener = hasCmdListener;
-    function addCmdListener(cmd, listener, thisObj) {
+    Net.has = has;
+    function on(cmd, listener, thisObj) {
         eventDisPatcher.addEventListener(cmd, listener, thisObj);
     }
-    Net.addCmdListener = addCmdListener;
-    function removeCmdListener(cmd, listener, thisObj) {
+    Net.on = on;
+    function off(cmd, listener, thisObj) {
         eventDisPatcher.removeEventListener(cmd, listener, thisObj);
     }
-    Net.removeCmdListener = removeCmdListener;
+    Net.off = off;
 })(Net || (Net = {}));
 //# sourceMappingURL=Net.js.map

@@ -134,8 +134,8 @@ var Pop;
                 var name_1 = list[i];
                 var layer = new eui.Group();
                 layer.name = name_1;
-                layer.width = __STAGE.stageWidth;
-                layer.height = __STAGE.stageHeight;
+                layer.width = STAGE.stageWidth;
+                layer.height = STAGE.stageHeight;
                 layer.touchEnabled = false;
                 layer.touchChildren = true;
                 root.addChild(layer);
@@ -246,8 +246,8 @@ var Pop;
                     this.screenBgImg = new eui.Image();
                     this.screenBgImg.source = "screen_bg_png";
                     this.screenBgImg.scale9Grid = new egret.Rectangle(60, 158, 360, 15);
-                    this.screenBgImg.width = __STAGE.stageWidth;
-                    this.screenBgImg.height = __STAGE.stageHeight;
+                    this.screenBgImg.width = STAGE.stageWidth;
+                    this.screenBgImg.height = STAGE.stageHeight;
                 }
                 layer.addChild(this.screenBgImg);
             }
@@ -316,8 +316,8 @@ var Pop;
         };
         PanelManager.prototype.addOpenEffect = function (panel) {
             egret.Tween.removeTweens(panel);
-            var stageWidth = __STAGE.stageWidth;
-            var stageHeight = __STAGE.stageHeight;
+            var stageWidth = STAGE.stageWidth;
+            var stageHeight = STAGE.stageHeight;
             switch (panel.effectType) {
                 case 1:
                     panel.anchorOffsetX = panel.width / 2;
@@ -349,8 +349,8 @@ var Pop;
         };
         PanelManager.prototype.addCloseEffect = function (panel) {
             egret.Tween.removeTweens(panel);
-            var stageWidth = __STAGE.stageWidth;
-            var stageHeight = __STAGE.stageHeight;
+            var stageWidth = STAGE.stageWidth;
+            var stageHeight = STAGE.stageHeight;
             var tween = null;
             switch (panel.effectType) {
                 case 1:

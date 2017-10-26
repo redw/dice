@@ -90,13 +90,13 @@ var BonusPanel = (function (_super) {
         // }
         this.tweenLight(360);
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        TickerUtil.register(this.onTouch, this, 700);
+        // TickerUtil.register(this.onTouch, this, 700);
     };
     BonusPanel.prototype.destory = function () {
         egret.Tween.removeTweens(this.imgLight);
         egret.Tween.removeTweens(this.groupIcon);
         this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        TickerUtil.unregister(this.onInterval, this);
+        // TickerUtil.unregister(this.onInterval, this);
     };
     BonusPanel.prototype.onTouch = function (e) {
         if (this.isClose) {

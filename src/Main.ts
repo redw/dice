@@ -1,5 +1,3 @@
-let __STAGE:egret.Stage;
-
 /**
  * 游戏入口
  */
@@ -17,35 +15,14 @@ class Main extends egret.DisplayObjectContainer {
         console.log('用最好的产品回报给大家!');
 
         if (this.stage) {
-            this.onAddToStage();
+            this.addToStage();
         } else {
-            this.once(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
+            this.once(egret.Event.ADDED_TO_STAGE, this.addToStage, this);
         }
     }
 
-    private onAddToStage() {
-        __STAGE = this.stage;
-        let stage = this.stage;
-        let assetAdapter = new AssetAdapter();
-        stage.registerImplementation("eui.IAssetAdapter", assetAdapter);
-        stage.scaleMode = egret.StageScaleMode.SHOW_ALL;
-
-        LoadManager.boot();
-        MainLoad.start(this.enterGame, this);
-    }
-
-    private enterGame() {
-        let mainView = new MainView();
-        this.addChild(mainView);
-
-        Pop.boot(this);
-
-        GameLoop.boot();
-        GameLoop.registerEnterFrame(this.onEnterFrame, this);
-    }
-
-    private onEnterFrame() {
-        dragonBones.WorldClock.clock.advanceTime(0.025);
+    private addToStage() {
+        let engine = new Engine(this, "MainView");
     }
 }
 

@@ -32,7 +32,7 @@ var BasePanel = (function (_super) {
         _this.existMode = 0;
         /** 打开特效 0:没有动画 1:中间弹出 2:上进 3:下进 4:左进 5:右进 */
         _this.effectType = 0;
-        _this.effectType = Util.getPropValue(option, "effect", 1);
+        _this.effectType = Util.getValue(option, "effect", 1);
         _this.modal = true;
         return _this;
     }

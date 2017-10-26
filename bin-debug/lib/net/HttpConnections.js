@@ -1,38 +1,33 @@
-var HttpConnect;
-(function (HttpConnect) {
-    var MEAN_WHILE = 2;
-    var host = "";
-    var token = "";
-    var requestCount;
-    var reqList;
-    var stateMap;
-    var errorArr;
-    var freeLoaderList;
-    var backFun;
-    var context;
-    function boot($host, $token, $backFun, $context) {
-        backFun = $backFun;
-        context = $context;
-        host = $host;
-        token = $token;
-        requestCount = 0;
-        reqList = [];
-        stateMap = {};
-        errorArr = [];
-        freeLoaderList = [];
+var __reflect = (this && this.__reflect) || function (p, c, t) {
+    p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
+};
+var HttpConnect = (function () {
+    function HttpConnect(host, token, back, context) {
+        this.MEAN_WHILE = 2;
+        this.host = "";
+        this.token = "";
+        this.requestCount = 0;
+        this.host = host;
+        this.token = token;
+        this.requestCount = 0;
+        this.reqList = [];
+        this.stateMap = {};
+        this.errorArr = [];
+        this.freeLoaderList = [];
+        this.freeReqList = [];
+        this.back = back;
+        this.context = context;
     }
-    HttpConnect.boot = boot;
-    /**
-     * ����������������Ϣ
-     * @param body      ��Ϣ��
-     * @param backFun   �ص�����
-     * @param context   �ص�����������
-     * @param method    post/get
-     */
-    function send(body, backFun, context, method) {
+    HttpConnect.prototype.send = function (body, backFun, context, method) {
         if (method === void 0) { method = "get"; }
-        var reqInfo = {};
-        if (Util.isSimpleType(body)) {
+        var reqInfo = null;
+        if (this.freeReqList.length) {
+            reqInfo = this.freeReqList.pop();
+        }
+        else {
+            reqInfo = {};
+        }
+        if (typeof body == "string") {
             reqInfo.body = { cmd: body };
         }
         else {
@@ -42,36 +37,33 @@ var HttpConnect;
         reqInfo.method = method;
         reqInfo.backFun = backFun;
         reqInfo.context = context;
-        reqList.push(reqInfo);
-        next();
-    }
-    HttpConnect.send = send;
-    function get(body, backFun, context) {
+        this.reqList.push(reqInfo);
+        this.next();
+    };
+    HttpConnect.prototype.get = function (body, backFun, context) {
         this.send(body, backFun, context);
-    }
-    HttpConnect.get = get;
-    function post(body, backFun, context) {
+    };
+    HttpConnect.prototype.post = function (body, backFun, context) {
         this.send(body, backFun, context, "post");
-    }
-    HttpConnect.post = post;
-    function next() {
-        if (reqList.length > 0 && requestCount < MEAN_WHILE) {
-            requestCount++;
-            var reqInfo = reqList.shift();
-            var request = getRequest(reqInfo);
-            var loader = getLoader();
-            loader["reqInfo"] = reqInfo;
-            loader.addEventListener(egret.Event.COMPLETE, onComplete, Net);
-            loader.addEventListener(egret.IOErrorEvent.IO_ERROR, onError, Net);
+    };
+    HttpConnect.prototype.next = function () {
+        if (this.reqList.length > 0 && this.requestCount < this.MEAN_WHILE) {
+            this.requestCount++;
+            var reqInfo = this.reqList.shift();
+            var request = this.getRequest(reqInfo);
+            var loader = this.getLoader();
+            loader["__reqInfo"] = reqInfo;
+            loader.addEventListener(egret.Event.COMPLETE, this.onComplete, this);
+            loader.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onError, this);
             loader.load(request);
         }
-    }
-    function getRequest(req) {
+    };
+    HttpConnect.prototype.getRequest = function (req) {
         var args = req.body;
         var request;
-        var url = host + "/" + "game" + "?";
+        var url = this.host + "/" + "game" + "?";
         var isGet = true;
-        var keyValue = "token=" + token;
+        var keyValue = "token=" + this.token;
         for (var key in args) {
             if (key == "method") {
                 isGet = args[key] != "post";
@@ -90,48 +82,48 @@ var HttpConnect;
             request.data = new egret.URLVariables(keyValue);
         }
         return request;
-    }
-    function getLoader() {
-        var loader = freeLoaderList.pop();
+    };
+    HttpConnect.prototype.getLoader = function () {
+        var loader = this.freeLoaderList.pop();
         if (!loader) {
             loader = new egret.URLLoader();
             loader.dataFormat = egret.URLLoaderDataFormat.TEXT;
         }
         return loader;
-    }
-    function onComplete(e) {
+    };
+    HttpConnect.prototype.onComplete = function (e) {
         var loader = e.target;
-        execute(loader);
-    }
-    function onError(e) {
+        this.execute(loader);
+    };
+    HttpConnect.prototype.onError = function (e) {
         var loader = e.target;
-        execute(loader);
-    }
-    function execute(loader) {
-        var reqInfo = loader["reqInfo"];
+        this.execute(loader);
+    };
+    HttpConnect.prototype.execute = function (loader) {
+        var reqInfo = loader["__reqInfo"];
         var end = false;
         var req = reqInfo.body;
         var cmd = req.cmd;
         var res = JSON.parse(loader.data) || { error: -1 };
         var error = +res.error;
         if (error) {
-            if (stateMap[cmd] === undefined) {
-                stateMap[cmd] = 1;
+            if (this.stateMap[cmd] === undefined) {
+                this.stateMap[cmd] = 1;
             }
             else {
-                stateMap[cmd] = stateMap[cmd] + 1;
-                if (stateMap[cmd] > 3) {
-                    errorArr.push(cmd);
+                this.stateMap[cmd] = this.stateMap[cmd] + 1;
+                if (this.stateMap[cmd] > 3) {
+                    this.errorArr.push(cmd);
                 }
-                if (errorArr.length > 1) {
-                    backFun.call(context, req, null);
+                if (this.errorArr.length > 1) {
+                    this.back.call(this.context);
                 }
             }
-            if (stateMap[cmd] >= 3) {
+            if (this.stateMap[cmd] >= 3) {
                 end = true;
             }
             else {
-                var request = getRequest(req);
+                var request = this.getRequest(req);
                 loader.load(request);
             }
         }
@@ -142,16 +134,23 @@ var HttpConnect;
             if (reqInfo.backFun && reqInfo.context) {
                 reqInfo.backFun.call(reqInfo.context, req, res);
             }
-            stateMap[cmd] = 0;
-            loader.removeEventListener(egret.Event.COMPLETE, onComplete, HttpConnect);
-            loader.removeEventListener(egret.IOErrorEvent.IO_ERROR, onError, HttpConnect);
-            loader["reqInfo"] = null;
-            freeLoaderList.push(loader);
-            ArrayUtil.removeItem(errorArr, cmd);
-            backFun.call(context, req, res);
-            requestCount -= 1;
-            next();
+            this.stateMap[cmd] = 0;
+            loader["__reqInfo"] = null;
+            loader.removeEventListener(egret.Event.COMPLETE, this.onComplete, this);
+            loader.removeEventListener(egret.IOErrorEvent.IO_ERROR, this.onError, this);
+            reqInfo.body = null;
+            reqInfo.now = 0;
+            reqInfo.method = null;
+            reqInfo.backFun = null;
+            reqInfo.conetxt = null;
+            this.freeReqList.push(reqInfo);
+            this.freeLoaderList.push(loader);
+            ArrayUtil.removeItem(this.errorArr, cmd);
+            this.requestCount -= 1;
+            this.next();
         }
-    }
-})(HttpConnect || (HttpConnect = {}));
+    };
+    return HttpConnect;
+}());
+__reflect(HttpConnect.prototype, "HttpConnect");
 //# sourceMappingURL=HttpConnections.js.map
