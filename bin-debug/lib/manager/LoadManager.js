@@ -9,7 +9,7 @@ var LoadManager;
     var hadListener = false;
     function boot() {
         loadingParamList = [];
-        loadWorker = new Worker(getBasePath() + "src/lib/netWorker.js");
+        loadWorker = new Worker(getBasePath() + "resource/web/netWorker.js");
         loadWorker.onmessage = onNetMessage;
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, groupLoadComplete, LoadManager);
     }
@@ -121,4 +121,3 @@ var LoadManager;
         return path;
     }
 })(LoadManager || (LoadManager = {}));
-//# sourceMappingURL=LoadManager.js.map

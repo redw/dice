@@ -6,6 +6,7 @@ class Engine {
     stage:egret.Stage;
     progress:number;
     readyCount:number;
+    costTime = 0;
 
     constructor(dis:egret.DisplayObject, mainView:any) {
         this.stage = dis.stage;
@@ -83,6 +84,8 @@ class Engine {
                 this.onLoadSkinComplete();
             });
         } else {
+            this.costTime = egret.getTimer();
+            console.time("theme");
             let themeURL = "resource/default.thm.json";
             let theme = new eui.Theme(themeURL, STAGE);
             theme.once(eui.UIEvent.COMPLETE, this.onLoadSkinComplete, this);
@@ -109,7 +112,8 @@ class Engine {
     }
 
     onLoadSkinComplete() {
-        egret.log("load skin complete");
+        console.timeEnd("theme");
+        egret.log("load skin complete" + (egret.getTimer() - this.costTime));
         this.addReadyCount();
     }
 

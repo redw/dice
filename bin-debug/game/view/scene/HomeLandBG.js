@@ -114,4 +114,3 @@ var HomeLandBG = (function (_super) {
     return HomeLandBG;
 }(egret.DisplayObjectContainer));
 __reflect(HomeLandBG.prototype, "HomeLandBG");
-//# sourceMappingURL=HomeLandBG.js.map

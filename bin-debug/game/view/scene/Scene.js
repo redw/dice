@@ -76,4 +76,3 @@ var Scene = (function (_super) {
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
-//# sourceMappingURL=Scene.js.map

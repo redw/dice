@@ -1,4 +1,4 @@
-class SocketConnect extends egret.EventDispatcher{
+class SocketConnect{
     connecting = false;
     socket:WebSocket;
     host = "";
@@ -6,9 +6,11 @@ class SocketConnect extends egret.EventDispatcher{
     back:Function;
     context:any;
 
-    public construct(host:string, token:string, back:Function, context:any) {
+    public constructor(host:string, token:string, back:Function, context:any) {
         this.host = host;
         this.token = token;
+        this.back = back;
+        this.context = context;
         this.socket = new WebSocket(host);
         this.socket.onopen = this.onOpen;
         this.socket.onmessage = this.onMessage;

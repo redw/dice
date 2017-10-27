@@ -70,4 +70,3 @@ var FriendInviteRenderer = (function (_super) {
     return FriendInviteRenderer;
 }(eui.ItemRenderer));
 __reflect(FriendInviteRenderer.prototype, "FriendInviteRenderer");
-//# sourceMappingURL=FriendInviteItem.js.map

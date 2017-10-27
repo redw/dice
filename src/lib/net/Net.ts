@@ -7,11 +7,11 @@ module Net {
     export function boot(obj:any, httpBack:Function, socketBack:Function, context:any) {
         eventDisPatcher = new egret.EventDispatcher();
         test = obj.test;
-        let httpHost = obj.httpHost;
-        let token = obj.socketHost;
-        let socketHost = obj.token;
+        let httpHost = obj.h_host;
+        let socketHost = obj.s_host;
+        let token = obj.token;
         httpConnect = new HttpConnect(httpHost, token, httpBack, context);
-        socketConnect = new SocketConnect((socketHost, token, socketBack, context));
+        socketConnect = new SocketConnect(socketHost, token, socketBack, context);
     }
 
     /**
@@ -42,7 +42,13 @@ module Net {
         if (test) {
             sendTestMessage(req, backFun, context);
         } else {
-            sendHMessage(req, data, backFun, context);
+            let info:any = {};
+            if (typeof req == "string") {
+                info.cmd = req;
+            } else {
+                Util.mixin(data, info);
+            }
+            sendHMessage(info, backFun, context);
         }
     }
 

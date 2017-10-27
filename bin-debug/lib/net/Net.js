@@ -7,11 +7,11 @@ var Net;
     function boot(obj, httpBack, socketBack, context) {
         eventDisPatcher = new egret.EventDispatcher();
         test = obj.test;
-        var httpHost = obj.httpHost;
-        var token = obj.socketHost;
-        var socketHost = obj.token;
+        var httpHost = obj.h_host;
+        var socketHost = obj.s_host;
+        var token = obj.token;
         httpConnect = new HttpConnect(httpHost, token, httpBack, context);
-        socketConnect = new SocketConnect((socketHost, token, socketBack, context));
+        socketConnect = new SocketConnect(socketHost, token, socketBack, context);
     }
     Net.boot = boot;
     /**
@@ -44,7 +44,14 @@ var Net;
             sendTestMessage(req, backFun, context);
         }
         else {
-            sendHMessage(req, data, backFun, context);
+            var info = {};
+            if (typeof req == "string") {
+                info.cmd = req;
+            }
+            else {
+                Util.mixin(data, info);
+            }
+            sendHMessage(info, backFun, context);
         }
     }
     Net.sendMessage = sendMessage;
@@ -70,4 +77,3 @@ var Net;
     }
     Net.off = off;
 })(Net || (Net = {}));
-//# sourceMappingURL=Net.js.map

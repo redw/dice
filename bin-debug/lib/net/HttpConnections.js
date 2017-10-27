@@ -153,4 +153,3 @@ var HttpConnect = (function () {
     return HttpConnect;
 }());
 __reflect(HttpConnect.prototype, "HttpConnect");
-//# sourceMappingURL=HttpConnections.js.map

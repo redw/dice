@@ -1,0 +1,2849 @@
+{
+  "guest": 0,
+  "uid": 327759754,
+  "serverTime": 1505455436,
+  "friendObj": {
+    "friendList": {},
+    "giftMsg": {},
+    "newMsg": {},
+    "friendCoin": 0,
+    "friendTimes": 0,
+    "getGiftTimes": 0
+  },
+  "offlineCoin": 0,
+  "offlineTime": 3680,
+  "todayEnter": 0,
+  "makeMoney": {
+    "1": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "2": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "3": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "4": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "5": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "6": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "7": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "8": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "9": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "10": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "11": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "12": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "13": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "14": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "15": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "16": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "17": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "18": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "19": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "20": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "21": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "22": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "23": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "24": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "25": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "26": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "27": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "28": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "29": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "30": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "31": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "32": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "33": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "34": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "35": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "36": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "37": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "38": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "39": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    },
+    "40": {
+      "lv": 0,
+      "auto": 0,
+      "lastMoneyTime": 0
+    }
+  },
+  "mineOutputAry": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "nickname": "",
+  "headimgurl": "2_0",
+  "type": 0,
+  "openid": "",
+  "isfocus": 1,
+  "guideBit": "",
+  "setup": "",
+  "curArea": 66,
+  "gold": "6.675122714908981e6",
+  "diamond": 0,
+  "historyArea": 67,
+  "rechargeFlag": 0,
+  "pill": 0,
+  "rmbGet": [],
+  "vipObj": {
+    "monthVIP": 0,
+    "monthVIPTime": 0,
+    "monthFlag": 0,
+    "foreverVIP": 0,
+    "foreverFlag": 0,
+    "fund": 0,
+    "fundBit": 0
+  },
+  "shareObj": {
+    "lastShareTime": 0,
+    "dayShareCount": 0,
+    "shareCount": 0,
+    "todayFlag": 0,
+    "shareBit": "",
+    "share1st": 1
+  },
+  "inviteObj": {
+    "inviteBit": "",
+    "inviteCount": 0,
+    "newGift": 0,
+    "rmbMail": 0,
+    "newInvBit": "",
+    "newInvNum": 0,
+    "newInvRmb": 0
+  },
+  "dailyObj": {
+    "buyMoneyTimes": 0,
+    "todayTimes": 0,
+    "boxNum": 0,
+    "freeVitBit": "",
+    "dailyRMB": "",
+    "rmbAry": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "pointReward": 0
+  },
+  "heroList": {
+    "101": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "102": {
+      "lv": 36,
+      "enhanceLv": 0,
+      "star": 1,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 3,
+      "beyond": 0,
+      "skin": 0
+    },
+    "103": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "104": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "105": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "106": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "107": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "108": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "109": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "110": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "111": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "112": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "113": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "114": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "115": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "116": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "117": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "118": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "119": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "120": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "121": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "122": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "123": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "124": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "125": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "126": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 1,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "127": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "128": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "129": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "130": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "131": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "132": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "133": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "134": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 1,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "135": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "136": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "137": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "138": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "139": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 1,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "140": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    },
+    "141": {
+      "lv": 0,
+      "enhanceLv": 0,
+      "star": 0,
+      "starPiece": 0,
+      "evolution": 0,
+      "skill": 0,
+      "beyond": 0,
+      "skin": 0
+    }
+  },
+  "battleObj": {
+    "myPos": [
+      0,
+      0,
+      0,
+      0,
+      102,
+      0,
+      0,
+      0,
+      0
+    ],
+    "nextSyncTime": 1505451734,
+    "itemList": {
+      "4": {
+        "lastTime": 0,
+        "times": 0
+      },
+      "5": {
+        "lastTime": 1505439689,
+        "times": 1
+      },
+      "6": {
+        "lastTime": 0,
+        "times": 0
+      },
+      "7": {
+        "lastTime": 0,
+        "times": 0
+      },
+      "8": {
+        "lastTime": 0,
+        "times": 0
+      }
+    },
+    "wheelTimes": 1,
+    "gotWheel": 0,
+    "lastOutTime": 14
+  },
+  "relationship": {
+    "1": {
+      "lv": 0
+    },
+    "2": {
+      "lv": 0
+    },
+    "3": {
+      "lv": 0
+    },
+    "4": {
+      "lv": 0
+    },
+    "5": {
+      "lv": 0
+    },
+    "6": {
+      "lv": 0
+    },
+    "7": {
+      "lv": 0
+    },
+    "8": {
+      "lv": 0
+    },
+    "9": {
+      "lv": 0
+    },
+    "10": {
+      "lv": 0
+    },
+    "11": {
+      "lv": 0
+    },
+    "12": {
+      "lv": 0
+    },
+    "13": {
+      "lv": 0
+    },
+    "14": {
+      "lv": 0
+    },
+    "15": {
+      "lv": 0
+    },
+    "16": {
+      "lv": 0
+    },
+    "17": {
+      "lv": 0
+    },
+    "18": {
+      "lv": 0
+    },
+    "19": {
+      "lv": 0
+    },
+    "20": {
+      "lv": 0
+    },
+    "21": {
+      "lv": 0
+    },
+    "22": {
+      "lv": 0
+    },
+    "23": {
+      "lv": 0
+    },
+    "24": {
+      "lv": 0
+    },
+    "25": {
+      "lv": 0
+    },
+    "26": {
+      "lv": 0
+    },
+    "27": {
+      "lv": 0
+    },
+    "28": {
+      "lv": 0
+    },
+    "29": {
+      "lv": 0
+    },
+    "30": {
+      "lv": 0
+    },
+    "31": {
+      "lv": 0
+    },
+    "32": {
+      "lv": 0
+    },
+    "33": {
+      "lv": 0
+    },
+    "34": {
+      "lv": 0
+    },
+    "35": {
+      "lv": 0
+    },
+    "36": {
+      "lv": 0
+    },
+    "37": {
+      "lv": 0
+    },
+    "38": {
+      "lv": 0
+    },
+    "39": {
+      "lv": 0
+    },
+    "40": {
+      "lv": 0
+    },
+    "41": {
+      "lv": 0
+    },
+    "42": {
+      "lv": 0
+    },
+    "43": {
+      "lv": 0
+    },
+    "44": {
+      "lv": 0
+    },
+    "45": {
+      "lv": 0
+    },
+    "46": {
+      "lv": 0
+    },
+    "47": {
+      "lv": 0
+    },
+    "48": {
+      "lv": 0
+    },
+    "49": {
+      "lv": 0
+    },
+    "50": {
+      "lv": 0
+    },
+    "51": {
+      "lv": 0
+    },
+    "52": {
+      "lv": 0
+    },
+    "53": {
+      "lv": 0
+    },
+    "54": {
+      "lv": 0
+    },
+    "55": {
+      "lv": 0
+    },
+    "56": {
+      "lv": 0
+    },
+    "57": {
+      "lv": 0
+    },
+    "58": {
+      "lv": 0
+    },
+    "59": {
+      "lv": 0
+    },
+    "60": {
+      "lv": 0
+    },
+    "61": {
+      "lv": 0
+    },
+    "62": {
+      "lv": 0
+    },
+    "63": {
+      "lv": 0
+    },
+    "64": {
+      "lv": 0
+    },
+    "65": {
+      "lv": 0
+    },
+    "66": {
+      "lv": 0
+    },
+    "67": {
+      "lv": 0
+    },
+    "68": {
+      "lv": 0
+    },
+    "69": {
+      "lv": 0
+    },
+    "70": {
+      "lv": 0
+    },
+    "71": {
+      "lv": 0
+    },
+    "72": {
+      "lv": 0
+    },
+    "73": {
+      "lv": 0
+    },
+    "74": {
+      "lv": 0
+    },
+    "75": {
+      "lv": 0
+    },
+    "76": {
+      "lv": 0
+    },
+    "77": {
+      "lv": 0
+    },
+    "78": {
+      "lv": 0
+    },
+    "79": {
+      "lv": 0
+    },
+    "80": {
+      "lv": 0
+    },
+    "81": {
+      "lv": 0
+    },
+    "82": {
+      "lv": 0
+    },
+    "83": {
+      "lv": 0
+    },
+    "84": {
+      "lv": 0
+    },
+    "85": {
+      "lv": 0
+    },
+    "86": {
+      "lv": 0
+    },
+    "87": {
+      "lv": 0
+    },
+    "88": {
+      "lv": 0
+    },
+    "89": {
+      "lv": 0
+    },
+    "90": {
+      "lv": 0
+    },
+    "91": {
+      "lv": 0
+    },
+    "92": {
+      "lv": 0
+    },
+    "93": {
+      "lv": 0
+    },
+    "94": {
+      "lv": 0
+    },
+    "95": {
+      "lv": 0
+    },
+    "96": {
+      "lv": 0
+    },
+    "97": {
+      "lv": 0
+    },
+    "98": {
+      "lv": 0
+    },
+    "99": {
+      "lv": 0
+    },
+    "100": {
+      "lv": 0
+    },
+    "101": {
+      "lv": 0
+    },
+    "102": {
+      "lv": 0
+    },
+    "103": {
+      "lv": 0
+    },
+    "104": {
+      "lv": 0
+    },
+    "105": {
+      "lv": 0
+    },
+    "106": {
+      "lv": 0
+    },
+    "107": {
+      "lv": 0
+    },
+    "108": {
+      "lv": 0
+    },
+    "109": {
+      "lv": 0
+    },
+    "110": {
+      "lv": 0
+    },
+    "111": {
+      "lv": 0
+    },
+    "112": {
+      "lv": 0
+    },
+    "113": {
+      "lv": 0
+    },
+    "114": {
+      "lv": 0
+    },
+    "115": {
+      "lv": 0
+    },
+    "116": {
+      "lv": 0
+    },
+    "117": {
+      "lv": 0
+    },
+    "118": {
+      "lv": 0
+    },
+    "119": {
+      "lv": 0
+    },
+    "120": {
+      "lv": 0
+    },
+    "121": {
+      "lv": 0
+    },
+    "122": {
+      "lv": 0
+    },
+    "123": {
+      "lv": 0
+    },
+    "124": {
+      "lv": 0
+    },
+    "125": {
+      "lv": 0
+    },
+    "126": {
+      "lv": 0
+    },
+    "127": {
+      "lv": 0
+    },
+    "128": {
+      "lv": 0
+    },
+    "129": {
+      "lv": 0
+    },
+    "130": {
+      "lv": 0
+    },
+    "131": {
+      "lv": 0
+    },
+    "132": {
+      "lv": 0
+    },
+    "133": {
+      "lv": 0
+    },
+    "134": {
+      "lv": 0
+    },
+    "135": {
+      "lv": 0
+    },
+    "136": {
+      "lv": 0
+    },
+    "137": {
+      "lv": 0
+    },
+    "138": {
+      "lv": 0
+    },
+    "139": {
+      "lv": 0
+    },
+    "140": {
+      "lv": 0
+    },
+    "141": {
+      "lv": 0
+    },
+    "142": {
+      "lv": 0
+    },
+    "143": {
+      "lv": 0
+    },
+    "144": {
+      "lv": 0
+    },
+    "145": {
+      "lv": 0
+    },
+    "146": {
+      "lv": 0
+    }
+  },
+  "drawObj": {
+    "drawTimes": 0,
+    "lastFreeTime": 0,
+    "ticket": 0,
+    "diaDrawTimes": 0,
+    "soulCoin": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "drawCoin": 0
+  },
+  "weaponObj": {
+    "maxNum": 4,
+    "buyNum": 0,
+    "weaponCoin": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "weaponList": {},
+    "nowRank": 0,
+    "weaponShop": [
+      {
+        "id": 1,
+        "state": 0
+      },
+      {
+        "id": 2,
+        "state": 0
+      },
+      {
+        "id": 3,
+        "state": 0
+      },
+      {
+        "id": 4,
+        "state": 0
+      }
+    ],
+    "weaponShopResetLastTime": 0,
+    "weaponShopTodayTimes": 0
+  },
+  "monsterObj": {
+    "boxList": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0
+    },
+    "skinList": {
+      "1011": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1021": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1031": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1041": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1051": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1061": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1071": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1091": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1111": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1141": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1151": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1161": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1181": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1191": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1201": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1211": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1221": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1231": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1251": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1261": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1271": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1281": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1291": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1301": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1302": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1311": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1321": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1331": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1341": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1342": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1351": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1371": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1372": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1381": {
+        "lv": 0,
+        "piece": 0
+      },
+      "1391": {
+        "lv": 0,
+        "piece": 0
+      }
+    }
+  },
+  "dungeonObj": {
+    "dungeonList": {
+      "1": {
+        "dungeonPos": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dungeonId": 0
+      },
+      "2": {
+        "dungeonPos": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dungeonId": 0
+      },
+      "3": {
+        "dungeonPos": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dungeonId": 0
+      },
+      "4": {
+        "dungeonPos": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dungeonId": 0
+      },
+      "5": {
+        "dungeonPos": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dungeonId": 0
+      }
+    },
+    "buyTimes": 0,
+    "maxTimes": 4,
+    "freeTimes": 4,
+    "lastRecoverTime": -1,
+    "lastFightTime": 0
+  },
+  "signObj": {
+    "todayFlag": 0,
+    "lastSignTime": 0,
+    "signDays": 0,
+    "signTotalDays": 0
+  },
+  "circleObj": {
+    "medal": 0,
+    "maxTimes": 3,
+    "nowTimes": 3,
+    "circleTimes": 0,
+    "lastCircleTimes": -1,
+    "lastCircleArea": 0,
+    "todayTimes": 0,
+    "egg": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "eggWheel": 0
+  },
+  "sevenDay": {
+    "sevenDayBit": "",
+    "sevenDayBegTime": 1505377194,
+    "sevenBuyBit": "",
+    "rmbDays": 0
+  },
+  "taskObj": {
+    "invite": 0,
+    "rmb": 0,
+    "moneyUp": 0,
+    "moneyTree": 0,
+    "heroUp": 0,
+    "enhance": 0,
+    "drawHero": 0,
+    "area": 44,
+    "monster": 0,
+    "dungeon": 0,
+    "circle": 0,
+    "sendVit": 0,
+    "event": 1,
+    "pvpNum": 0,
+    "taskBit": 0
+  },
+  "missionObj": {
+    "group": 0,
+    "missionBit": "",
+    "id": 4,
+    "num": 67,
+    "isfinish": 0
+  },
+  "achievementObj": {
+    "area": 67,
+    "box": 1,
+    "circle": 0,
+    "drawHero": 0,
+    "heroNum": 1,
+    "enhance": 0,
+    "star": 0,
+    "relationNum": 0,
+    "monsterNum": 0,
+    "monsterUp": 0,
+    "weaponRank": 0,
+    "weaponNum": 0,
+    "moneyNum": 0,
+    "pvpWinNum": 0,
+    "pvpContinueWin": 0,
+    "achieveBit": ""
+  },
+  "pvpShopObj": {
+    "pvpShop": [
+      {
+        "id": 101,
+        "state": 0
+      },
+      {
+        "id": 201,
+        "state": 0
+      },
+      {
+        "id": 301,
+        "state": 0
+      },
+      {
+        "id": 401,
+        "state": 0
+      }
+    ],
+    "resetLastTime": 0,
+    "todayTimes": 0,
+    "pvpCoin": 0
+  },
+  "shopObj": {
+    "1": {
+      "todayTimes": 0
+    },
+    "2": {
+      "todayTimes": 0
+    },
+    "3": {
+      "todayTimes": 0
+    },
+    "4": {
+      "todayTimes": 0
+    },
+    "5": {
+      "todayTimes": 0
+    },
+    "6": {
+      "todayTimes": 0
+    },
+    "7": {
+      "todayTimes": 0
+    },
+    "8": {
+      "todayTimes": 0
+    },
+    "9": {
+      "todayTimes": 0
+    },
+    "10": {
+      "todayTimes": 0
+    },
+    "11": {
+      "todayTimes": 0
+    },
+    "12": {
+      "todayTimes": 0
+    },
+    "13": {
+      "todayTimes": 0
+    },
+    "19": {
+      "todayTimes": 0
+    },
+    "20": {
+      "todayTimes": 0
+    },
+    "21": {
+      "todayTimes": 0
+    },
+    "22": {
+      "todayTimes": 0
+    },
+    "23": {
+      "todayTimes": 0
+    },
+    "24": {
+      "todayTimes": 0
+    },
+    "25": {
+      "todayTimes": 0
+    }
+  },
+  "home": {
+    "version": 1,
+    "ore": 0,
+    "building": {
+      "1": {
+        "lv": 0
+      },
+      "2": {
+        "lv": 0
+      },
+      "3": {
+        "lv": 0
+      }
+    },
+    "mine": {
+      "1": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      },
+      "2": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      },
+      "3": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      },
+      "4": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      },
+      "5": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      },
+      "6": {
+        "pos": [],
+        "hero": {},
+        "outputPerSec": 0,
+        "lastOutputTime": 0,
+        "maxOutput": 12000,
+        "nowOutput": 0,
+        "lv": 1
+      }
+    }
+  },
+  "activityObj": {
+    "101": {
+      "id": 0,
+      "todayCollectNum": 0
+    },
+    "102": {
+      "id": 86,
+      "rmbAct": 0,
+      "rmbActBit": ""
+    },
+    "103": {
+      "id": 0
+    },
+    "104": {
+      "id": 88,
+      "pos": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "luckyCoin": 5
+    },
+    "105": {
+      "id": 0
+    },
+    "106": {
+      "id": 0
+    },
+    "107": {
+      "id": 0
+    },
+    "108": {
+      "id": 0
+    },
+    "109": {
+      "id": 0,
+      "point": 0
+    },
+    "110": {
+      "id": 87,
+      "usedCoin": 0,
+      "inviteNum": 0
+    },
+    "111": {
+      "id": 89,
+      "buyFlag": [
+        0,
+        0,
+        0
+      ],
+      "todayFlag": [
+        0,
+        0,
+        0
+      ],
+      "timesAry": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "newObj": {
+    "hallows": {
+      "1": {
+        "lv": 0,
+        "piece": 0
+      },
+      "2": {
+        "lv": 0,
+        "piece": 0
+      },
+      "3": {
+        "lv": 0,
+        "piece": 0
+      },
+      "4": {
+        "lv": 0,
+        "piece": 0
+      },
+      "5": {
+        "lv": 0,
+        "piece": 0
+      },
+      "6": {
+        "lv": 0,
+        "piece": 0
+      },
+      "7": {
+        "lv": 0,
+        "piece": 0
+      },
+      "8": {
+        "lv": 0,
+        "piece": 0
+      },
+      "9": {
+        "lv": 0,
+        "piece": 0
+      },
+      "10": {
+        "lv": 0,
+        "piece": 0
+      },
+      "11": {
+        "lv": 0,
+        "piece": 0
+      },
+      "12": {
+        "lv": 0,
+        "piece": 0
+      },
+      "13": {
+        "lv": 0,
+        "piece": 0
+      },
+      "14": {
+        "lv": 0,
+        "piece": 0
+      },
+      "15": {
+        "lv": 0,
+        "piece": 0
+      },
+      "16": {
+        "lv": 0,
+        "piece": 0
+      },
+      "17": {
+        "lv": 0,
+        "piece": 0
+      },
+      "18": {
+        "lv": 0,
+        "piece": 0
+      },
+      "19": {
+        "lv": 0,
+        "piece": 0
+      },
+      "20": {
+        "lv": 0,
+        "piece": 0
+      },
+      "21": {
+        "lv": 0,
+        "piece": 0
+      },
+      "22": {
+        "lv": 0,
+        "piece": 0
+      },
+      "23": {
+        "lv": 0,
+        "piece": 0
+      },
+      "24": {
+        "lv": 0,
+        "piece": 0
+      },
+      "25": {
+        "lv": 0,
+        "piece": 0
+      },
+      "26": {
+        "lv": 0,
+        "piece": 0
+      },
+      "27": {
+        "lv": 0,
+        "piece": 0
+      },
+      "28": {
+        "lv": 0,
+        "piece": 0
+      },
+      "29": {
+        "lv": 0,
+        "piece": 0
+      },
+      "30": {
+        "lv": 0,
+        "piece": 0
+      },
+      "31": {
+        "lv": 0,
+        "piece": 0
+      },
+      "32": {
+        "lv": 0,
+        "piece": 0
+      },
+      "33": {
+        "lv": 0,
+        "piece": 0
+      },
+      "34": {
+        "lv": 0,
+        "piece": 0
+      },
+      "35": {
+        "lv": 0,
+        "piece": 0
+      },
+      "36": {
+        "lv": 0,
+        "piece": 0
+      },
+      "37": {
+        "lv": 0,
+        "piece": 0
+      },
+      "38": {
+        "lv": 0,
+        "piece": 0
+      },
+      "39": {
+        "lv": 0,
+        "piece": 0
+      },
+      "40": {
+        "lv": 0,
+        "piece": 0
+      },
+      "41": {
+        "lv": 0,
+        "piece": 0
+      },
+      "101": {
+        "lv": 0,
+        "piece": 0
+      },
+      "102": {
+        "lv": 0,
+        "piece": 0
+      },
+      "103": {
+        "lv": 0,
+        "piece": 0
+      },
+      "104": {
+        "lv": 0,
+        "piece": 0
+      },
+      "105": {
+        "lv": 0,
+        "piece": 0
+      },
+      "106": {
+        "lv": 0,
+        "piece": 0
+      },
+      "107": {
+        "lv": 0,
+        "piece": 0
+      },
+      "108": {
+        "lv": 0,
+        "piece": 0
+      },
+      "109": {
+        "lv": 0,
+        "piece": 0
+      },
+      "110": {
+        "lv": 0,
+        "piece": 0
+      },
+      "111": {
+        "lv": 0,
+        "piece": 0
+      },
+      "112": {
+        "lv": 0,
+        "piece": 0
+      },
+      "113": {
+        "lv": 0,
+        "piece": 0
+      },
+      "114": {
+        "lv": 0,
+        "piece": 0
+      },
+      "115": {
+        "lv": 0,
+        "piece": 0
+      },
+      "116": {
+        "lv": 0,
+        "piece": 0
+      },
+      "117": {
+        "lv": 0,
+        "piece": 0
+      },
+      "118": {
+        "lv": 0,
+        "piece": 0
+      },
+      "119": {
+        "lv": 0,
+        "piece": 0
+      },
+      "120": {
+        "lv": 0,
+        "piece": 0
+      },
+      "121": {
+        "lv": 0,
+        "piece": 0
+      },
+      "122": {
+        "lv": 0,
+        "piece": 0
+      },
+      "123": {
+        "lv": 0,
+        "piece": 0
+      },
+      "124": {
+        "lv": 0,
+        "piece": 0
+      },
+      "125": {
+        "lv": 0,
+        "piece": 0
+      },
+      "126": {
+        "lv": 0,
+        "piece": 0
+      },
+      "127": {
+        "lv": 0,
+        "piece": 0
+      },
+      "128": {
+        "lv": 0,
+        "piece": 0
+      },
+      "129": {
+        "lv": 0,
+        "piece": 0
+      },
+      "130": {
+        "lv": 0,
+        "piece": 0
+      },
+      "131": {
+        "lv": 0,
+        "piece": 0
+      },
+      "132": {
+        "lv": 0,
+        "piece": 0
+      },
+      "133": {
+        "lv": 0,
+        "piece": 0
+      },
+      "134": {
+        "lv": 0,
+        "piece": 0
+      },
+      "135": {
+        "lv": 0,
+        "piece": 0
+      },
+      "136": {
+        "lv": 0,
+        "piece": 0
+      },
+      "137": {
+        "lv": 0,
+        "piece": 0
+      },
+      "138": {
+        "lv": 0,
+        "piece": 0
+      },
+      "139": {
+        "lv": 0,
+        "piece": 0
+      },
+      "140": {
+        "lv": 0,
+        "piece": 0
+      },
+      "141": {
+        "lv": 0,
+        "piece": 0
+      },
+      "142": {
+        "lv": 0,
+        "piece": 0
+      },
+      "143": {
+        "lv": 0,
+        "piece": 0
+      },
+      "144": {
+        "lv": 0,
+        "piece": 0
+      },
+      "145": {
+        "lv": 0,
+        "piece": 0
+      },
+      "146": {
+        "lv": 0,
+        "piece": 0
+      },
+      "147": {
+        "lv": 0,
+        "piece": 0
+      },
+      "148": {
+        "lv": 0,
+        "piece": 0
+      },
+      "149": {
+        "lv": 0,
+        "piece": 0
+      },
+      "150": {
+        "lv": 0,
+        "piece": 0
+      },
+      "151": {
+        "lv": 0,
+        "piece": 0
+      },
+      "152": {
+        "lv": 0,
+        "piece": 0
+      },
+      "153": {
+        "lv": 0,
+        "piece": 0
+      },
+      "154": {
+        "lv": 0,
+        "piece": 0
+      },
+      "155": {
+        "lv": 0,
+        "piece": 0
+      },
+      "156": {
+        "lv": 0,
+        "piece": 0
+      },
+      "157": {
+        "lv": 0,
+        "piece": 0
+      },
+      "158": {
+        "lv": 0,
+        "piece": 0
+      },
+      "159": {
+        "lv": 0,
+        "piece": 0
+      },
+      "160": {
+        "lv": 0,
+        "piece": 0
+      },
+      "161": {
+        "lv": 0,
+        "piece": 0
+      },
+      "162": {
+        "lv": 0,
+        "piece": 0
+      },
+      "163": {
+        "lv": 0,
+        "piece": 0
+      },
+      "164": {
+        "lv": 0,
+        "piece": 0
+      },
+      "165": {
+        "lv": 0,
+        "piece": 0
+      },
+      "166": {
+        "lv": 0,
+        "piece": 0
+      },
+      "167": {
+        "lv": 0,
+        "piece": 0
+      },
+      "168": {
+        "lv": 0,
+        "piece": 0
+      },
+      "169": {
+        "lv": 0,
+        "piece": 0
+      },
+      "170": {
+        "lv": 0,
+        "piece": 0
+      },
+      "171": {
+        "lv": 0,
+        "piece": 0
+      },
+      "172": {
+        "lv": 0,
+        "piece": 0
+      },
+      "173": {
+        "lv": 0,
+        "piece": 0
+      },
+      "174": {
+        "lv": 0,
+        "piece": 0
+      },
+      "175": {
+        "lv": 0,
+        "piece": 0
+      },
+      "176": {
+        "lv": 0,
+        "piece": 0
+      },
+      "177": {
+        "lv": 0,
+        "piece": 0
+      },
+      "178": {
+        "lv": 0,
+        "piece": 0
+      },
+      "179": {
+        "lv": 0,
+        "piece": 0
+      },
+      "180": {
+        "lv": 0,
+        "piece": 0
+      },
+      "181": {
+        "lv": 0,
+        "piece": 0
+      },
+      "182": {
+        "lv": 0,
+        "piece": 0
+      },
+      "183": {
+        "lv": 0,
+        "piece": 0
+      },
+      "184": {
+        "lv": 0,
+        "piece": 0
+      },
+      "185": {
+        "lv": 0,
+        "piece": 0
+      },
+      "186": {
+        "lv": 0,
+        "piece": 0
+      },
+      "187": {
+        "lv": 0,
+        "piece": 0
+      },
+      "188": {
+        "lv": 0,
+        "piece": 0
+      },
+      "189": {
+        "lv": 0,
+        "piece": 0
+      },
+      "190": {
+        "lv": 0,
+        "piece": 0
+      },
+      "191": {
+        "lv": 0,
+        "piece": 0
+      },
+      "192": {
+        "lv": 0,
+        "piece": 0
+      },
+      "193": {
+        "lv": 0,
+        "piece": 0
+      },
+      "194": {
+        "lv": 0,
+        "piece": 0
+      },
+      "195": {
+        "lv": 0,
+        "piece": 0
+      },
+      "196": {
+        "lv": 0,
+        "piece": 0
+      },
+      "197": {
+        "lv": 0,
+        "piece": 0
+      },
+      "198": {
+        "lv": 0,
+        "piece": 0
+      },
+      "199": {
+        "lv": 0,
+        "piece": 0
+      },
+      "200": {
+        "lv": 0,
+        "piece": 0
+      },
+      "201": {
+        "lv": 0,
+        "piece": 0
+      },
+      "202": {
+        "lv": 0,
+        "piece": 0
+      },
+      "203": {
+        "lv": 0,
+        "piece": 0
+      },
+      "204": {
+        "lv": 0,
+        "piece": 0
+      },
+      "205": {
+        "lv": 0,
+        "piece": 0
+      },
+      "206": {
+        "lv": 0,
+        "piece": 0
+      },
+      "207": {
+        "lv": 0,
+        "piece": 0
+      },
+      "208": {
+        "lv": 0,
+        "piece": 0
+      },
+      "209": {
+        "lv": 0,
+        "piece": 0
+      },
+      "210": {
+        "lv": 0,
+        "piece": 0
+      },
+      "211": {
+        "lv": 0,
+        "piece": 0
+      },
+      "212": {
+        "lv": 0,
+        "piece": 0
+      },
+      "213": {
+        "lv": 0,
+        "piece": 0
+      },
+      "214": {
+        "lv": 0,
+        "piece": 0
+      },
+      "215": {
+        "lv": 0,
+        "piece": 0
+      },
+      "216": {
+        "lv": 0,
+        "piece": 0
+      },
+      "217": {
+        "lv": 0,
+        "piece": 0
+      },
+      "218": {
+        "lv": 0,
+        "piece": 0
+      },
+      "219": {
+        "lv": 0,
+        "piece": 0
+      },
+      "220": {
+        "lv": 0,
+        "piece": 0
+      },
+      "221": {
+        "lv": 0,
+        "piece": 0
+      },
+      "222": {
+        "lv": 0,
+        "piece": 0
+      },
+      "223": {
+        "lv": 0,
+        "piece": 0
+      },
+      "224": {
+        "lv": 0,
+        "piece": 0
+      },
+      "225": {
+        "lv": 0,
+        "piece": 0
+      },
+      "226": {
+        "lv": 0,
+        "piece": 0
+      },
+      "227": {
+        "lv": 0,
+        "piece": 0
+      },
+      "228": {
+        "lv": 0,
+        "piece": 0
+      },
+      "229": {
+        "lv": 0,
+        "piece": 0
+      },
+      "230": {
+        "lv": 0,
+        "piece": 0
+      },
+      "231": {
+        "lv": 0,
+        "piece": 0
+      },
+      "232": {
+        "lv": 0,
+        "piece": 0
+      },
+      "233": {
+        "lv": 0,
+        "piece": 0
+      },
+      "234": {
+        "lv": 0,
+        "piece": 0
+      },
+      "235": {
+        "lv": 0,
+        "piece": 0
+      },
+      "236": {
+        "lv": 0,
+        "piece": 0
+      },
+      "237": {
+        "lv": 0,
+        "piece": 0
+      },
+      "238": {
+        "lv": 0,
+        "piece": 0
+      },
+      "239": {
+        "lv": 0,
+        "piece": 0
+      },
+      "240": {
+        "lv": 0,
+        "piece": 0
+      },
+      "241": {
+        "lv": 0,
+        "piece": 0
+      },
+      "242": {
+        "lv": 0,
+        "piece": 0
+      },
+      "243": {
+        "lv": 0,
+        "piece": 0
+      },
+      "244": {
+        "lv": 0,
+        "piece": 0
+      },
+      "245": {
+        "lv": 0,
+        "piece": 0
+      },
+      "246": {
+        "lv": 0,
+        "piece": 0
+      },
+      "247": {
+        "lv": 0,
+        "piece": 0
+      },
+      "248": {
+        "lv": 0,
+        "piece": 0
+      },
+      "249": {
+        "lv": 0,
+        "piece": 0
+      },
+      "250": {
+        "lv": 0,
+        "piece": 0
+      },
+      "251": {
+        "lv": 0,
+        "piece": 0
+      },
+      "252": {
+        "lv": 0,
+        "piece": 0
+      },
+      "253": {
+        "lv": 0,
+        "piece": 0
+      },
+      "254": {
+        "lv": 0,
+        "piece": 0
+      },
+      "255": {
+        "lv": 0,
+        "piece": 0
+      },
+      "256": {
+        "lv": 0,
+        "piece": 0
+      },
+      "257": {
+        "lv": 0,
+        "piece": 0
+      },
+      "258": {
+        "lv": 0,
+        "piece": 0
+      },
+      "259": {
+        "lv": 0,
+        "piece": 0
+      },
+      "260": {
+        "lv": 0,
+        "piece": 0
+      },
+      "261": {
+        "lv": 0,
+        "piece": 0
+      },
+      "262": {
+        "lv": 0,
+        "piece": 0
+      },
+      "263": {
+        "lv": 0,
+        "piece": 0
+      },
+      "264": {
+        "lv": 0,
+        "piece": 0
+      },
+      "265": {
+        "lv": 0,
+        "piece": 0
+      },
+      "266": {
+        "lv": 0,
+        "piece": 0
+      },
+      "267": {
+        "lv": 0,
+        "piece": 0
+      },
+      "268": {
+        "lv": 0,
+        "piece": 0
+      },
+      "269": {
+        "lv": 0,
+        "piece": 0
+      },
+      "270": {
+        "lv": 0,
+        "piece": 0
+      },
+      "271": {
+        "lv": 0,
+        "piece": 0
+      },
+      "272": {
+        "lv": 0,
+        "piece": 0
+      },
+      "273": {
+        "lv": 0,
+        "piece": 0
+      },
+      "274": {
+        "lv": 0,
+        "piece": 0
+      },
+      "275": {
+        "lv": 0,
+        "piece": 0
+      },
+      "276": {
+        "lv": 0,
+        "piece": 0
+      },
+      "277": {
+        "lv": 0,
+        "piece": 0
+      },
+      "278": {
+        "lv": 0,
+        "piece": 0
+      },
+      "279": {
+        "lv": 0,
+        "piece": 0
+      },
+      "280": {
+        "lv": 0,
+        "piece": 0
+      },
+      "281": {
+        "lv": 0,
+        "piece": 0
+      },
+      "282": {
+        "lv": 0,
+        "piece": 0
+      },
+      "283": {
+        "lv": 0,
+        "piece": 0
+      },
+      "284": {
+        "lv": 0,
+        "piece": 0
+      },
+      "285": {
+        "lv": 0,
+        "piece": 0
+      },
+      "286": {
+        "lv": 0,
+        "piece": 0
+      }
+    },
+    "suit": {
+      "1": {
+        "lv": 0
+      },
+      "2": {
+        "lv": 0
+      },
+      "3": {
+        "lv": 0
+      },
+      "4": {
+        "lv": 0
+      },
+      "5": {
+        "lv": 0
+      },
+      "6": {
+        "lv": 0
+      },
+      "7": {
+        "lv": 0
+      },
+      "101": {
+        "lv": 0
+      },
+      "102": {
+        "lv": 0
+      },
+      "103": {
+        "lv": 0
+      },
+      "104": {
+        "lv": 0
+      },
+      "105": {
+        "lv": 0
+      },
+      "106": {
+        "lv": 0
+      },
+      "107": {
+        "lv": 0
+      },
+      "108": {
+        "lv": 0
+      },
+      "109": {
+        "lv": 0
+      },
+      "110": {
+        "lv": 0
+      },
+      "111": {
+        "lv": 0
+      },
+      "112": {
+        "lv": 0
+      },
+      "113": {
+        "lv": 0
+      },
+      "114": {
+        "lv": 0
+      },
+      "115": {
+        "lv": 0
+      },
+      "116": {
+        "lv": 0
+      },
+      "117": {
+        "lv": 0
+      },
+      "118": {
+        "lv": 0
+      },
+      "119": {
+        "lv": 0
+      },
+      "120": {
+        "lv": 0
+      },
+      "121": {
+        "lv": 0
+      },
+      "122": {
+        "lv": 0
+      },
+      "123": {
+        "lv": 0
+      },
+      "124": {
+        "lv": 0
+      },
+      "125": {
+        "lv": 0
+      },
+      "126": {
+        "lv": 0
+      },
+      "127": {
+        "lv": 0
+      },
+      "128": {
+        "lv": 0
+      },
+      "129": {
+        "lv": 0
+      },
+      "130": {
+        "lv": 0
+      },
+      "131": {
+        "lv": 0
+      }
+    }
+  },
+  "mailObj": {
+    "mail": {
+      "1": {
+        "id": 1,
+        "type": 0,
+        "title": "大圣爷爷！",
+        "text": "感谢您光临《妖怪休走》的游戏世界！",
+        "createTime": 1505377194,
+        "item": {
+          "reward_1": [
+            "3",
+            "0",
+            "100"
+          ]
+        },
+        "state": 0
+      },
+      "2": {
+        "id": 2,
+        "type": 0,
+        "title": "【化缘】开放礼",
+        "text": "化缘可赚取大量铜钱！N关闭游戏还在帮您赚钱！",
+        "createTime": 1505377254,
+        "item": {
+          "reward_1": [
+            "3",
+            "0",
+            "100"
+          ]
+        },
+        "state": 0
+      },
+      "3": {
+        "id": 3,
+        "type": 0,
+        "title": "【寻仙】开放礼",
+        "text": "寻仙可获得强力伙伴！",
+        "createTime": 1505377618,
+        "item": {
+          "reward_1": [
+            "3",
+            "0",
+            "100"
+          ]
+        },
+        "state": 0
+      },
+      "4": {
+        "id": 4,
+        "type": 2,
+        "title": "热烈庆祝2服开启~",
+        "text": "",
+        "createTime": 1505441714,
+        "item": {
+          "reward_1": [
+            "3",
+            "0",
+            "666"
+          ]
+        },
+        "state": 0
+      }
+    },
+    "count": 4
+  },
+  "mailFlag": 0
+}

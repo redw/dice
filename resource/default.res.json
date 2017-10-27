@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,dice_roll_ske_json,dice_roll_tex_json,dice_roll_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png,skin_city_1_png,skin_city_2_png,skin_city_3_png,skin_dice_1_png,skin_dice_2_png,skin_dice_3_png,skin_player_1_png,skin_player_2_png,skin_player_3_png,skin_bg_1_png,skin_bg_2_png,skin_bubble_1_png,skin_bubble_2_png,skin_but_blue_png,skin_but_yellow_png,skin_city_label_0_png,skin_dice_label_0_png_png,skin_label_car_png,skin_label_cary_png,skin_label_city_png,skin_label_cityy_png,skin_label_dice_png,skin_label_dicey_png,skin_label_player_png,skin_label_playery_png,skin_lock_png,skin_NO1_png,skin_NO2_png,skin_NO3_png,skin_player_label_0_png,skin_player_label_1_png,skin_player_xilie1_png,skin_player_xilie2_png,skin_player_xilie3_png,skin_selection_png,skin_title_city_png,skin_title_touzi_png,skin_track_png,skin_track_1_png,skin_track_2_png,skin_use_png,skin_using_png,suspension_but_1_touch_png,num_wawa_0_png,num_wawa_1_png,num_wawa_10_png,num_wawa_2_png,num_wawa_3_png,num_wawa_4_png,num_wawa_5_png,num_wawa_6_png,num_wawa_7_png,num_wawa_8_png,num_wawa_9_png,wawa_bg_hou_0_png,wawa_bg_hou_1_png,wawa_bg_qian_png,wawa_bg_zhong00_png,wawa_bg_zhong01_png,wawa_but_00_png,wawa_but_01_png,wawa_but_02_png,wawa_but_03_png,wawa_but_bg_png,wawa_but_close_png,wawa_label_00_png,wawa_label_01_png,wawa_label_02_png,wawa_light_00_png,wawa_light_01_png,wawa_light_02_png,wawa_xl1_00_png,wawa_xl1_01_png,wawa_xl2_00_png,wawa_xl2_01_png,wawa_xl_00_png,wawa_xl_01_png,poche_ske2_json,poche_tex2_json,poche_tex2_png,chess_1_1_ske_ske_json,chess_1_1_ske_tex_json,chess_1_1_ske_tex_png,jianzhushengji_ske_json,jianzhushengji_tex_json,jianzhushengji_tex_png,dengguang_02_png,dengguang_10_png,dengguang_12_png,dengguang_22_png,dengguang_42_png,dengguang_62_png,dengguang_8_png,dice_roll_ske2_json,dice_roll_tex2_json,dice_roll_tex2_png,zhuawawaji_ske2_json,zhuawawaji_tex2_json,zhuawawaji_tex2_png,juming_ske2_json,juming_tex2_json,juming_tex2_png,xiaojiaoche_ske2_json,xiaojiaoche_tex2_json,xiaojiaoche_tex2_png,dice_roll_ske3_json,dice_roll_tex3_json,dice_roll_tex3_png",
+			"keys": "juming_ske_json,juming_tex_json,juming_tex_png,maoqizi_ske_json,maoqizi_tex_json,maoqizi_tex_png,poche_ske_json,poche_tex_json,poche_tex_png,xiaojiaoche_ske_json,xiaojiaoche_tex_json,xiaojiaoche_tex_png,zhuawawaji_ske_json,zhuawawaji_tex_json,zhuawawaji_tex_png,dengguang_0_png,dengguang_1_png,dengguang_2_png,dengguang_3_png,dengguang_4_png,dengguang_5_png,dengguang_6_png,skin_city_1_png,skin_city_2_png,skin_city_3_png,skin_dice_1_png,skin_dice_2_png,skin_dice_3_png,skin_player_1_png,skin_player_2_png,skin_player_3_png,skin_bg_1_png,skin_bg_2_png,skin_bubble_1_png,skin_bubble_2_png,skin_but_blue_png,skin_but_yellow_png,skin_city_label_0_png,skin_dice_label_0_png_png,skin_label_car_png,skin_label_cary_png,skin_label_city_png,skin_label_cityy_png,skin_label_dice_png,skin_label_dicey_png,skin_label_player_png,skin_label_playery_png,skin_lock_png,skin_NO1_png,skin_NO2_png,skin_NO3_png,skin_player_label_0_png,skin_player_label_1_png,skin_player_xilie1_png,skin_player_xilie2_png,skin_player_xilie3_png,skin_selection_png,skin_title_city_png,skin_title_touzi_png,skin_track_png,skin_track_1_png,skin_track_2_png,skin_use_png,skin_using_png,suspension_but_1_touch_png,num_wawa_0_png,num_wawa_1_png,num_wawa_10_png,num_wawa_2_png,num_wawa_3_png,num_wawa_4_png,num_wawa_5_png,num_wawa_6_png,num_wawa_7_png,num_wawa_8_png,num_wawa_9_png,wawa_bg_hou_0_png,wawa_bg_hou_1_png,wawa_bg_qian_png,wawa_bg_zhong00_png,wawa_bg_zhong01_png,wawa_but_00_png,wawa_but_01_png,wawa_but_02_png,wawa_but_03_png,wawa_but_bg_png,wawa_but_close_png,wawa_label_00_png,wawa_label_01_png,wawa_label_02_png,wawa_light_00_png,wawa_light_01_png,wawa_light_02_png,wawa_xl1_00_png,wawa_xl1_01_png,wawa_xl2_00_png,wawa_xl2_01_png,wawa_xl_00_png,wawa_xl_01_png,poche_ske2_json,poche_tex2_json,poche_tex2_png,chess_1_1_ske_ske_json,chess_1_1_ske_tex_json,chess_1_1_ske_tex_png,juming_ske2_json,juming_tex2_json,juming_tex2_png,xiaojiaoche_ske2_json,xiaojiaoche_tex2_json,xiaojiaoche_tex2_png,dice_roll_tex_png,dice_roll_tex_json,dice_roll_ske_json",
 			"name": "preload"
 		}
 	],
@@ -1568,21 +1568,6 @@
 			"name": "poche_tex_png"
 		},
 		{
-			"url": "ani/bone/shaizi/dice_roll_ske.json",
-			"type": "json",
-			"name": "dice_roll_ske_json"
-		},
-		{
-			"url": "ani/bone/shaizi/dice_roll_tex.json",
-			"type": "json",
-			"name": "dice_roll_tex_json"
-		},
-		{
-			"url": "ani/bone/shaizi/dice_roll_tex.png",
-			"type": "image",
-			"name": "dice_roll_tex_png"
-		},
-		{
 			"url": "ani/bone/xiaojiaoche/xiaojiaoche_ske.json",
 			"type": "json",
 			"name": "xiaojiaoche_ske_json"
@@ -1863,329 +1848,249 @@
 			"name": "suspension_but_1_touch_png"
 		},
 		{
-			"name": "num_wawa_0_png",
+			"url": "ui/wawaji/num/num_wawa_0.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_0.png"
+			"name": "num_wawa_0_png"
 		},
 		{
-			"name": "num_wawa_1_png",
+			"url": "ui/wawaji/num/num_wawa_1.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_1.png"
+			"name": "num_wawa_1_png"
 		},
 		{
-			"name": "num_wawa_10_png",
+			"url": "ui/wawaji/num/num_wawa_10.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_10.png"
+			"name": "num_wawa_10_png"
 		},
 		{
-			"name": "num_wawa_2_png",
+			"url": "ui/wawaji/num/num_wawa_2.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_2.png"
+			"name": "num_wawa_2_png"
 		},
 		{
-			"name": "num_wawa_3_png",
+			"url": "ui/wawaji/num/num_wawa_3.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_3.png"
+			"name": "num_wawa_3_png"
 		},
 		{
-			"name": "num_wawa_4_png",
+			"url": "ui/wawaji/num/num_wawa_4.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_4.png"
+			"name": "num_wawa_4_png"
 		},
 		{
-			"name": "num_wawa_5_png",
+			"url": "ui/wawaji/num/num_wawa_5.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_5.png"
+			"name": "num_wawa_5_png"
 		},
 		{
-			"name": "num_wawa_6_png",
+			"url": "ui/wawaji/num/num_wawa_6.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_6.png"
+			"name": "num_wawa_6_png"
 		},
 		{
-			"name": "num_wawa_7_png",
+			"url": "ui/wawaji/num/num_wawa_7.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_7.png"
+			"name": "num_wawa_7_png"
 		},
 		{
-			"name": "num_wawa_8_png",
+			"url": "ui/wawaji/num/num_wawa_8.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_8.png"
+			"name": "num_wawa_8_png"
 		},
 		{
-			"name": "num_wawa_9_png",
+			"url": "ui/wawaji/num/num_wawa_9.png",
 			"type": "image",
-			"url": "ui/wawaji/num/num_wawa_9.png"
+			"name": "num_wawa_9_png"
 		},
 		{
-			"name": "wawa_bg_hou_0_png",
+			"url": "ui/wawaji/wawa_bg_hou_0.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_bg_hou_0.png"
+			"name": "wawa_bg_hou_0_png"
 		},
 		{
-			"name": "wawa_bg_hou_1_png",
+			"url": "ui/wawaji/wawa_bg_hou_1.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_bg_hou_1.png"
+			"name": "wawa_bg_hou_1_png"
 		},
 		{
-			"name": "wawa_bg_qian_png",
+			"url": "ui/wawaji/wawa_bg_qian.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_bg_qian.png"
+			"name": "wawa_bg_qian_png"
 		},
 		{
-			"name": "wawa_bg_zhong00_png",
+			"url": "ui/wawaji/wawa_bg_zhong00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_bg_zhong00.png"
+			"name": "wawa_bg_zhong00_png"
 		},
 		{
-			"name": "wawa_bg_zhong01_png",
+			"url": "ui/wawaji/wawa_bg_zhong01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_bg_zhong01.png"
+			"name": "wawa_bg_zhong01_png"
 		},
 		{
-			"name": "wawa_but_00_png",
+			"url": "ui/wawaji/wawa_but_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_00.png"
+			"name": "wawa_but_00_png"
 		},
 		{
-			"name": "wawa_but_01_png",
+			"url": "ui/wawaji/wawa_but_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_01.png"
+			"name": "wawa_but_01_png"
 		},
 		{
-			"name": "wawa_but_02_png",
+			"url": "ui/wawaji/wawa_but_02.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_02.png"
+			"name": "wawa_but_02_png"
 		},
 		{
-			"name": "wawa_but_03_png",
+			"url": "ui/wawaji/wawa_but_03.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_03.png"
+			"name": "wawa_but_03_png"
 		},
 		{
-			"name": "wawa_but_bg_png",
+			"url": "ui/wawaji/wawa_but_bg.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_bg.png"
+			"name": "wawa_but_bg_png"
 		},
 		{
-			"name": "wawa_but_close_png",
+			"url": "ui/wawaji/wawa_but_close.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_but_close.png"
+			"name": "wawa_but_close_png"
 		},
 		{
-			"name": "wawa_label_00_png",
+			"url": "ui/wawaji/wawa_label_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_label_00.png"
+			"name": "wawa_label_00_png"
 		},
 		{
-			"name": "wawa_label_01_png",
+			"url": "ui/wawaji/wawa_label_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_label_01.png"
+			"name": "wawa_label_01_png"
 		},
 		{
-			"name": "wawa_label_02_png",
+			"url": "ui/wawaji/wawa_label_02.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_label_02.png"
+			"name": "wawa_label_02_png"
 		},
 		{
-			"name": "wawa_light_00_png",
+			"url": "ui/wawaji/wawa_light_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_light_00.png"
+			"name": "wawa_light_00_png"
 		},
 		{
-			"name": "wawa_light_01_png",
+			"url": "ui/wawaji/wawa_light_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_light_01.png"
+			"name": "wawa_light_01_png"
 		},
 		{
-			"name": "wawa_light_02_png",
+			"url": "ui/wawaji/wawa_light_02.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_light_02.png"
+			"name": "wawa_light_02_png"
 		},
 		{
-			"name": "wawa_xl1_00_png",
+			"url": "ui/wawaji/wawa_xl1_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl1_00.png"
+			"name": "wawa_xl1_00_png"
 		},
 		{
-			"name": "wawa_xl1_01_png",
+			"url": "ui/wawaji/wawa_xl1_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl1_01.png"
+			"name": "wawa_xl1_01_png"
 		},
 		{
-			"name": "wawa_xl2_00_png",
+			"url": "ui/wawaji/wawa_xl2_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl2_00.png"
+			"name": "wawa_xl2_00_png"
 		},
 		{
-			"name": "wawa_xl2_01_png",
+			"url": "ui/wawaji/wawa_xl2_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl2_01.png"
+			"name": "wawa_xl2_01_png"
 		},
 		{
-			"name": "wawa_xl_00_png",
+			"url": "ui/wawaji/wawa_xl_00.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl_00.png"
+			"name": "wawa_xl_00_png"
 		},
 		{
-			"name": "wawa_xl_01_png",
+			"url": "ui/wawaji/wawa_xl_01.png",
 			"type": "image",
-			"url": "ui/wawaji/wawa_xl_01.png"
+			"name": "wawa_xl_01_png"
 		},
 		{
-			"name": "poche_ske2_json",
+			"url": "ani/bone/bus/poche/poche_ske.json",
 			"type": "json",
-			"url": "ani/bone/bus/poche/poche_ske.json"
+			"name": "poche_ske2_json"
 		},
 		{
-			"name": "poche_tex2_json",
+			"url": "ani/bone/bus/poche/poche_tex.json",
 			"type": "json",
-			"url": "ani/bone/bus/poche/poche_tex.json"
+			"name": "poche_tex2_json"
 		},
 		{
-			"name": "poche_tex2_png",
+			"url": "ani/bone/bus/poche/poche_tex.png",
 			"type": "image",
-			"url": "ani/bone/bus/poche/poche_tex.png"
+			"name": "poche_tex2_png"
 		},
 		{
-			"name": "chess_1_1_ske_ske_json",
+			"url": "ani/bone/chess/chess_1/chess_1_1_ske_ske.json",
 			"type": "json",
-			"url": "ani/bone/chess/chess_1/chess_1_1_ske_ske.json"
+			"name": "chess_1_1_ske_ske_json"
 		},
 		{
-			"name": "chess_1_1_ske_tex_json",
+			"url": "ani/bone/chess/chess_1/chess_1_1_ske_tex.json",
 			"type": "json",
-			"url": "ani/bone/chess/chess_1/chess_1_1_ske_tex.json"
+			"name": "chess_1_1_ske_tex_json"
 		},
 		{
-			"name": "chess_1_1_ske_tex_png",
+			"url": "ani/bone/chess/chess_1/chess_1_1_ske_tex.png",
 			"type": "image",
-			"url": "ani/bone/chess/chess_1/chess_1_1_ske_tex.png"
+			"name": "chess_1_1_ske_tex_png"
 		},
 		{
-			"name": "jianzhushengji_ske_json",
+			"url": "ani/bone/map/juming/juming_ske.json",
 			"type": "json",
-			"url": "ani/bone/effect/jianzhushengji/jianzhushengji_ske.json"
+			"name": "juming_ske2_json"
 		},
 		{
-			"name": "jianzhushengji_tex_json",
+			"url": "ani/bone/map/juming/juming_tex.json",
 			"type": "json",
-			"url": "ani/bone/effect/jianzhushengji/jianzhushengji_tex.json"
+			"name": "juming_tex2_json"
 		},
 		{
-			"name": "jianzhushengji_tex_png",
+			"url": "ani/bone/map/juming/juming_tex.png",
 			"type": "image",
-			"url": "ani/bone/effect/jianzhushengji/jianzhushengji_tex.png"
+			"name": "juming_tex2_png"
 		},
 		{
-			"name": "dengguang_02_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_0.png"
-		},
-		{
-			"name": "dengguang_10_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_10.png"
-		},
-		{
-			"name": "dengguang_12_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_12.png"
-		},
-		{
-			"name": "dengguang_22_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_2.png"
-		},
-		{
-			"name": "dengguang_42_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_4.png"
-		},
-		{
-			"name": "dengguang_62_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_6.png"
-		},
-		{
-			"name": "dengguang_8_png",
-			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/dengguang/dengguang_8.png"
-		},
-		{
-			"name": "dice_roll_ske2_json",
+			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_ske.json",
 			"type": "json",
-			"url": "ani/bone/effect/zhuawawaji/shaizi/dice_roll_ske.json"
+			"name": "xiaojiaoche_ske2_json"
 		},
 		{
-			"name": "dice_roll_tex2_json",
+			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_tex.json",
 			"type": "json",
-			"url": "ani/bone/effect/zhuawawaji/shaizi/dice_roll_tex.json"
+			"name": "xiaojiaoche_tex2_json"
 		},
 		{
-			"name": "dice_roll_tex2_png",
+			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_tex.png",
 			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/shaizi/dice_roll_tex.png"
+			"name": "xiaojiaoche_tex2_png"
 		},
 		{
-			"name": "zhuawawaji_ske2_json",
+			"url": "ani/bone/roll/dice_roll_ske.json",
 			"type": "json",
-			"url": "ani/bone/effect/zhuawawaji/zhuawawaji_ske.json"
+			"name": "dice_roll_ske_json"
 		},
 		{
-			"name": "zhuawawaji_tex2_json",
+			"url": "ani/bone/roll/dice_roll_tex.json",
 			"type": "json",
-			"url": "ani/bone/effect/zhuawawaji/zhuawawaji_tex.json"
+			"name": "dice_roll_tex_json"
 		},
 		{
-			"name": "zhuawawaji_tex2_png",
+			"url": "ani/bone/roll/dice_roll_tex.png",
 			"type": "image",
-			"url": "ani/bone/effect/zhuawawaji/zhuawawaji_tex.png"
-		},
-		{
-			"name": "juming_ske2_json",
-			"type": "json",
-			"url": "ani/bone/map/juming/juming_ske.json"
-		},
-		{
-			"name": "juming_tex2_json",
-			"type": "json",
-			"url": "ani/bone/map/juming/juming_tex.json"
-		},
-		{
-			"name": "juming_tex2_png",
-			"type": "image",
-			"url": "ani/bone/map/juming/juming_tex.png"
-		},
-		{
-			"name": "xiaojiaoche_ske2_json",
-			"type": "json",
-			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_ske.json"
-		},
-		{
-			"name": "xiaojiaoche_tex2_json",
-			"type": "json",
-			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_tex.json"
-		},
-		{
-			"name": "xiaojiaoche_tex2_png",
-			"type": "image",
-			"url": "ani/bone/map/xiaojiaoche/xiaojiaoche_tex.png"
-		},
-		{
-			"name": "dice_roll_ske3_json",
-			"type": "json",
-			"url": "ani/bone/roll/shaizi/dice_roll_ske.json"
-		},
-		{
-			"name": "dice_roll_tex3_json",
-			"type": "json",
-			"url": "ani/bone/roll/shaizi/dice_roll_tex.json"
-		},
-		{
-			"name": "dice_roll_tex3_png",
-			"type": "image",
-			"url": "ani/bone/roll/shaizi/dice_roll_tex.png"
+			"name": "dice_roll_tex_png"
 		}
 	]
 }

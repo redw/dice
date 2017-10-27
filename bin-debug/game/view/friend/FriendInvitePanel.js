@@ -34,4 +34,3 @@ var FriendInvitePanel = (function (_super) {
     return FriendInvitePanel;
 }(BasePanel));
 __reflect(FriendInvitePanel.prototype, "FriendInvitePanel");
-//# sourceMappingURL=FriendInvitePanel.js.map

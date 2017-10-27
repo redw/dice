@@ -50,4 +50,3 @@ var AutoBitmap = (function (_super) {
     return AutoBitmap;
 }(egret.Bitmap));
 __reflect(AutoBitmap.prototype, "AutoBitmap");
-//# sourceMappingURL=AutoBitmap.js.map

@@ -147,4 +147,3 @@ var Dice = (function (_super) {
     return Dice;
 }(egret.DisplayObjectContainer));
 __reflect(Dice.prototype, "Dice");
-//# sourceMappingURL=Dice.js.map

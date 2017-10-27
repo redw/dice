@@ -2,63 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354097f5-5154-4fa5-87bb-9370f55ffa31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/core/Engine.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/MainLoad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/MainLoad.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/FrameAnimal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/FrameAnimal.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BitUtil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BitUtil.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TickerUtil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TickerUtil.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/core/MainLoad.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/core/FrameAnimal.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/utils/BitUtil.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/utils/TickerUtil.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/web/bg_login.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/web/progress_bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/web/progress_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/web/json/enter.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/BaseButton.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/Engine.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameConfig.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameEvents.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/Global.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/BottomView.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/LeftView.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/MainView.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/RightView.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/dollmachine/DollMachinePanel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInviteItem.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInvitePanel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLandBG.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/SceneBG.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/Dice.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/DiceContainer.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinItemRen.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinModel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPanel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart0.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart1.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart2.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinShowComp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinTabBtn.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ILifeCycle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/IViewStack.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ObjPool.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/EventManager.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/LoadManager.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/net/Net.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/BaseSound.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ArrayUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BigNum.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/EffectUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ExternalUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MathUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/RedPointUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TextUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleTabBtn.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/shaizi/dice_roll_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/shaizi/dice_roll_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/shaizi/dice_roll_tex.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/lib/netWorker.js" afterPath="$PROJECT_DIR$/resource/web/netWorker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/BaseButton.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/BaseButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/Engine.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/Engine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameConfig.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameConfig.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameDataProxy.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameEvents.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameEvents.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/Global.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/Global.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/BottomView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/BottomView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/LeftView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/LeftView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/RightView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/RightView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/dollmachine/DollMachinePanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/dollmachine/DollMachinePanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInviteItem.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInviteItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInvitePanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/friend/FriendInvitePanel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLandBG.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLandBG.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/SceneBG.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/SceneBG.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/Dice.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/Dice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/DiceContainer.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/DiceContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinItemRen.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinItemRen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinModel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart0.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart1.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart2.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart3.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinShowComp.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinShowComp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinTabBtn.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinTabBtn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/AssetAdapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ILifeCycle.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ILifeCycle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/IViewStack.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/IViewStack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ObjPool.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ObjPool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js" afterPath="$PROJECT_DIR$/bin-debug/lib/core/ThemeAdapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/EventManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/EventManager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/LoadManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/LoadManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/LoadManager.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/LoadManager.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/manager/PanelManager.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/net/HttpConnections.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/Net.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/Net.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/Net.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/net/Net.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js" afterPath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/net/SocketConnections.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/BaseSound.js" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/BaseSound.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/sound/SoundManager.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ArrayUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/ArrayUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BigNum.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BigNum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/DisplayUtil.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/EffectUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/EffectUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/ExternalUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/ExternalUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/GeomUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MathUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/MathUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/MovieClipUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/RedPointUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/RedPointUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/StringUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TextUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/TextUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/TimeUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/Util.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/view/BasePanel.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/ExComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleTabBtn.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleTabBtn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/enter.json" afterPath="$PROJECT_DIR$/http/enter.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/exml.e.d.ts" afterPath="$PROJECT_DIR$/libs/exml.e.d.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.ts" afterPath="$PROJECT_DIR$/src/Main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/GameDataProxy.ts" afterPath="$PROJECT_DIR$/src/game/core/GameDataProxy.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/GameLoop.ts" afterPath="$PROJECT_DIR$/src/game/core/GameLoop.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/BonusPanel.ts" afterPath="$PROJECT_DIR$/src/game/view/BonusPanel.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config_avu.json" afterPath="$PROJECT_DIR$/resource/config_avu.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.res.json" afterPath="$PROJECT_DIR$/resource/default.res.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.thm.json" afterPath="$PROJECT_DIR$/resource/default.thm.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/Engine.ts" afterPath="$PROJECT_DIR$/src/game/core/Engine.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" afterPath="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" afterPath="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/net/HttpConnections.ts" afterPath="$PROJECT_DIR$/src/lib/net/HttpConnections.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/net/Net.ts" afterPath="$PROJECT_DIR$/src/lib/net/Net.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/net/SocketConnections.ts" afterPath="$PROJECT_DIR$/src/lib/net/SocketConnections.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" afterPath="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/Util.ts" afterPath="$PROJECT_DIR$/src/lib/utils/Util.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/view/BasePanel.ts" afterPath="$PROJECT_DIR$/src/lib/view/BasePanel.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,8 +178,8 @@
       <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="374">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -93,8 +188,48 @@
       <file leaf-file-name="Engine.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/core/Engine.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="321">
+              <caret line="115" column="53" lean-forward="false" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="egret.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/modules/egret/egret.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="15303" column="57" lean-forward="false" selection-start-line="15303" selection-start-column="57" selection-end-line="15303" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoadManager.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="116" column="16" lean-forward="true" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enter.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/web/json/enter.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="netWorker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/web/netWorker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +238,8 @@
       <file leaf-file-name="config_avu.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resource/config_avu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="44">
+              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -113,18 +248,8 @@
       <file leaf-file-name="Net.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/net/Net.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameLoop.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/core/GameLoop.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="-335">
+              <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -133,48 +258,18 @@
       <file leaf-file-name="HttpConnections.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/net/HttpConnections.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="152" column="43" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+            <state relative-caret-position="748">
+              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundManager.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/sound/SoundManager.ts">
+      <file leaf-file-name="enter.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/enter.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasePanel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/view/BasePanel.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisplayUtil.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketConnections.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/net/SocketConnections.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -238,29 +333,29 @@
         <option value="$PROJECT_DIR$/src/game/view/friend/FriendInvitePanel.ts" />
         <option value="$PROJECT_DIR$/src/game/view/friend/FriendInviteItem.ts" />
         <option value="$PROJECT_DIR$/src/game/view/dollmachine/DollMachinePanel.ts" />
-        <option value="$PROJECT_DIR$/resource/config_avu.json" />
-        <option value="$PROJECT_DIR$/http/enter.json" />
         <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
         <option value="$PROJECT_DIR$/src/lib/utils/Util.ts" />
         <option value="$PROJECT_DIR$/src/lib/utils/TickerUtil.ts" />
-        <option value="$PROJECT_DIR$/src/lib/net/SocketConnections.ts" />
         <option value="$PROJECT_DIR$/src/lib/core/Engine.ts" />
         <option value="$PROJECT_DIR$/src/game/core/Game.ts" />
         <option value="$PROJECT_DIR$/src/game/core/EnterLogic.ts" />
         <option value="$PROJECT_DIR$/src/game/core/GameDataProxy.ts" />
-        <option value="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" />
         <option value="$PROJECT_DIR$/src/game/core/MainLoad.ts" />
         <option value="$PROJECT_DIR$/src/game/view/BonusPanel.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
         <option value="$PROJECT_DIR$/src/lib/manager/PanelManager.ts" />
-        <option value="$PROJECT_DIR$/src/lib/net/HttpConnections.ts" />
         <option value="$PROJECT_DIR$/src/lib/sound/SoundManager.ts" />
         <option value="$PROJECT_DIR$/src/lib/view/BasePanel.ts" />
         <option value="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" />
         <option value="$PROJECT_DIR$/src/Main.ts" />
-        <option value="$PROJECT_DIR$/src/lib/net/Net.ts" />
         <option value="$PROJECT_DIR$/src/game/core/GameLoop.ts" />
+        <option value="$PROJECT_DIR$/resource/config_avu.json" />
+        <option value="$PROJECT_DIR$/src/lib/net/SocketConnections.ts" />
+        <option value="$PROJECT_DIR$/src/lib/net/HttpConnections.ts" />
+        <option value="$PROJECT_DIR$/http/enter.json" />
+        <option value="$PROJECT_DIR$/src/lib/net/Net.ts" />
         <option value="$PROJECT_DIR$/src/game/core/Engine.ts" />
+        <option value="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" />
       </list>
     </option>
   </component>
@@ -271,19 +366,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1436" />
-    <option name="height" value="877" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -301,31 +387,26 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -335,11 +416,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -353,99 +434,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sound" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -463,103 +456,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scene" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -569,11 +470,29 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -583,7 +502,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,16 +511,17 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\hh_roll\resource\web" />
+      <recent name="C:\workspace\hh_roll\src\game\view\skinPanel" />
+      <recent name="C:\workspace\hh_roll\resource\animation" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\hh_roll\resource" />
       <recent name="C:\workspace\hh_roll\src\game\view\skinPanel" />
       <recent name="C:\workspace\hh_roll\resource\eui_skins\skinPanel" />
       <recent name="C:\workspace\hh_roll\src\lib\utils" />
-      <recent name="C:\workspace\hh_roll\resource" />
       <recent name="C:\workspace\hh_roll\src\lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\hh_roll\src\game\view\skinPanel" />
-      <recent name="C:\workspace\hh_roll\resource\animation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -652,7 +571,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -692,6 +611,7 @@
       <workItem from="1508848568023" duration="166000" />
       <workItem from="1508948290654" duration="579000" />
       <workItem from="1509028014919" duration="8756000" />
+      <workItem from="1509070192241" duration="3304000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.0.2">
       <created>1508482485711</created>
@@ -711,32 +631,32 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83670000" />
+    <option name="totallyTimeSpent" value="86974000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24894515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -789,124 +709,101 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinItemRenSkin.exml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/eui_skins/skinPanel/skin_1Skin.exml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinItemRen.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/view/SimpleTabBtn.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinModel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinTabBtn.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/netWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/view/ExComponent.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
-          <folding />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/friend/FriendInvitePanel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/friend/FriendInviteItem.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="58" selection-end-column="12" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="58" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/dollmachine/DollMachinePanel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/default.res.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="1612" column="39" selection-start-line="1612" selection-start-column="21" selection-end-line="1612" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/http/enter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1612" column="39" lean-forward="false" selection-start-line="1612" selection-start-column="21" selection-end-line="1612" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/BottomView.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/Global.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/BaseButton.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2835">
-          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/CmdConst.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -914,39 +811,28 @@
     <entry file="file://$PROJECT_DIR$/src/game/core/GameConfig.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/GameEvents.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/utils/Util.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding />
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/TextUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -954,47 +840,42 @@
     <entry file="file://$PROJECT_DIR$/src/lib/utils/TickerUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/ArrayUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1306">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="33" />
-          <folding />
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/BigNum.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5866">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/BitUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/ExternalUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding />
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/MathUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-825">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1002,25 +883,21 @@
     <entry file="file://$PROJECT_DIR$/src/lib/view/AutoBitmap.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/core/AssetAdapter.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-211">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/core/FrameAnimal.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1028,47 +905,22 @@
     <entry file="file://$PROJECT_DIR$/src/lib/core/ObjPool.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/manager/EventManager.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="19" />
-          <folding />
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/core/Engine.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/modules/egret/egret.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="2261" column="8" selection-start-line="2261" selection-start-column="8" selection-end-line="2261" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/core/Engine.ts" />
     <entry file="file://$PROJECT_DIR$/src/game/core/GameDataProxy.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1076,111 +928,226 @@
     <entry file="file://$PROJECT_DIR$/src/game/view/BonusPanel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-          <folding />
+          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/manager/PanelManager.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
-          <caret line="348" column="30" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/net/SocketConnections.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/net/HttpConnections.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="152" column="43" selection-start-line="152" selection-start-column="43" selection-end-line="152" selection-end-column="43" />
+          <caret line="348" column="30" lean-forward="false" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/sound/SoundManager.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="264">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <marker date="1509070112217" expanded="true" signature="19:2976" ph="..." />
+            <marker date="1509070112217" expanded="true" signature="284:472" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="508:580" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="614:663" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="669:697" ph="/** 设置背景音乐的开关 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="748:947" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="767:872" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="802:862" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="876:912" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="953:978" ph="/** 设置音效开关 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="1029:1128" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1057:1093" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1134:1159" ph="/** 播放背景音乐 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="1203:1801" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1284:1340" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1381:1621" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1411:1491" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1495:1611" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1625:1795" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1807:1832" ph="/** 停止背景音乐 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="1864:1962" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="1969:1992" ph="/** 播放音效 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="2036:2217" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2070:2101" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2223:2246" ph="/** 停止音乐 ...*/" />
+            <marker date="1509070112217" expanded="true" signature="2278:2372" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2315:2366" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2413:2729" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2492:2538" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2542:2599" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2671:2723" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2794:2974" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2859:2908" ph="{...}" />
+            <marker date="1509070112217" expanded="true" signature="2912:2968" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/view/BasePanel.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="572">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <marker date="1509070112220" expanded="true" signature="95:843" ph="{...}" />
+            <marker date="1509070112220" expanded="true" signature="497:614" ph="{...}" />
+            <marker date="1509070112220" expanded="true" signature="659:841" ph="{...}" />
+            <marker date="1509070112220" expanded="true" signature="746:786" ph="{...}" />
+            <marker date="1509070112220" expanded="true" signature="792:835" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <marker date="1509070112218" expanded="true" signature="53:4171" ph="..." />
+            <marker date="1509070112218" expanded="true" signature="111:814" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="485:808" ph="/*...*/" />
+            <marker date="1509070112218" expanded="true" signature="893:1024" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="946:1018" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1122:1178" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1285:1414" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1307:1366" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1372:1408" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1420:1506" ph="/** 设置子对象的属性 ...*/" />
+            <marker date="1509070112218" expanded="true" signature="1615:2110" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1645:2104" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1719:2094" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1748:1995" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1800:1862" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="1913:1977" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2022:2080" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2200:2382" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2230:2376" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2308:2366" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2467:3125" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2590:2648" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2741:2895" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2783:2844" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="2933:3119" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="3021:3062" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="3196:3308" ph="{...}" />
+            <marker date="1509070112218" expanded="true" signature="3314:4169" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/MainLoad.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="830">
-          <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+          <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/core/GameLoop.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/config_avu.json">
+    <entry file="file://$PROJECT_DIR$/src/lib/net/SocketConnections.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/net/Net.ts">
+    <entry file="file://$PROJECT_DIR$/src/lib/utils/Util.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="374">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/net/HttpConnections.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/enter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/config_avu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/net/Net.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/web/netWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/web/json/enter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/Engine.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state relative-caret-position="321">
+          <caret line="115" column="53" lean-forward="false" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/core/GameLoop.ts">
+    <entry file="file://$PROJECT_DIR$/libs/modules/egret/egret.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="551">
+          <caret line="15303" column="57" lean-forward="false" selection-start-line="15303" selection-start-column="57" selection-end-line="15303" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="116" column="16" lean-forward="true" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
           <folding />
         </state>
       </provider>

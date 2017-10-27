@@ -1,3 +1,366 @@
 {
-  "id":100
+  "serverTime": 1509071471,
+  "friendObj": {
+    "friendList": {},
+    "newMsg": {},
+    "gift": {},
+    "dayNewFriend": 0
+  },
+  "enemyList": {},
+  "steal": {
+    "uid": 1681111,
+    "gold": 1000,
+    "wrongTimes": 0,
+    "cd": 2
+  },
+  "nickname": "",
+  "headimgurl": "",
+  "sex": 0,
+  "uid": 1681113,
+  "zone": "1_1",
+  "userInfo": {
+    "star": 1,
+    "language": 1,
+    "sign": "",
+    "number": ""
+  },
+  "homelv": 2,
+  "pos": {
+    "type": "home",
+    "uid": 0,
+    "nowland": 200,
+    "backland": 0,
+    "event": null
+  },
+  "land": {
+    "100": {
+      "bid": 1
+    },
+    "101": {
+      "bid": 1010
+    },
+    "102": {
+      "bid": 1020
+    },
+    "200": {
+      "bid": 1
+    },
+    "201": {
+      "bid": 2010
+    },
+    "300": {
+      "bid": 1
+    },
+    "301": {
+      "bid": 3010
+    },
+    "302": {
+      "bid": 3020
+    },
+    "400": {
+      "bid": 1
+    },
+    "401": {
+      "bid": 4010
+    },
+    "500": {
+      "bid": 1
+    },
+    "501": {
+      "bid": 5010
+    },
+    "502": {
+      "bid": 5020
+    },
+    "601": {
+      "bid": 6010
+    },
+    "602": {
+      "bid": 6020
+    },
+    "700": {
+      "bid": 1
+    },
+    "701": {
+      "bid": 7010
+    },
+    "702": {
+      "bid": 7020
+    },
+    "800": {
+      "bid": 1
+    },
+    "801": {
+      "bid": 8010
+    }
+  },
+  "tech": {
+    "100": 1,
+    "300": 1,
+    "500": 1,
+    "700": 1
+  },
+  "building": {
+    "1010": {
+      "lv": 0,
+      "event": null
+    },
+    "1020": {
+      "lv": 0,
+      "event": null
+    },
+    "2010": {
+      "lv": 1,
+      "event": {
+        "type": "destroy",
+        "by": [],
+        "lid": 201
+      }
+    },
+    "3010": {
+      "lv": 0,
+      "event": null
+    },
+    "3020": {
+      "lv": 0,
+      "event": null
+    },
+    "4010": {
+      "lv": 0,
+      "event": null
+    },
+    "5010": {
+      "lv": 0,
+      "event": null
+    },
+    "5020": {
+      "lv": 0,
+      "event": null
+    },
+    "6010": {
+      "lv": 0,
+      "event": null
+    },
+    "6020": {
+      "lv": 0,
+      "event": null
+    },
+    "7010": {
+      "lv": 0,
+      "event": {
+        "type": "capture",
+        "by": [],
+        "lid": 701
+      }
+    },
+    "7020": {
+      "lv": 0,
+      "event": {
+        "type": "capture",
+        "by": [],
+        "lid": 702
+      }
+    },
+    "8010": {
+      "lv": 0,
+      "event": null
+    }
+  },
+  "police": [],
+  "zoneMem": {
+    "1681113": {
+      "nowland": 200,
+      "chess": "",
+      "vehicle": "1_1",
+      "hat": 0
+    }
+  },
+  "vitNow": 2391,
+  "vitMax": 24,
+  "lastRecover": 1509012326,
+  "popuNow": 5,
+  "popuMax": 5,
+  "diamond": 95209,
+  "gold": 91728,
+  "chess": "",
+  "chessObj": {
+    "1": {
+      "lv": 0
+    },
+    "2": {
+      "lv": 1
+    },
+    "3": {
+      "lv": 0
+    },
+    "4": {
+      "lv": 0
+    },
+    "5": {
+      "lv": 0
+    },
+    "6": {
+      "lv": 0
+    },
+    "7": {
+      "lv": 0
+    },
+    "8": {
+      "lv": 0
+    },
+    "9": {
+      "lv": 0
+    }
+  },
+  "vehicle": "1_1",
+  "vehicleObj": {
+    "1": {
+      "lv": 1
+    },
+    "2": {
+      "lv": 0
+    },
+    "3": {
+      "lv": 0
+    },
+    "4": {
+      "lv": 0
+    },
+    "5": {
+      "lv": 0
+    },
+    "6": {
+      "lv": 0
+    }
+  },
+  "dice": 1,
+  "diceObj": {
+    "1": {
+      "lv": 1
+    },
+    "2": {
+      "lv": 0
+    },
+    "3": {
+      "lv": 0
+    },
+    "4": {
+      "lv": 0
+    },
+    "5": {
+      "lv": 0
+    },
+    "6": {
+      "lv": 0
+    },
+    "7": {
+      "lv": 0
+    },
+    "8": {
+      "lv": 0
+    },
+    "9": {
+      "lv": 0
+    },
+    "10": {
+      "lv": 0
+    },
+    "11": {
+      "lv": 0
+    },
+    "12": {
+      "lv": 0
+    },
+    "13": {
+      "lv": 0
+    }
+  },
+  "skin": 1,
+  "skinObj": {
+    "1": {
+      "lv": 3
+    },
+    "2": {
+      "lv": 1
+    },
+    "3": {
+      "lv": 2
+    },
+    "4": {
+      "lv": 0
+    },
+    "5": {
+      "lv": 0
+    }
+  },
+  "draw": {
+    "totalTimes": 2,
+    "lastFreshTime": 1509012326,
+    "group": [
+      2,
+      1,
+      3
+    ],
+    "groupTime": [
+      1,
+      0,
+      0
+    ]
+  },
+  "achieveObj": {
+    "default": 1,
+    "homelv": 2,
+    "roll6": 2,
+    "destroy": 0,
+    "arrest": 0,
+    "chess": 2,
+    "skin": 0,
+    "vehicle": 0,
+    "escape": 0,
+    "bigCard": 0,
+    "comsume": 4800,
+    "steal": 0,
+    "greenHat": 0,
+    "achBit": "1"
+  },
+  "share": {
+    "shareTotal": 0,
+    "todayCount": 0,
+    "nextShareTime": 0,
+    "inviteScoreNo": 0,
+    "reward": [
+      [
+        "vit",
+        "0",
+        "5"
+      ],
+      [
+        "gold",
+        "0",
+        "9999"
+      ]
+    ]
+  },
+  "invite": {
+    "inviteList": {},
+    "limitNum": 20,
+    "invitePoint": 0,
+    "bit": ""
+  },
+  "msg": [],
+  "msgTime": 0,
+  "usersInfo": {
+    "1681111": {
+      "nickname": "",
+      "headimgurl": "",
+      "sex": 0,
+      "uid": 1681111
+    },
+    "1681113": {
+      "nickname": "",
+      "headimgurl": "",
+      "sex": 0,
+      "uid": 1681113
+    }
+  }
 }

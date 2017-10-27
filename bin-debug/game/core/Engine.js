@@ -6,6 +6,7 @@ var PLATFORM;
 var Engine = (function () {
     function Engine(dis, mainView) {
         var _this = this;
+        this.costTime = 0;
         this.stage = dis.stage;
         STAGE = this.stage;
         this.mainView = mainView;
@@ -75,6 +76,8 @@ var Engine = (function () {
             });
         }
         else {
+            this.costTime = egret.getTimer();
+            console.time("theme");
             var themeURL = "resource/default.thm.json";
             var theme = new eui.Theme(themeURL, STAGE);
             theme.once(eui.UIEvent.COMPLETE, this.onLoadSkinComplete, this);
@@ -99,7 +102,8 @@ var Engine = (function () {
         this.addReadyCount();
     };
     Engine.prototype.onLoadSkinComplete = function () {
-        egret.log("load skin complete");
+        console.timeEnd("theme");
+        egret.log("load skin complete" + (egret.getTimer() - this.costTime));
         this.addReadyCount();
     };
     Engine.prototype.onEnterComplete = function () {
@@ -143,4 +147,3 @@ var Engine = (function () {
     return Engine;
 }());
 __reflect(Engine.prototype, "Engine");
-//# sourceMappingURL=Engine.js.map

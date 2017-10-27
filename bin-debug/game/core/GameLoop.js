@@ -102,4 +102,3 @@ var GameLoop;
     }
     GameLoop.registerTimer = registerTimer;
 })(GameLoop || (GameLoop = {}));
-//# sourceMappingURL=GameLoop.js.map
