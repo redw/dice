@@ -112,3 +112,4 @@ var MathUtil;
     }
     MathUtil.easyNumber = easyNumber;
 })(MathUtil || (MathUtil = {}));
+//# sourceMappingURL=MathUtil.js.map

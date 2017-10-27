@@ -23,3 +23,4 @@ var SkinPart1 = (function (_super) {
     return SkinPart1;
 }(eui.Component));
 __reflect(SkinPart1.prototype, "SkinPart1");
+//# sourceMappingURL=SkinPart1.js.map

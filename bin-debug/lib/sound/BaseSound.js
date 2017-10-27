@@ -116,3 +116,4 @@ var BaseSound = (function (_super) {
     return BaseSound;
 }(egret.HashObject));
 __reflect(BaseSound.prototype, "BaseSound");
+//# sourceMappingURL=BaseSound.js.map

@@ -49,3 +49,4 @@ var SimpleButton = (function (_super) {
     return SimpleButton;
 }(eui.Image));
 __reflect(SimpleButton.prototype, "SimpleButton");
+//# sourceMappingURL=SimpleButton.js.map

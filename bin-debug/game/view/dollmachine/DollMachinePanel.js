@@ -82,3 +82,4 @@ var DollMachinePanel = (function (_super) {
     return DollMachinePanel;
 }(BasePanel));
 __reflect(DollMachinePanel.prototype, "DollMachinePanel");
+//# sourceMappingURL=DollMachinePanel.js.map

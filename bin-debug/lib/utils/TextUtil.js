@@ -10,3 +10,4 @@ var TextUtil;
     }
     TextUtil.color = color;
 })(TextUtil || (TextUtil = {}));
+//# sourceMappingURL=TextUtil.js.map

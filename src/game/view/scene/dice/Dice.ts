@@ -14,13 +14,14 @@ class Dice extends egret.DisplayObjectContainer {
 
     public xx = 0;
     public yy = 0;
+    public order = 0;
     public offX = 0;
     public offY = 0;
 
     public constructor(value) {
         super();
-        this.scaleX = 0.5;
-        this.scaleY = 0.5;
+        this.scaleX = 0.6;
+        this.scaleY = 0.6;
         let armature = BoneUtil.createArmature("dice_roll");
         let name = `${1}-1`;
         armature.animation.play(name, 1);
@@ -51,7 +52,7 @@ class Dice extends egret.DisplayObjectContainer {
      * @param dropTime  下落时间
      * @returns {any}
      */
-    public throw(toX:number, toY:number, value?:number, method?:number, dropTime?:number) {
+    public throw(toX:number, toY:number, value?:number, method?:number|string, dropTime?:number) {
         if (!value) {
             value = ArrayUtil.getRandomItem(ArrayUtil.numberArray(1, 6));
         }
@@ -78,10 +79,23 @@ class Dice extends egret.DisplayObjectContainer {
         let name = `${this.pointCount}-${this.method}`;
         this.armature.animation.play(name, 1);
         this.alpha = 1;
-        this.scaleX = 0.3;
-        this.scaleY = 0.3;
-        this.x = this.x - 100;
-        this.y = this.y - 500;
+        this.scaleX = 0.4;
+        this.scaleY = 0.4;
+        if (this.method == "1") {
+            this.y = this.y - 500;
+        } else if (this.method == "2") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        } else if (this.method == "2_x") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        } else if (this.method == "3") {
+            this.x = toX - 100;
+            this.y = toY - 500;
+        } else if (this.method == "3_x") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        }
         let offX = toX;
         let offY = this.y;
         this.to(toX, toY, offX, offY);
@@ -115,9 +129,10 @@ class Dice extends egret.DisplayObjectContainer {
                 this.p1_y = offY;
                 this.p2_x = toX;
                 this.p2_y = toY;
-                prop.factor = 1;
-                prop.scaleY = 0.5;
-                prop.scaleX = 0.5;
+                prop.scaleY = 0.6;
+                prop.scaleX = 0.6;
+                prop.x = toX;
+                prop.y = toY;
             } else {
                prop.x = toX;
                prop.y = toY;

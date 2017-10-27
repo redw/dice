@@ -23,6 +23,7 @@ var DiceContainer = (function (_super) {
         _this.layer = new egret.DisplayObjectContainer();
         _this.addChild(_this.layer);
         _this.gridIndexArr = [];
+        _this.diceIndexArr = [];
         var off = homeLand.des + homeLand.build + homeLand.road;
         var span = homeLand.des * 2 + homeLand.build * 2 + homeLand.road * 2 + homeLand.inner;
         var len = homeLand.inner;
@@ -36,16 +37,19 @@ var DiceContainer = (function (_super) {
         _this.addEventListener("DICE_ANI_COMPLETE", _this.diceAniComplete, _this);
         return _this;
     }
+    // 添加随机色子
     DiceContainer.prototype.addRandomDice = function (value) {
         if (value === void 0) { value = 1; }
-        var exist = false;
-        do {
+        while (true) {
             var pos = ArrayUtil.getRandomItem(this.gridIndexArr);
-            var span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
-            var yy = ~~(pos / span);
-            var xx = pos % span;
-            this.addDice(xx, yy, value);
-        } while (exist);
+            if (this.diceIndexArr.indexOf(+pos) < 0) {
+                var span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
+                var yy = ~~(pos / span);
+                var xx = pos % span;
+                this.addDice(xx, yy, value);
+                break;
+            }
+        }
     };
     /**
      * 添加色子
@@ -58,17 +62,22 @@ var DiceContainer = (function (_super) {
      */
     DiceContainer.prototype.addDice = function (xx, yy, value, posX, posY) {
         if (value === void 0) { value = 1; }
-        if (posX === void 0) { posX = 0; }
-        if (posY === void 0) { posY = 0; }
+        if (posX === void 0) { posX = 48; }
+        if (posY === void 0) { posY = 34; }
         var dice = new Dice(value);
         dice.xx = xx;
         dice.yy = yy;
+        var span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
+        dice.order = yy * span + xx;
+        this.diceIndexArr.push(yy * span + xx);
         var point = this.getGirdPosByXXYY(xx, yy);
         dice.setPos(point.x + posX, point.y + posY);
         this.layer.addChild(dice);
+        this.sortDisplay();
         this.diceArr.push(dice);
         return dice;
     };
+    // 得到色子值
     DiceContainer.prototype.getDiceValues = function () {
         var len = this.diceArr.length;
         var result = [];
@@ -81,6 +90,7 @@ var DiceContainer = (function (_super) {
      * 抛色子
      */
     DiceContainer.prototype.throwDice = function (values, method) {
+        this.timerId = GameLoop.registerEnterFrame(this.sortDisplay, this);
         var len = this.diceArr.length;
         if (!values || !values.length) {
             values = [];
@@ -94,34 +104,94 @@ var DiceContainer = (function (_super) {
         var value = 0;
         var time = 400 + ~~(Math.random() * 100);
         var indexArr = this.gridIndexArr.concat();
-        for (var i = 0; i < this.throwCount; i++) {
-            var dice = this.diceArr[i];
-            if (!dice) {
-                this.addRandomDice(1);
+        this.diceIndexArr = [];
+        var count = 0;
+        var span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
+        var throwInfo = [];
+        var step = 0;
+        var methodIndexArr = [];
+        while (count < this.throwCount || step > 10000) {
+            step++;
+            var index = ArrayUtil.getRandomItem(indexArr);
+            var methodIndex = Util.getRandomInt(0, 4);
+            if (this.diceIndexArr.indexOf(index) < 0 && (methodIndexArr.length >= 5 || methodIndexArr.indexOf(methodIndex) < 0)) {
+                var xx = index % span;
+                var yy = ~~(index / span);
+                var offArr = DiceContainer.DICE_OFF[methodIndex];
+                var ok = true;
+                for (var i = 0; i < offArr.length; i += 2) {
+                    var newXX = xx + offArr[i];
+                    var newYY = yy + offArr[i + 1];
+                    var newIndex = newYY * span + newXX;
+                    if (this.gridIndexArr.indexOf(newIndex) >= 0) {
+                        ok = false;
+                        break;
+                    }
+                }
+                if (ok) {
+                    count++;
+                    throwInfo.push(DiceContainer.DICE_METHOD[methodIndex], xx, yy);
+                    this.diceIndexArr.push(index);
+                    methodIndexArr.push(methodIndex);
+                    for (var i = 0; i < offArr.length; i += 2) {
+                        var newXX = xx + offArr[i];
+                        var newYY = yy + offArr[i + 1];
+                        var newIndex = newYY * span + newXX;
+                        this.diceIndexArr.push(newIndex);
+                    }
+                }
             }
-            var method_1 = Util.getRandomInt(1, 3);
-            var index = ArrayUtil.removeRandomItem(indexArr);
-            var point = this.getGridPosByIndex(index);
-            value += dice.throw(point.x, point.y, values[i], method_1, time);
         }
-        this.throwValue = value;
+        if (step >= 10000) {
+            console.log("抛色子算法错误");
+        }
+        else {
+            for (var i = 0, len_1 = throwInfo.length; i < len_1; i += 3) {
+                var dice = this.diceArr[~~(i / 3)];
+                if (!dice) {
+                    this.addRandomDice(1);
+                }
+                var method_1 = throwInfo[i];
+                var xx = throwInfo[i + 1];
+                var yy = throwInfo[i + 2];
+                dice.xx = xx;
+                dice.yy = yy;
+                var index = yy * span + xx;
+                dice.order = index;
+                var point = this.getGridPosByIndex(index);
+                value += dice.throw(point.x + 48, point.y + 34, values[i], method_1, time);
+            }
+            this.throwValue = value;
+        }
     };
     DiceContainer.prototype.diceAniComplete = function () {
         this.completeCount++;
         if (this.throwCount == this.completeCount) {
+            GameLoop.clearTimer(this.timerId);
             EventManager.inst.dispatchEventWith(GameEvents.DICE_COMPLETE);
+        }
+    };
+    // 色子排序
+    DiceContainer.prototype.sortDisplay = function () {
+        this.diceArr.sort(Util.ascendSort);
+        var len = this.diceArr.length;
+        for (var i = 0; i < len; i++) {
+            var dice = this.diceArr[i];
+            this.layer.setChildIndex(dice, i);
         }
     };
     DiceContainer.prototype.getGridPosByIndex = function (index) {
         var span = this.homeLand.des * 2 + this.homeLand.build * 2 + this.homeLand.road * 2 + this.homeLand.inner;
         var xx = index % span;
         var yy = ~~(index / span);
-        console.log("drop:", xx, yy);
         return this.getGirdPosByXXYY(xx, yy);
     };
     DiceContainer.prototype.getGirdPosByXXYY = function (xx, yy) {
         return this.homeLand.getGridPosByXXYY(xx, yy);
     };
+    DiceContainer.DICE_METHOD = ["1", "2", "2_x", "3", "3_x"];
+    DiceContainer.DICE_OFF = [[], [0, -1], [1, 0], [0, -1, 0 - 2], [1, 0, 2, 0]];
     return DiceContainer;
 }(egret.DisplayObjectContainer));
 __reflect(DiceContainer.prototype, "DiceContainer");
+//# sourceMappingURL=DiceContainer.js.map

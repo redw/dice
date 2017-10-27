@@ -21,3 +21,4 @@ var SimpleTabBtn = (function (_super) {
     return SimpleTabBtn;
 }(eui.Component));
 __reflect(SimpleTabBtn.prototype, "SimpleTabBtn");
+//# sourceMappingURL=SimpleTabBtn.js.map

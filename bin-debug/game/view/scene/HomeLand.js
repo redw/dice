@@ -65,7 +65,8 @@ var HomeLand = (function (_super) {
     };
     // 实始化色子
     HomeLand.prototype.initDice = function (count) {
-        if (count === void 0) { count = 2; }
+        if (count === void 0) { count = 5; }
+        this.diceContainer.addDice(4, 4, 1);
         var diceArr = ArrayUtil.numberArray(0, 9);
         while (count--) {
             var randomValue = ArrayUtil.removeRandomItem(diceArr);
@@ -78,3 +79,4 @@ var HomeLand = (function (_super) {
     return HomeLand;
 }(egret.DisplayObjectContainer));
 __reflect(HomeLand.prototype, "HomeLand");
+//# sourceMappingURL=HomeLand.js.map

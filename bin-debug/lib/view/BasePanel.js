@@ -48,3 +48,4 @@ var BasePanel = (function (_super) {
     return BasePanel;
 }(ExComponent));
 __reflect(BasePanel.prototype, "BasePanel");
+//# sourceMappingURL=BasePanel.js.map

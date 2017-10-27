@@ -19,10 +19,11 @@ var Dice = (function (_super) {
         _this.pointCount = 0;
         _this.xx = 0;
         _this.yy = 0;
+        _this.order = 0;
         _this.offX = 0;
         _this.offY = 0;
-        _this.scaleX = 0.5;
-        _this.scaleY = 0.5;
+        _this.scaleX = 0.6;
+        _this.scaleY = 0.6;
         var armature = BoneUtil.createArmature("dice_roll");
         var name = 1 + "-1";
         armature.animation.play(name, 1);
@@ -94,10 +95,27 @@ var Dice = (function (_super) {
         var name = this.pointCount + "-" + this.method;
         this.armature.animation.play(name, 1);
         this.alpha = 1;
-        this.scaleX = 0.3;
-        this.scaleY = 0.3;
-        this.x = this.x - 100;
-        this.y = this.y - 500;
+        this.scaleX = 0.4;
+        this.scaleY = 0.4;
+        if (this.method == "1") {
+            this.y = this.y - 500;
+        }
+        else if (this.method == "2") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        }
+        else if (this.method == "2_x") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        }
+        else if (this.method == "3") {
+            this.x = toX - 100;
+            this.y = toY - 500;
+        }
+        else if (this.method == "3_x") {
+            this.x = toX - 50;
+            this.y = toY - 500;
+        }
         var offX = toX;
         var offY = this.y;
         this.to(toX, toY, offX, offY);
@@ -129,9 +147,10 @@ var Dice = (function (_super) {
                 this.p1_y = offY;
                 this.p2_x = toX;
                 this.p2_y = toY;
-                prop.factor = 1;
-                prop.scaleY = 0.5;
-                prop.scaleX = 0.5;
+                prop.scaleY = 0.6;
+                prop.scaleX = 0.6;
+                prop.x = toX;
+                prop.y = toY;
             }
             else {
                 prop.x = toX;
@@ -147,3 +166,4 @@ var Dice = (function (_super) {
     return Dice;
 }(egret.DisplayObjectContainer));
 __reflect(Dice.prototype, "Dice");
+//# sourceMappingURL=Dice.js.map

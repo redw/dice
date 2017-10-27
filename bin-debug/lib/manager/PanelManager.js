@@ -382,3 +382,4 @@ var Pop;
     }(egret.HashObject));
     __reflect(PanelManager.prototype, "PanelManager");
 })(Pop || (Pop = {}));
+//# sourceMappingURL=PanelManager.js.map

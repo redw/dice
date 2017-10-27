@@ -59,7 +59,8 @@ class HomeLand extends egret.DisplayObjectContainer {
     }
 
     // 实始化色子
-    private initDice(count = 2) {
+    private initDice(count = 5) {
+        this.diceContainer.addDice(4, 4, 1);
         let diceArr = ArrayUtil.numberArray(0, 9);
         while (count--) {
             let randomValue = ArrayUtil.removeRandomItem(diceArr);

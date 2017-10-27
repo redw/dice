@@ -35,9 +35,8 @@ class Scene extends egret.DisplayObjectContainer {
         this.addChild(this.backGround);
         this.backGround.draw();
 
-        this.homeLand = new HomeLand(95, 67);
+        this.homeLand = new HomeLand(95, 67, inner);
         this.addChild(this.homeLand);
-
         // this.initDice();
     }
 

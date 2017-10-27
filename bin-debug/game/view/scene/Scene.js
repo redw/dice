@@ -43,7 +43,7 @@ var Scene = (function (_super) {
         _this.backGround = new SceneBG();
         _this.addChild(_this.backGround);
         _this.backGround.draw();
-        _this.homeLand = new HomeLand(95, 67);
+        _this.homeLand = new HomeLand(95, 67, inner);
         _this.addChild(_this.homeLand);
         return _this;
         // this.initDice();
@@ -76,3 +76,4 @@ var Scene = (function (_super) {
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
+//# sourceMappingURL=Scene.js.map
