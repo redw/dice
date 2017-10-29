@@ -104,7 +104,7 @@ var HomeLandBG = (function (_super) {
     HomeLandBG.prototype.addTileToLayer = function (xx, yy, source, container, offX, offY) {
         if (offX === void 0) { offX = 0; }
         if (offY === void 0) { offY = 0; }
-        var bitmap = new AutoBitmap();
+        var bitmap = new eui.Image();
         bitmap.source = source;
         var pos = this.homeLand.getGridPosByXXYY(xx, yy);
         bitmap.x = pos.x + offX;

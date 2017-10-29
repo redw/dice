@@ -15,7 +15,7 @@ class LeftView extends ExComponent {
                 break;
 
             case "activityBtn":
-                Pop.open(DollMachinePanel)
+                Pop.open(DollMachinePanel);
                 break;
         }
     }

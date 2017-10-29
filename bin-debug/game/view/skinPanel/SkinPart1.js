@@ -13,14 +13,23 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var SkinPart1 = (function (_super) {
     __extends(SkinPart1, _super);
-    function SkinPart1() {
+    function SkinPart1(owner) {
         var _this = _super.call(this) || this;
+        _this.owner = owner;
         _this.skinName = SkinPart1Skin;
         return _this;
     }
-    SkinPart1.prototype.showSomeInfo = function (obj, type) {
+    SkinPart1.prototype.init = function () {
+        this.tabBar.addEventListener(egret.Event.CHANGING, this.onSelectChange, this);
+    };
+    SkinPart1.prototype.onSelectChange = function () {
+        var subType = (this.tabBar.selectedIndex || 0) + 1;
+        var arr = SkinModel.getDataProvider(1, subType);
+        this.owner.setData(arr);
+    };
+    SkinPart1.prototype.active = function () {
     };
     return SkinPart1;
-}(eui.Component));
+}(ExComponent));
 __reflect(SkinPart1.prototype, "SkinPart1");
 //# sourceMappingURL=SkinPart1.js.map

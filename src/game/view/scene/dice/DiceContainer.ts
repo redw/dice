@@ -114,7 +114,7 @@ class DiceContainer extends egret.DisplayObjectContainer {
         let throwInfo = [];
         let step = 0;
         let methodIndexArr = [];
-        while (count < this.throwCount || step > 10000) {
+        while (count < this.throwCount || step > 1000) {
             step++;
             let index = ArrayUtil.getRandomItem(indexArr);
             let methodIndex = Util.getRandomInt(0, 4);
@@ -147,7 +147,7 @@ class DiceContainer extends egret.DisplayObjectContainer {
             }
         }
 
-        if (step >= 10000) {
+        if (step >= 1000) {
             console.log("抛色子算法错误");
         } else {
             for (let i = 0, len = throwInfo.length; i < len; i += 3) {

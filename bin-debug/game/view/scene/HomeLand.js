@@ -22,9 +22,6 @@ var HomeLand = (function (_super) {
      * @param tileW     格子宽度
      * @param tileH     格子高度
      * @param inner     内部大小
-     * @param road      环道
-     * @param build     建筑
-     * @param des       装饰
      */
     function HomeLand(tileW, tileH, inner) {
         if (inner === void 0) { inner = 3; }
@@ -39,8 +36,6 @@ var HomeLand = (function (_super) {
         _this.tileW = tileW;
         _this.tileH = tileH;
         _this.inner = inner;
-        _this.x = STAGE.stageWidth * 0.5;
-        _this.y = 200;
         var count = inner + (_this.road + _this.build + _this.des) * 2;
         _this.size = count;
         _this.backGround = new HomeLandBG(_this);

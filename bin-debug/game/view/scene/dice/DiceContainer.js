@@ -110,7 +110,7 @@ var DiceContainer = (function (_super) {
         var throwInfo = [];
         var step = 0;
         var methodIndexArr = [];
-        while (count < this.throwCount || step > 10000) {
+        while (count < this.throwCount || step > 1000) {
             step++;
             var index = ArrayUtil.getRandomItem(indexArr);
             var methodIndex = Util.getRandomInt(0, 4);
@@ -142,7 +142,7 @@ var DiceContainer = (function (_super) {
                 }
             }
         }
-        if (step >= 10000) {
+        if (step >= 1000) {
             console.log("抛色子算法错误");
         }
         else {

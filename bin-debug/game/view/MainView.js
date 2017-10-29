@@ -15,7 +15,7 @@ var MainView = (function (_super) {
     __extends(MainView, _super);
     function MainView() {
         var _this = _super.call(this) || this;
-        _this.scene = new Scene(95, 67, 5);
+        _this.scene = new Scene();
         _this.addChild(_this.scene);
         _this.leftView = new LeftView();
         _this.leftView.left = 0;

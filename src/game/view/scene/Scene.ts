@@ -1,43 +1,60 @@
+import Stage = egret.Stage;
 /**
  * 游戏场景
  */
 class Scene extends egret.DisplayObjectContainer {
+    private sceneWidth:number;
+    private sceneHeight:number;
+
     private backGround:SceneBG;
     private homeLand:HomeLand;
 
-    public tileW = 100;
-    public tileH = 100;
-    public inner = 3;
-    public road = 1;
-    public build = 1;
-    public des = 1;
-    public size = 7;
+    private mouseDownX:number;
+    private mouseDownY:number;
+    private startX:number;
+    private startY:number;
 
     /**
      * 构造函数
      * @param tileW     格子宽度
      * @param tileH     格子高度
      * @param inner     内部大小
-     * @param road      环道
-     * @param build     建筑
-     * @param des       装饰
      */
-    public constructor(tileW:number, tileH:number, inner = 3) {
+    public constructor(width=1920, height=2160) {
         super();
-        this.tileW = tileW;
-        this.tileH = tileH;
-        this.inner = inner;
-
-        let count = inner + (this.road + this.build + this.des) * 2;
-        this.size = count;
+        this.changeSceneSize(width, height);
 
         this.backGround = new SceneBG();
         this.addChild(this.backGround);
         this.backGround.draw();
 
+        this.createHomeLand(width * 0.5, height * 0.5);
+        this.center();
+
+        STAGE.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onMouseDown, this);
+    }
+
+    public changeSceneSize(width:number, height:number) {
+        this.sceneWidth = width;
+        this.sceneHeight = height;
+    }
+
+    public center() {
+        this.x = (this.sceneWidth - STAGE.stageWidth) * -0.5;
+        this.y = (this.sceneHeight) * -0.5;
+    }
+
+    /**
+     * 创建家园
+     * @param tileW
+     * @param tileH
+     * @param inner
+     */
+    public createHomeLand(x:number, y:number, inner = 3) {
         this.homeLand = new HomeLand(95, 67, inner);
+        this.homeLand.x = x;
+        this.homeLand.y = y + 200;
         this.addChild(this.homeLand);
-        // this.initDice();
     }
 
     public createDice(x:number, y:number) {
@@ -50,20 +67,49 @@ class Scene extends egret.DisplayObjectContainer {
     }
 
     public getGridPosByXXYY(xx:number, yy:number) {
-        let x = (xx - yy - 1) * this.tileW * 0.5;
-        let y = (xx + yy) * this.tileH * 0.5;
+        let x = (xx - yy - 1) * 59* 0.5;
+        let y = (xx + yy) * 67 * 0.5;
         return {x:x, y:y};
     }
 
-    // // 实始化色子
-    // private initDice(count = 2) {
-    //     let diceArr = ArrayUtil.numberArray(0, 9);
-    //     while (count--) {
-    //         let randomValue = ArrayUtil.removeRandomItem(diceArr);
-    //         this.diceContainer.addRandomDice(randomValue);
-    //     }
-    // }
-    //
+
+    public onMouseDown(e:egret.TouchEvent) {
+        this.mouseDownX = e.stageX;
+        this.mouseDownY = e.stageY;
+        this.startX = this.x;
+        this.startY = this.y;
+        STAGE.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMouseMove, this);
+    }
+
+    private onMouseUp(e:egret.TouchEvent) {
+        STAGE.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMouseMove, this);
+    }
+
+    private onMouseMove(e:egret.TouchEvent) {
+        let stageX = e.stageX;
+        let stageY = e.stageY;
+        let offX = stageX - this.mouseDownX;
+        let offY = stageY - this.mouseDownY;
+        this.x = this.startX + offX;
+        this.y = this.startY + offY;
+        let maxX = 0;
+        let maxY = 0;
+        let minX = STAGE.stageWidth - this.sceneWidth;
+        let minY = STAGE.stageHeight - this.sceneHeight;
+        if (this.x > maxX) {
+            this.x = maxX;
+        }
+        if (this.x < minX) {
+            this.x = minX;
+        }
+        if (this.y > maxY) {
+            this.y = maxY;
+        }
+        if (this.y < minY) {
+            this.y = minY;
+        }
+    }
+
     public throwDice() {
         this.homeLand.throwDice();
     }

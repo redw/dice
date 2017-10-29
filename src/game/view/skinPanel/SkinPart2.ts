@@ -1,10 +1,10 @@
-class SkinPart2 extends eui.Component {
+class SkinPart2 extends ExComponent {
     public constructor() {
         super();
         this.skinName = SkinPart2Skin;
     }
 
-    public showSomeInfo(obj:any, type:number) {
+    public active() {
 
     }
 }

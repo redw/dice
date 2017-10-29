@@ -11,104 +11,48 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-/**
- * 奖励
- * @author j
- * 2016/1/22
- */
 var BonusPanel = (function (_super) {
     __extends(BonusPanel, _super);
     function BonusPanel() {
         var _this = _super.call(this) || this;
         _this.time = 3;
         _this.isClose = false;
-        // this._modal = true;
-        // this._layer = PanelManager.TOP_LAYER;
-        // this.skinName = BounsPanelSkin;
+        _this.layer = PanelLayer.TOP_LAYER;
+        _this.skinName = BounsPanelSkin;
         _this.horizontalCenter = 0;
         _this.verticalCenter = 0;
         return _this;
     }
-    BonusPanel.prototype.initData = function () {
-        this.awardId = this.data["awardId"];
-        this.cnt = this.data["cnt"];
-        this.heroId = this.data["hero"];
-        this.callback = this.data["callback"];
-        this.thisObject = this.data["thisObject"];
-        // var heroData:HeroVO;
-        // if(this.heroId)
-        // {
-        //     heroData = UserProxy.inst.heroData.getHeroData(this.heroId);
-        // }
-        // var rewardData:RewardData = UserMethod.inst.rewardJs[this.awardId];
-        //
-        // if(this.awardId == BonusType.COIN_TIME)
-        // {
-        //     this.imgIcon.source = rewardData.icon;
-        //     this.awardName.text = rewardData.name + "x" +  MathUtil.easyNumber(this.cnt) + "小时";
-        // }
-        // else if(this.awardId == BonusType.HERO)
-        // {
-        //     this.imgIcon.source = Global.getChaIcon(this.heroId);
-        //     this.awardName.text = heroData.config.name;
-        // }
-        // else if(this.awardId == BonusType.HERO_CHIP)
-        // {
-        //     this.imgIcon.source = Global.getChaChipIcon(this.heroId);
-        //
-        //     this.awardName.text = heroData.config.name + "碎片x" +  MathUtil.easyNumber(this.cnt);
-        // }
-        // else if(this.awardId == BonusType.WORD )
-        // {
-        //     this.awardName.visible = false;
-        //     this.imgIcon.source = "piece_" + this.cnt + "_png";
-        // }
-        // else if(this.awardId == BonusType.BOX)
-        // {
-        //     var boxData:any = Config.WarBoxData[this.cnt];
-        //     this.imgIcon.source = "reward_box_"+ this.cnt +"_png";
-        //     this.awardName.text =  boxData["name"] + "x1";
-        // }
-        // else if (this.awardId == BonusType.GAS) {
-        //     this.imgIcon.source = "sky_energy_bar_png";
-        //     this.awardName.text =  "能量" + "x" + this.cnt;
-        // }
-        // else if (this.awardId == BonusType.SKIN) {
-        //     this.imgIcon.source = URLConfig.getHeroSkinChipIcon(this.heroId, true);
-        //     this.awardName.text =  "皮肤" + "x" + this.cnt;
-        // }
-        // else if(this.awardId == BonusType.ARTIFACT)
-        // {
-        //     let config:ArtifactConfigItem = Config.ArtifactData[this.heroId];
-        //     this.imgIcon.source = URLConfig.getArtifactIconUrl(this.heroId, true);
-        //     this.awardName.text =  config.name + "x" + this.cnt;
-        // }
-        // else
-        // {
-        //     this.imgIcon.source = rewardData.icon;
-        //     this.awardName.text = rewardData.name + "x" + MathUtil.easyNumber(this.cnt);
-        // }
+    BonusPanel.prototype.active = function () {
+        this.back = this.data["back"];
+        this.backContext = this.data["backContext"];
+        this.imgIcon.source = this.data["icon"];
+        this.awardName.text = this.data["name"] || "";
+        this.toX = this.data["toX"];
+        this.toY = this.data["toY"];
         this.tweenLight(360);
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        // TickerUtil.register(this.onTouch, this, 700);
-    };
-    BonusPanel.prototype.destory = function () {
-        egret.Tween.removeTweens(this.imgLight);
-        egret.Tween.removeTweens(this.groupIcon);
-        this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouch, this);
-        // TickerUtil.unregister(this.onInterval, this);
+        this.timerId = GameLoop.registerTimer(this.onTouch, this, 700);
     };
     BonusPanel.prototype.onTouch = function (e) {
+        var _this = this;
+        if (this.timerId) {
+            GameLoop.clearTimer(this.timerId);
+            this.timerId = 0;
+        }
         if (this.isClose) {
             return;
         }
         this.isClose = true;
         this.awardName.visible = false;
         egret.Tween.get(this.groupIcon).to({ scaleX: 1.5, scaleY: 1.5 }, 350, egret.Ease.elasticOut).call(function () {
-            this.imgLight.visible = false;
-            egret.Tween.removeTweens(this.imgLight);
-            switch (this.awardId) {
-            }
+            _this.imgLight.visible = false;
+            egret.Tween.removeTweens(_this.imgLight);
+            var toX = _this.toX;
+            var toY = _this.toY;
+            egret.Tween.get(_this.groupIcon).to({ x: toX, y: toY, alpha: 0.4, scaleX: 1, scaleY: 1 }, 350).call(function () {
+                _this.hidePanel();
+            }, _this);
         }, this);
     };
     BonusPanel.prototype.onInterval = function (e) {
@@ -118,14 +62,15 @@ var BonusPanel = (function (_super) {
         }
     };
     BonusPanel.prototype.tweenLight = function (value) {
+        var _this = this;
         egret.Tween.get(this.imgLight).to({ rotation: value }, 10000).call(function () {
-            this.tweenLight(value);
+            _this.tweenLight(value);
         }, this);
     };
     BonusPanel.prototype.hidePanel = function () {
-        // PanelManager.inst.hidePanel("BonusPanel");
-        if (this.callback != null) {
-            this.callback.call(this.thisObject);
+        Pop.close(this);
+        if (this.back) {
+            this.back.call(this.backContext);
         }
     };
     return BonusPanel;
