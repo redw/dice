@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354097f5-5154-4fa5-87bb-9370f55ffa31" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/build.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/SceneBuildLayer.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/scene/SceneDecorateLayer.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/BaseButton.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/BaseButton.js" />
@@ -69,12 +72,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleButton.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleGroup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/SimpleTabBtn.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/SimpleTabBtn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config_avu.json" afterPath="$PROJECT_DIR$/resource/config_avu.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.res.json" afterPath="$PROJECT_DIR$/resource/default.res.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/MainView.ts" afterPath="$PROJECT_DIR$/src/game/view/MainView.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,11 +98,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Util.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Util.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/utils/Util.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
               <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneBG.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBG.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,41 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="egret.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/modules/egret/egret.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="15303" column="57" lean-forward="false" selection-start-line="15303" selection-start-column="57" selection-end-line="15303" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadManager.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DiceContainer.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="-418">
               <caret line="119" column="41" lean-forward="false" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enter.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/http/enter.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -159,8 +141,28 @@
       <file leaf-file-name="Scene.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            <state relative-caret-position="589">
+              <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneBuildLayer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBuildLayer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneDecorateLayer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneDecorateLayer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,7 +172,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,18 +181,18 @@
       <file leaf-file-name="HomeLand.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dice.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
+      <file leaf-file-name="build.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resource/build.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="149" column="37" lean-forward="false" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,10 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/scene/SceneBG.ts" />
-        <option value="$PROJECT_DIR$/resource/eui_skins/LeftViewSkin.exml" />
-        <option value="$PROJECT_DIR$/src/game/view/skinPanel.ts" />
         <option value="$PROJECT_DIR$/src/game/view/skinPanel/skinPanel.ts" />
         <option value="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPanelSkin.exml" />
         <option value="$PROJECT_DIR$/src/game/view/LeftView.ts" />
@@ -279,11 +277,15 @@
         <option value="$PROJECT_DIR$/src/game/core/Engine.ts" />
         <option value="$PROJECT_DIR$/src/lib/manager/LoadManager.ts" />
         <option value="$PROJECT_DIR$/resource/config_avu.json" />
-        <option value="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/SceneEdgeDecorate.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/SceneBuildLayer.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/scene/SceneDecorateLayer.ts" />
+        <option value="$PROJECT_DIR$/resource/build.json" />
       </list>
     </option>
   </component>
@@ -399,18 +401,12 @@
               <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_roll" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_roll" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
+              <option name="myItemId" value="scene" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,11 +420,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_roll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,13 +493,29 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ApexTest" factoryName="Apex Test">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
       <envs />
@@ -557,7 +583,7 @@
       <workItem from="1508848568023" duration="166000" />
       <workItem from="1508948290654" duration="579000" />
       <workItem from="1509028014919" duration="8756000" />
-      <workItem from="1509070192241" duration="18114000" />
+      <workItem from="1509070192241" duration="21477000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.0.2">
       <created>1508482485711</created>
@@ -577,7 +603,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101784000" />
+    <option name="totallyTimeSpent" value="105147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -655,42 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinModel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinTabBtn.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/view/ExComponent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/friend/FriendInvitePanel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/friend/FriendInviteItem.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="58" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/dollmachine/DollMachinePanel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -776,6 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5866">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,6 +796,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -827,6 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,6 +843,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,38 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/config_avu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1090,18 +1052,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/utils/Util.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBG.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBuildLayer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/modules/eui/eui.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="6172" column="8" lean-forward="false" selection-start-line="6172" selection-start-column="8" selection-end-line="6172" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/config_avu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="-418">
           <caret line="119" column="41" lean-forward="false" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/utils/Util.ts">
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneDecorateLayer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="484">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/build.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -43,4 +43,3 @@ var SkinModel;
     }
     SkinModel.getSkinConfigObj = getSkinConfigObj;
 })(SkinModel || (SkinModel = {}));
-//# sourceMappingURL=SkinModel.js.map

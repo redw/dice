@@ -194,4 +194,3 @@ var DiceContainer = (function (_super) {
     return DiceContainer;
 }(egret.DisplayObjectContainer));
 __reflect(DiceContainer.prototype, "DiceContainer");
-//# sourceMappingURL=DiceContainer.js.map

@@ -47,4 +47,3 @@ var GameDataProxy;
         }
     }
 })(GameDataProxy || (GameDataProxy = {}));
-//# sourceMappingURL=GameDataProxy.js.map

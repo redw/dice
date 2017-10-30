@@ -311,4 +311,3 @@ var BigNum = (function () {
     return BigNum;
 }());
 __reflect(BigNum.prototype, "BigNum");
-//# sourceMappingURL=BigNum.js.map

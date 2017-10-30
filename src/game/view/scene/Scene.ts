@@ -2,9 +2,6 @@
  * 游戏场景
  */
 class Scene extends egret.DisplayObjectContainer {
-    private backGround:SceneBG;
-    private homeLand:HomeLand;
-
     public tileW = 100;
     public tileH = 100;
     public inner = 3;
@@ -13,20 +10,23 @@ class Scene extends egret.DisplayObjectContainer {
     public des = 1;
     public size = 7;
 
+    private backGround:SceneBG;
+    private homeLand:HomeLand;
+
     /**
      * 构造函数
+     * @param inner     内部大小
      * @param tileW     格子宽度
      * @param tileH     格子高度
-     * @param inner     内部大小
      * @param road      环道
      * @param build     建筑
      * @param des       装饰
      */
-    public constructor(tileW:number, tileH:number, inner = 3) {
+    public constructor(inner = 3, tileW:number, tileH:number) {
         super();
+        this.inner = inner;
         this.tileW = tileW;
         this.tileH = tileH;
-        this.inner = inner;
 
         let count = inner + (this.road + this.build + this.des) * 2;
         this.size = count;
@@ -66,5 +66,17 @@ class Scene extends egret.DisplayObjectContainer {
     //
     public throwDice() {
         this.homeLand.throwDice();
+    }
+
+    public static getGridPosByXXYY(xx:number, yy:number, width=95, height=67) {
+        let x = (xx - yy - 1) * width * 0.5;
+        let y = (xx + yy) * height * 0.5;
+        return {x:x, y:y};
+    }
+
+    public static getBuildConfigInfo(source:string) {
+        source = source.replace("_png", "");
+        let obj = RES.getRes("build_json");
+        return obj[source];
     }
 }

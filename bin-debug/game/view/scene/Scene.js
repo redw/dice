@@ -18,14 +18,14 @@ var Scene = (function (_super) {
     __extends(Scene, _super);
     /**
      * 构造函数
+     * @param inner     内部大小
      * @param tileW     格子宽度
      * @param tileH     格子高度
-     * @param inner     内部大小
      * @param road      环道
      * @param build     建筑
      * @param des       装饰
      */
-    function Scene(tileW, tileH, inner) {
+    function Scene(inner, tileW, tileH) {
         if (inner === void 0) { inner = 3; }
         var _this = _super.call(this) || this;
         _this.tileW = 100;
@@ -35,9 +35,9 @@ var Scene = (function (_super) {
         _this.build = 1;
         _this.des = 1;
         _this.size = 7;
+        _this.inner = inner;
         _this.tileW = tileW;
         _this.tileH = tileH;
-        _this.inner = inner;
         var count = inner + (_this.road + _this.build + _this.des) * 2;
         _this.size = count;
         _this.backGround = new SceneBG();
@@ -73,7 +73,18 @@ var Scene = (function (_super) {
     Scene.prototype.throwDice = function () {
         this.homeLand.throwDice();
     };
+    Scene.getGridPosByXXYY = function (xx, yy, width, height) {
+        if (width === void 0) { width = 95; }
+        if (height === void 0) { height = 67; }
+        var x = (xx - yy - 1) * width * 0.5;
+        var y = (xx + yy) * height * 0.5;
+        return { x: x, y: y };
+    };
+    Scene.getBuildConfigInfo = function (source) {
+        source = source.replace("_png", "");
+        var obj = RES.getRes("build_json");
+        return obj[source];
+    };
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
-//# sourceMappingURL=Scene.js.map

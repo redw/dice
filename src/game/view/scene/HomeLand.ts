@@ -4,6 +4,10 @@
  */
 class HomeLand extends egret.DisplayObjectContainer {
     private backGround:HomeLandBG;
+    private buildLayer0:SceneBuildLayer;
+    private buildLayer1:SceneBuildLayer;
+    private decorateLayer0:SceneDecorateLayer;
+    private decorateLayer1:SceneDecorateLayer;
     private diceContainer: DiceContainer;
 
     public tileW = 100;
@@ -37,8 +41,22 @@ class HomeLand extends egret.DisplayObjectContainer {
         this.backGround = new HomeLandBG(this);
         this.addChild(this.backGround);
 
+        this.decorateLayer0 = new SceneDecorateLayer("up", inner);
+        this.addChild(this.decorateLayer0);
+
+        this.buildLayer0 = new SceneBuildLayer("up", inner);
+        this.addChild(this.buildLayer0);
+
         this.diceContainer = new DiceContainer(this);
         this.addChild(this.diceContainer);
+
+        this.buildLayer1 = new SceneBuildLayer("down", inner);
+        this.addChild(this.buildLayer1);
+
+        this.decorateLayer1 = new SceneDecorateLayer("down", inner);
+        this.addChild(this.decorateLayer1);
+
+        this.decorateLayer0.drawUp();
 
         this.initDice();
     }
