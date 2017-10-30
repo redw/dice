@@ -96,7 +96,7 @@ class HomeLandBG extends egret.DisplayObjectContainer {
     }
 
     public addTileToLayer(xx:number, yy:number, source:string, container:egret.DisplayObjectContainer, offX = 0, offY = 0) {
-        let bitmap = new AutoBitmap();
+        let bitmap = new eui.Image();
         bitmap.source = source;
         let pos = this.homeLand.getGridPosByXXYY(xx, yy);
         bitmap.x = pos.x + offX;

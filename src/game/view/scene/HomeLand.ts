@@ -23,9 +23,6 @@ class HomeLand extends egret.DisplayObjectContainer {
      * @param tileW     格子宽度
      * @param tileH     格子高度
      * @param inner     内部大小
-     * @param road      环道
-     * @param build     建筑
-     * @param des       装饰
      */
     public constructor(tileW:number, tileH:number, inner = 3) {
         super();
@@ -33,8 +30,6 @@ class HomeLand extends egret.DisplayObjectContainer {
         this.tileH = tileH;
         this.inner = inner;
 
-        this.x = STAGE.stageWidth * 0.5;
-        this.y = 200;
         let count = inner + (this.road + this.build + this.des) * 2;
         this.size = count;
 

@@ -18,8 +18,8 @@ var SkinPart3 = (function (_super) {
         _this.skinName = SkinPart3Skin;
         return _this;
     }
-    SkinPart3.prototype.showSomeInfo = function (obj, type) {
+    SkinPart3.prototype.active = function () {
     };
     return SkinPart3;
-}(eui.Component));
+}(ExComponent));
 __reflect(SkinPart3.prototype, "SkinPart3");

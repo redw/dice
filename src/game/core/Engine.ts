@@ -151,16 +151,21 @@ class Engine {
     }
 
     enterGame() {
-        let V = egret.getDefinitionByName(this.mainView);
-        let v = new V();
-        let stage = STAGE;
-        if (window["hideProgress"]) {
-            window["hideProgress"]();
-        }
+        let stage = this.stage;
         stage.removeChildren();
-        stage.addChild(v);
 
         GameLoop.boot();
         stage.addEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
+
+        let V = egret.getDefinitionByName(this.mainView);
+        let v = new V();
+        let popLayer = new egret.DisplayObjectContainer();
+        stage.addChild(v);
+        stage.addChild(popLayer);
+        Pop.boot(popLayer);
+
+        if (window["hideProgress"]) {
+            window["hideProgress"]();
+        }
     }
 }

@@ -21,13 +21,26 @@ var SkinPanel = (function (_super) {
     }
     SkinPanel.prototype.init = function () {
         this.tabBar.addEventListener(egret.Event.CHANGING, this.onSelectChange, this);
+        Net.on(CmdConst.SKIN_UP, this.skinUpRes, this);
         this.onSelectChange();
     };
     SkinPanel.prototype.onSelectChange = function () {
         var selectIndex = this.tabBar.selectedIndex;
         var type = Math.max(selectIndex, 0);
+        if (type == 1) {
+            var arr = SkinModel.getDataProvider(type, 1);
+            this.skinShowComp.setData(arr);
+        }
+        else {
+            var arr = SkinModel.getDataProvider(type);
+            this.skinShowComp.setData(arr);
+        }
+    };
+    SkinPanel.prototype.skinUpRes = function () {
+        var selectIndex = this.tabBar.selectedIndex;
+        var type = Math.max(selectIndex, 0);
         var arr = SkinModel.getDataProvider(type);
-        this.skinShowComp.setSkinInfo(arr, type);
+        this.skinShowComp.refresh(arr);
     };
     return SkinPanel;
 }(BasePanel));

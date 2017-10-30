@@ -18,22 +18,82 @@ var SkinItemRen = (function (_super) {
         _this.skinName = SkinItemRenSkin;
         return _this;
     }
-    SkinItemRen.prototype.selected = function (obj) {
-        DisplayUtil.setChildProp(this, "selectedImg", obj.id == this.cdata.id, "visible");
+    SkinItemRen.prototype.$onAddToStage = function (stage, nestLevel) {
+        _super.prototype.$onAddToStage.call(this, stage, nestLevel);
+        this.useImg.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onUseSkin, this);
     };
-    SkinItemRen.prototype.setData = function (obj, type) {
-        var cObj = SkinModel.getSkinConfigObj(obj, type);
-        var nameTxt = DisplayUtil.getChildByName(this, "nameTxt");
-        var name = cObj.name;
+    SkinItemRen.prototype.$onRemoveFromStage = function () {
+        _super.prototype.$onRemoveFromStage.call(this);
+        this.useImg.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onUseSkin, this);
+    };
+    SkinItemRen.prototype.onUseSkin = function (e) {
+        e.stopImmediatePropagation();
+        var type = this.data.type;
+        if (type == 0) {
+            Net.sendMessage(CmdConst.CHANGE_SKIN, { sid: this.data.id });
+        }
+        else if (type == 1) {
+            Net.sendMessage(CmdConst.CHANGE_CHESS, { cid: this.data.id });
+        }
+        else if (type == 2) {
+            Net.sendMessage(CmdConst.CHANGE_DICE, { did: this.data.id });
+        }
+        else {
+            Net.sendMessage(CmdConst.CHANGE_VEHICLE, { vid: this.data.id });
+        }
+    };
+    SkinItemRen.prototype.dataChanged = function () {
+        var obj = this.data;
+        var type = obj.type;
+        this.cData = SkinModel.getSkinConfigObj(obj);
+        var curProp = SkinModel.getCurProp(type);
+        var name = this.cData.name;
+        this.lockImg.visible = Boolean(!obj.lv);
+        if (curProp == obj.lv) {
+            this.useImg.visible = true;
+        }
+        else {
+            this.useImg.visible = Boolean(obj.lv);
+        }
         var count = 1;
         if (type == 0) {
-            nameTxt.text = name;
+            this.nameTxt.text = name;
         }
         else {
             name = name + "{0}";
-            TextUtil.color(nameTxt, name, "     x" + count, 0xb55826);
+            TextUtil.color(this.nameTxt, name, "     x" + count, 0xb55826);
+        }
+        switch (type) {
+            case 0:
+                this.iconImg.source = URLConfig.getCitySkinIcon(obj.id);
+                this.seatImg.visible = false;
+                this.iconImg.scaleX = 1.5;
+                this.iconImg.scaleY = 1.5;
+                this.seatGroup.y = -30;
+                break;
+            case 1:
+                this.iconImg.source = URLConfig.getChessObjSkinIcon(obj.id);
+                this.seatImg.visible = true;
+                this.iconImg.scaleX = 1;
+                this.iconImg.scaleY = 1;
+                this.seatGroup.y = 0;
+                break;
+            case 2:
+                this.iconImg.source = URLConfig.getDiceSkinIcon(obj.id);
+                this.seatImg.visible = true;
+                this.iconImg.scaleX = 1;
+                this.iconImg.scaleY = 1;
+                this.seatGroup.y = 0;
+                break;
+            case 3:
+                this.iconImg.source = URLConfig.getVehicleSkinIcon(obj.id);
+                this.seatImg.visible = true;
+                this.iconImg.scaleX = 1;
+                this.iconImg.scaleY = 1;
+                this.seatGroup.y = 0;
+                break;
         }
     };
     return SkinItemRen;
-}(eui.Component));
+}(eui.ItemRenderer));
 __reflect(SkinItemRen.prototype, "SkinItemRen");

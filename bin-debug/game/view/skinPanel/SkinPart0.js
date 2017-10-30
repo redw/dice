@@ -13,13 +13,35 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var SkinPart0 = (function (_super) {
     __extends(SkinPart0, _super);
-    function SkinPart0() {
+    function SkinPart0(owner) {
         var _this = _super.call(this) || this;
         _this.skinName = SkinPart0Skin;
+        _this.owner = owner;
         return _this;
     }
-    SkinPart0.prototype.showSomeInfo = function (obj, type) {
+    SkinPart0.prototype.init = function () {
+        this.upgradeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSkinUP, this);
+    };
+    SkinPart0.prototype.onSkinUP = function () {
+        Net.sendMessage(CmdConst.SKIN_UP, { sid: this.data.id });
+    };
+    SkinPart0.prototype.onClick = function (name) {
+        if (name == "upgradeBtn") {
+            this.onSkinUP();
+        }
+    };
+    SkinPart0.prototype.active = function () {
+        var obj = this.data;
+        var cData = SkinModel.getSkinConfigObj(obj);
+        var lv = obj.lv;
+        var maxLv = cData.cost.length;
+        var levelTxt = DisplayUtil.getChildByName(this.contentGroup, "levelTxt");
+        levelTxt.text = lv || "未解锁";
+        var extraTxt = DisplayUtil.getChildByName(this.contentGroup, "extraTxt");
+        extraTxt.text = cData.reward_1;
+        var diamondTxt = DisplayUtil.getChildByName(this.contentGroup, "diamondTxt");
+        diamondTxt.text = cData.cost[Math.min(lv, maxLv - 1)];
     };
     return SkinPart0;
-}(eui.Component));
+}(ExComponent));
 __reflect(SkinPart0.prototype, "SkinPart0");

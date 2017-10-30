@@ -22,7 +22,7 @@ var RedPoint = (function (_super) {
         if (source === void 0) { source = "red_point_png"; }
         var _this = _super.call(this) || this;
         _this.jump = true;
-        _this.bitmap = new AutoBitmap();
+        _this.bitmap = new eui.Image();
         _this.bitmap.x = -RedPoint.POINT_RADIUS / 2;
         _this.bitmap.y = -RedPoint.POINT_RADIUS / 2;
         _this.bitmap.source = source;

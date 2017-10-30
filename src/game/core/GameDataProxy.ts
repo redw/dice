@@ -57,6 +57,11 @@ interface IGameData {
     sex:number;
     tech:{number:number}[];
     uid:number;
+
+    skin:any;
+    chess:number;
+    dice:number;
+    vehicle:number;
     skinObj:any;
     chessObj:any;
     diceObj:any;

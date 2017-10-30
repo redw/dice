@@ -7,12 +7,12 @@ class RedPoint extends egret.Sprite {
     private static POINT_RADIUS:number = 20;
 
     public jump:boolean = true;
-    public bitmap:AutoBitmap;
+    public bitmap:eui.Image;
 
     public constructor(source = "red_point_png") {
         super();
 
-        this.bitmap = new AutoBitmap();
+        this.bitmap = new eui.Image();
         this.bitmap.x = -RedPoint.POINT_RADIUS / 2;
         this.bitmap.y = -RedPoint.POINT_RADIUS / 2;
         this.bitmap.source = source;

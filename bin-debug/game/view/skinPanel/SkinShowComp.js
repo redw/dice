@@ -15,56 +15,65 @@ var SkinShowComp = (function (_super) {
     __extends(SkinShowComp, _super);
     function SkinShowComp() {
         var _this = _super.call(this) || this;
-        _this.itemArr = [];
-        _this.freeItemArr = [];
         _this.skinName = SkinShowCompSkin;
-        _this.partList = Array(4);
         return _this;
     }
-    SkinShowComp.prototype.setSkinInfo = function (arr, type) {
+    SkinShowComp.prototype.init = function () {
+        this.list.itemRenderer = SkinItemRen;
+        this.list.addEventListener(eui.PropertyEvent.PROPERTY_CHANGE, this.onSelectItem, this);
+        this.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.onTouchEnd, this, true, Number.MAX_VALUE);
+        this.partList = Array(4);
+    };
+    SkinShowComp.prototype.onTouchEnd = function (e) {
+        var _this = this;
+        var touchMoved = this.scroll["$Scroller"][5];
+        if (touchMoved) {
+            e.stopImmediatePropagation();
+            var scrollH_1 = Math.abs(this.list.scrollH);
+            scrollH_1 = Math.round(scrollH_1 / 225) * 225;
+            egret.setTimeout(function () {
+                _this.list.scrollH = scrollH_1;
+                _this.scroll["$Scroller"][5] = false;
+            }, this, 0);
+        }
+    };
+    SkinShowComp.prototype.active = function () {
+        var arr = this.data;
         this.skinData = arr;
-        while (this.itemArr.length) {
-            var item = this.itemArr.pop();
-            DisplayUtil.removeFromParent(item);
-            this.freeItemArr.push(item);
-        }
-        for (var i = 0, len = arr.length; i < len; i++) {
-            var comp = null;
-            if (this.freeItemArr.length) {
-                comp = this.freeItemArr.pop();
-            }
-            else {
-                comp = new SkinItemRen();
-            }
-            this.itemArr.push(comp);
-            comp.setData(arr[i], type);
-            this.itemContainer.addChild(comp);
-        }
+        this.list.dataProvider = new eui.ArrayCollection(arr);
+        this.list.selectedIndex = 0;
+        var type = arr[0].type;
         for (var i = 0, len = this.partList.length; i < len; i++) {
             var view = this.partList[i];
             if (i == type) {
                 if (!view) {
-                    view = new (egret.getDefinitionByName("SkinPart" + i));
+                    view = new (egret.getDefinitionByName("SkinPart" + i))(this);
                     this.partList[i] = view;
                 }
                 if (!view.parent) {
-                    this.addChild(view);
+                    this.partGroup.addChild(view);
                 }
             }
             else {
                 DisplayUtil.removeFromParent(view);
             }
         }
-        this.showSomeSkinInfo(arr[0], type);
     };
-    SkinShowComp.prototype.showSomeSkinInfo = function (obj, type) {
+    SkinShowComp.prototype.onSelectItem = function () {
+        var obj = this.list.selectedItem;
+        var type = obj.type;
         var view = this.partList[type];
-        if (view && view.showSomeInfo) {
-            view.showSomeInfo(obj, type);
+        if (view) {
+            view.setData(obj);
         }
         else {
         }
     };
+    SkinShowComp.prototype.refresh = function (arr) {
+        var dataProvider = this.list.dataProvider;
+        dataProvider.replaceAll(arr);
+        this.onSelectItem();
+    };
     return SkinShowComp;
-}(eui.Component));
+}(ExComponent));
 __reflect(SkinShowComp.prototype, "SkinShowComp");

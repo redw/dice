@@ -133,16 +133,19 @@ var Engine = (function () {
         GameLoop.$onEnterFrame();
     };
     Engine.prototype.enterGame = function () {
+        var stage = this.stage;
+        stage.removeChildren();
+        GameLoop.boot();
+        stage.addEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
         var V = egret.getDefinitionByName(this.mainView);
         var v = new V();
-        var stage = STAGE;
+        var popLayer = new egret.DisplayObjectContainer();
+        stage.addChild(v);
+        stage.addChild(popLayer);
+        Pop.boot(popLayer);
         if (window["hideProgress"]) {
             window["hideProgress"]();
         }
-        stage.removeChildren();
-        stage.addChild(v);
-        GameLoop.boot();
-        stage.addEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
     };
     return Engine;
 }());

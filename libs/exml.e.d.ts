@@ -1,12 +1,18 @@
 declare class BottomViewSkin extends eui.Skin{
 }
+declare class BounsPanelSkin extends eui.Skin{
+}
 declare class LeftViewSkin extends eui.Skin{
 }
 declare class RightViewSkin extends eui.Skin{
 }
+declare class GreenButtonSkin extends eui.Skin{
+}
 declare class ProgressSkin extends eui.Skin{
 }
 declare class SimpleTabBtnSkin extends eui.Skin{
+}
+declare class YellowButtonSkin extends eui.Skin{
 }
 declare class DollMachinePanelSkin extends eui.Skin{
 }
