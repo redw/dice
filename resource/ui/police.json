@@ -1,0 +1,14 @@
+{"file":"police.png","frames":{
+"police_bg_00_png":{"x":684,"y":0,"w":236,"h":90,"offX":0,"offY":0,"sourceW":236,"sourceH":90},
+"police_bg_01_png":{"x":247,"y":0,"w":435,"h":107,"offX":0,"offY":0,"sourceW":435,"sourceH":107},
+"police_bg_02_png":{"x":0,"y":0,"w":245,"h":377,"offX":0,"offY":0,"sourceW":245,"sourceH":377},
+"police_label_00_png":{"x":876,"y":92,"w":108,"h":32,"offX":0,"offY":0,"sourceW":108,"sourceH":32},
+"police_label_01_png":{"x":876,"y":126,"w":107,"h":31,"offX":0,"offY":0,"sourceW":107,"sourceH":31},
+"police_label_02_png":{"x":247,"y":109,"w":196,"h":51,"offX":1,"offY":2,"sourceW":197,"sourceH":55},
+"police_label_03_png":{"x":922,"y":0,"w":90,"h":41,"offX":0,"offY":0,"sourceW":90,"sourceH":41},
+"police_label_04_png":{"x":601,"y":109,"w":69,"h":31,"offX":0,"offY":0,"sourceW":69,"sourceH":31},
+"police_label_05_png":{"x":445,"y":109,"w":154,"h":32,"offX":0,"offY":0,"sourceW":154,"sourceH":32},
+"police_label_06_png":{"x":730,"y":149,"w":105,"h":24,"offX":0,"offY":0,"sourceW":105,"sourceH":24},
+"police_label_07_png":{"x":445,"y":149,"w":283,"h":23,"offX":0,"offY":0,"sourceW":283,"sourceH":23},
+"police_label_08_png":{"x":922,"y":43,"w":79,"h":33,"offX":0,"offY":0,"sourceW":79,"sourceH":33},
+"police_label_09_png":{"x":684,"y":92,"w":190,"h":55,"offX":0,"offY":0,"sourceW":190,"sourceH":55}}}

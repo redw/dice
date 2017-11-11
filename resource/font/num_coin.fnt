@@ -1,0 +1,165 @@
+{
+    "file": "num_coin.png", 
+    "frames": {
+        "f": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 66, 
+            "w": 66, 
+            "h": 23, 
+            "y": 0, 
+            "x": 0
+        }, 
+        ",": {
+            "offY": 17, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 6, 
+            "w": 6, 
+            "h": 6, 
+            "y": 38, 
+            "x": 95
+        }, 
+        "0": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 13, 
+            "w": 13, 
+            "h": 22, 
+            "y": 0, 
+            "x": 83
+        }, 
+        ".": {
+            "offY": 19, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 4, 
+            "w": 4, 
+            "h": 4, 
+            "y": 38, 
+            "x": 103
+        }, 
+        "4": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 13, 
+            "w": 13, 
+            "h": 22, 
+            "y": 0, 
+            "x": 68
+        }, 
+        "2": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 11, 
+            "h": 22, 
+            "y": 25, 
+            "x": 44
+        }, 
+        "m": {
+            "offY": 7, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 16, 
+            "w": 16, 
+            "h": 16, 
+            "y": 25, 
+            "x": 0
+        }, 
+        "8": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 22, 
+            "y": 0, 
+            "x": 112
+        }, 
+        "+": {
+            "offY": 7, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 11, 
+            "y": 25, 
+            "x": 95
+        }, 
+        "6": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 25, 
+            "x": 18
+        }, 
+        "1": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 7, 
+            "w": 7, 
+            "h": 23, 
+            "y": 25, 
+            "x": 57
+        }, 
+        "5": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 24, 
+            "x": 82
+        }, 
+        "3": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 22, 
+            "y": 24, 
+            "x": 68
+        }, 
+        "9": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 24, 
+            "x": 112
+        }, 
+        "k": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 25, 
+            "x": 31
+        }, 
+        "7": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 23, 
+            "y": 0, 
+            "x": 98
+        }
+    }
+}

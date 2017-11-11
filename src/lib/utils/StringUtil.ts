@@ -29,24 +29,28 @@ module StringUtil {
         return result != null ? eval(result[2]) : null;
     }
 
-    export function decodeName(name:string, showAll:boolean=false):string {
+    export function decodeName(name:any, showAll:boolean=false):string {
         var result = "玩家";
-        if (name) {
-            try {
-                result = decodeURIComponent(name);
+        if (typeof name == "object") {
+            result = "玩家:" + name.uid;
+        } else {
+            if (name) {
+                try {
+                    result = decodeURIComponent(name);
+                }
+                catch (e) {
+                    result = "玩家";
+                }
             }
-            catch (e) {
-                result = "玩家";
+            result = result.replace(new RegExp("/( )/g"), "");
+            if (result.length > 8 && !showAll) {
+                result = result.substr(0, 6) + "...";
             }
-        }
-        result = result.replace(new RegExp("/( )/g"), "");
-        if (result.length > 8 && !showAll) {
-            result = result.substr(0, 6) + "...";
         }
         return result;
     }
 
-    export function decodeStr(str:string, err:string) {
+    export function decodeStr(str:string, err = "") {
         let result = err;
         if (str) {
             try {

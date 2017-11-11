@@ -21,7 +21,7 @@ class ExternalUtil{
     }
 
     public static getVersion() {
-        return window["game_version"] || "1"
+        return window["game_version"] || "0.0.1"
     }
 
     public static getPlatform() {
@@ -74,30 +74,9 @@ class ExternalUtil{
     }
 
     public static pay(pid:number):void {
-        // if (Global.PAY_ENABLED) {
-        //     let area = window["__qu__"] || 1;
-        //     if(this.getIsHT())
-        //     {
-        //         var htPid:number = this.checkHTPid(pid);
-        //         window["AWY_SDK"].hortorPay({userdata:area, product_id: htPid,uid:UserProxy.inst.uid,gameid:Global.GAME_ID});
-        //     }
-        //     else if(ExternalUtil.inst.getIsYYB())
-        //     {
-        //         var yybPid:number = this.checkYYBPid(pid);
-        //         window["AWY_SDK"].pay({userdata:area, pid:yybPid});
-        //     }
-        //     else if(ExternalUtil.inst.getIs4399())
-        //     {
-        //         var newPid:number = this.checkPidFor4399(pid);
-        //         window["AWY_SDK"].pay4399({userdata:area, product_id: newPid,uid:UserProxy.inst.uid,gameid:Global.GAME_ID});
-        //     }
-        //     else
-        //     {
-        //         window["AWY_SDK"].pay({userdata:area, pid: pid});
-        //     }
-        // } else{
-        //     Alert.show("充值系统正在维护！");
-        // }
+        // TODO 支付,待调
+        let area = window["__qu__"] || 1;
+        window["AWY_SDK"].pay({userdata:area, pid: pid});
     }
 
     /**

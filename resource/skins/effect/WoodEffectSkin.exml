@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WoodEffectSkin" width="640" height="1067" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="effectGroup" width="1" height="1" left="105" bottom="0"/>
+</e:Skin>

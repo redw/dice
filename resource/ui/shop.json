@@ -1,0 +1,17 @@
+{"file":"shop.png","frames":{
+"dice_diamon_1_png":{"x":439,"y":0,"w":66,"h":66,"offX":51,"offY":26,"sourceW":155,"sourceH":111},
+"dice_diamon_2_png":{"x":275,"y":360,"w":136,"h":85,"offX":19,"offY":20,"sourceW":155,"sourceH":111},
+"dice_diamon_3_png":{"x":139,"y":360,"w":134,"h":89,"offX":10,"offY":9,"sourceW":155,"sourceH":111},
+"shop_bg_1_png":{"x":298,"y":0,"w":139,"h":153,"offX":0,"offY":0,"sourceW":139,"sourceH":153},
+"shop_bg_2_png":{"x":139,"y":297,"w":32,"h":30,"offX":0,"offY":0,"sourceW":32,"sourceH":30},
+"shop_bg_3_png":{"x":0,"y":0,"w":296,"h":139,"offX":0,"offY":0,"sourceW":296,"sourceH":139},
+"shop_bg_4_png":{"x":126,"y":141,"w":116,"h":154,"offX":0,"offY":0,"sourceW":116,"sourceH":154},
+"shop_bg_5_png":{"x":0,"y":141,"w":124,"h":154,"offX":0,"offY":0,"sourceW":124,"sourceH":154},
+"shop_diamon_1_png":{"x":439,"y":68,"w":63,"h":60,"offX":58,"offY":29,"sourceW":155,"sourceH":111},
+"shop_diamon_2_png":{"x":393,"y":261,"w":94,"h":76,"offX":38,"offY":21,"sourceW":155,"sourceH":111},
+"shop_diamon_3_png":{"x":394,"y":155,"w":97,"h":104,"offX":38,"offY":7,"sourceW":155,"sourceH":111},
+"shop_diamon_4_png":{"x":0,"y":297,"w":137,"h":88,"offX":4,"offY":8,"sourceW":155,"sourceH":111},
+"shop_diamon_5_png":{"x":244,"y":259,"w":147,"h":99,"offX":0,"offY":2,"sourceW":155,"sourceH":111},
+"shop_diamon_6_png":{"x":244,"y":155,"w":148,"h":102,"offX":0,"offY":0,"sourceW":155,"sourceH":111},
+"shop_label_1_png":{"x":0,"y":387,"w":117,"h":49,"offX":0,"offY":0,"sourceW":117,"sourceH":49},
+"shop_yy_png":{"x":439,"y":130,"w":16,"h":20,"offX":0,"offY":0,"sourceW":16,"sourceH":20}}}

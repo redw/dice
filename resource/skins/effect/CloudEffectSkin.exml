@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CloudEffectSkin" width="640" height="1067" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="icloud0" top="-210" source="switch_cloud_png" scaleX="2.5" scaleY="2.5" x="645"/>
+	<e:Image id="icloud1" top="40" y="10" scaleX="1" source="switch_cloud_png" anchorOffsetX="0" width="704" anchorOffsetY="0" height="421.79" x="-710"/>
+	<e:Image id="icloud2" top="170" y="20" scaleX="1.5" source="switch_cloud_png" anchorOffsetX="0" width="704" anchorOffsetY="0" height="421.79" x="645" scaleY="1.5"/>
+	<e:Image id="icloud3" top="340" y="30" scaleX="1.5" source="switch_cloud_png" anchorOffsetX="0" width="704" anchorOffsetY="0" height="421.79" x="-1060" scaleY="1.5"/>
+	<e:Image id="icloud4" top="530" y="40" scaleX="2" source="switch_cloud_png" anchorOffsetX="0" width="704" anchorOffsetY="0" height="421.79" scaleY="2" x="645"/>
+	<e:Image id="icloud5" top="817" y="40" scaleX="1" source="switch_cloud_png" anchorOffsetX="0" width="840.36" anchorOffsetY="0" height="477.85" scaleY="1" x="-850"/>
+</e:Skin>

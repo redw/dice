@@ -1,0 +1,145 @@
+{
+    "file": "num_diamon.png", 
+    "frames": {
+        ",": {
+            "offY": 17, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 4, 
+            "w": 4, 
+            "h": 6, 
+            "y": 0, 
+            "x": 58
+        }, 
+        "0": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 22, 
+            "y": 0, 
+            "x": 30
+        }, 
+        ".": {
+            "offY": 19, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 4, 
+            "w": 4, 
+            "h": 4, 
+            "y": 8, 
+            "x": 58
+        }, 
+        "4": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 13, 
+            "w": 13, 
+            "h": 22, 
+            "y": 0, 
+            "x": 15
+        }, 
+        "2": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 24, 
+            "x": 47
+        }, 
+        "m": {
+            "offY": 7, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 16, 
+            "w": 16, 
+            "h": 16, 
+            "y": 24, 
+            "x": 29
+        }, 
+        "8": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 22, 
+            "y": 24, 
+            "x": 15
+        }, 
+        "k": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 22, 
+            "y": 48, 
+            "x": 42
+        }, 
+        "6": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 48, 
+            "x": 13
+        }, 
+        "1": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 22, 
+            "sourceW": 7, 
+            "w": 7, 
+            "h": 22, 
+            "y": 48, 
+            "x": 54
+        }, 
+        "5": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 25, 
+            "x": 0
+        }, 
+        "3": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 12, 
+            "w": 12, 
+            "h": 22, 
+            "y": 0, 
+            "x": 44
+        }, 
+        "9": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 22, 
+            "y": 42, 
+            "x": 29
+        }, 
+        "7": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 23, 
+            "sourceW": 13, 
+            "w": 13, 
+            "h": 23, 
+            "y": 0, 
+            "x": 0
+        }
+    }
+}

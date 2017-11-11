@@ -27,7 +27,14 @@ module Util {
         return to;
     }
 
-    export function objToArr(obj:any, out?:any[]) {
+    /**
+     * 此处修改了数据源.
+     * @param obj
+     * @param out
+     * @param autoAddId
+     * @returns {any[]}
+     */
+    export function objToArr(obj:any, out?:any[], autoAddId = false) {
         if (!out) {
             out = [];
         }
@@ -35,39 +42,16 @@ module Util {
             let keys = Object.keys(obj);
             for (let i = 0, len = keys.length; i < len; i++) {
                 let key = keys[i];
+                if (autoAddId) {
+                    obj[key].id = +key;
+                }
                 out.push(obj[key]);
             }
         }
         return out;
     }
 
-    export function getValue(source:any, key:string, defaultValue?:any) {
-        if (!source || typeof source === 'number') {
-            return defaultValue;
-        } else if (source.hasOwnProperty(key)) {
-            return source[key];
-        } else if (key.indexOf('.'))
-        {
-            let keys = key.split('.');
-            let parent = source;
-            let value = defaultValue;
-            //  Use for loop here so we can break early
-            for (var i = 0; i < keys.length; i++) {
-                if (parent.hasOwnProperty(keys[i])) {
-                    //  Yes it has a key property, let's carry on down
-                    value = parent[keys[i]];
-                    parent = parent[keys[i]];
-                } else {
-                    //  Can't go any further, so reset to default
-                    value = defaultValue;
-                    break;
-                }
-            }
-            return value;
-        } else {
-            return defaultValue;
-        }
-    }
+
 
     // 升序
     export function ascendSort(a:{order:number}, b:{order:number}) {
@@ -97,5 +81,29 @@ module Util {
     export function isSimpleType(value:any) {
         let t = typeof (value);
         return t == "number" || t == "boolean" || t == "string";
+    }
+
+    export function getPropValue(source:any, key:string, defaultValue?:any) {
+        if (!source || typeof source === 'number') {
+            return defaultValue;
+        } else if (source.hasOwnProperty(key) || typeof key === 'number') {
+            return source[key];
+        } else if (key.indexOf('.') >= 0) {
+            let keys = key.split('.');
+            let parent = source;
+            let value = defaultValue;
+            for (let i = 0, len = keys.length; i < len; i++) {
+                if (parent && parent.hasOwnProperty(keys[i])) {
+                    value = parent[keys[i]];
+                    parent = parent[keys[i]];
+                } else {
+                    value = defaultValue;
+                    break;
+                }
+            }
+            return value;
+        } else {
+            return defaultValue;
+        }
     }
 }

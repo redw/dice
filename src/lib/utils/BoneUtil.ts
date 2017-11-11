@@ -8,33 +8,56 @@ module BoneUtil {
     let bonesDataMap = {};
     let dragonFactory = new dragonBones.EgretFactory();
 
-    export function createArmature(name:string) {
+    export function createArmature(name:string, complete:Function, context:any) {
+        let armature = createArmatureSync(name);
+        if (armature) {
+            complete.call(context, armature);
+        } else {
+            LoadManager.loadDragonBone(name, ()=>{
+                let armature = createArmatureSync(name);
+                if (complete) {
+                    complete.call(context, armature);
+                }
+            }, null);
+        }
+    }
+
+    export function createArmatureSync(name:string) {
         let resName = `${name}`;
         if (pool[resName] && pool[resName].length > 0) {
-            return pool[resName].pop();
-        } else {
-            if (!bonesDataMap[resName]) {
-                bonesDataMap[resName] = [];
-                let boneJson = RES.getRes(`${resName}_ske_json`);
-                let texture = RES.getRes(`${resName}_tex_png`);
-                let textureData = RES.getRes(`${resName}_tex_json`);
-                let version = boneJson.version;
-                let versions = dragonBones.DataParser["DATA_VERSIONS"];
-                if (versions && versions.indexOf(version) < 0) {
-                    egret.error(`dragonbones verion error:${version}`);
-                    boneJson.version = versions[versions.length - 1];
-                }
-                let dragonBonesData = dragonFactory.getDragonBonesData(resName);
-                if (!dragonBonesData) {
-                    dragonFactory.parseDragonBonesData(boneJson);
-                }
-                dragonFactory.parseTextureAtlasData(textureData, texture, resName);
-            }
-            let armature = dragonFactory.buildArmature(resName);
-            armature.cacheFrameRate = 30;
+            let armature = pool[resName].pop();
             dragonBones.WorldClock.clock.add(armature);
-            bonesDataMap[resName].push(armature);
             return armature;
+        } else {
+            let boneJson = RES.getRes(`${resName}_ske_json`);
+            let textureData = RES.getRes(`${resName}_tex_json`);
+            let texture = RES.getRes(`${resName}_tex_png`);
+            if (!boneJson || !textureData || !texture) {
+                return null;
+            } else {
+                if (!bonesDataMap[resName]) {
+                    bonesDataMap[resName] = [];
+                    // TODO 此外强行改名
+                    boneJson.armature[0].name = name;
+                    let version = boneJson.version;
+                    let versions = dragonBones.DataParser["DATA_VERSIONS"];
+                    // TODO 此外强行改版本
+                    if (versions && versions.indexOf(version) < 0) {
+                        egret.error(`dragonbones verion error:${version}`);
+                        boneJson.version = versions[versions.length - 1];
+                    }
+                    let dragonBonesData = dragonFactory.getDragonBonesData(resName);
+                    if (!dragonBonesData) {
+                        dragonFactory.parseDragonBonesData(boneJson);
+                    }
+                    dragonFactory.parseTextureAtlasData(textureData, texture, resName);
+                }
+                let armature = dragonFactory.buildArmature(resName);
+                armature.cacheFrameRate = 30;
+                dragonBones.WorldClock.clock.add(armature);
+                bonesDataMap[resName].push(armature);
+                return armature;
+            }
         }
     }
 
@@ -51,6 +74,7 @@ module BoneUtil {
             armature.animation.stop();
             dragonBones.WorldClock.clock.remove(armature);
             pool[name].push(armature);
+            console.log("移除动画:", armature.name);
         }
     }
 }

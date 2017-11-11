@@ -35,6 +35,10 @@ var Main = (function (_super) {
         return _this;
     }
     Main.prototype.addToStage = function () {
+        var _a = { a: 10, b: 20, c: 30 }, a = _a.a, b = _a.b, c = _a.c;
+        console.log(a, b, c);
+        var _b = [1, 2], first = _b[0], second = _b[1];
+        console.log(first, second);
         var engine = new Engine(this, "MainView");
     };
     return Main;

@@ -27,7 +27,7 @@ module TimeUtil {
      * @param time (ms)
      * @returns {string}  '06:23:11'
      */
-    export function timeToString(time:number, needHour:boolean = false):string {
+    export function timeToString(time:number, needHour:boolean = false, seq = ":"):string {
         if (time >= 3600) {
             needHour = true;
         }
@@ -36,11 +36,10 @@ module TimeUtil {
         var seconds:number = Math.floor(time - hours * 3600 - minutes * 60);
         var strTime = "";
         if (needHour) {
-            strTime += ((hours > 9 ? hours : ("0" + hours)) + ":");
+            strTime += ((hours > 9 ? hours : ("0" + hours)) + seq);
         }
-        strTime += ((minutes > 9 ? minutes : ("0" + minutes)) + ":");
+        strTime += ((minutes > 9 ? minutes : ("0" + minutes)) + seq);
         strTime += (seconds > 9 ? seconds : ("0" + seconds));
-        //
         return strTime;
     }
 

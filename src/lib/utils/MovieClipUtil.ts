@@ -41,13 +41,17 @@ module MovieClipUtil {
         }
     }
 
-    export function createMovieClip(name:string, suffix:string="_"):egret.MovieClip {
+    /**
+     * 同步创建mc,可能导致热图所回为null
+     * @param name
+     * @returns {any}
+     */
+    export function createMovieClipSync(name:string):egret.MovieClip {
         if (pool[name] && pool[name].length > 0) {
-            addCount(name);
             return pool[name].pop();
         } else {
-            let dataRes:any = RES.getRes(`${name}${suffix}json`);
-            let textureRes:any = RES.getRes(`${name}${suffix}png`);
+            let dataRes:any = RES.getRes(`${name}_json`);
+            let textureRes:any = RES.getRes(`${name}_png`);
             if (!dataRes || !textureRes) {
                 return null;
             } else {
@@ -56,10 +60,28 @@ module MovieClipUtil {
                 let mc = new egret.MovieClip(mcFactory.generateMovieClipData(name));
                 if (!mc.totalFrames) {
                     mc = null;
-                    console.error(`资源${name}错误`);
+                    egret.error(`资源${name}错误`);
                 }
                 return mc;
             }
+        }
+    }
+
+    /**
+     * 异步创建mc
+     * @param name
+     * @param cb
+     * @param cbThis
+     */
+    export function createMovieClip(name:string, cb:Function, cbThis?:any) {
+        let mc = createMovieClipSync(name);
+        if (mc) {
+            cb.call(cbThis, mc);
+        } else {
+            LoadManager.loadMC(name, ()=>{
+                mc = createMovieClipSync(name);
+                cb.call(cbThis, mc);
+            }, null);
         }
     }
 

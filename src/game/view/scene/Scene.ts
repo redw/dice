@@ -16,9 +16,8 @@ class Scene extends egret.DisplayObjectContainer {
 
     /**
      * 构造函数
-     * @param tileW     格子宽度
-     * @param tileH     格子高度
-     * @param inner     内部大小
+     * @param width     场景宽度
+     * @param height    场景高度
      */
     public constructor(width=1920, height=2160) {
         super();

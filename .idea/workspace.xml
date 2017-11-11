@@ -2,81 +2,610 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354097f5-5154-4fa5-87bb-9370f55ffa31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/ui/common/common_new_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/ui/common/common_new_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/eui_skins/BounsPanelSkin.exml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/core/URLConfig.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/view/BImage.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/view/FImage.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/game/core/GameLoop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin-debug/lib/view/AutoBitmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/but_red_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/but_red_1_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/button_invite1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/button_invite1_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/common_but_close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/common_but_close_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/mail_but_getbig.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/mail_but_getbig_disable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/mail_but_getbig_touch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/view/AutoBitmap.ts" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/core/GameLoop.ts" afterPath="$PROJECT_DIR$/src/lib/core/GameLoop.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_but_delete.png" afterPath="$PROJECT_DIR$/resource/ui/friend/friend_but_delete.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_img.png" afterPath="$PROJECT_DIR$/resource/ui/friend/friend_img.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label.png" afterPath="$PROJECT_DIR$/resource/ui/friend/friend_label.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_1.png" afterPath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_2.png" afterPath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_3.png" afterPath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top.png" afterPath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_addfriend.png" afterPath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_addfriend.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_skinshop.png" afterPath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_skinshop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_2.png" afterPath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_3.png" afterPath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/skins/effect/WoodEffectSkin.exml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/effects/CloundEffect.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/view/effects/WoodEffect.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/utils/AutoBitmap.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/utils/BitUtil.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/utils/TickerUtil.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/chess/chess_1/chess_1_1_ske_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/chess/chess_1/chess_1_1_ske_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/chess/chess_1/chess_1_1_ske_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/shaizi/dice_roll_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/shaizi/dice_roll_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/shaizi/dice_roll_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/juming/juming_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/juming/juming_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/juming/juming_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/maoqizi/maoqizi_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/maoqizi/maoqizi_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/maoqizi/maoqizi_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/poche/poche_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/poche/poche_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/poche/poche_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/dice_roll_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/dice_roll_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/roll/dice_roll_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/shaizi/dice_roll_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/shaizi/dice_roll_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/shaizi/dice_roll_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/xiaojiaoche/xiaojiaoche_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/xiaojiaoche/xiaojiaoche_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/xiaojiaoche/xiaojiaoche_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/zhuawawaji/zhuawawaji_ske.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/zhuawawaji/zhuawawaji_tex.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ani/bone/zhuawawaji/zhuawawaji_tex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/BottomViewSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/BounsPanelSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/LeftViewSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/RightViewSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/component/GreenButtonSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/component/ProgressSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/component/SimpleTabBtnSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/component/YellowButtonSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/dollMachine/DollMachinePanelSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/dollMachine/Skinwawaji_light.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinItemRenSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPanelSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPart0Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPart1Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPart2Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinPart3Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinShowCompSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/SkinTabBtnSkin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/skin_1Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/skin_2Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/skin_3Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/eui_skins/skinPanel/skin_4Skin.exml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_bg_paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_bg_paper2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_bg_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_hand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/announ/announ_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/button_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/close_btn_bg_down.png.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/close_btn_bg_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/green_btn_bg_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/green_btn_bg_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/mail_but_get.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/mail_but_get_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/red_btn_bg_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/red_btn_bg_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/shop_but.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/shop_but_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/yellow_btn_bg_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/but/yellow_btn_bg_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_VIP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_b1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_3_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_caidai.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_caidai2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_caidai3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_caidai4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_giftnum.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_bg_giftsqu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_boy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_boy_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_girl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_girl_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_head.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_diamon_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_loca.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_money.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_icon_money_disable.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_line1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_line2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_line3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_line4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_new_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/common_new_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/common/guide_gray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_but_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_but_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_head.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_accept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_label_refuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/friend/friend_qrcode.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (10).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (11).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (12).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (13).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (14).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (15).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (16).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (17).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (18).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (19).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (20).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (21).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (22).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (23).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (24).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (25).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (26).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (27).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (28).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (3).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (4).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (5).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (6).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (7).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (8).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/1 (9).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/city/city_name_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/head/head_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/head/head_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/head/head_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/juese/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skincity/skin_city_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skindice/skin_dice_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skindice/skin_dice_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skindice/skin_dice_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skinplayer/skin_player_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skinplayer/skin_player_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/skinplayer/skin_player_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/upcityaward/upcity_award_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/upcityaward/upcity_award_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/upcityaward/upcity_award_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/upcityaward/upcity_award_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/upcityaward/upcity_award_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/icon/xingzuo/common_icon_xingzuo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_bg_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_bg_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_but_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_icon_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_icon_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/invitation_award/invitaward_label_06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_get.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_bg_top_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_mail_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_mail_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_message_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/mail_label_message_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mail/message_icon_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_bg_shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_ann.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_attention.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_friend _touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_friend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_menub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_mes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_rank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_setting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_shop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_but_vip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_icon_+dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/main/main_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bar_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bar_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bar_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_chaqi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_chaqi_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_chuizi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_coin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_coin_L.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_diamon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_diannao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_pohuai.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_wawaji.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_bg_wenhao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/mapevent/mapevent_head.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/num_hat/num_hat_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bar_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bar_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bar_bg_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bar_bg_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bar_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bg_city.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_bg_line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_activity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_addfriend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_addmoney.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_hat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_menuy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_skinshop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_sound.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_sound_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_sound_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_sound_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_talk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_talk_diamon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_task.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_but_upgrade.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_icon_Resident.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_icon_diamon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_icon_money.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_icon_warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_star_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_star_gray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_star_yell.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_talk_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_talk_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_talk_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/playmain/playmain_talk_label_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_bg_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_bg_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_bg_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/police/police_label_08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_head_first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_head_second.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_head_third.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_friend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_friend0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_world.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_label_world0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/rank_tip_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_but_visit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rank/set_label_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_head_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_head_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_bg_head_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_fail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_head_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_head_star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_who.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/rich/rich_win.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/robothead/head_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/robothead/head_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/robothead/head_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/common_gerenqianming.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_bg_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_but_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_but_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_but_on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_but_select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_icon_fangyan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_tip_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_tip_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_tip_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/set/set_tip_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/dice_diamon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/dice_diamon_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/dice_diamon_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_bg_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_diamon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_diamon_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_diamon_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_money_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_money_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_money_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/shop/shop_yy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_NO1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_NO2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_NO3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_bubble_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_bubble_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_but_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_but_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_city_label_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_dice_label_0_png.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_car.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_cary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_city.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_cityy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_dicey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_label_playery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_player_label_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_player_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_player_xilie1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_player_xilie2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_player_xilie3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_selection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_title_city.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_title_touzi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_track.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_track_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_track_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_use.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/skin/skin_using.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_Occupy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_bg_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_but_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_but_1_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_coin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_diamon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_fix_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_fix_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_icon_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_icon_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_police.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_up_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/suspension/suspension_up_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/ui.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/ui.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_award_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bar_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bar_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_bg_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_but_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_jumin_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_jumin_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_jumin_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_star_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_star_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_star_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/upcity/upcity_warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/common_visitandskin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/invite_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_bg_rainbow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_bg_rainbow2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_but_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_but_hat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_but_talk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_but_touzi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit2_hurt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_bg_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/visit_rabbit_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_bg_5_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/visit/vtalk_label_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/num/num_wawa_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_bg_hou_0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_bg_hou_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_bg_qian.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_bg_zhong00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_bg_zhong01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_01_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_03_touch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_but_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_label_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_label_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_label_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_light_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_light_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_light_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl1_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl1_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl2_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl2_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl_00.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/ui/wawaji/wawa_xl_01.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_tex.png" afterPath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_tex.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_tex.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_tex.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_0.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_2.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_4.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_6.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/dengguang/dengguang_6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_tex.png" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_tex.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_tex.png" afterPath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_tex.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_tex.png" afterPath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_tex.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/CmdConst.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/core/Engine.js" afterPath="$PROJECT_DIR$/bin-debug/game/core/Engine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/BonusPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/MainView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLandBG.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/HomeLandBG.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/MainView.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/view/MainView.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/DiceContainer.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/dice/DiceContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinItemRen.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinItemRen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinModel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPanel.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart0.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart1.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart2.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart3.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinPart3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinShowComp.js" afterPath="$PROJECT_DIR$/bin-debug/game/view/skinPanel/SkinShowComp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" afterPath="$PROJECT_DIR$/bin-debug/lib/view/RedPoint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js.map" afterPath="$PROJECT_DIR$/bin-debug/game/view/scene/Scene.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js.map" afterPath="$PROJECT_DIR$/bin-debug/lib/utils/BoneUtil.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/exml.e.d.ts" afterPath="$PROJECT_DIR$/libs/exml.e.d.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_ske.json" afterPath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_ske.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_tex.json" afterPath="$PROJECT_DIR$/resource/ani/bone/bus/poche/poche_tex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_ske.json" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_ske.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_tex.json" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/jianzhushengji/jianzhushengji_tex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_ske.json" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_ske.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_tex.json" afterPath="$PROJECT_DIR$/resource/ani/bone/effect/zhuawawaji/zhuawawaji_tex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_ske.json" afterPath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_ske.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_tex.json" afterPath="$PROJECT_DIR$/resource/ani/bone/map/juming/juming_tex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_ske.json" afterPath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_ske.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_tex.json" afterPath="$PROJECT_DIR$/resource/ani/bone/map/xiaojiaoche/xiaojiaoche_tex.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.res.json" afterPath="$PROJECT_DIR$/resource/default.res.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/default.thm.json" afterPath="$PROJECT_DIR$/resource/default.thm.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/eui_skins/BottomViewSkin.exml" afterPath="$PROJECT_DIR$/resource/eui_skins/BottomViewSkin.exml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/eui_skins/dollMachine/DollMachinePanelSkin.exml" afterPath="$PROJECT_DIR$/resource/eui_skins/dollMachine/DollMachinePanelSkin.exml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/ui/ui.json" afterPath="$PROJECT_DIR$/resource/ui/ui.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/CmdConst.ts" afterPath="$PROJECT_DIR$/src/game/core/CmdConst.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/Engine.ts" afterPath="$PROJECT_DIR$/src/game/core/Engine.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/GameDataProxy.ts" afterPath="$PROJECT_DIR$/src/game/core/GameDataProxy.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/BonusPanel.ts" afterPath="$PROJECT_DIR$/src/game/view/BonusPanel.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/LeftView.ts" afterPath="$PROJECT_DIR$/src/game/view/LeftView.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/MainView.ts" afterPath="$PROJECT_DIR$/src/game/view/MainView.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" afterPath="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinItemRen.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinItemRen.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinModel.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinModel.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPanel.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPanel.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart0.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart0.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart1.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart1.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart2.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart2.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart3.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinPart3.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinShowComp.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinShowComp.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/view/skinPanel/SkinTabBtn.ts" afterPath="$PROJECT_DIR$/src/game/view/skinPanel/SkinTabBtn.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/view/RedPoint.ts" afterPath="$PROJECT_DIR$/src/lib/view/RedPoint.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/ArrayUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/ArrayUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/BigNum.ts" afterPath="$PROJECT_DIR$/src/lib/utils/BigNum.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/BoneUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/BoneUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/EffectUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/EffectUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/ExternalUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/ExternalUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/GeomUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/GeomUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/MathUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/MathUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/MovieClipUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/MovieClipUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/StringUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/StringUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/TextUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/TextUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/TimeUtil.ts" afterPath="$PROJECT_DIR$/src/lib/utils/TimeUtil.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/utils/Util.ts" afterPath="$PROJECT_DIR$/src/lib/utils/Util.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -98,48 +627,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CmdConst.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/core/CmdConst.ts">
+      <file leaf-file-name="CloundEffect.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/effects/CloundEffect.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="195">
+              <caret line="13" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BonusPanel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/BonusPanel.ts">
+      <file leaf-file-name="MainView.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="-525">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="33" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scene.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
+      <file leaf-file-name="AssetAdapter.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/core/AssetAdapter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="-211">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILifeCycle.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/core/ILifeCycle.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiceContainer.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="149" column="22" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneBG.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/SceneBG.ts">
+      <file leaf-file-name="ArrayUtil.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lib/utils/ArrayUtil.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -148,53 +679,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeLand.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
+      <file leaf-file-name="Scene.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <marker date="1509283589000" expanded="true" signature="1482:1701" ph="{...}" />
-              </folding>
+            <state relative-caret-position="1005">
+              <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainView.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
+      <file leaf-file-name="Dice.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2085">
+              <caret line="139" column="51" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BottomView.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/BottomView.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="30" />
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeLandBG.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts">
+      <file leaf-file-name="WoodEffect.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/view/effects/WoodEffect.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1469">
-              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+            <state relative-caret-position="1050">
+              <caret line="70" column="35" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkinPanel.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/view/skinPanel/SkinPanel.ts">
+      <file leaf-file-name="WoodEffectSkin.exml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/skins/effect/WoodEffectSkin.exml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BounsPanelSkin.exml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/eui_skins/BounsPanelSkin.exml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="15">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -237,11 +766,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/view/skinPanel/SkinTabBtn.ts" />
-        <option value="$PROJECT_DIR$/src/game/core/BaseButton.ts" />
-        <option value="$PROJECT_DIR$/src/lib/view/ExComponent.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/skinPanel/SkinCostComp.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/skinPanel/SkinShowViewComp.ts" />
         <option value="$PROJECT_DIR$/src/game/core/GameConfig.ts" />
         <option value="$PROJECT_DIR$/src/game/view/skinPanel/SkinShowComp.ts" />
         <option value="$PROJECT_DIR$/src/game/view/dollmachine/DollMachineView.ts" />
@@ -284,10 +808,15 @@
         <option value="$PROJECT_DIR$/src/game/view/BonusPanel.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts" />
         <option value="$PROJECT_DIR$/src/game/view/skinPanel/SkinPanel.ts" />
-        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/HomeLand.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts" />
         <option value="$PROJECT_DIR$/src/game/view/scene/Scene.ts" />
+        <option value="$PROJECT_DIR$/resource/default.thm.json" />
+        <option value="$PROJECT_DIR$/src/game/view/effects/CloundEffect.ts" />
+        <option value="$PROJECT_DIR$/resource/skins/effect/WoodEffectSkin.exml" />
+        <option value="$PROJECT_DIR$/src/game/view/effects/WoodEffect.ts" />
+        <option value="$PROJECT_DIR$/src/lib/utils/BoneUtil.ts" />
+        <option value="$PROJECT_DIR$/src/game/view/MainView.ts" />
       </list>
     </option>
   </component>
@@ -376,10 +905,6 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -420,26 +945,8 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,10 +969,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skinPanel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,7 +1046,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="effects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_dice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hh_dice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -558,31 +1083,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hh_dice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eui_skins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -592,19 +1099,19 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resource/eui_skins" />
-      <recent name="$PROJECT_DIR$/src/game/view" />
-      <recent name="$PROJECT_DIR$/src/game/core" />
-      <recent name="$PROJECT_DIR$/src/game/view/skinPanel" />
-      <recent name="$PROJECT_DIR$/src/lib/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib/core" />
       <recent name="$PROJECT_DIR$/src/game/core" />
       <recent name="C:\workspace\hh_roll\resource\web" />
       <recent name="C:\workspace\hh_roll\src\game\view\skinPanel" />
       <recent name="C:\workspace\hh_roll\resource\animation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/utils" />
+      <recent name="$PROJECT_DIR$/resource/eui_skins" />
+      <recent name="$PROJECT_DIR$/src/game/view" />
+      <recent name="$PROJECT_DIR$/src/game/core" />
+      <recent name="$PROJECT_DIR$/src/game/view/skinPanel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -695,7 +1202,11 @@
       <workItem from="1508948290654" duration="579000" />
       <workItem from="1509028014919" duration="8756000" />
       <workItem from="1509070192241" duration="18114000" />
-      <workItem from="1509153595458" duration="19806000" />
+      <workItem from="1509153595458" duration="20780000" />
+      <workItem from="1509532285146" duration="2351000" />
+      <workItem from="1509878077781" duration="6644000" />
+      <workItem from="1509888694543" duration="12920000" />
+      <workItem from="1510412103080" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.0.2">
       <created>1508482485711</created>
@@ -715,7 +1226,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121590000" />
+    <option name="totallyTimeSpent" value="144742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
@@ -725,21 +1236,21 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -793,85 +1304,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lib/core/AssetAdapter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/core/FrameAnimal.ts" />
-    <entry file="file://$PROJECT_DIR$/src/lib/core/ObjPool.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/manager/EventManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/core/Engine.ts" />
-    <entry file="file://$PROJECT_DIR$/src/lib/sound/SoundManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/utils/DisplayUtil.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/core/MainLoad.ts" />
-    <entry file="file://$PROJECT_DIR$/src/lib/net/SocketConnections.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/net/HttpConnections.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/net/Net.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/web/netWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/web/json/enter.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -883,15 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229545">
           <caret line="15303" column="57" selection-start-line="15303" selection-start-column="57" selection-end-line="15303" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="365" column="1" selection-start-line="365" selection-start-column="1" selection-end-line="365" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,17 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <marker date="1509153453000" expanded="true" signature="3813:4087" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,10 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <marker date="1509279126000" expanded="true" signature="88904:88912" ph="{&quot;name&quot;: &quot;common_new_1_png&quot;...}" />
-            <marker date="1509279126000" expanded="true" signature="88904:88915" ph="[...]" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="66" column="28" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,15 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/manager/PanelManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3210">
-          <caret line="121" column="20" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="161" column="58" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,23 +1371,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
           <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/eui_skins/component/SimpleTabBtnSkin.exml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/eui_skins/component/SimpleTabBtnSkin.exml" />
     <entry file="file://$PROJECT_DIR$/src/lib/view/SimpleButton.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="32" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,23 +1393,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/view/AutoBitmap.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/view/AutoBitmap.ts" />
     <entry file="file://$PROJECT_DIR$/src/lib/view/BasePanel.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="132" column="56" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1455">
           <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-364">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,7 +1458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,23 +1472,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/eui_skins/BounsPanelSkin.exml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/eui_skins/BounsPanelSkin.exml" />
     <entry file="file://$PROJECT_DIR$/src/game/view/BonusPanel.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="555">
           <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,33 +1487,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLandBG.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1469">
+        <state relative-caret-position="1470">
           <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/HomeLand.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <marker date="1509283589000" expanded="true" signature="1482:1701" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,22 +1508,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/DiceContainer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
+        <state relative-caret-position="2235">
           <caret line="149" column="22" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/RightView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/eui_skins/BottomViewSkin.exml" />
+    <entry file="file://$PROJECT_DIR$/src/lib/net/Net.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/net/SocketConnections.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/manager/PanelManager.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/default.thm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/manager/LoadManager.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="34" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/skins/effect/WoodEffectSkin.exml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/effects/WoodEffect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/utils/BoneUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/BottomView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/scene/dice/Dice.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="51" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/effects/CloundEffect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/view/scene/Scene.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="1005">
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/view/MainView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/core/AssetAdapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/core/ILifeCycle.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/utils/ArrayUtil.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

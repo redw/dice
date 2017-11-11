@@ -19,9 +19,8 @@ var Scene = (function (_super) {
     __extends(Scene, _super);
     /**
      * 构造函数
-     * @param tileW     格子宽度
-     * @param tileH     格子高度
-     * @param inner     内部大小
+     * @param width     场景宽度
+     * @param height    场景高度
      */
     function Scene(width, height) {
         if (width === void 0) { width = 1920; }

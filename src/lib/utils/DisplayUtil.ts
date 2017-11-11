@@ -14,8 +14,8 @@ module DisplayUtil {
         model.x = 0;
         model.y = 0;
         model.alpha = alpha;
-        model.width = STAGE.stageWidth;
-        model.height = STAGE.stageHeight;
+        model.width = Global.getStageWidth();
+        model.height = Global.getStageHeight();
         model.touchEnabled = true;
         return model;
 
@@ -43,31 +43,6 @@ module DisplayUtil {
             return parent.getChildByName(name);
         } else {
             return null;
-        }
-    }
-
-    /**
-     * 设置子对象的属性
-     * @param parent
-     * @param name
-     * @param prop
-     */
-    export function setChildProp(parent:egret.DisplayObjectContainer, name:string, value:any, prop?:string) {
-        if (parent && name) {
-            let dis = parent.getChildByName(name);
-            if (dis) {
-                if (!prop) {
-                    if (dis instanceof eui.Label) {
-                        prop = "text";
-                    }
-                    if (dis instanceof eui.Image) {
-                        prop = "source";
-                    }
-                }
-                if (prop) {
-                    dis[prop] = value;
-                }
-            }
         }
     }
 
@@ -102,11 +77,31 @@ module DisplayUtil {
         }
     }
 
-    export function getObjectCenterPosition(obj: egret.DisplayObject){
-        var x = obj.x + obj.width * 0.5;
-        var y = obj.y + obj.height * 0.5;
-        return [x,y];
+    /**
+     * 设置子对象的属性
+     * @param parent
+     * @param name
+     * @param prop
+     */
+    export function setChildProp(parent:egret.DisplayObjectContainer, name:string, value:any, prop?:string) {
+        if (parent && name) {
+            let dis = parent.getChildByName(name);
+            if (dis) {
+                if (!prop) {
+                    if (dis instanceof eui.Label) {
+                        prop = "text";
+                    }
+                    if (dis instanceof eui.Image) {
+                        prop = "source";
+                    }
+                }
+                if (prop) {
+                    dis[prop] = value;
+                }
+            }
+        }
     }
+
 
     // export function createTxt(style:Object) {
     //     let defaultStyle = {

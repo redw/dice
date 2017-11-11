@@ -1,0 +1,7 @@
+{"file":"robothead.png","frames":{
+"head_1_jpg":{"x":0,"y":0,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200},
+"head_2_jpg":{"x":202,"y":0,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200},
+"head_3_jpg":{"x":0,"y":202,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200},
+"head_4_jpg":{"x":202,"y":202,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200},
+"head_5_jpg":{"x":0,"y":404,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200},
+"head_6_jpg":{"x":202,"y":404,"w":200,"h":200,"offX":0,"offY":0,"sourceW":200,"sourceH":200}}}

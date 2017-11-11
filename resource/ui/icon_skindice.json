@@ -1,0 +1,8 @@
+{"file":"icon_skindice.png","frames":{
+"dice_roll1_png":{"x":0,"y":0,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll2_png":{"x":96,"y":0,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll3_png":{"x":0,"y":105,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll4_png":{"x":96,"y":105,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll5_png":{"x":0,"y":210,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll6_png":{"x":96,"y":210,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110},
+"dice_roll7_png":{"x":0,"y":315,"w":94,"h":103,"offX":3,"offY":4,"sourceW":100,"sourceH":110}}}

@@ -1,0 +1,7 @@
+{"file":"icon_upcityaward.png","frames":{
+"cityaward_area_png":{"x":442,"y":314,"w":380,"h":139,"offX":13,"offY":21,"sourceW":470,"sourceH":160},
+"cityaward_bus_png":{"x":0,"y":156,"w":429,"h":151,"offX":0,"offY":6,"sourceW":470,"sourceH":160},
+"cityaward_gold_png":{"x":0,"y":0,"w":470,"h":154,"offX":0,"offY":6,"sourceW":470,"sourceH":160},
+"cityaward_home_png":{"x":472,"y":0,"w":432,"h":158,"offX":0,"offY":0,"sourceW":470,"sourceH":160},
+"cityaward_jump_png":{"x":0,"y":314,"w":440,"h":139,"offX":10,"offY":11,"sourceW":470,"sourceH":160},
+"cityaward_police_png":{"x":431,"y":160,"w":404,"h":152,"offX":0,"offY":6,"sourceW":470,"sourceH":160}}}

@@ -17,6 +17,7 @@ var BoneUtil;
             if (!bonesDataMap[resName]) {
                 bonesDataMap[resName] = [];
                 var boneJson = RES.getRes(resName + "_ske_json");
+                boneJson.armature[0].name = name;
                 var texture = RES.getRes(resName + "_tex_png");
                 var textureData = RES.getRes(resName + "_tex_json");
                 var version = boneJson.version;
@@ -39,6 +40,13 @@ var BoneUtil;
         }
     }
     BoneUtil.createArmature = createArmature;
+    function createArmatureSync(name, cb, context) {
+        LoadManager.loadDragonBone(name, function () {
+            var armature = createArmature(name);
+            cb.call(context, armature);
+        }, null);
+    }
+    BoneUtil.createArmatureSync = createArmatureSync;
     function release(armature, resName) {
         if (armature) {
             var name_1 = resName || armature.name;

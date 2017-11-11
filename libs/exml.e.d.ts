@@ -18,6 +18,10 @@ declare class DollMachinePanelSkin extends eui.Skin{
 }
 declare class Skinwawaji_light extends eui.Skin{
 }
+declare class CloudEffectSkin extends eui.Skin{
+}
+declare class WoodEffectSkin extends eui.Skin{
+}
 declare class SkinItemRenSkin extends eui.Skin{
 }
 declare class SkinPanelSkin extends eui.Skin{

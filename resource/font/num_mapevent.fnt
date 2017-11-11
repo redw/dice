@@ -1,0 +1,135 @@
+{
+    "file": "num_mapevent.png", 
+    "frames": {
+        "0": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 18, 
+            "y": 0, 
+            "x": 26
+        }, 
+        ".": {
+            "offY": 15, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 4, 
+            "w": 4, 
+            "h": 4, 
+            "y": 40, 
+            "x": 30
+        }, 
+        "4": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 19, 
+            "y": 0, 
+            "x": 0
+        }, 
+        "2": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 9, 
+            "w": 9, 
+            "h": 19, 
+            "y": 21, 
+            "x": 12
+        }, 
+        "m": {
+            "offY": 5, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 13, 
+            "w": 13, 
+            "h": 14, 
+            "y": 21, 
+            "x": 38
+        }, 
+        "8": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 18, 
+            "y": 20, 
+            "x": 26
+        }, 
+        "k": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 9, 
+            "w": 9, 
+            "h": 18, 
+            "y": 21, 
+            "x": 53
+        }, 
+        "6": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 18, 
+            "y": 21, 
+            "x": 0
+        }, 
+        "1": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 5, 
+            "w": 5, 
+            "h": 19, 
+            "y": 40, 
+            "x": 23
+        }, 
+        "5": {
+            "offY": 1, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 9, 
+            "w": 9, 
+            "h": 18, 
+            "y": 37, 
+            "x": 38
+        }, 
+        "3": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 19, 
+            "y": 0, 
+            "x": 39
+        }, 
+        "9": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 10, 
+            "w": 10, 
+            "h": 19, 
+            "y": 0, 
+            "x": 51
+        }, 
+        "7": {
+            "offY": 0, 
+            "offX": 0, 
+            "sourceH": 19, 
+            "sourceW": 11, 
+            "w": 11, 
+            "h": 19, 
+            "y": 0, 
+            "x": 13
+        }
+    }
+}
