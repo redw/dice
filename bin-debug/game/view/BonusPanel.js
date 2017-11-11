@@ -76,4 +76,3 @@ var BonusPanel = (function (_super) {
     return BonusPanel;
 }(BasePanel));
 __reflect(BonusPanel.prototype, "BonusPanel");
-//# sourceMappingURL=BonusPanel.js.map

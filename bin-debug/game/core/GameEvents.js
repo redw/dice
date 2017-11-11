@@ -13,4 +13,3 @@ var GameEvents;
     // 加载ske文件完成
     GameEvents.LOAD_SKE_COMPLETE = "load_ske_complete";
 })(GameEvents || (GameEvents = {}));
-//# sourceMappingURL=GameEvents.js.map

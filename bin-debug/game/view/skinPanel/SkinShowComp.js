@@ -77,4 +77,3 @@ var SkinShowComp = (function (_super) {
     return SkinShowComp;
 }(ExComponent));
 __reflect(SkinShowComp.prototype, "SkinShowComp");
-//# sourceMappingURL=SkinShowComp.js.map

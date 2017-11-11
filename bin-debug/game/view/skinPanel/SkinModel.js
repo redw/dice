@@ -116,4 +116,3 @@ var SkinModel;
     }
     SkinModel.getSkinData = getSkinData;
 })(SkinModel || (SkinModel = {}));
-//# sourceMappingURL=SkinModel.js.map

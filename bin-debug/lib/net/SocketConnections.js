@@ -41,4 +41,3 @@ var SocketConnect = (function () {
     return SocketConnect;
 }());
 __reflect(SocketConnect.prototype, "SocketConnect");
-//# sourceMappingURL=SocketConnections.js.map

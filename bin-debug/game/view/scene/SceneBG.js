@@ -35,4 +35,3 @@ var SceneBG = (function (_super) {
     return SceneBG;
 }(egret.DisplayObjectContainer));
 __reflect(SceneBG.prototype, "SceneBG");
-//# sourceMappingURL=SceneBG.js.map

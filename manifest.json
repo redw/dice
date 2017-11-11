@@ -15,10 +15,15 @@
 		"bin-debug/lib/net/Net.js",
 		"bin-debug/lib/utils/ArrayUtil.js",
 		"bin-debug/lib/view/BasePanel.js",
+<<<<<<< HEAD
 		"bin-debug/lib/core/GameLoop.js",
+=======
+		"bin-debug/lib/core/AssetAdapter.js",
+		"bin-debug/game/core/GameDataProxy.js",
+>>>>>>> 1c7c12fed53b09a4f61024b8bfcc3681f83b93fd
 		"bin-debug/game/core/GameEvents.js",
+		"bin-debug/game/core/GameLoop.js",
 		"bin-debug/game/core/Global.js",
-		"bin-debug/game/core/URLConfig.js",
 		"bin-debug/game/view/BonusPanel.js",
 		"bin-debug/game/view/BottomView.js",
 		"bin-debug/game/view/LeftView.js",
@@ -33,6 +38,8 @@
 		"bin-debug/game/view/scene/HomeLandBG.js",
 		"bin-debug/game/view/scene/Scene.js",
 		"bin-debug/game/view/scene/SceneBG.js",
+		"bin-debug/game/view/scene/SceneBuildLayer.js",
+		"bin-debug/game/view/scene/SceneDecorateLayer.js",
 		"bin-debug/game/view/scene/dice/Dice.js",
 		"bin-debug/game/view/scene/dice/DiceContainer.js",
 		"bin-debug/game/view/skinPanel/SkinItemRen.js",
@@ -44,7 +51,10 @@
 		"bin-debug/game/view/skinPanel/SkinPart3.js",
 		"bin-debug/game/view/skinPanel/SkinShowComp.js",
 		"bin-debug/game/view/skinPanel/SkinTabBtn.js",
+<<<<<<< HEAD
 		"bin-debug/lib/core/AssetAdapter.js",
+=======
+>>>>>>> 1c7c12fed53b09a4f61024b8bfcc3681f83b93fd
 		"bin-debug/game/core/BaseButton.js",
 		"bin-debug/lib/core/ILifeCycle.js",
 		"bin-debug/lib/core/IViewStack.js",
@@ -72,10 +82,16 @@
 		"bin-debug/lib/utils/TextUtil.js",
 		"bin-debug/lib/utils/TimeUtil.js",
 		"bin-debug/lib/utils/Util.js",
+<<<<<<< HEAD
 		"bin-debug/game/core/GameConfig.js",
 		"bin-debug/lib/view/BImage.js",
 		"bin-debug/game/core/GameDataProxy.js",
 		"bin-debug/lib/view/FImage.js",
+=======
+		"bin-debug/lib/view/AutoBitmap.js",
+		"bin-debug/game/core/Engine.js",
+		"bin-debug/game/core/GameConfig.js",
+>>>>>>> 1c7c12fed53b09a4f61024b8bfcc3681f83b93fd
 		"bin-debug/lib/view/RedPoint.js",
 		"bin-debug/lib/view/SimpleButton.js",
 		"bin-debug/lib/view/SimpleGroup.js",

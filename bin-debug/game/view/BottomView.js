@@ -28,4 +28,3 @@ var BottomView = (function (_super) {
     return BottomView;
 }(ExComponent));
 __reflect(BottomView.prototype, "BottomView");
-//# sourceMappingURL=BottomView.js.map

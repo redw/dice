@@ -40,8 +40,17 @@ var HomeLand = (function (_super) {
         _this.size = count;
         _this.backGround = new HomeLandBG(_this);
         _this.addChild(_this.backGround);
+        _this.decorateLayer0 = new SceneDecorateLayer("up", inner);
+        _this.addChild(_this.decorateLayer0);
+        _this.buildLayer0 = new SceneBuildLayer("up", inner);
+        _this.addChild(_this.buildLayer0);
         _this.diceContainer = new DiceContainer(_this);
         _this.addChild(_this.diceContainer);
+        _this.buildLayer1 = new SceneBuildLayer("down", inner);
+        _this.addChild(_this.buildLayer1);
+        _this.decorateLayer1 = new SceneDecorateLayer("down", inner);
+        _this.addChild(_this.decorateLayer1);
+        _this.decorateLayer0.drawUp();
         _this.initDice();
         return _this;
     }
@@ -74,4 +83,3 @@ var HomeLand = (function (_super) {
     return HomeLand;
 }(egret.DisplayObjectContainer));
 __reflect(HomeLand.prototype, "HomeLand");
-//# sourceMappingURL=HomeLand.js.map

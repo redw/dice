@@ -11,7 +11,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Stage = egret.Stage;
 /**
  * 游戏场景
  */
@@ -19,43 +18,36 @@ var Scene = (function (_super) {
     __extends(Scene, _super);
     /**
      * 构造函数
-     * @param width     场景宽度
-     * @param height    场景高度
+     * @param inner     内部大小
+     * @param tileW     格子宽度
+     * @param tileH     格子高度
+     * @param road      环道
+     * @param build     建筑
+     * @param des       装饰
      */
-    function Scene(width, height) {
-        if (width === void 0) { width = 1920; }
-        if (height === void 0) { height = 2160; }
+    function Scene(inner, tileW, tileH) {
+        if (inner === void 0) { inner = 3; }
         var _this = _super.call(this) || this;
-        _this.changeSceneSize(width, height);
+        _this.tileW = 100;
+        _this.tileH = 100;
+        _this.inner = 3;
+        _this.road = 1;
+        _this.build = 1;
+        _this.des = 1;
+        _this.size = 7;
+        _this.inner = inner;
+        _this.tileW = tileW;
+        _this.tileH = tileH;
+        var count = inner + (_this.road + _this.build + _this.des) * 2;
+        _this.size = count;
         _this.backGround = new SceneBG();
         _this.addChild(_this.backGround);
         _this.backGround.draw();
-        _this.createHomeLand(width * 0.5, height * 0.5);
-        _this.center();
-        STAGE.addEventListener(egret.TouchEvent.TOUCH_BEGIN, _this.onMouseDown, _this);
+        _this.homeLand = new HomeLand(95, 67, inner);
+        _this.addChild(_this.homeLand);
         return _this;
+        // this.initDice();
     }
-    Scene.prototype.changeSceneSize = function (width, height) {
-        this.sceneWidth = width;
-        this.sceneHeight = height;
-    };
-    Scene.prototype.center = function () {
-        this.x = (this.sceneWidth - STAGE.stageWidth) * -0.5;
-        this.y = (this.sceneHeight) * -0.5;
-    };
-    /**
-     * 创建家园
-     * @param tileW
-     * @param tileH
-     * @param inner
-     */
-    Scene.prototype.createHomeLand = function (x, y, inner) {
-        if (inner === void 0) { inner = 3; }
-        this.homeLand = new HomeLand(95, 67, inner);
-        this.homeLand.x = x;
-        this.homeLand.y = y + 200;
-        this.addChild(this.homeLand);
-    };
     Scene.prototype.createDice = function (x, y) {
         var dice = BoneUtil.createArmature("dice_roll");
         var display = dice.display;
@@ -65,48 +57,34 @@ var Scene = (function (_super) {
         this.addChild(display);
     };
     Scene.prototype.getGridPosByXXYY = function (xx, yy) {
-        var x = (xx - yy - 1) * 59 * 0.5;
-        var y = (xx + yy) * 67 * 0.5;
+        var x = (xx - yy - 1) * this.tileW * 0.5;
+        var y = (xx + yy) * this.tileH * 0.5;
         return { x: x, y: y };
     };
-    Scene.prototype.onMouseDown = function (e) {
-        this.mouseDownX = e.stageX;
-        this.mouseDownY = e.stageY;
-        this.startX = this.x;
-        this.startY = this.y;
-        STAGE.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMouseMove, this);
-    };
-    Scene.prototype.onMouseUp = function (e) {
-        STAGE.removeEventListener(egret.TouchEvent.TOUCH_MOVE, this.onMouseMove, this);
-    };
-    Scene.prototype.onMouseMove = function (e) {
-        var stageX = e.stageX;
-        var stageY = e.stageY;
-        var offX = stageX - this.mouseDownX;
-        var offY = stageY - this.mouseDownY;
-        this.x = this.startX + offX;
-        this.y = this.startY + offY;
-        var maxX = 0;
-        var maxY = 0;
-        var minX = STAGE.stageWidth - this.sceneWidth;
-        var minY = STAGE.stageHeight - this.sceneHeight;
-        if (this.x > maxX) {
-            this.x = maxX;
-        }
-        if (this.x < minX) {
-            this.x = minX;
-        }
-        if (this.y > maxY) {
-            this.y = maxY;
-        }
-        if (this.y < minY) {
-            this.y = minY;
-        }
-    };
+    // // 实始化色子
+    // private initDice(count = 2) {
+    //     let diceArr = ArrayUtil.numberArray(0, 9);
+    //     while (count--) {
+    //         let randomValue = ArrayUtil.removeRandomItem(diceArr);
+    //         this.diceContainer.addRandomDice(randomValue);
+    //     }
+    // }
+    //
     Scene.prototype.throwDice = function () {
         this.homeLand.throwDice();
+    };
+    Scene.getGridPosByXXYY = function (xx, yy, width, height) {
+        if (width === void 0) { width = 95; }
+        if (height === void 0) { height = 67; }
+        var x = (xx - yy - 1) * width * 0.5;
+        var y = (xx + yy) * height * 0.5;
+        return { x: x, y: y };
+    };
+    Scene.getBuildConfigInfo = function (source) {
+        source = source.replace("_png", "");
+        var obj = RES.getRes("build_json");
+        return obj[source];
     };
     return Scene;
 }(egret.DisplayObjectContainer));
 __reflect(Scene.prototype, "Scene");
-//# sourceMappingURL=Scene.js.map

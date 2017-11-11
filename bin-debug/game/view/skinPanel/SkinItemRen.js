@@ -97,4 +97,3 @@ var SkinItemRen = (function (_super) {
     return SkinItemRen;
 }(eui.ItemRenderer));
 __reflect(SkinItemRen.prototype, "SkinItemRen");
-//# sourceMappingURL=SkinItemRen.js.map

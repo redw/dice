@@ -45,4 +45,3 @@ var SkinPanel = (function (_super) {
     return SkinPanel;
 }(BasePanel));
 __reflect(SkinPanel.prototype, "SkinPanel");
-//# sourceMappingURL=SkinPanel.js.map
